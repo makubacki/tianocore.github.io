@@ -1,5 +1,7 @@
 # Container for OSFC Workshops
 
+<b>NOTE:</b> This Wiki page is only for archival purposes. The container is no longer available to download.
+
 This document describes how to install the container used for the following workshops at [[OSFC 2018]]:
 
 * [Building Open Source UEFI Firmware with EDK II](https://osfc.io/talks/building-open-source-unified-extensible-firmware-interface-uefi-firmware-with-efi-development-kit-ii-edk-ii)
@@ -9,7 +11,7 @@ These containers are intended to simplify installation of tools and code across 
 
 ## Install the Container
 
-You can download the container [here](https://firmware.intel.com/sites/default/files/edk2-ubuntu_docker_image.zip).
+~~You can download the container~~ (no longer available) 
 
 After downloading the container, install Docker if you have not done that already.
 
@@ -154,6 +156,4 @@ For more information or examples on building EDK II and writing applications, pl
 
 ### Support Questions
 
-IRC – stephano (freenode or OFTC)
-
-Email: stephano.cetola@intel.com
+Email [[Mailing-Lists]]
