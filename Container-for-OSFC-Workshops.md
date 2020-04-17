@@ -4,8 +4,11 @@
 
 This document describes how to install the container used for the following workshops at [[OSFC 2018]]:
 
-* [Building Open Source UEFI Firmware with EDK II](https://osfc.io/talks/building-open-source-unified-extensible-firmware-interface-uefi-firmware-with-efi-development-kit-ii-edk-ii)
-* [Debugging UEFI Firmware under Linux](https://osfc.io/talks/debugging-unified-extensible-firmware-interface-uefi-firmware-under-linux)
+* [~~Building Open Source UEFI Firmware with EDK II~~](https://osfc.io/talks/building-open-source-unified-extensible-firmware-interface-uefi-firmware-with-efi-development-kit-ii-edk-ii) - No longer available
+* [~~Debugging UEFI Firmware under Linux~~](https://osfc.io/talks/debugging-unified-extensible-firmware-interface-uefi-firmware-under-linux) - No longer available
+
+Alternative [Tianocore Training](https://github.com/tianocore-training/Tianocore_Training_Contents/wiki) see presentation on "EDK II Build Lab - Emulation/OVMF".
+
 
 These containers are intended to simplify installation of tools and code across a variety of Linux distributions. If possible, please test the container installation prior to arriving at OSFC.
 
