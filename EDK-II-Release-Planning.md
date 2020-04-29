@@ -24,6 +24,7 @@
 * [OVMF Support booting from VMware PVSCSI controllers](https://bugzilla.tianocore.org/show_bug.cgi?id=2567)
 * [OVMF RFE: VCPU hotplug with SMM](https://bugzilla.tianocore.org/show_bug.cgi?id=1512)
 * [Ensure NV Variable Confidentiality and Integrity for Platforms Supporting RPMC](https://bugzilla.tianocore.org/show_bug.cgi?id=2594)
+* [FmpDxe: Implement Fmp Capsule Dependency feature in library](https://bugzilla.tianocore.org/show_bug.cgi?id=2696)
 * TBD
 
 # edk2-stable202008 tag planning
