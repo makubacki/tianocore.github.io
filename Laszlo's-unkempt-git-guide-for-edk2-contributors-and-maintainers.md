@@ -80,7 +80,7 @@ Contributor workflow
      git config notes.rewriteRef       refs/notes/commits
      git config sendemail.chainreplyto false
      git config sendemail.thread       true
-     git config sendemail.to           edk2-devel@lists.01.org
+     git config sendemail.to           devel@edk2.groups.io
      ```
 
 6.   <a name="contrib-06" href="#contrib-06">&sect;</a>
