@@ -1,8 +1,6 @@
 # 1. What is ECC tool?
-ECC is a python tool which is help to check the EDKII C coding style.<br>
-It will report error for the codes which don't follow EDKII C coding style.<br>
-EDK II C Coding Standards Specification：<br>
-https://edk2-docs.gitbooks.io/edk-ii-c-coding-standards-specification/content/
+ECC is a python tool which helps to detect coding style issues.<br>
+It reports errors for the codes which don't follow [EDK II C Coding Standards Specification](https://edk2-docs.gitbooks.io/edk-ii-c-coding-standards-specification/content/).<br>
 
 # 2. Where is ECC tool?
 ECC tool is located in edk2/BaseTools/Source/Python/Ecc.
@@ -35,7 +33,7 @@ This error may be met when you run ECC tool with python 3.x, then ECC depends on
 **4). You can type "Ecc -h/Ecc --help" to get the help info of ECC tool**.<br>
 
 **5). Common usage model:**<br>
-**Ecc -c config file  -e exception file  -t  the target directory which need to be scanned by ECC -r the ECC scan result csv file**<br>
+**Ecc -c config file  -e exception file  -t  the target directory which needs to be scanned by ECC -r the ECC scan result CSV file**<br>
 (Notes: Please use the full path when specify the target directory to scan.)
 
 config.ini and exception.xml are in edk2/BaseTools/Source/Python/Ecc dir.<br>
@@ -46,7 +44,7 @@ For example, run ECC to check the coding style in Mdepkg:<br>
 **Ecc –c  D:/AWORK/edk2/BaseTools/Source/Python/Ecc/config.ini**
 **-e D:/AWORK/edk2/BaseTools/Source/Python/Ecc/exception.xml -t D:/AWORK/edk2/MdePkg -r MdePkgECC.csv** <br>
 
-(Notes: When run ECC for a specific sub-dir, it may report some error such as some library instance are not used, but when run ECC for the whole project, these errors are gone. So we can ignore such kind of error when run ECC for a specific sub-dir.)<br>
+(Notes: When running ECC for a specific sub-dir, it may report some errors such as some library instances are not used, but when running ECC for the whole project, these errors are gone. We can ignore such kind of error when running ECC for a specific sub-dir.)<br>
 
 **6). You may need to maintain the config.ini and exception.xml files by yourself for your project.**<br>
 
