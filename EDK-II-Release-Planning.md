@@ -25,6 +25,8 @@
 * [OVMF RFE: VCPU hotplug with SMM](https://bugzilla.tianocore.org/show_bug.cgi?id=1512)
 * [Ensure NV Variable Confidentiality and Integrity for Platforms Supporting RPMC](https://bugzilla.tianocore.org/show_bug.cgi?id=2594)
 * [FmpDxe: Implement Fmp Capsule Dependency feature in library](https://bugzilla.tianocore.org/show_bug.cgi?id=2696)
+* [Remove deprecate APIs in BaseCryptLib](https://bugzilla.tianocore.org/show_bug.cgi?id=1898)
+* [Provide a pcd to disable SHA1 support](https://bugzilla.tianocore.org/show_bug.cgi?id=1682)
 * TBD
 
 # edk2-stable202008 tag planning
