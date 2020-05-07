@@ -24,6 +24,7 @@
 * [OVMF Support booting from VMware PVSCSI controllers](https://bugzilla.tianocore.org/show_bug.cgi?id=2567)
 * [OVMF RFE: VCPU hotplug with SMM](https://bugzilla.tianocore.org/show_bug.cgi?id=1512)
 * [OVMF PEI phase variable driver / MemoryTypeInfo tracking](https://bugzilla.tianocore.org/show_bug.cgi?id=386)
+* [ArmVirtPkg, OvmfPkg: Pass parameter from QEMU to control PXE IPv4/v6 boot](https://bugzilla.tianocore.org/show_bug.cgi?id=2681)
 * [Ensure NV Variable Confidentiality and Integrity for Platforms Supporting RPMC](https://bugzilla.tianocore.org/show_bug.cgi?id=2594)
 * [FmpDxe: Implement Fmp Capsule Dependency feature in library](https://bugzilla.tianocore.org/show_bug.cgi?id=2696)
 * [Remove deprecate APIs in BaseCryptLib](https://bugzilla.tianocore.org/show_bug.cgi?id=1898)
