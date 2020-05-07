@@ -15,7 +15,7 @@
 * [RegularExpressionDxe: Use submodule way to access third party Oniguruma](https://bugzilla.tianocore.org/show_bug.cgi?id=2073)
 * [BrotliCustomDecompressLib: Use submodule way to access third party brotli](https://bugzilla.tianocore.org/show_bug.cgi?id=2559)
 * [BaseTools: Use submodule way to access third party brotli](https://bugzilla.tianocore.org/show_bug.cgi?id=2558)
-* [EDK2 CI for RISC-V architecture](https://bugzilla.tianocore.org/show_bug.cgi?id=2562)
+* [RISC-V architecture on EDK2](https://bugzilla.tianocore.org/show_bug.cgi?id=2672)
 * [Disabling safe string constraint assertions](https://bugzilla.tianocore.org/show_bug.cgi?id=2054)
 * [ArmVirtPkg Implement support for TPM2 measured boot](https://bugzilla.tianocore.org/show_bug.cgi?id=2560)
 * [OVMF Implement support for Linux v5.7+ initrd and mixed mode loading](https://bugzilla.tianocore.org/show_bug.cgi?id=2564)
