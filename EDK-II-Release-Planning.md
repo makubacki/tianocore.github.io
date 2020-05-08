@@ -30,6 +30,7 @@
 * [Remove deprecate APIs in BaseCryptLib](https://bugzilla.tianocore.org/show_bug.cgi?id=1898)
 * [Provide a pcd to disable SHA1 support](https://bugzilla.tianocore.org/show_bug.cgi?id=1682)
 * [IntelFsp2Pkg: Support Multi-Phase silicon initialization and debug handlers](https://bugzilla.tianocore.org/show_bug.cgi?id=2698)
+* [Enable Host Unit Tests for Linux in Core CI](https://bugzilla.tianocore.org/show_bug.cgi?id=2513)
 * TBD
 
 # edk2-stable202008 tag planning
