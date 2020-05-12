@@ -17,6 +17,12 @@ Note: the 'git clone' command above pulls the latest code from edk2. If you want
 bash$ git clone https://github.com/tianocore/edk2.git vUDK2017
 </pre>
 
+===Initialize submodules===
+
+<pre>
+bash$ git submodule update --init
+</pre>
+
 ===Compile build tools ===
 
 <pre>
