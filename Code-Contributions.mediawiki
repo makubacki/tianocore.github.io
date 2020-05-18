@@ -1,4 +1,4 @@
-Please refer to [https://github.com/tianocore/edk2/blob/master/Readme.md] for more information.
+Please refer to [https://github.com/tianocore/edk2/blob/master/ReadMe.rst] for more information.
 
 See also
 
