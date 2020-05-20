@@ -34,7 +34,7 @@ VariablePolicyHelperLib contains common helper functions that are a shorthand fo
   VariablePolicyHelperLib|MdeModulePkg/Library/VariablePolicyHelperLib/VariablePolicyHelperLib.inf
 ```
 
-### VarCheckPolicyLib NULL Instance
+### VarCheckPolicyLib NULL LibraryClass
 
 If a platform is using the SMM-, MM-, or Standalone MM-based VariableServices, there is a VarCheck lib instance that **must** be linked to enable VariablePolicy engine. This VarCheck instance also handles MM communication/handler registration.
 
