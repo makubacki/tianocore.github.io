@@ -9,5 +9,6 @@
 [[Reporting Security Issues]]<br />
 [[Community Information]]<br/>
 [[Additional Projects]] & [[Tasks]]<br/>
+[[Training]]<br/>
 [[Community Support]]<br/>
 [[Community Virtual Meetings]]<br/>
