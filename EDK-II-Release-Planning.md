@@ -31,6 +31,9 @@
 * [Provide a pcd to disable SHA1 support](https://bugzilla.tianocore.org/show_bug.cgi?id=1682)
 * [IntelFsp2Pkg: Support Multi-Phase silicon initialization and debug handlers](https://bugzilla.tianocore.org/show_bug.cgi?id=2698)
 * [Enable Host Unit Tests for Linux in Core CI](https://bugzilla.tianocore.org/show_bug.cgi?id=2513)
+* [Add Open CI build test for Ovmf and Emulator](https://bugzilla.tianocore.org/show_bug.cgi?id=2570)
+* [Add UEFI 2.8/2.8a definition in MdePkg](https://bugzilla.tianocore.org/show_bug.cgi?id=2768)
+* [Add PI1.7/PI1.7a definition into MdePkg](https://bugzilla.tianocore.org/show_bug.cgi?id=2769)
 * TBD
 
 # edk2-stable202008 tag planning
