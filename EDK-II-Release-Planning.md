@@ -4,7 +4,7 @@
 
 | Date (00:00:00 UTC-8)| Description                              |
 | ---------------------| ---------------------------------------- |
-| 2020-05-29           | Beginning of development                 |
+| 2020-06-03           | Beginning of development                 |
 | 2020-08-07           | Feature Planning Freeze                  |
 | 2020-08-14           | [Soft Feature Freeze](SoftFeatureFreeze) |
 | 2020-08-21           | [Hard Feature Freeze](HardFeatureFreeze) |
@@ -31,6 +31,7 @@
 ## Proposed Features
 * TBD
 
+# [edk2-stable202005 tag](https://github.com/tianocore/edk2/releases/tag/edk2-stable202005)
 # [edk2-stable202002 tag](https://github.com/tianocore/edk2/releases/tag/edk2-stable202002)
 # [edk2-stable201911 tag](https://github.com/tianocore/edk2/releases/tag/edk2-stable201911)
 # [edk2-stable201908 tag](https://github.com/tianocore/edk2/releases/tag/edk2-stable201908)
