@@ -1,41 +1,3 @@
-# edk2-stable202005 tag planning
-
-## Proposed Schedule
-
-| Date (00:00:00 UTC-8)| Description                              |
-| ---------------------| ---------------------------------------- |
-| 2020-03-04           | Beginning of development                 |
-| 2020-05-08           | Feature Planning Freeze                  |
-| 2020-05-15           | [Soft Feature Freeze](SoftFeatureFreeze) |
-| 2020-05-22           | [Hard Feature Freeze](HardFeatureFreeze) |
-| 2020-06-03           | Release                                  |
-
-## Proposed Features
-* [BootGuard TOCTOU vulnerability (CVE-2019-11098)](https://bugzilla.tianocore.org/show_bug.cgi?id=1614)
-* [RegularExpressionDxe: Use submodule way to access third party Oniguruma](https://bugzilla.tianocore.org/show_bug.cgi?id=2073)
-* [BrotliCustomDecompressLib: Use submodule way to access third party brotli](https://bugzilla.tianocore.org/show_bug.cgi?id=2559)
-* [BaseTools: Use submodule way to access third party brotli](https://bugzilla.tianocore.org/show_bug.cgi?id=2558)
-* [RISC-V architecture on EDK2](https://bugzilla.tianocore.org/show_bug.cgi?id=2672)
-* [Disabling safe string constraint assertions](https://bugzilla.tianocore.org/show_bug.cgi?id=2054)
-* [ArmVirtPkg Implement support for TPM2 measured boot](https://bugzilla.tianocore.org/show_bug.cgi?id=2560)
-* [OVMF Implement support for Linux v5.7+ initrd and mixed mode loading](https://bugzilla.tianocore.org/show_bug.cgi?id=2564)
-* [OVMF Use loadimage/startimage for loading the kernel passed via the QEMU command line](https://bugzilla.tianocore.org/show_bug.cgi?id=2566)
-* [OVMF Support booting from Fusion-MPT SCSI controllers](https://bugzilla.tianocore.org/show_bug.cgi?id=2390)
-* [OVMF Support booting from VMware PVSCSI controllers](https://bugzilla.tianocore.org/show_bug.cgi?id=2567)
-* [OVMF RFE: VCPU hotplug with SMM](https://bugzilla.tianocore.org/show_bug.cgi?id=1512)
-* [OVMF PEI phase variable driver / MemoryTypeInfo tracking](https://bugzilla.tianocore.org/show_bug.cgi?id=386)
-* [ArmVirtPkg, OvmfPkg: Pass parameter from QEMU to control PXE IPv4/v6 boot](https://bugzilla.tianocore.org/show_bug.cgi?id=2681)
-* [Ensure NV Variable Confidentiality and Integrity for Platforms Supporting RPMC](https://bugzilla.tianocore.org/show_bug.cgi?id=2594)
-* [FmpDxe: Implement Fmp Capsule Dependency feature in library](https://bugzilla.tianocore.org/show_bug.cgi?id=2696)
-* [Remove deprecate APIs in BaseCryptLib](https://bugzilla.tianocore.org/show_bug.cgi?id=1898)
-* [Provide a pcd to disable SHA1 support](https://bugzilla.tianocore.org/show_bug.cgi?id=1682)
-* [IntelFsp2Pkg: Support Multi-Phase silicon initialization and debug handlers](https://bugzilla.tianocore.org/show_bug.cgi?id=2698)
-* [Enable Host Unit Tests for Linux in Core CI](https://bugzilla.tianocore.org/show_bug.cgi?id=2513)
-* [Add Open CI build test for Ovmf and Emulator](https://bugzilla.tianocore.org/show_bug.cgi?id=2570)
-* [Add UEFI 2.8/2.8a definition in MdePkg](https://bugzilla.tianocore.org/show_bug.cgi?id=2768)
-* [Add PI1.7/PI1.7a definition into MdePkg](https://bugzilla.tianocore.org/show_bug.cgi?id=2769)
-* TBD
-
 # edk2-stable202008 tag planning
 
 ## Proposed Schedule
@@ -49,6 +11,9 @@
 | 2020-08-28           | Release                                  |
 
 ## Proposed Features
+* [BootGuard TOCTOU vulnerability (CVE-2019-11098)](https://bugzilla.tianocore.org/show_bug.cgi?id=1614)
+* [Ensure NV Variable Confidentiality and Integrity for Platforms Supporting RPMC](https://bugzilla.tianocore.org/show_bug.cgi?id=2594)
+* [Provide a pcd to disable SHA1 support](https://bugzilla.tianocore.org/show_bug.cgi?id=1682)
 * TBD
 
 # edk2-stable202011 tag planning
