@@ -12,10 +12,15 @@
 
 ## Proposed Features
 * [BootGuard TOCTOU vulnerability (CVE-2019-11098)](https://bugzilla.tianocore.org/show_bug.cgi?id=1614)
-* [Ensure NV Variable Confidentiality and Integrity for Platforms Supporting RPMC](https://bugzilla.tianocore.org/show_bug.cgi?id=2594)
 * [Provide a pcd to disable SHA1 support](https://bugzilla.tianocore.org/show_bug.cgi?id=1682)
 * [ShellPkg: add HttpDynamicCommand](https://bugzilla.tianocore.org/show_bug.cgi?id=2860)
-* TBD
+* [CXL 1.1 Base Specification Register definitions](https://bugzilla.tianocore.org/show_bug.cgi?id=2611)
+* [Enable BSD license checker for new added files in open CI](https://bugzilla.tianocore.org/show_bug.cgi?id=2691)
+* [Add UNIT_TESTING_DEBUG define to enable source level debugging of host based unit tests](https://bugzilla.tianocore.org/show_bug.cgi?id=2804)
+* [Add new instance of BaseLib that for host based unit tests called UnitTestHostBaseLib](https://bugzilla.tianocore.org/show_bug.cgi?id=2800)
+* [Update openssl version to latest stable version 1.1.1g](https://bugzilla.tianocore.org/show_bug.cgi?id=2898)
+* [Add a pre-memory AP vector at 0xFF000](https://bugzilla.tianocore.org/show_bug.cgi?id=2776)
+* [IntelFsp2Pkg: Add FSP*_ARCH_UPD](https://bugzilla.tianocore.org/show_bug.cgi?id=2781)
 
 # edk2-stable202011 tag planning
 
