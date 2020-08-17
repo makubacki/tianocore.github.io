@@ -19,7 +19,7 @@
 * [ShellPkg: add HttpDynamicCommand](https://bugzilla.tianocore.org/show_bug.cgi?id=2860)
 * [CXL 1.1 Base Specification Register definitions](https://bugzilla.tianocore.org/show_bug.cgi?id=2611)
 * [BaseTools: Add support on C files to consume ASL files](https://bugzilla.tianocore.org/show_bug.cgi?id=2425)
-* [Enable BSD license checker for new added files in open CI](https://bugzilla.tianocore.org/show_bug.cgi?id=2691)
+* [Enable BSD-2-Clause-Patent license checker for new added files in open CI](https://bugzilla.tianocore.org/show_bug.cgi?id=2691)
 * [Enable ECC (EFI Code Checker) checker in open CI](https://bugzilla.tianocore.org/show_bug.cgi?id=2606)
 * [Add UNIT_TESTING_DEBUG define to enable source level debugging of host based unit tests](https://bugzilla.tianocore.org/show_bug.cgi?id=2804)
 * [Add new instance of BaseLib that for host based unit tests called UnitTestHostBaseLib](https://bugzilla.tianocore.org/show_bug.cgi?id=2800)
