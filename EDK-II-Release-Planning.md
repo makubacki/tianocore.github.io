@@ -6,9 +6,9 @@
 | ---------------------| ---------------------------------------- |
 | 2020-06-03           | Beginning of development                 |
 | 2020-08-07           | Feature Planning Freeze                  |
-| 2020-08-14           | [Soft Feature Freeze](SoftFeatureFreeze) |
-| 2020-08-21           | [Hard Feature Freeze](HardFeatureFreeze) |
-| 2020-08-28           | Release                                  |
+| 2020-08-24           | [Soft Feature Freeze](SoftFeatureFreeze) |
+| 2020-08-28           | [Hard Feature Freeze](HardFeatureFreeze) |
+| 2020-09-04           | Release                                  |
 
 ## Proposed Features
 * [BootGuard TOCTOU vulnerability (CVE-2019-11098)](https://bugzilla.tianocore.org/show_bug.cgi?id=1614)
