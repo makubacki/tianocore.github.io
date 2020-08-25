@@ -14,6 +14,6 @@ If you are a developer, and would like to make [[Code Contributions]] to our com
 * Review our secure coding documents [https://legacy.gitbook.com/book/edk2-docs/edk-ii-secure-coding-guide/details] [https://legacy.gitbook.com/book/edk2-docs/edk-ii-secure-code-review-guide/details] prior to sumbmitting a patch, along with creating a unit test and performing some static analysis
 * Recommend following some of the practices at [https://google.github.io/eng-practices/review/reviewer/]
 * Do not post a patch to an unmitigated security issue. Instead follow guidelines at [https://github.com/tianocore/tianocore.github.io/wiki/Reporting-Security-Issues] 
-
+* If a proposed set of patches also requires a change to [[UEFI]] or other industry standard specifications, then use the [[EDK II Code First Process]].
 
 <!-- [[Category:Main]] -->
