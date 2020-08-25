@@ -5,3 +5,6 @@ See also
 [[Commit Message Format]]
 
 [[Code Style]]
+
+[[EDK II Code First Process]]
+
