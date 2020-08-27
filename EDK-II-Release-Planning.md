@@ -16,7 +16,7 @@
 * [Update openssl version to latest stable version 1.1.1g](https://bugzilla.tianocore.org/show_bug.cgi?id=2898)
 * [TPM Add capability to let PEIM extend TcgEvent](https://bugzilla.tianocore.org/show_bug.cgi?id=2841)
 * [TPM Bios to verify TPM2_ChangeEPS Support through TPM Capabilities command request and enable it if available](https://bugzilla.tianocore.org/show_bug.cgi?id=2793)
-* [ShellPkg: add HttpDynamicCommand](https://bugzilla.tianocore.org/show_bug.cgi?id=2860)
+* [Add FSP binary measurement](https://bugzilla.tianocore.org/show_bug.cgi?id=2376)
 * [CXL 1.1 Base Specification Register definitions](https://bugzilla.tianocore.org/show_bug.cgi?id=2611)
 * [BaseTools: Add support on C files to consume ASL files](https://bugzilla.tianocore.org/show_bug.cgi?id=2425)
 * [Enable BSD-2-Clause-Patent license checker for new added files in open CI](https://bugzilla.tianocore.org/show_bug.cgi?id=2691)
@@ -36,13 +36,14 @@
 
 | Date (00:00:00 UTC-8)| Description                              |
 | ---------------------| ---------------------------------------- |
-| 2020-08-28           | Beginning of development                 |
+| 2020-09-04           | Beginning of development                 |
 | 2020-11-06           | Feature Planning Freeze                  |
 | 2020-11-13           | [Soft Feature Freeze](SoftFeatureFreeze) |
 | 2020-11-20           | [Hard Feature Freeze](HardFeatureFreeze) |
 | 2020-11-27           | Release                                  |
 
 ## Proposed Features
+* [ShellPkg: add HttpDynamicCommand](https://bugzilla.tianocore.org/show_bug.cgi?id=2860)
 * TBD
 
 # [edk2-stable202005 tag](https://github.com/tianocore/edk2/releases/tag/edk2-stable202005)
