@@ -12,7 +12,7 @@
 
 ## Proposed Features
 * [BootGuard TOCTOU vulnerability (CVE-2019-11098)](https://bugzilla.tianocore.org/show_bug.cgi?id=1614)
-* [Provide a pcd to disable SHA1 support](https://bugzilla.tianocore.org/show_bug.cgi?id=1682)
+* [Provide MACROs to disable SHA1 support](https://bugzilla.tianocore.org/show_bug.cgi?id=1682)
 * [Update openssl version to latest stable version 1.1.1g](https://bugzilla.tianocore.org/show_bug.cgi?id=2898)
 * [TPM Add capability to let PEIM extend TcgEvent](https://bugzilla.tianocore.org/show_bug.cgi?id=2841)
 * [TPM Bios to verify TPM2_ChangeEPS Support through TPM Capabilities command request and enable it if available](https://bugzilla.tianocore.org/show_bug.cgi?id=2793)
