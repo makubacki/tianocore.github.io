@@ -21,7 +21,7 @@ The tianocore infosec team uses the following flow to evaluate items
 # Security Advisories
 
 List of current EDK II Security Advisories can be found at this Gitbook : 
-**[Security Advisory Log]( https://www.gitbook.com/book/edk2-docs/security-advisory/details)**
+**[Security Advisory Log]( https://edk2-docs.gitbook.io/security-advisory/)**
 
 
 

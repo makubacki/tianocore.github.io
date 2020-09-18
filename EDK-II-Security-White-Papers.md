@@ -15,12 +15,12 @@ A list of White Papers and information for EDK II Security from multiple sources
 
 **EDK II Code:**
 * [A Tour Beyond BIOS - Security Design Guide in_EDK_II.pdf](https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Security_Design_Guide_in_EDK_II.pdf) (Sept 2016)
-* [EDK II Secure Coding Guide ](https://legacy.gitbook.com/book/edk2-docs/edk-ii-secure-coding-guide/details) (June 2019)
-* [EDK II Secure Code Review Guide ](https://legacy.gitbook.com/book/edk2-docs/edk-ii-secure-code-review-guide/details) (June 2019)
+* [EDK II Secure Coding Guide ](https://edk2-docs.gitbook.io/edk-ii-secure-coding-guide) (June 2019) 
+* [EDK II Secure Code Review Guide ](https://edk2-docs.gitbook.io/edk-ii-secure-code-review-guide) (June 2019)
 
 **Memory Protection:**
-* [A Tour Beyond BIOS – Memory Protection in UEFI BIOS - gitbook](https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-memory-protection-in-uefi-bios/details)  (March 2017)
-* [A Tour Beyond BIOS - Mitigate Buffer Overflow in UEFI - gitbook](https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-mitigate-buffer-overflow-in-ue/details) (April 2018)
+* [A Tour Beyond BIOS – Memory Protection in UEFI BIOS - gitbook](https://edk2-docs.gitbook.io/a-tour-beyond-bios-memory-protection-in-uefi-bios)  (March 2017)
+* [A Tour Beyond BIOS - Mitigate Buffer Overflow in UEFI - gitbook](https://edk2-docs.gitbook.io/a-tour-beyond-bios-mitigate-buffer-overflow-in-ue) (April 2018)
 
 **SMM Protection:**
 * [A Tour Beyond BIOS Secure SMM Communication](https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Secure_SMM_Communication.pdf) (April 2016)
@@ -28,7 +28,7 @@ A list of White Papers and information for EDK II Security from multiple sources
 
 **SecureBoot/AuthVariable:**
 * [A Tour Beyond BIOS - Implementing UEFI Authenticated Variables in SMM with EDK II](https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf) (Oct 2015)
-* [Understanding the UEFI Secure Boot Chain](https://legacy.gitbook.com/book/edk2-docs/understanding-the-uefi-secure-boot-chain/details) (June 2019)
+* [Understanding the UEFI Secure Boot Chain](https://edk2-docs.gitbook.io/understanding-the-uefi-secure-boot-chain) (June 2019)
 
 **DMA:**
 [A Tour Beyond BIOS - Using IOMMU for DMA Protection in UEFI firmware](https://software.intel.com/sites/default/files/managed/8d/88/intel-whitepaper-using-iommu-for-dma-protection-in-uefi.pdf ) (Oct 2017)

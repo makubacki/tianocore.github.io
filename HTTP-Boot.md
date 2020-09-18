@@ -4,7 +4,7 @@ For a detailed description on UEFI HTTP Boot, see the "HTTP Boot" section of the
 
 ## HTTP Boot: Getting Started
 
-Please refer to the white paper [EDK II HTTP Boot Getting Started Guide](https://legacy.gitbook.com/book/edk2-docs/getting-started-guide-of-edk-ii-http-boot/details) for a step by step guide of the HTTP Boot enabling and server configuration in **corporate environment**.
+Please refer to the white paper [EDK II HTTP Boot Getting Started Guide](https://edk2-docs.gitbook.io/getting-started-guide-of-edk-ii-http-boot) for a step by step guide of the HTTP Boot enabling and server configuration in **corporate environment**.
 
 ## Vendor Documentation and Conference Presentations
 

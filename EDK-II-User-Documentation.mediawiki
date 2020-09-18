@@ -53,7 +53,7 @@ NOTE SVNs: For Nt32Pkg requires -r13186, For OVMF Requires -r13160 beyond UDK201
 
 <tr>
     <td>
-[https://legacy.gitbook.com/book/edk2-docs/edk-ii-uefi-driver-writer-s-guide/details gitbook]
+[https://edk2-docs.gitbook.io/edk-ii-uefi-driver-writer-s-guide gitbook]
     </td>
 
     <td>
