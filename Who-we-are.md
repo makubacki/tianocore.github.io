@@ -31,7 +31,7 @@ Current Stewards body includes technologists from Apple Inc., Intel Corporation,
 Inc, and Red Hat, representing diverse areas to maintain a healthy
 ecosystem.
 
-### Members of the TianoCore Community
+## Members of the TianoCore Community
 
 
 ## Contributor 
