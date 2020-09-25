@@ -27,8 +27,8 @@ Technical development community includes Stewards and Maintainers to
 steer the technical direction of EDK II project hosted on Tianocore.org.
 
 The technical development community will be assisted by the Stewards.
-Current Stewards body includes technologists from Apple, Intel, Nuvia
-inc, and Red Hat, representing diverse areas to maintain a healthy
+Current Stewards body includes technologists from Apple Inc., Intel Corporation, Nuvia
+Inc, and Red Hat, representing diverse areas to maintain a healthy
 ecosystem.
 
 ### Members of the TianoCore Community
@@ -61,9 +61,9 @@ A Contributor is anyone with interest in contributing to Tianocore.org
 
 ### Steps to contribute code
 
-1.  ### Create a Github account: [https://github.com/](https://github.com/)
+1.  Create a Github account: [https://github.com/](https://github.com/)
 
-2.  ### Join the EDK II Project Mailing list: [Mailing List](https://github.com/tianocore/tianocore.github.io/wiki/Mailing-Lists) 
+2.  Join the EDK II Project Mailing list: [Mailing List](https://github.com/tianocore/tianocore.github.io/wiki/Mailing-Lists) 
 
 3.  Follow the guidelines for submitting a code contribution by the EDK
     II Project Code Contributions process:
@@ -170,7 +170,7 @@ A Reviewer is anyone with interest in contributing to Tianocore.org
 
 -   Reviewers help maintainers review code, but don\'t have push access.
 
--   A <u>designated</u> Package Reviewer:
+-   A designated Package Reviewer:
 
     -   shall be reasonably familiar with the Package (or some modules
         thereof)
@@ -236,7 +236,7 @@ interests shift with time too.
 New stewards are elected by existing stewards in recognition of work
 already being done.
 
-**Replacing a Steward **
+### Replacing a Steward 
 
 If one of the Stewards decides to retire, they can resign simply by
 sending a patch to modify Maintainers.txt. The remaining Stewards may
@@ -259,9 +259,9 @@ A Community Manager manages the TianoCore Community.
 
 4.  Run the TianoCore community meetings on a regular basis.
 
-**Guidelines for TianoCore Community**
+### Guidelines for TianoCore Community
 
-### Mailing List
+#### Mailing List
 
 1.  Use a mail user agent that supports a \"threaded view\" and supports
     tagging messages for later.
@@ -270,9 +270,8 @@ A Community Manager manages the TianoCore Community.
 
 3.  Keep an eye on your mailbox, do revisit tagged messages.
 
-###  
 
-###  Bugzilla
+####  Bugzilla
 
 1.  Writing bug reports, issues and/or feature requests:
 
@@ -309,6 +308,7 @@ A Community Manager manages the TianoCore Community.
 
     -   List new feature Bugzillas and high-profile bug fixes
         [here](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Release-Planning).
+---
 
 **Resources**
 
