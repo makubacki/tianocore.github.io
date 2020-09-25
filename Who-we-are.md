@@ -231,7 +231,7 @@ Stewards loosely distribute the above responsibilities between each
 other; not every steward is active in every role. Activities and
 interests shift with time too.
 
-### Add / Remove a Steward
+### Adding a Steward
 
 New stewards are elected by existing stewards in recognition of work
 already being done.
@@ -316,8 +316,9 @@ A Community Manager manages the TianoCore Community.
 
 [https://en.wikipedia.org/wiki/Open\_source\#The\_open-source\_model\_and\_open\_collaboration](https://en.wikipedia.org/wiki/Open_source#The_open-source_model_and_open_collaboration)
 
-Links: [About](https://www.tianocore.org/about.html) TianoCore \|
-Licensing \| [FAQ](https://www.tianocore.org/faq.html) \| [How to
+Links: [About TianoCore](https://www.tianocore.org/about.html)\|
+[Licensing](https://www.tianocore.org/legalese.html)\| 
+[FAQ](https://www.tianocore.org/faq.html) \| [How to
 Contribute](https://www.tianocore.org/contrib) \| [Code of
 Conduct](https://www.tianocore.org/coc.html) \|
 [Wiki](https://github.com/tianocore/tianocore.github.io/wiki/Home)
