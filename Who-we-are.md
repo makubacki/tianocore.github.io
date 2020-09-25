@@ -3,7 +3,7 @@
 
 # TianoCore Open Source Community 
 
-Rev 1.0
+Rev 1.0  **Draft for Review** 
 
 ## Overview
 
@@ -214,7 +214,7 @@ project and helps drive the community to reach consensus.
 7.  Promote open source development practices on the edk2-devel mailing
     list
 
-8.  Uphold the [[code of
+8.  Uphold the [code of
     conduct](https://www.tianocore.org/coc.html); speak up
     if someone violates it on the list or other collaboration areas.
 
