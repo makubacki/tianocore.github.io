@@ -40,8 +40,7 @@ Course Goal:Initialize the boot process by following the UEFI specifications
   </td>
   
   <td>
-<a href="https://tianocore-training.github.io/Lesson-0/)
-  [https://tianocore-training.github.io/Lesson-0/"> Launch </a> 
+<a href="https://tianocore-training.github.io/Lesson-0"> Launch   </a>
   </td>
 
   <td>
