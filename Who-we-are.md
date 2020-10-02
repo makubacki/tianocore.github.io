@@ -18,7 +18,7 @@ projects. Most of our efforts are currently related to the [EDK
 II project](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II).
 
 The community consists of Contributors, Maintainers, Reviewers,
-Stewards, and Community Manager. All members adhere to the Tianocore.org
+Stewards, Community Manager, Release Manager, and TianoCore Admin. All members adhere to the Tianocore.org
 [Code of Conduct](https://www.tianocore.org/coc.html).
 
 ### Structure of the Technical Development Community
@@ -113,7 +113,7 @@ The role of a maintainer is to:
 
 1.  Process review requests in FIFO order.
 
-2.  Never let a pending request get older than a calendar week.
+2.  Maintainer is responsible for timely responses on emails addressed to them (preferably less than calendar week). 
 
 3.  If you are out-of-office for an extended period of time, inform the
     Stewards and/or your co-maintainers about pending requests. Use
@@ -181,7 +181,9 @@ A Reviewer is anyone with interest in contributing to Tianocore.org
         (or some modules thereof), in certain platforms and
         environments.
 
--   Same rules apply from the Contributors.
+    -  Reviewer is responsible for timely responses on emails addressed to them (preferably less than calendar week).
+
+    -  Same rules apply from the Contributors.
 
 ## Steward
 -------
@@ -241,6 +243,29 @@ already being done.
 If one of the Stewards decides to retire, they can resign simply by
 sending a patch to modify Maintainers.txt. The remaining Stewards may
 elect a new Steward to cover the gaps to maintain a healthy ecosystem.
+
+## TianoCore Admin
+--------------------
+### Definition
+A TianoCore Admin manages the access rights to TianoCore Community.
+
+### Role
+
+- The TianoCore admin is responsible for monitoring role changes in the community such as managing access rights while adding/removing maintainers.
+- Responsible for Approval and removal of access to TianoCore resources such as GitHub, Bugzilla, groups.io etc..
+
+
+## Release Manager
+--------------------
+### Definition
+A Release Manager manages the TianoCore releases to the Community.
+
+### Role
+
+The Release Manager is responsible for driving the quarterly Stable Tags. The Release Manager will plan the features, schedule the release date, create the Stable Tag with the release notes and announce to the EDK II community on the release milestones: Soft feature freeze, hard feature freeze and the final release of the Stable Tag.
+
+
+
 
 ## Community Manager 
 ------------------
