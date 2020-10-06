@@ -27,8 +27,8 @@ Technical development community includes Stewards and Maintainers to
 steer the technical direction of EDK II project hosted on Tianocore.org.
 
 The technical development community will be assisted by the Stewards.
-Current Stewards body includes technologists from Apple Inc., Intel Corporation, Nuvia
-Inc, and Red Hat, representing diverse areas to maintain a healthy
+Current Stewards body includes technologists from Apple Inc., Intel Corporation, NUVIA
+Inc, and Red Hat, Inc., representing diverse areas to maintain a healthy
 ecosystem.
 
 ## Members of the TianoCore Community
