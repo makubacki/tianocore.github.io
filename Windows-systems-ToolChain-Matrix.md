@@ -14,12 +14,12 @@ Change **TOOL_CHAIN_TAG** in the file Conf\Target.txt for Windows Visual Studio 
 
 Example:
 
-for Windows 10 64 bit OS and Visual Studio 2013 modify the following in Target.txt
+for Windows 10 64 bit OS and Visual Studio 2015 modify the following in Target.txt
 ```
 From:
 TOOL_CHAIN_TAG = MYTOOLS
 to:
-TOOL_CHAIN_TAG = VS2013x86
+TOOL_CHAIN_TAG = VS2015x86
 ```
 
 NOTE: VS2012** only with UDK2014 releases or equivalent or later UDK release
