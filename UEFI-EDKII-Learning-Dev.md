@@ -1,7 +1,7 @@
 # UEFI and EDK II Learning and Development
 
 Welcome to UEFI and EDK II Learning and Development.  The self paced courses below are provided to help you increase your knowledge of UEFI and EDK II and to aid you in performing UEFI- and EDK II-related tasks.
-These courses are provided and produced as a courtesy of Intel Corporation and Contributed-under: TianoCore Contribution Agreement 1.1 ([https://github.com/tianocore-training/Lesson-0/blob/master/LICENSE.txt  License Agreement])
+These courses are provided and produced as a courtesy of Intel Corporation and Contributed-under: TianoCore Contribution Agreement 1.1 ([License Agreement](https://github.com/tianocore-training/Lesson-0/blob/master/LICENSE.txt)  )
 
 Before you begin a course, review the course objectives and intended audience to determine if the course is right for you.   Enjoy learning more about UEFI and EDK II!
 
