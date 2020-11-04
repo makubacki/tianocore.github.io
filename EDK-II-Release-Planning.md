@@ -12,7 +12,19 @@
 
 ## Proposed Features
 * [ShellPkg: add HttpDynamicCommand](https://bugzilla.tianocore.org/show_bug.cgi?id=2860)
-* TBD
+* [OvmfPkg, ArmVirtPkg: enable HttpDynamicCommand](https://bugzilla.tianocore.org/show_bug.cgi?id=2857)
+* [CryptoPkg/BaseCryptLib: fix NULL dereference (CVE-2019-14584)](https://bugzilla.tianocore.org/show_bug.cgi?id=1914)
+* [Remove DEPRECATED code wrapped by new macro DISABLE_NEW_DEPRECATED_INTERFACES](https://bugzilla.tianocore.org/show_bug.cgi?id=2777)
+* [MdePkg: Add definitions for HTTP Chunked Transfer](https://bugzilla.tianocore.org/show_bug.cgi?id=2915)
+* [Add SMBIOS 3.4.0 DDR5 Support](https://bugzilla.tianocore.org/show_bug.cgi?id=2352)
+* [UefiCpuPkg: MpServices2Ppi and MpServicesPpi compatibility support.](https://bugzilla.tianocore.org/show_bug.cgi?id=2883)
+* [Add RngLib instead of TimerLib for OpensslLib](https://bugzilla.tianocore.org/show_bug.cgi?id=1871)
+* [SecurityPkg/DxeImageVerificationLib: Disable SHA1 base on MACRO](https://bugzilla.tianocore.org/show_bug.cgi?id=2943)
+* [Remove the deprecated MD5 and SHA1 support of Hash2DxeCrypto](https://bugzilla.tianocore.org/show_bug.cgi?id=3027)
+* [Adopt VariablePolicy, Deprecate VarLock and VarCheckPolicy.](https://bugzilla.tianocore.org/show_bug.cgi?id=2522)
+* [EmulatorPkg: Add CI build for SECURE_BOOT_ENABLE](https://bugzilla.tianocore.org/show_bug.cgi?id=2979)
+* [BaseTools: Add EDKII_DSC_PLATFORM_GUID MACRO](https://bugzilla.tianocore.org/show_bug.cgi?id=2969)
+* [BaseTools: Enable Module Scope Structure Pcd](https://bugzilla.tianocore.org/show_bug.cgi?id=2648)
 
 # [edk2-stable202008 tag](https://github.com/tianocore/edk2/releases/tag/edk2-stable202008)
 # [edk2-stable202005 tag](https://github.com/tianocore/edk2/releases/tag/edk2-stable202005)
