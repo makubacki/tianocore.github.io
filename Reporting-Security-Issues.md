@@ -14,6 +14,8 @@ If you are interested in being involved in the evaluation of Tianocore Security 
 
 Also, tianocore infosec team members should only share details of unmitigated issues in the infosec-tagged Bugzilla entries. Any sharing of unmitigated issues on un-encrypted email or open source prior to embargo expiry may lead to removal from the infosec group.
 
+Now that tianocore is a CNA https://cve.mitre.org/cve/cna.html, CVE issuance will be a “Must” for tianocore content and “May” for downstream derivatives of tianocore (open or closed). We request that the reporter perform the initial CVSS calculation.  Recommend using https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L. If reporter doesn’t wish to grade, then infosec will propose a grade and share w/ reporter prior to applying the grading.
+
 The tianocore infosec team uses the following flow to evaluate items
 ![](https://github.com/jwang36/tianocore.github.io/raw/master/security/flowchart.svg?sanitize=true)
 
