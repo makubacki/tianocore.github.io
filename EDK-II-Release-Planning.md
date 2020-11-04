@@ -21,6 +21,7 @@
 * [Add RngLib instead of TimerLib for OpensslLib](https://bugzilla.tianocore.org/show_bug.cgi?id=1871)
 * [SecurityPkg/DxeImageVerificationLib: Disable SHA1 base on MACRO](https://bugzilla.tianocore.org/show_bug.cgi?id=2943)
 * [Remove the deprecated MD5 and SHA1 support of Hash2DxeCrypto](https://bugzilla.tianocore.org/show_bug.cgi?id=3027)
+* [CryptoPkg/OpensslLib: Add native instruction support for X64](https://bugzilla.tianocore.org/show_bug.cgi?id=2507)
 * [Adopt VariablePolicy, Deprecate VarLock and VarCheckPolicy.](https://bugzilla.tianocore.org/show_bug.cgi?id=2522)
 * [EmulatorPkg: Add CI build for SECURE_BOOT_ENABLE](https://bugzilla.tianocore.org/show_bug.cgi?id=2979)
 * [BaseTools: Add EDKII_DSC_PLATFORM_GUID MACRO](https://bugzilla.tianocore.org/show_bug.cgi?id=2969)
