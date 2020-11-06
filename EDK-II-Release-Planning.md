@@ -26,6 +26,7 @@
 * [EmulatorPkg: Add CI build for SECURE_BOOT_ENABLE](https://bugzilla.tianocore.org/show_bug.cgi?id=2979)
 * [BaseTools: Add EDKII_DSC_PLATFORM_GUID MACRO](https://bugzilla.tianocore.org/show_bug.cgi?id=2969)
 * [BaseTools: Enable Module Scope Structure Pcd](https://bugzilla.tianocore.org/show_bug.cgi?id=2648)
+* [BaseTools: Incremental build enhancement](https://bugzilla.tianocore.org/show_bug.cgi?id=3052)
 
 # [edk2-stable202008 tag](https://github.com/tianocore/edk2/releases/tag/edk2-stable202008)
 # [edk2-stable202005 tag](https://github.com/tianocore/edk2/releases/tag/edk2-stable202005)
