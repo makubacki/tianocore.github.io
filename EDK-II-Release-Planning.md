@@ -28,6 +28,7 @@
 * [Implementation of UEFI Redfish Host Interface Dxe](https://bugzilla.tianocore.org/show_bug.cgi?id=2912)
 * [Add SATA port error recovery when operating in AHCI mode](https://bugzilla.tianocore.org/show_bug.cgi?id=3025)
 * [Restart failed ATA packets when operating in AHCI mode](https://bugzilla.tianocore.org/show_bug.cgi?id=3026)
+* [Extend usage of LastAttemptStatus in FmpDxe](https://bugzilla.tianocore.org/show_bug.cgi?id=2802)
 * [Add firmware support for Kvmtool](https://bugzilla.tianocore.org/show_bug.cgi?id=3055)
 * [EmulatorPkg: Add CI build for SECURE_BOOT_ENABLE](https://bugzilla.tianocore.org/show_bug.cgi?id=2979)
 * [BaseTools: Add EDKII_DSC_PLATFORM_GUID MACRO](https://bugzilla.tianocore.org/show_bug.cgi?id=2969)
