@@ -2,7 +2,7 @@
 
 ## [[UEFI and EDK II Learning and Development|UEFI EDKII Learning Dev]]
 
-These online courses provide background information on the [[UEFI]] specification and [[EDK II]]. This self-paced training is recommended for anyone new to UEFI. 
+These online courses provide background information on the [[UEFI]] specification and [[EDK II]]. This self-paced training is recommended for anyone new to UEFI. [[UEFI-EDKII-Learning-Dev]]
 
 ## [TianoCore Developer Training](https://github.com/tianocore-training/Tianocore_Training_Contents/wiki) 
 
