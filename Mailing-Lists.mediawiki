@@ -1,5 +1,5 @@
 === Current Lists ===
-We currently have lists for development discussions / patch review, announcements, requests for comments, and general discussion. These lists can all be found on Groups.io:
+We currently have the below mailing lists for questions, these are also listed on Groups.io: 
 
 Development discussion and patch reviews: https://edk2.groups.io/g/devel<br />
 Announcements: https://edk2.groups.io/g/announce<br />
