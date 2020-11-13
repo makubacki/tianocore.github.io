@@ -1,7 +1,7 @@
-The [[edk2-devel]] mailing list is a good way to contact a broad set of TianoCore developers and site maintainers.
-Please contact the community admins through our edk2-devel email list - edk2-devel-owner@lists.01.org
+The EDK II [[Mailing Lists]]  is a good way to contact a broad set of TianoCore developers and site maintainers.
+Please contact the community admins through our - devel+owner@edk2.groups.io
 
-To become a community contributor (please see the [[How_To_Contribute]] page) or contact the community admins.
+To become a community contributor (please see the [[Community Information]] page) or contact the community admins.
 
-Note: Please use judgement if sending personal information to [[edk2-devel]], since this is a public list.
+Note: Please use judgement if sending personal information to EDK II [[Mailing Lists]] , since this is a public list.
 
