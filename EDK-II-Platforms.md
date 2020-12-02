@@ -11,7 +11,7 @@ Note: new platforms are being developed in the [edk2-platforms](https://github.c
 
 ### Intel® Processor Platforms
 
-Recent Intel platform EDK II implementations follow a software architecture intended to aid in uniform delivery of Intel platforms called EDK II Minimum Platform. That architecture is described and maintained in the [EDK II Minimum Platform Specification draft](https://edk2-docs.gitbooks.io/edk-ii-minimum-platform-specification). Brief and practical information regarding the goals of a Minimum Platform and how to build are available in the Intel platform [Readme.md](https://github.com/tianocore/edk2-platforms/blob/master/Platform/Intel/Readme.md).
+Recent Intel platform EDK II implementations follow a software architecture intended to aid in uniform delivery of Intel platforms called EDK II Minimum Platform. That architecture is described and maintained in the [EDK II Minimum Platform Specification draft](https://tianocore-docs.github.io/edk2-MinimumPlatformSpecification/draft/). Brief and practical information regarding the goals of a Minimum Platform and how to build are available in the Intel platform [Readme.md](https://github.com/tianocore/edk2-platforms/blob/master/Platform/Intel/Readme.md).
 
 #### EDK II Minimum Platforms
 

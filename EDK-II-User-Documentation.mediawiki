@@ -53,7 +53,10 @@ NOTE SVNs: For Nt32Pkg requires -r13186, For OVMF Requires -r13160 beyond UDK201
 
 <tr>
     <td>
-[https://edk2-docs.gitbook.io/edk-ii-uefi-driver-writer-s-guide gitbook]
+[https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/ HTML]
+[https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.pdf PDF]
+[https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.mobi MOBI]
+[https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.epub EPUB]
     </td>
 
     <td>

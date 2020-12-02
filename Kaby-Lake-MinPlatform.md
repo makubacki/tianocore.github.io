@@ -7,4 +7,4 @@
 This tree follows a "minimum platform" philosophy, providing boot to a UEFI compliant operating system using the minimum number of EDK II modules. The project uses the [Intel® Firmware Support Package (Intel® FSP)](https://github.com/IntelFsp/FSP/tree/master/KabylakeFspBinPkg) for platform silicon initialization.
 
 [Minimum Platform Readme File](https://github.com/tianocore/edk2-platforms/blob/master/Platform/Intel/Readme.md)
-[Minimum Platform Specification](https://edk2-docs.gitbooks.io/edk-ii-minimum-platform-specification/content/)
+[Minimum Platform Specification](https://tianocore-docs.github.io/edk2-MinimumPlatformSpecification/draft/)

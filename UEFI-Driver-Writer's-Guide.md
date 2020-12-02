@@ -4,6 +4,11 @@ This document is provided to help developers prepare UEFI drivers using the [[ED
 
 ## Versions
 
-As of April 2018, the UEFI Driver Writer's Guide is available in gitbook format.
+As of April 2018, the UEFI Driver Writer's Guide is available in the following formats.
 
-https://edk2-docs.gitbooks.io/edk-ii-uefi-driver-writer-s-guide/
+* [HTML](https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/)
+* [PDF](https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.pdf)
+* [MOBI](https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.mobi)
+* [EPUB](https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.epub)
+
+

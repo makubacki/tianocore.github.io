@@ -15,5 +15,5 @@ The main MinPlatform Package ([MinPlatformPkg](https://github.com/tianocore/edk2
 
 #### Resources
 - [Open Source Firmware Conference (OSFC)](https://osfc.io/) Presentation on [Minimum Platform Architecture (Sept 2019)](https://software.intel.com/sites/default/files/Open%20Source%20UEFI%20Firmware%20for%20Intel%20Platforms.pdf)
-- [EDK II Minimum Platform Architecture Specification](https://edk2-docs.gitbooks.io/edk-ii-minimum-platform-specification/content/)
+- [EDK II Minimum Platform Architecture Specification](https://tianocore-docs.github.io/edk2-MinimumPlatformSpecification/draft/)
 - [A Tour Beyond BIOS Open Source IA Firmware Platform Design Guide in EDK II (v 2)](https://github.com/tianocore/edk2-platforms/blob/master/Platform/Intel/MinPlatformPkg/Docs/A_Tour_Beyond_BIOS_Open_Source_IA_Firmware_Platform_Design_Guide_in_EFI_Developer_Kit_II%20-%20V2.pdf)

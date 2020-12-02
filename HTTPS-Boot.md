@@ -4,7 +4,7 @@ The security of HTTPS boot is that of the underlying Transport Layer Security (T
 
 ## HTTPS Boot Getting Started
 
-Please refer to the [EDK II HTTPS Boot Getting Started Guide](https://edk2-docs.gitbook.io/getting-started-with-uefi-https-boot-on-edk-ii) for a step by step guide of the HTTPS Boot enabling and HTTPS server configuration.
+Please refer to the [EDK II HTTPS Boot Getting Started Guide](https://tianocore-docs.github.io/EDKIIHttpsBootGettingStartedGuide/draft/) for a step by step guide of the HTTPS Boot enabling and HTTPS server configuration.
 
 ## HTTPS Boot Authentication
 

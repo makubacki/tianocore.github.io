@@ -13,7 +13,7 @@ For detail of CET, please refer to Control-flow Enforcement Technology whitepape
 
 # Introduction
 
-EDKII has enabled different technology for security, such as memory level protection [A Tour Beyound BIOS -  Memory Protection in UEFI BIOS](https://edk2-docs.gitbook.io/a-tour-beyond-bios-memory-protection-in-uefi-bios/), or buffer overflow mitigation [A Tour Beyound BIOS - Mitigate Buffer Overflow in UEFI](https://edk2-docs.gitbook.io/a-tour-beyond-bios-mitigate-buffer-overflow-in-ue/).
+EDKII has enabled different technology for security, such as memory level protection [A Tour Beyound BIOS -  Memory Protection in UEFI BIOS](https://edk2-docs.gitbook.io/a-tour-beyond-bios-memory-protection-in-uefi-bios/), or buffer overflow mitigation [A Tour Beyound BIOS - Mitigate Buffer Overflow in UEFI](https://tianocore-docs.github.io/ATBB-Mitigate_Buffer_Overflow_in_UEFI/draft/).
 
 Now EDKII can use CET to enforce the control-flow as well. The current status is that EDKII enabled ShadowStatck in SMM.
 

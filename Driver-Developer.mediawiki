@@ -22,7 +22,7 @@ This page is designed to support Unified Extensible Firmware Interface ([[UEFI]]
 
 <tr>
     <td>[[UEFI Driver Writer's Guide]]</td>
-    <td>The [[UEFI Driver Writer's Guide]] (DWG) is available in gitbook.</td>
+    <td>The [[UEFI Driver Writer's Guide]] (DWG) is available in multiple formats.</td>
 </tr>
 
 <tr>
