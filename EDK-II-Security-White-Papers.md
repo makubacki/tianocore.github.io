@@ -32,7 +32,7 @@ A list of White Papers and information for EDK II Security from multiple sources
 
 **TrustedBoot/TPM2:**
 * [A Tour Beyond BIOS - with the UEFI TPM2 Support in EDK II](https://software.intel.com/sites/default/files/managed/94/2d/a_tour_beyond_bios_implementing_tpm2_support_in_edkii.pdf) (Sept 2014)
-* [Understanding the Trusted Boot Chain Implementation](https://tianocore-docs.github.io/edk2-TrustedBootChain/draft/) (Nov 2020)
+* [Understanding the Trusted Boot Chain Implementation]( https://tianocore-docs.github.io/edk2-TrustedBootChain/release-1.00/) (Nov 2020)
 
 **DMA:**
 [A Tour Beyond BIOS - Using IOMMU for DMA Protection in UEFI firmware](https://software.intel.com/sites/default/files/managed/8d/88/intel-whitepaper-using-iommu-for-dma-protection-in-uefi.pdf ) (Oct 2017)
