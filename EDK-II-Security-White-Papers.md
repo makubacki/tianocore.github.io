@@ -30,6 +30,10 @@ A list of White Papers and information for EDK II Security from multiple sources
 * [A Tour Beyond BIOS - Implementing UEFI Authenticated Variables in SMM with EDK II](https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf) (Oct 2015)
 * [Understanding the UEFI Secure Boot Chain](https://tianocore-docs.github.io/Understanding_UEFI_Secure_Boot_Chain/draft/) (June 2019)
 
+**TrustedBoot/TPM2:**
+* [A Tour Beyond BIOS - with the UEFI TPM2 Support in EDK II](https://software.intel.com/sites/default/files/managed/94/2d/a_tour_beyond_bios_implementing_tpm2_support_in_edkii.pdf) (Sept 2014)
+* [Understanding the Trusted Boot Chain Implementation](https://tianocore-docs.github.io/edk2-TrustedBootChain/draft/) (Nov 2020)
+
 **DMA:**
 [A Tour Beyond BIOS - Using IOMMU for DMA Protection in UEFI firmware](https://software.intel.com/sites/default/files/managed/8d/88/intel-whitepaper-using-iommu-for-dma-protection-in-uefi.pdf ) (Oct 2017)
 
@@ -38,9 +42,6 @@ A list of White Papers and information for EDK II Security from multiple sources
 
 **S3:**
 [A Tour Beyond BIOS - Implementing S3 Resume with EDK II ](https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_S3_resume_with_EDKII_V2.pdf) (Oct 2015)
-
-**TPM2:**
-[A Tour Beyond BIOS - with the UEFI TPM2 Support in EDK II](https://software.intel.com/sites/default/files/managed/94/2d/a_tour_beyond_bios_implementing_tpm2_support_in_edkii.pdf) (Sept 2014)
 
 **Profile:**
 [A Tour Beyond BIOS - Implementing Profiling in EDK_II ](https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_Profiling_in_EDK_II.pdf) (July 2016)
