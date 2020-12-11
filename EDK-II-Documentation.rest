@@ -1,22 +1,17 @@
+Overview
+==========
+
 [[Getting Started with EDK II]] - steps for downloading EDK II and compiling projects under various OS/compiler environments.
+
+For an explanation of the basic EDK II setup, and to see examples of how to use the specification files .DEC, .DSC, and .INF, see the wiki page [[Build Description Files]].
 
 Specifications
 ================
 
-The following table contains released versions of EDK II Specifications, published using
-[Gitbook Action](https://github.com/marketplace/actions/gitbook-action).
+The following table contains released versions of EDK II Specifications, published using [Gitbook Action](https://github.com/marketplace/actions/gitbook-action).
 
  - The latest draft versions of the EDK II Specification can be found on the [[EDK II Draft Specification]] page.
- - Previous versions of the EDK II Specifications can be found on the [[EDK II Specifications Archived]] page.
-
-For an explanation of the basic EDK II setup, and to see examples of how to use the specification files .DEC, .DSC, and .INF, see the wiki page [[Build Description Files]].
-
-The `EDK II Template Specification`_ is an example document that may be used as a template 
-for a new Specification.  For complete details on how to contribute to TianoCore documents, please
-see the information at https://github.com/tianocore-docs/edk2-TemplateSpecification/wiki.
-
-Specifications
----------------
+ - Previous versions of the EDK II Specifications can be found on the [[EDK II Specifications Archived]] page
 
 .. csv-table::
    :delim: |
@@ -38,9 +33,10 @@ Specifications
 
 
 EDK II Template Specification
----------------------------------
+##############################
 
-This document is a template that can be copied to start a new Tianocore Gitbook document. It also provides examples for styles and formats commonly found in Tianocore specifications.
+This sample specification can be copied to start a new Tianocore Gitbook document. It also provides examples for styles and formats commonly found in Tianocore specifications. For complete details on how to contribute to TianoCore documents, please
+see the information at https://github.com/tianocore-docs/edk2-TemplateSpecification/wiki.
 
 `HTML <https://tianocore-docs.github.io/edk2-TemplateSpecification/draft>`_,
 `PDF <https://tianocore-docs.github.io/edk2-TemplateSpecification/draft/edk2-TemplateSpecification-draft.pdf>`_,
