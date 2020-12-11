@@ -8,10 +8,12 @@ For an explanation of the basic EDK II setup, and to see examples of how to use 
 Specifications
 ================
 
-The following table contains released versions of EDK II Specifications, published using [Gitbook Action](https://github.com/marketplace/actions/gitbook-action).
+The following table contains released versions of EDK II Specifications, published using [Gitbook Action](https://github.com/marketplace/actions/gitbook-action):
 
  - The latest draft versions of the EDK II Specification can be found on the [[EDK II Draft Specification]] page.
  - Previous versions of the EDK II Specifications can be found on the [[EDK II Specifications Archived]] page
+
+The `EDK II Specification Template`_ can be used to start a new specification document. 
 
 .. csv-table::
    :delim: |
@@ -35,7 +37,7 @@ The following table contains released versions of EDK II Specifications, publish
 EDK II Template Specification
 ##############################
 
-This sample specification can be copied to start a new Tianocore Gitbook document. It also provides examples for styles and formats commonly found in Tianocore specifications. For complete details on how to contribute to TianoCore documents, please
+This sample specification can be copied to start a new Tianocore Specification document. It also provides examples for styles and formats commonly found in Tianocore specifications. For complete details on how to contribute to TianoCore documents, please
 see the information at https://github.com/tianocore-docs/edk2-TemplateSpecification/wiki.
 
 `HTML <https://tianocore-docs.github.io/edk2-TemplateSpecification/draft>`_,
