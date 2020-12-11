@@ -91,8 +91,8 @@ User Documentation
    </tr>
    <tr>
        <td>
-      <a>href = "https://github.com/tianocore-docs/Docs/raw/master/User_Docs/SigningUefiImages%20-v1dot31.pdf">Signing UEFI Images</a></td>
-      <td>This document describes how to sign UEFI images for the development and test of UEFI Secure Boot using the UDK2010.SR1 release. 
+      <a href = "https://github.com/tianocore-docs/Docs/raw/master/User_Docs/SigningUefiImages%20-v1dot31.pdf">Signing UEFI Images</a></td>
+      <td>This document describes how to sign UEFI images for the development and test of UEFI Secure Boot using the UDK2010.SR1 release: 
       *	Provides an overview of UEFI Secure Boot 
       *	Details the steps to sign an UEFI image 
       *	Describes the UEFI Secure Boot policies 
