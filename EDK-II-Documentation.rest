@@ -1,5 +1,5 @@
-EDK II Specifications
-======================
+Specifications
+================
 
 The following table contains released versions of EDK II Specifications, published using
 [Gitbook Action](https://github.com/marketplace/actions/gitbook-action).
