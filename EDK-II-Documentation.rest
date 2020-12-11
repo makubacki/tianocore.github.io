@@ -91,13 +91,8 @@ User Documentation
    </tr>
    <tr>
        <td>
-      [https://github.com/tianocore-docs/Docs/raw/master/User_Docs/SigningUefiImages%20-v1dot31.pdf PDF ] or
-      [https://github.com/tianocore-docs/Docs/raw/master/User_Docs/SigningUefiImages%20-v1dot31.zip Zip]
-      </td>
-      <td>
-      Signing UEFI Images.pdf V1.31 <br>
-      Version 1.31. This document describes how to sign UEFI images for the development and test of UEFI Secure Boot using the UDK2010.SR1 release.
-
+      <a>href = "https://github.com/tianocore-docs/Docs/raw/master/User_Docs/SigningUefiImages%20-v1dot31.pdf">Signing UEFI Images</a></td>
+      <td>This document describes how to sign UEFI images for the development and test of UEFI Secure Boot using the UDK2010.SR1 release. 
       *	Provides an overview of UEFI Secure Boot 
       *	Details the steps to sign an UEFI image 
       *	Describes the UEFI Secure Boot policies 
@@ -109,7 +104,7 @@ User Documentation
 
       NOTE SVNs: For Nt32Pkg requires -r13186, For OVMF Requires -r13160 beyond UDK2010.SR1 release version
 
-      * Feb 2013
+      Feb 2013
       </td>
    </tr>
    <tr>
