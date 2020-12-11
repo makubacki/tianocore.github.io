@@ -108,8 +108,6 @@ User Documentation
       *	Describes the image authorization flow when UEFI Secure Boot is enabled
       *	Decribes how to use OVMF and NT32Pkg as UEFI Secure Boot reference platforms
       *	Demonstrates several UEFI Secure Boot scenarios using OVMF Updates and clarifications related to UEFI Spec conformance regarding KEK and DB usages
-
-
       See also [[SecurityPkg]] for more information on How to enable security, TPM, User identification (UID), secure boot and authenticated variable.
 
       NOTE SVNs: For Nt32Pkg requires -r13186, For OVMF Requires -r13160 beyond UDK2010.SR1 release version
@@ -134,25 +132,17 @@ User Documentation
       </td>
       <td>
       EDKII User Manual V 0.7 <br>
-      This document provides detailed instructions for downloading, configuring, and building an EDK II project as well as running EDKII Emulation Environments.
-      * March 2010
+      This document provides detailed instructions for downloading, configuring, and building an EDK II project as well as running EDKII Emulation Environments. March 2010.
+      </td>
+   </tr>
+   <tr>
+      <td>https://github.com/tianocore-docs/Docs/raw/master/User_Docs/EDK_II%20Module%20Writer_s%20Guide_0_7.pdf</td>
+      <td>EDK II Module Writer's Guide v 0.7. This document is a guideline for new EDK II module developers, and provides detailed instructions on how to develop and build a new module, and how to release with a package. March 2010.
       </td>
    </tr>
    <tr>
       <td>
-      [https://github.com/tianocore-docs/Docs/raw/master/User_Docs/EDK_II%20Module%20Writer_s%20Guide_0_7.pdf PDF]
-      </td>
-      <td>
-      EDK II Module Writer's Guide v 0.7<br>
-      The document is a guideline for new EDK II module developers, and provides detailed instructions on how to develop and build a new module, and
-how to release with a package.
-
-      * March 2010
-      </td>
-   </tr>
-   <tr>
-      <td>
-      [https://github.com/tianocore-docs/Docs/raw/master/User_Docs/PerformanceOptimization_1_0.pdf  PDF]
+      https://github.com/tianocore-docs/Docs/raw/master/User_Docs/PerformanceOptimization_1_0.pdf
       </td>
       <td>
       Performance Optimization <br>
