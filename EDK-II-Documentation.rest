@@ -7,15 +7,15 @@ For an explanation of the basic EDK II setup, and to see examples of how to use 
 
 See below for more information on the following topics:
 
-- `Specifications`_, 
-- `Training`_, 
-- `User Documentation`_, 
-- `Libraries and Helper files`_, 
-- `White Papers`_, 
-- `Security`_, 
-- `Driver Development`_, 
-- `Code Style`_, 
-- `Historical Documents`_
+- `Specifications`_ 
+- `Training`_ 
+- `User Documentation`_ 
+- `Libraries and Helper files`_ 
+- `White Papers`_ 
+- `Security`_ 
+- `Driver Development`_ 
+- `Code Style`_ 
+- `Historical Documents`_ 
 
 Specifications
 ================
