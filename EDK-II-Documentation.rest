@@ -5,7 +5,17 @@ Overview
 
 For an explanation of the basic EDK II setup, and to see examples of how to use the specification files .DEC, .DSC, and .INF, see the wiki page [[Build Description Files]].
 
-`Specifications`_, `Training`_, `User Documentation`_, `Libraries and Helper files`_, `White Papers`_, `Security`_, `Driver Development`_, `Code Style`_, `Historical documentation`_
+See below for more information on the following topics:
+
+- `Specifications`_, 
+- `Training`_, 
+- `User Documentation`_, 
+- `Libraries and Helper files`_, 
+- `White Papers`_, 
+- `Security`_, 
+- `Driver Development`_, 
+- `Code Style`_, 
+- `Historical Documents`_
 
 Specifications
 ================
@@ -57,7 +67,7 @@ User Documentation
 Libraries and Helper files
 =========================== 
 
-White Paper
+White Papers
 ============ 
 
 Security
@@ -69,7 +79,7 @@ Driver Development
 Code Style
 ===========
 
-Historical documentation
-=========================
+Historical Documents
+======================
 
 
