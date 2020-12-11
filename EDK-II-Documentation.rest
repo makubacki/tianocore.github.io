@@ -171,7 +171,7 @@ how to release with a package.
       * July 2009
       </td>
    </tr>
-</table>
+   </table>
 
 Libraries and Helper files
 =========================== 
