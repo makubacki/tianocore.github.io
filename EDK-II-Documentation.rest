@@ -101,18 +101,16 @@ User Documentation
       *	Decribes how to use OVMF and NT32Pkg as UEFI Secure Boot reference platforms
       *	Demonstrates several UEFI Secure Boot scenarios using OVMF Updates and clarifications related to UEFI Spec conformance regarding KEK and DB usages
       See also [[SecurityPkg]] for more information on How to enable security, TPM, User identification (UID), secure boot and authenticated variable.
-
       NOTE SVNs: For Nt32Pkg requires -r13186, For OVMF Requires -r13160 beyond UDK2010.SR1 release version
-
       Feb 2013
       </td>
    </tr>
    <tr>
       <td>
-      [https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/ HTML]
-      [https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.pdf PDF]
-      [https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.mobi MOBI]
-      [https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.epub EPUB]
+      <a href = "https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/"> UEFI Driver Writers' Guide: HTML</a>, 
+      <a href = "https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.pdf"> PDF</a>, 
+      <a href = "https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.mobi"> MOBI</a>, 
+      <a href = "https://tianocore-docs.github.io/edk2-UefiDriverWritersGuide/draft/edk2-UefiDriverWritersGuide-draft.epub"> EPUB</a>
       </td>
       <td>
       The [[UEFI Driver Writer's Guide]] is designed to aid in the development of UEFI Drivers using the EDK II open source project as a development environment. Please refer to the [[Driver Developer]] page for more information.
@@ -120,37 +118,31 @@ User Documentation
    </tr>
    <tr>
       <td>
-      [https://github.com/tianocore-docs/Docs/raw/master/User_Docs/EDK_II_UserManual_0_7.pdf PDF]
+      <a href = "https://github.com/tianocore-docs/Docs/raw/master/User_Docs/EDK_II_UserManual_0_7.pdf"> EDK II User Manual</a>
       </td>
       <td>
-      EDKII User Manual V 0.7 <br>
       This document provides detailed instructions for downloading, configuring, and building an EDK II project as well as running EDKII Emulation Environments. March 2010.
       </td>
    </tr>
    <tr>
-      <td>https://github.com/tianocore-docs/Docs/raw/master/User_Docs/EDK_II%20Module%20Writer_s%20Guide_0_7.pdf</td>
-      <td>EDK II Module Writer's Guide v 0.7. This document is a guideline for new EDK II module developers, and provides detailed instructions on how to develop and build a new module, and how to release with a package. March 2010.
+      <td><a href = "https://github.com/tianocore-docs/Docs/raw/master/User_Docs/EDK_II%20Module%20Writer_s%20Guide_0_7.pdf">EDK II Module Writers Guide</a></td>
+      <td>This document is a guideline for new EDK II module developers, and provides detailed instructions on how to develop and build a new module, and how to release with a package. March 2010.
       </td>
    </tr>
    <tr>
       <td>
-      https://github.com/tianocore-docs/Docs/raw/master/User_Docs/PerformanceOptimization_1_0.pdf
+      <a href="https://github.com/tianocore-docs/Docs/raw/master/User_Docs/PerformanceOptimization_1_0.pdf">Performance Optimization</a>d
       </td>
       <td>
-      Performance Optimization <br>
-      Technical documentation for Performance Optimization for EDK II
-
-      * Feb 2010
+      Technical documentation for Performance Optimization for EDK II. Feb 2010. 
       </td>
    </tr>
    <tr>
       <td>
-      [https://github.com/tianocore-docs/Docs/raw/master/User_Docs/UEFI%20SCT%20Case%20Writers%20Guide_0_91.pdf PDF ]
+      <a href="https://github.com/tianocore-docs/Docs/raw/master/User_Docs/UEFI%20SCT%20Case%20Writers%20Guide_0_91.pdf">UEFI SCT Writers Guide</a>
       </td>
       <td>
-      UEFI SCT Case Writers Guide .91 <br>
-      This document defines the guidelines for writing the test cases under UEFI Self-Certification Test (SCT) and introduces the UEFI SCT source tree. This document is intended for anyone interested in developing or porting tests for the UEFI SCT
-      * July 2009
+      This document defines the guidelines for writing the test cases under UEFI Self-Certification Test (SCT) and introduces the UEFI SCT source tree. This document is intended for anyone interested in developing or porting tests for the UEFI SCT. July 2009.
       </td>
    </tr>
    </table>
