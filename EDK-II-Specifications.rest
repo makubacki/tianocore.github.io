@@ -18,6 +18,7 @@ Specifications
 
 .. csv-table::
    :delim: |
+   :widths: 15 15 15 15 40
 
    **Title** | **Revision** | **Date** | **Download** | **Description**
    Build | v1.28 | April 2018 | `HTML <https://tianocore-docs.github.io/edk2-BuildSpecification/release-1.28/>`_, `PDF <https://tianocore-docs.github.io/edk2-BuildSpecification/release-1.28/edk2-BuildSpecification-release-1.28.pdf>`_, `Mobi <https://tianocore-docs.github.io/edk2-BuildSpecification/release-1.28/edk2-BuildSpecification-release-1.28.mobi>`_, `ePub <https://tianocore-docs.github.io/edk2-BuildSpecification/release-1.28/edk2-BuildSpecification-release-1.28.epub>`_, `Github <https://github.com/tianocore-docs/edk2-BuildSpecification/tree/release/1.28>`_ | This document describes the EDK II Build Architecture. This specification was designed to support new build requirements for building EDK II modules and EDK components within the EDK II build infrastructure as well as to generate binary firmware images and Unified Extensible Firmware Image (UEFI) applications.
