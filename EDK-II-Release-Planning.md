@@ -12,6 +12,10 @@
 
 ## Proposed Features
 * [CryptoPkg/OpensslLib: Add native instruction support for X64](https://bugzilla.tianocore.org/show_bug.cgi?id=2507)
+* [SEV Encrypted Boot for Ovmf (remote attestation)](https://bugzilla.tianocore.org/show_bug.cgi?id=3077)
+* [virtio-fs driver for OvmfPkg and ArmVirtPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3097)
+* [Apply SEV-ES mitigations for encryption bit position and MMIO](https://bugzilla.tianocore.org/show_bug.cgi?id=3108)
+* [OVMF RFE: VCPU hot-unplug with SMI](https://bugzilla.tianocore.org/show_bug.cgi?id=3132)
 * TBD
 
 # edk2-stable202105 tag planning
