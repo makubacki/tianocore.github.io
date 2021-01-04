@@ -1,5 +1,5 @@
 * [[Getting Started with EDK II]]
-* [[EDK II Specifications]]
+* [[EDK II Specifications|EDK-II-Documentation#specifications]]
 * [[Training]]
 * [[EDK II User Documentation]]
 * [[EDK II Libraries and Helper files]]
