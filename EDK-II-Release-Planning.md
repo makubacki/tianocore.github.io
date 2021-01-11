@@ -17,6 +17,9 @@
 * [virtio-fs driver for OvmfPkg and ArmVirtPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3097)
 * [Apply SEV-ES mitigations for encryption bit position and MMIO](https://bugzilla.tianocore.org/show_bug.cgi?id=3108)
 * [OVMF RFE: VCPU hot-unplug with SMI](https://bugzilla.tianocore.org/show_bug.cgi?id=3132)
+* [Add Core CI support for StandaloneMmPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3150)
+* [Update LZMA module to LZMA SDK latest version 19.00](https://bugzilla.tianocore.org/show_bug.cgi?id=3101)
+* [IntelFsp2Pkg: Support FSP private temporary memory](https://bugzilla.tianocore.org/show_bug.cgi?id=3153)
 * TBD
 
 # edk2-stable202105 tag planning
