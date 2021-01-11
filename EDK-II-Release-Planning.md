@@ -20,6 +20,7 @@
 * [Add Core CI support for StandaloneMmPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3150)
 * [Update LZMA module to LZMA SDK latest version 19.00](https://bugzilla.tianocore.org/show_bug.cgi?id=3101)
 * [IntelFsp2Pkg: Support FSP private temporary memory](https://bugzilla.tianocore.org/show_bug.cgi?id=3153)
+* [Port open source JSON library (jansson)](https://bugzilla.tianocore.org/show_bug.cgi?id=3163)
 * TBD
 
 # edk2-stable202105 tag planning
