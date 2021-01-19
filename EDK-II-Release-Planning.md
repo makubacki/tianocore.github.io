@@ -21,6 +21,8 @@
 * [Update LZMA module to LZMA SDK latest version 19.00](https://bugzilla.tianocore.org/show_bug.cgi?id=3101)
 * [IntelFsp2Pkg: Support FSP private temporary memory](https://bugzilla.tianocore.org/show_bug.cgi?id=3153)
 * [Port open source JSON library (jansson)](https://bugzilla.tianocore.org/show_bug.cgi?id=3163)
+* [add file buffering to the UEFI shell's COMP command](https://bugzilla.tianocore.org/show_bug.cgi?id=3123)
+* [Shell: pathname / filename sorting](https://bugzilla.tianocore.org/show_bug.cgi?id=3151)
 * TBD
 
 # edk2-stable202105 tag planning
