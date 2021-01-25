@@ -25,6 +25,15 @@
 * [Shell: pathname / filename sorting](https://bugzilla.tianocore.org/show_bug.cgi?id=3151)
 * TBD
 
+## Wiki
+* TBD
+
+## Update Notes
+* If the user has the windows bat script that calls Split in it，it needs to change to "call Split" because Split will be a bat script but not an executable file.
+* Shell depends on library class OrderedCollectionLib. Platform DSC needs to configure it in [LibraryClasses]
+OrderedCollectionLib|MdePkg/Library/BaseOrderedCollectionRedBlackTreeLib/BaseOrderedCollectionRedBlackTreeLib.inf
+* TBD
+
 # edk2-stable202105 tag planning
 
 ## Proposed Schedule
