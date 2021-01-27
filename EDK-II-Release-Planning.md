@@ -34,6 +34,16 @@
 * If the user has the windows bat script that calls Split in it，it needs to change to "call Split" because Split will be a bat script but not an executable file.
 * Shell depends on library class OrderedCollectionLib. Platform DSC needs to configure it in [LibraryClasses]
 OrderedCollectionLib|MdePkg/Library/BaseOrderedCollectionRedBlackTreeLib/BaseOrderedCollectionRedBlackTreeLib.inf
+* Some struct fields in SmBios.h have typos and get fixed in these code change [0db8](https://github.com/tianocore/edk2/commit/0db89a661f38b10012ff4f62e1853bfc48efd462), [bd9d](https://github.com/tianocore/edk2/commit/bd9da7b1da2639fcea8a156fa92a32bbc4209367), [e157](https://github.com/tianocore/edk2/commit/e157c8f9ed173a390d2c9d29069a46e9662e0d04). Details are listed below.
+In struct ```SMBIOS_TABLE_TYPE17```:
+&nbsp;```FirwareVersion ==> FirmwareVersion```
+In struct ```SMBIOS_TABLE_TYPE4```:
+&nbsp;```ProcessorManufacture ==> ProcessorManufacturer```
+In struct ```PROCESSOR_CHARACTERISTIC_FLAGS```:
+&nbsp;```Processor64BitCapble ==> Processor64BitCapable```
+&nbsp;```ProcessorEnhancedVirtulization ==> ProcessorEnhancedVirtualization```
+&nbsp;```Processor128bitCapble ==> Processor128BitCapable```
+Platform code that uses those fields need modifications.
 * TBD
 
 # edk2-stable202105 tag planning
