@@ -2,7 +2,7 @@ Tianocore is participating in the [http://socghop.appspot.com Google Summer of C
 
 ==Contacts==
 
-For most questions, please email the [[edk2-devel]] email list.  If this doesn't work, contact {{sfuser|jljusten}} directly.
+For most questions, please email the [[edk2-devel]] email list.  If this doesn't work, contact jljusten directly.
 
 ==News==
 * Here is the [http://www.google-melange.com/gsoc/events/google/gsoc2011 official GSoC 2011 timeline]
@@ -37,8 +37,8 @@ Here are some recommendations for use during the summer while working on your pr
 # Create a timeline with some intermediate goals for your project.
 #* Discuss the situation with your mentor if you need to adjust your goals.
 # Don't copy source code, except from the main [http://www.tianocore.org/edk2/ EDK II] tree.
-#* If you think some BSD licensed code from another project is required, make sure you discuss it with your mentor and  {{sfuser|jljusten}}.
-# If you have an issue, and your mentor is not able to help you, then contact {{sfuser|jljusten}}.
+#* If you think some BSD licensed code from another project is required, make sure you discuss it with your mentor and jljusten.
+# If you have an issue, and your mentor is not able to help you, then contact jljusten.
 
 ==Mentors==
 # Be sure to look over Google's [http://google-opensource.blogspot.com/2011/04/dos-and-donts-of-google-summer-of-code_21.html DOs and DON'Ts for mentors].
@@ -46,7 +46,7 @@ Here are some recommendations for use during the summer while working on your pr
 # Monitor your students work in their source repository
 #* If you are not seeing regular updates, make sure your student is not getting into trouble
 #* You should be in communication with your student, or seeing good results in their source repository at least every few days (at a minimum).
-# If you have an issue, please contact {{sfuser|jljusten}}.
+# If you have an issue, please contact jljusten.
 
 <!--
 
@@ -81,9 +81,9 @@ To submit your application visit the Google Summer of Code site, and submit your
 * http://www.google-melange.com/gsoc/org/google/gsoc2011/tianocore
 
 ==Potential Mentors==
-* {{sfuser|jljusten}}
-* {{sfuser|andrewfish}}
-* {{sfuser|andreiwarkentin}}
+* jljusten
+* andrewfish
+* andreiwarkentin
 
 To become a mentor for our project:
 * Visit http://www.google-melange.com/gsoc/request/google/gsoc2011/tianocore
