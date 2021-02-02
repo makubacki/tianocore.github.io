@@ -24,6 +24,7 @@
 * [add file buffering to the UEFI shell's COMP command](https://bugzilla.tianocore.org/show_bug.cgi?id=3123)
 * [Shell: pathname / filename sorting](https://bugzilla.tianocore.org/show_bug.cgi?id=3151)
 * [Extend support of peripheral x64 MM_STANDALONE drivers](https://bugzilla.tianocore.org/show_bug.cgi?id=3129)
+* [BaseTools: Convert the Split tool from C language to Python](https://bugzilla.tianocore.org/show_bug.cgi?id=3165)
 * TBD
 
 ## Wiki
