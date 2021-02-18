@@ -2,16 +2,17 @@
 <!-- [[Category:Tasks]] -->
 This task involves making several improvements for the standard shell text editor
 
-=Current Status=
-* Being worked on by Suyu Yang for [[GSOC2011]]
-** Source: http://code.google.com/p/edk2-editor
-
-=Task Overview=
-
+* Status: Complete :heavy_check_mark:
 * Difficulty: Medium
 * Language: C
-* Mentor: {{sfuser|jljusten}}
-* Suggested by: {{sfuser|jljusten}}, {{sfuser|geekboy15a}}, {{sfuser|jcarsey}}
+* Mentor: [[@jljusten|https://github.com/jljusten]]
+* Suggested by: [[@jljusten|https://github.com/jljusten]], [[@ErikBjorge|https://github.com/ErikBjorge]], [[@jcarsey|https://github.com/jcarsey]]
+
+=Status=
+* Completed :heavy_check_mark:
+* Work done by Suyu Yang for [[GSOC2011]].
+** Source: http://code.google.com/p/edk2-editor
+* Available in main edk2 tree
 
 Issues:
 * Plenty of wasted screen space
@@ -21,7 +22,7 @@ Issues:
 Nice to have:
 * Support terminal widths as narrow as 60 columns
 
-Location of editor code: [https://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/ShellPkg/Library/UefiShellDebug1CommandsLib/Edit ShellPkg/Library/UefiShellDebug1CommandsLib/Edit]
+Location of editor code: [https://github.com/tianocore/edk2/tree/master/ShellPkg/Library/UefiShellDebug1CommandsLib/Edit ShellPkg/Library/UefiShellDebug1CommandsLib/Edit]
 
 =Development environment=
 Building
@@ -34,8 +35,10 @@ Testing
 =Current State=
 
 Here is the current look of the UEFI Editor:
- <font style="background: lightgray; color:black">UEFI EDIT 2.0     NewFile.txt                                                   </font>
- <font style="background: black; color: white">                                                                                
+
+<pre>
+UEFI EDIT 2.0     NewFile.txt                                                   
+                                                                                 
                                                                                  
                                                                                  
                                                                                  
@@ -56,15 +59,16 @@ Here is the current look of the UEFI Editor:
                                                                                  
                                                                                  
    Row: 1  Col: 1       0 Lines Read                            |INS|            
- <font style="color: yellow">F1</font>  Go To Line      <font style="color: yellow">F2</font>  Save File       <font style="color: yellow">F3</font>  Exit                                
- <font style="color: yellow">F4</font>  Search          <font style="color: yellow">F5</font>  Search/Replace  <font style="color: yellow">F6</font>  Cut Line                            
- <font style="color: yellow">F7</font>  Paste Line      <font style="color: yellow">F8</font>  Open File       <font style="color: yellow">F9</font>  File Type                           </font>
+ F1  Go To Line      F2  Save File       F3  Exit                                
+ F4  Search          F5  Search/Replace  F6  Cut Line                            
+ F7  Paste Line      F8  Open File       F9  File Type                           </pre>
 
 =Suggested New Layout=
 
 ==Main window==
- <font style="background: lightgray; color:black">UEFI EDIT 2.0     NewFile.txt                               </font>
- <font style="background: black; color: white">                                                            
+<pre>
+UEFI EDIT 2.0     NewFile.txt                               
+                                                            
                                                              
                                                              
                                                              
@@ -87,14 +91,15 @@ Here is the current look of the UEFI Editor:
                                                              
                                                              
                                                              
- 1,1                                            Help: Ctrl-? </font>
+ 1,1                                            Help: Ctrl-? </pre>
 
 
 ==Editor Help==
 
 Ctrl-? should popup a help box, something like this:
- <font style="background: lightgray; color:black">UEFI EDIT 2.0     NewFile.txt                               </font>
- <font style="background: black; color: white">                                                            
+<pre>
+UEFI EDIT 2.0     NewFile.txt                               
+                                                            
   +-- Help --------------------------------------------+     
   | Ctrl-G, F1  Go To Line      Ctrl-S, F2  Save File  |     
   | Ctrl-Q, F3  Exit            Ctrl-F, F4  Search     |     
@@ -117,11 +122,12 @@ Ctrl-? should popup a help box, something like this:
                                                              
                                                              
                                                              
- 1,1                                            Help: Ctrl-? </font>
+ 1,1                                            Help: Ctrl-? </pre>
 
 Another option might be to display help as if it were a text file:
- <font style="background: lightgray; color:black">UEFI EDIT 2.0     (Editor Help)                             </font>
- <font style="background: black; color: white">Help                                                        
+<pre>
+UEFI EDIT 2.0     (Editor Help)                             
+Help                                                        
                                                              
  Control Key   Function Key   Command                        
  -----------   ------------   -----------------              
@@ -144,13 +150,14 @@ Another option might be to display help as if it were a text file:
                                                              
                                                              
                                                              
- 1,1                                            Help: Ctrl-? </font>
+ 1,1                                            Help: Ctrl-? </pre>
 
 ==Search==
 
 Ctrl-F should ask for text to find on the bottom line:
- <font style="background: lightgray; color:black">UEFI EDIT 2.0     NewFile.txt                               </font>
- <font style="background: black; color: white">                                                            
+<pre>
+UEFI EDIT 2.0     NewFile.txt                               
+                                                            
                                                              
                                                              
                                                              
@@ -173,13 +180,14 @@ Ctrl-F should ask for text to find on the bottom line:
                                                              
                                                              
                                                              
- Search for: UserEntersSearchTextHere                        </font>
+ Search for: UserEntersSearchTextHere                        </pre>
 
 ==Search/Replace==
 
 Ctrl-R should ask for the seach/replace on the bottom line.  First the search, then the replace text.
- <font style="background: lightgray; color:black">UEFI EDIT 2.0     NewFile.txt                               </font>
- <font style="background: black; color: white">                                                            
+<pre>
+UEFI EDIT 2.0     NewFile.txt                               
+                                                            
                                                              
                                                              
                                                              
@@ -202,9 +210,9 @@ Ctrl-R should ask for the seach/replace on the bottom line.  First the search, t
                                                              
                                                              
                                                              
- Replace with: UserEntersReplacementTextHere                 </font>
+ Replace with: UserEntersReplacementTextHere                 </pre>
 
 = See Also =
 * [[Tasks]]
 * [[GSOC2011#Shell editor improvements]]
-* [https://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/MdePkg/Include/Protocol/SimpleTextIn.h SimpleTextIn.h], [https://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/MdePkg/Include/Protocol/SimpleTextInEx.h SimpleTextInEx.h]
+* [https://github.com/tianocore/edk2/blob/master/MdePkg/Include/Protocol/SimpleTextIn.h SimpleTextIn.h], [https://github.com/tianocore/edk2/blob/master/MdePkg/Include/Protocol/SimpleTextInEx.h SimpleTextInEx.h]
