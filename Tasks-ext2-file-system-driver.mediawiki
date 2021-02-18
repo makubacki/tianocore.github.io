@@ -7,9 +7,11 @@ Develop an [[Wikipedia:Ext2|ext2]] filesystem driver.  (read-only support would 
 * Mentor: [[@ErikBjorge|https://github.com/ErikBjorge]]
 * Suggested by: rsun3
 
-=Current Status=
-* Being worked on by Alin Rus for [[GSOC2011]]
+= Status =
+* Some progress was made during [[GSOC2011]] by Alin Rus
 ** Source: https://github.com/GunioRobot/Ext2Pkg
+* A newer effort has been started based on GRUB filesystem drivers, however this code cannot be merged to TianoCore due to GRUB being licensed under the GPL.
+** https://github.com/pbatard/efifs/tree/master/
 
 =Details=
 Filesystems in UEFI can be accessed through the SimpleFileSystem protocol.  This protocol is the defined within [https://github.com/tianocore/edk2/blob/master/MdePkg/Include/Protocol/SimpleFileSystem.h SimpleFileSystem.h].
