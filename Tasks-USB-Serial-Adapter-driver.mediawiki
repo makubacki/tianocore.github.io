@@ -82,7 +82,7 @@ There are many USB Serial adapters available. Some examples are listed here, but
 * [http://www.iogear.com/product/GUC232A/ IOGEAR USB to Serial RS-232 Adapter]
 
 = Further Discussion =
-This project would be for an edk2 based driver, so please discuss the project on [[edk2-devel]].
+This project would be for an edk2 based driver, so please discuss the project on [[edk2-devel|https://edk2.groups.io/g/devel]].
 
 = See Also =
 * [[Tasks#USB-to-serial driver]]
