@@ -1,9 +1,13 @@
 Create a Windows based host environment for [[EmulatorPkg]].
 
+* Status: Complete :heavy_check_mark:
 * Difficulty: Medium
 * Language: C
 * Mentor:
 * Suggested by: [[@ajfish|https://github.com/ajfish]]
+
+= Status =
+Completed :heavy_check_mark: by [[@niruiyu|https://github.com/niruiyu]] in 2018.
 
 = Details =
 EmulatorPkg is very similar in many respects to the [[Nt32Pkg]],
