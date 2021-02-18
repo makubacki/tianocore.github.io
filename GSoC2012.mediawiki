@@ -57,9 +57,9 @@ For most questions, please email the [[edk2-devel]] email list.  If this doesn't
 
 <!--
 
-==Students==
+--><!--==Students==--><!--
 
-===Getting Started===
+--><!--===Getting Started===--><!--
 For GSoC2011 Google has posted some useful
 [http://google-opensource.blogspot.com/2011/03/dos-and-donts-of-google-summer-of-code.html DOs and DON'Ts for students].
 
@@ -72,7 +72,7 @@ Aside from Google's recommendations, here are some things you should look over b
 #* Determine which source control system you will use.  Subversion would be a good first choice.  Git could be an options as well.  (You'll want to include your mentor in this choice.)
 #* Some code hosting options: [http://code.google.com/hosting google], [http://sourceforge.net sourceforge], [https://github.com/ github]
 
-===Working on the Project===
+--><!--===Working on the Project===--><!--
 Here are some recommendations for use during the summer while working on your project:
 # [http://www.google.com/search?q=commit+early+commit+often Commit early, commit often]
 #* Besides being a good practice in general, this will allow your mentor to see your progress.
@@ -86,7 +86,7 @@ Here are some recommendations for use during the summer while working on your pr
 #* If you think some BSD licensed code from another project is required, make sure you discuss it with your mentor and jljusten.
 # If you have an issue, and your mentor is not able to help you, then contact jljusten.
 
-==Mentors==
+--><!--==Mentors==--><!--
 # Be sure to look over Google's [http://google-opensource.blogspot.com/2011/04/dos-and-donts-of-google-summer-of-code_21.html DOs and DON'Ts for mentors].
 # Review the student section above
 # Monitor your students work in their source repository
