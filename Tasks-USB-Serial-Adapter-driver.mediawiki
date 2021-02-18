@@ -1,11 +1,12 @@
-'''Status''': Completed (For FTDI). Available at OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe.
+'''Status''': :white_check_mark:Completed (For FTDI). Available at OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe.
 
 Develop a USB driver for a common USB Serial Adapter.
 
 * Difficulty: Medium
 * Language: C
-* Mentor:
-* Suggested by: {{sfuser|jljusten}}
+* Mentor: [[@ErikBjorge|https://github.com/ErikBjorge]]
+* Suggested by: [[@jljusten|https://github.com/jljusten]]
+* Student: [[@ashedesimone|https://github.com/ashedesimone]].
 
 = Details =
 Today there are many inexpensive USB Serial adapters available, and
