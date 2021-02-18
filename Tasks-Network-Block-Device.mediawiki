@@ -3,7 +3,7 @@ Add [http://nbd.sourceforge.net/ Network Block Device] support
 * Difficulty: Medium
 * Language: C
 * Mentor:
-* Suggested by: {{sfuser|bjjohnson}}, {{sfuser|andreiwarkentin}}
+* Suggested by: bjjohnson, andreiwarkentin
 
 = Details =
 
