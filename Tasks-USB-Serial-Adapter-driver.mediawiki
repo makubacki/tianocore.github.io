@@ -1,13 +1,13 @@
 Develop a USB driver for a common USB Serial Adapter.
 
-* Status: Complete :white_check_mark:
+* Status: Complete :heavy_check_mark:
 * Difficulty: Medium
 * Language: C
 * Mentor: [[@ErikBjorge|https://github.com/ErikBjorge]]
 * Suggested by: [[@jljusten|https://github.com/jljusten]]
 
 = Status =
-* Completed :white_check_mark: (For FTDI).
+* Completed :heavy_check_mark: (For FTDI).
 * Work done by [[@ashedesimone|https://github.com/ashedesimone]] as a [[GSoC2012]] Student.
 * Available at [[edk2-platforms/Drivers/OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe|https://github.com/tianocore/edk2-platforms/tree/master/Drivers/OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe]].
 
