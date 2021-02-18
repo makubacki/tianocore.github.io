@@ -3,7 +3,7 @@ Create a Windows based host environment for [[EmulatorPkg]].
 * Difficulty: Medium
 * Language: C
 * Mentor:
-* Suggested by: {{sfuser|andrewfish}}
+* Suggested by: andrewfish
 
 = Details =
 EmulatorPkg is very similar in many respects to the [[Nt32Pkg]],
