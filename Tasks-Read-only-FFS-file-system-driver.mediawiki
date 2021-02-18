@@ -5,18 +5,20 @@ Develop a read-only file system driver which allows the contents of each PI 1.2 
 * Difficulty: Medium
 * Language: C
 * Mentor:
-* Suggested by: {{sfuser|mdkinney}}
+* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
 
-=Current Status=
-* Being worked on by Colin Drake for [[GSOC2011]]
+=Status=
+* Completed :heavy_check_mark:
+* Work done by Colin Drake as a [[GSOC2011]] student.
 ** Source: https://github.com/cfdrake/FileSystemPkg
+* Still needs to be integrated into edk2.
 
 =Details=
 The PI 1.2 Firmware File System (FFS) allows firmware elements to be packed efficiently into flash memory.
 
-The FirmwareVolume2 protocol allows firmware code to easily access the contents of each FFS.  This protocol is defined within [https://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/MdePkg/Include/Protocol/FirmwareVolume2.h FirmwareVolume2.h].
+The FirmwareVolume2 protocol allows firmware code to easily access the contents of each FFS.  This protocol is defined within [https://github.com/tianocore/edk2/blob/master/MdePkg/Include/Protocol/FirmwareVolume2.h FirmwareVolume2.h].
 
-Filesystems (generally disk based) in UEFI can be accessed through the SimpleFileSystem protocol.  This protocol is the defined within [https://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/MdePkg/Include/Protocol/SimpleFileSystem.h SimpleFileSystem.h].
+Filesystems (generally disk based) in UEFI can be accessed through the SimpleFileSystem protocol.  This protocol is the defined within [https://github.com/tianocore/edk2/blob/master/MdePkg/Include/Protocol/SimpleFileSystem.h SimpleFileSystem.h].
 
 This project would involve reading each FirmwareVolume2 protocol instance and from it producing a SimpleFileSystem instance.  Each FFS file appear as a readable file.
 
@@ -28,7 +30,7 @@ Building: This project can be completed on any edk2 supported OS or toolchain.
 Testing: This project can be tested on any PI 1.2 system.  Even without loading the driver into flash, it can be loaded by using the EFI shell 'load' command.  [http://www.tianocore.org/ovmf/ OVMF], [[Nt32Pkg]] or [[UnixPkg]] could each provide friendly test environments.
 
 =Further Discussion=
-This project would be for an edk2 based driver, so please discuss the project on [[edk2-devel]].
+This project would be for an edk2 based driver, so please discuss the project on [[edk2-devel|https://edk2.groups.io/g/devel]].
 
 = See Also =
 * [[Tasks]]
