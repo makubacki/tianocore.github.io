@@ -34,7 +34,7 @@ Some possible sub-goals for the driver
 * Enable networking support
 
 = Further Discussion =
-Please discuss the project on [[edk2-devel]].
+Please discuss the project on [[edk2-devel|https://edk2.groups.io/g/devel]].
 
 = See Also =
 * [[Tasks]]
