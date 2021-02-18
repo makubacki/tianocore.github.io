@@ -4,8 +4,8 @@ Develop an [[Wikipedia:Ext2|ext2]] filesystem driver.  (read-only support would 
 
 * Difficulty: Medium ... Hard
 * Language: C
-* Mentor: {{sfuser|geekboy15a}}
-* Suggested by: {{sfuser|rsun3}}
+* Mentor: [[@ErikBjorge|https://github.com/ErikBjorge]]
+* Suggested by: rsun3
 
 =Current Status=
 * Being worked on by Alin Rus for [[GSOC2011]]
