@@ -1,6 +1,6 @@
 <!-- [[Category:GSOC2011]] -->
 <!-- [[Category:Tasks]] -->
-Develop an [[Wikipedia:Ext2|ext2]] filesystem driver.  (read-only support would be useful as a first step)
+Develop an [[ext2|https://en.wikipedia.org/wiki/Ext2]] filesystem driver.  (read-only support would be useful as a first step)
 
 * Difficulty: Medium ... Hard
 * Language: C
@@ -31,7 +31,7 @@ Building: This project can be completed on any edk2 supported OS or toolchain.
 Testing: [https://github.com/tianocore/tianocore.github.io/wiki/OVMF OVMF] would probably provide the easiest environment for testing your project.  You should be able to build your driver into OVMF and then run OVMF with a hard disk image that contains an ext2 file-system.
 
 =Further Discussion=
-This project would be for an edk2 based driver, so please discuss the project on [[edk2-devel]].
+This project would be for an edk2 based driver, so please discuss the project on [[edk2-devel|https://edk2.groups.io/g/devel]].
 
 =See Also=
 * [[Tasks]]
