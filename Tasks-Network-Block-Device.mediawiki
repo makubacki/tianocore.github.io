@@ -50,7 +50,7 @@ Sub-goals:
 ** [EXTRA] Write simple tool to manage NBD driver.
 
 = Further Discussion =
-This project would be for an edk2 based driver, so please discuss the project on [[edk2-devel]].
+This project would be for an edk2 based driver, so please discuss the project on [[edk2-devel|https://edk2.groups.io/g/devel]].
 
 = See Also =
 * [[Tasks#Network Block Device (NBD) client]]
