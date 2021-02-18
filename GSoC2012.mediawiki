@@ -9,11 +9,11 @@
 ** There is an application template below
 ** The application deadline is '''final''', so don't be late!
 ** You can submit applications for more than one project if you find multiple projects interesting. Although, you can only be able to be assigned to a single project in the end.
-* Please join our [[edk2-devel]] email list and start asking about the project you are interested in
+* Please join our [[edk2-devel|https://edk2.groups.io/g/devel]] email list and start asking about the project you are interested in
 ** Let us know if you need more information!
 
 '''More information'''
-* Feel free to suggest you own project idea.  (It is best to discuss your idea first on [[edk2-devel]].)
+* Feel free to suggest you own project idea.  (It is best to discuss your idea first on [[edk2-devel|https://edk2.groups.io/g/devel]].)
 * Tianocore GSoC page: http://www.google-melange.com/gsoc/org/google/gsoc2012/tianocore
 
 Note: We primarily use the [[BSD License]], and it is generally expected that your project will be completed utilizing this license.
@@ -39,7 +39,7 @@ To submit your application visit the Google Summer of Code site, and submit your
 
 ==Potential Mentors==
 If you are interested in mentoring a project:
-* Please contact us on the [[edk2-devel]] email list, or contact jljusten.
+* Please contact us on the [[edk2-devel|https://edk2.groups.io/g/devel]] email list, or contact jljusten.
 * We would look for mentors with experience with edk2 and/or other open source projects.
 * If you have a project idea that you prefer to mentor, let us know about it.
 <!--
@@ -49,7 +49,7 @@ To become a mentor for our project:
 -->
 
 ==Contacts==
-For most questions, please email the [[edk2-devel]] email list.  If this doesn't work, contact jljusten directly.
+For most questions, please email the [[edk2-devel|https://edk2.groups.io/g/devel]] email list.  If this doesn't work, contact jljusten directly.
 
 ==See Also==
 * [[GSOC2011]]
@@ -78,7 +78,7 @@ Here are some recommendations for use during the summer while working on your pr
 #* Besides being a good practice in general, this will allow your mentor to see your progress.
 #* Proper [[Commit Partitioning]] can allow you to check in changes up to several per day.
 # Ask questions earlier rather than later.
-#* Use the [[edk2-devel]] list first, and your mentor second.  You should interact with our community as much as possible.
+#* Use the [[edk2-devel|https://edk2.groups.io/g/devel]] list first, and your mentor second.  You should interact with our community as much as possible.
 #* Questions are good.  Perhaps it'll point out some documentation that we need for our community.
 # Create a timeline with some intermediate goals for your project.
 #* Discuss the situation with your mentor if you need to adjust your goals.
