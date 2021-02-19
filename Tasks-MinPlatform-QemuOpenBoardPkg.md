@@ -17,6 +17,8 @@ This project aims to solve that problem by creating a MinPlatform board port for
 
 The output of this project would be the creation of QemuOpenBoardPkg. Like OVMF, this would run on top of Qemu, however it would use the [MinPlatform Architecture](https://tianocore-docs.github.io/edk2-MinimumPlatformSpecification/draft/) and should serve as a simple example for new developers to get started with EDK II.
 
+At a minimum, QemuOpenBoardPkg should run on `qemu-system-x86_64` with a 32-bit PEI and a 64-bit DXE, which is the typical UEFI system firmware environment. Other system targets can also be optionally implemented for extra credit, such as `qemu-system-i386` or `qemu-system-aarch64` or `qemu-system-riscv64`.
+
 # Development Environment
 Building: This project can be completed on any edk2 supported OS or toolchain. Ideally, QemuOpenBoardPkg should be compiler agnostic and be able to build with either Clang, GCC, or Visual C++ though that is not a strict requirement.
 
