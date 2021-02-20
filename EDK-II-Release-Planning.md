@@ -11,12 +11,10 @@
 | 2021-03-05           | Release                                  |
 
 ## Proposed Features
-* [CryptoPkg/OpensslLib: Add native instruction support for X64](https://bugzilla.tianocore.org/show_bug.cgi?id=2507)
 * [ArmVirtPkg: support extra pci root bridges (pxb)](https://bugzilla.tianocore.org/show_bug.cgi?id=3059)
 * [SEV Encrypted Boot for Ovmf (remote attestation)](https://bugzilla.tianocore.org/show_bug.cgi?id=3077)
 * [virtio-fs driver for OvmfPkg and ArmVirtPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3097)
 * [Apply SEV-ES mitigations for encryption bit position and MMIO](https://bugzilla.tianocore.org/show_bug.cgi?id=3108)
-* [OVMF RFE: VCPU hot-unplug with SMI](https://bugzilla.tianocore.org/show_bug.cgi?id=3132)
 * [Add Core CI support for StandaloneMmPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3150)
 * [Update LZMA module to LZMA SDK latest version 19.00](https://bugzilla.tianocore.org/show_bug.cgi?id=3101)
 * [IntelFsp2Pkg: Support FSP private temporary memory](https://bugzilla.tianocore.org/show_bug.cgi?id=3153)
@@ -25,6 +23,7 @@
 * [Shell: pathname / filename sorting](https://bugzilla.tianocore.org/show_bug.cgi?id=3151)
 * [Extend support of peripheral x64 MM_STANDALONE drivers](https://bugzilla.tianocore.org/show_bug.cgi?id=3129)
 * [BaseTools: Convert the Split tool from C language to Python](https://bugzilla.tianocore.org/show_bug.cgi?id=3165)
+* [ArmPkg: Add Universal/Smbios](https://bugzilla.tianocore.org/show_bug.cgi?id=3225)
 * TBD
 
 ## Wiki
