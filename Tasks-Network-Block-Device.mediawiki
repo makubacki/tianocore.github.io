@@ -18,6 +18,7 @@ Server
 
 = Links for more information =
 
+* https://github.com/NetworkBlockDevice/nbd/blob/master/doc/proto.md
 * http://nbd.sourceforge.net/
 * http://wiki.wireshark.org/NBD
 * http://www.vanheusden.com/java/JNbd/
@@ -30,10 +31,8 @@ Building: This project can be completed on any edk2 supported OS or toolchain.
 
 = Sub-goals =
 Sub-goals:
-* Using wireshark and publically available documentation, document the client/server protocol.
-** Basic protocol.
-** [EXTRA] Named exports.
-** [EXTRA] Authentication.
+* Read the publicly available documentation and understand the NBD protocol: https://github.com/NetworkBlockDevice/nbd/blob/master/doc/proto.md
+** For any missing details, wireshark and be used to observe existing behavior
 * Setup UEFI environment with working TCP/IP (can 'ping' from Shell)
 * Investigate EDK2 TcpIoLib and ecosystem.
 ** Some questions to answer: how to get local IP? Study UEFI spec and EDK2 code under NetworkPkg.
