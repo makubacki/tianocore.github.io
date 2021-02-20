@@ -44,10 +44,10 @@ Mentor: [[@shijunjing|https://github.com/shijunjing]]
 
 Build a MinPlatform Board Port for Qemu.
 
-Difficulty: Medium
-Language: C
-Mentor:
-Suggested by: @nate-desimone
+* Difficulty: Medium
+* Language: C
+* Mentor:
+* Suggested by: @nate-desimone
 
 More information: [[Tasks-MinPlatform-QemuOpenBoardPkg]]
 
@@ -55,10 +55,10 @@ More information: [[Tasks-MinPlatform-QemuOpenBoardPkg]]
 
 Build a MinPlatform board port for a new motherboard of your choice.
 
-Difficulty: Medium
-Language: C
-Mentor:
-Suggested by: @nate-desimone
+* Difficulty: Medium
+* Language: C
+* Mentor:
+* Suggested by: @nate-desimone
 
 More information: [[Tasks-MinPlatform-Board-Port]]
 
@@ -66,10 +66,10 @@ More information: [[Tasks-MinPlatform-Board-Port]]
 
 Build a MinPlatform board port for the Raspberry Pi.
 
-Difficulty: Medium
-Language: C
-Mentor:
-Suggested by: @nate-desimone
+* Difficulty: Medium
+* Language: C
+* Mentor:
+* Suggested by: @nate-desimone
 
 More information: [[Tasks-MinPlatform-Port-to-Raspberry-Pi]]
 
