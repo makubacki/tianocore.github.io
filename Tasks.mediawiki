@@ -8,7 +8,9 @@ These tasks have been identified by our community. Many of these tasks would mak
 
 [[LLVM|https://llvm.org/]] support in [[EDK II]] is currently limited to Linux builds. Getting LLVM running on Windows would enable the TianoCore project to support Clang and the LLVM toolchain more robustly. Microsoft Windows 10 should be the primary target.
 * Difficulty: Medium
-* Mentor: [[@shijunjing|https://github.com/shijunjing]]
+* Language: C, Python
+* Mentor:
+* Suggested by: [[@shijunjing|https://github.com/shijunjing]]
 
 === Add Rust Support to EDK II ===
 
@@ -18,7 +20,8 @@ Add support for the Rust programming language to EDK II
 * Language: Rust, C, Assembly
 * Mentor:
 * Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
-* More information: [[Tasks-Add-Rust-Support-to-EDK-II]]
+
+More information: [[Tasks-Add-Rust-Support-to-EDK-II]]
 
 === Port the Go language to UEFI ===
 
@@ -28,7 +31,8 @@ Add support for the Go programming language to EDK II
 * Language: Go, C, Assembly
 * Mentor:
 * Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
-* More information: TODO
+
+More information: TODO
 
 === LLVM Optimizations ===
 
@@ -36,7 +40,10 @@ LLVM Address Sanitation using Intel MPX to detect buffer overflows
 * Depends on compiler & hardware that supports the Intel MPX compiler
 * Focus on firmware components
 LLVM Static Analysis to extend Address Sanitation for FW security
-Mentor: [[@shijunjing|https://github.com/shijunjing]]
+* Difficulty: Medium..Hard
+* Language: C, Assembly
+* Mentor:
+* Suggested by: [[@shijunjing|https://github.com/shijunjing]]
 
 == New Platforms and Boards ==
 
@@ -47,7 +54,7 @@ Build a MinPlatform Board Port for Qemu.
 * Difficulty: Medium
 * Language: C
 * Mentor:
-* Suggested by: @nate-desimone
+* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
 More information: [[Tasks-MinPlatform-QemuOpenBoardPkg]]
 
@@ -58,7 +65,7 @@ Build a MinPlatform board port for a new motherboard of your choice.
 * Difficulty: Medium
 * Language: C
 * Mentor:
-* Suggested by: @nate-desimone
+* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
 More information: [[Tasks-MinPlatform-Board-Port]]
 
@@ -69,7 +76,7 @@ Build a MinPlatform board port for the Raspberry Pi.
 * Difficulty: Medium
 * Language: C
 * Mentor:
-* Suggested by: @nate-desimone
+* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
 More information: [[Tasks-MinPlatform-Port-to-Raspberry-Pi]]
 
@@ -107,6 +114,7 @@ Mentor: [[@mdkinney|https://github.com/mdkinney]], [[@shijunjing|https://github.
 Azure pipelines CI is currently only enabled for core EDK II.  Extend this by implementing Azure pipelines to test patches submitted for open source platforms hosted in edk2-platforms.
 * Difficulty: Easy
 * Language: Python
+* Mentor:
 * Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
 == EDK II Core Improvements ==
@@ -183,9 +191,11 @@ Make use of __builtin_return_address(n) & _ReturnAddress to add debug & data gat
 * Performance profile library calls EFI boot and runtime services calls.
 * gBS is set up by a library so it could point to a debug wrapper for the functions.
 * Post process raw output (PDB name + offset in PE/COFF) to include function names via parsing .map files.
-Difficulty: Medium ... Hard
-Language: C
-Suggested by: [[@ajfish|https://github.com/ajfish]]
+Summary:
+* Difficulty: Medium ... Hard
+* Language: C
+* Mentor:
+* Suggested by: [[@ajfish|https://github.com/ajfish]]
 
 === Various Debug Improvements ===
 
@@ -199,9 +209,11 @@ Note: There are many ideas here. Please feel free to gather any reasonable subse
 * Add a library class for a module to access/initiate leak checking.
 * Add sample based profiling to [[EmulatorPkg]]/[[Nt32Pkg]]. On a Mac this would be figuring out how to use Instruments to profile the emulator.
 * Add a sampling based profiling tool to a real EFI system. Note this requires the ability to capture a stack trace and then post process it (likely on the build system).
-Difficulty: Medium ... Hard
-Language: C
-Suggested by: [[@ajfish|https://github.com/ajfish]]
+Summary:
+* Difficulty: Medium ... Hard
+* Language: C
+* Mentor:
+* Suggested by: [[@ajfish|https://github.com/ajfish]]
 
 == UEFI Networking Improvements ==
 
