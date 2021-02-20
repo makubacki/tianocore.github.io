@@ -40,7 +40,7 @@ Mentor: [[@shijunjing|https://github.com/shijunjing]]
 
 == New Platforms and Boards ==
 
-=== MinPlatform Qemu OpenBoardPkg ==
+=== MinPlatform Qemu OpenBoardPkg ===
 
 Build a MinPlatform Board Port for Qemu.
 
