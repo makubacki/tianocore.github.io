@@ -51,7 +51,7 @@ Suggested by: @nate-desimone
 
 More information: [[Tasks-MinPlatform-QemuOpenBoardPkg]]
 
-=== Add a new MinPlatform Board Port ===
+=== Port MinPlatform to a New Motherboard ===
 
 Build a MinPlatform board port for a new motherboard of your choice.
 
