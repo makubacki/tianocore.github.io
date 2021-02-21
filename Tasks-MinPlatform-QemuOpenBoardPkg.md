@@ -19,6 +19,8 @@ The output of this project would be the creation of QemuOpenBoardPkg. Like OVMF,
 
 At a minimum, QemuOpenBoardPkg should run on `qemu-system-x86_64` with a 32-bit PEI and a 64-bit DXE, which is the typical UEFI system firmware environment. Other system targets can also be optionally implemented for extra credit, such as `qemu-system-i386` or `qemu-system-aarch64` or `qemu-system-riscv64`.
 
+There is an open source Qemu FSP available [here](https://github.com/universalpayload/fspsdk/tree/qemu_fsp_x64). While this FSP does not do much silicon initialization, it is a great vehicle for testing FSP integration. At present, this open source FSP has only been tested in Slimbootloader and only supports the FSP 2.0 specification. As extra credit, this project could integrate the FSP and upgrade it to FSP 2.2. QemuOpenBoardPkg can provide a test vehicle to create a fully open source example of FSP including both API mode and Dispatch mode. QemuOpenBoardPkg could also be used as a sandbox for exploring future FSP architectural upgrades like 64-bit FSP for example.
+
 # Development Environment
 Building: This project can be completed on any edk2 supported OS or toolchain. Ideally, QemuOpenBoardPkg should be compiler agnostic and be able to build with either Clang, GCC, or Visual C++ though that is not a strict requirement.
 
