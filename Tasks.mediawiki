@@ -51,7 +51,7 @@ Build a C compiler that is able to generate EBC (EFI Byte Code).
 * Difficulty: Hard
 * Language: C, Assembly
 * Mentor: 
-* Suggested by: [@nate-desimone](https://github.com/nate-desimone)
+* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
 More information: [[Tasks-Build-a-C-compiler-for-EBC]]
 
