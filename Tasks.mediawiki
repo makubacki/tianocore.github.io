@@ -45,6 +45,16 @@ LLVM Static Analysis to extend Address Sanitation for FW security
 * Mentor:
 * Suggested by: [[@shijunjing|https://github.com/shijunjing]]
 
+=== Build a C compiler for EBC ===
+Build a C compiler that is able to generate EBC (EFI Byte Code).
+
+* Difficulty: Hard
+* Language: C, Assembly
+* Mentor: 
+* Suggested by: [@nate-desimone](https://github.com/nate-desimone)
+
+More information: [[Tasks-Build-a-C-compiler-for-EBC]]
+
 == New Platforms and Boards ==
 
 === MinPlatform Qemu Support ===
