@@ -101,8 +101,6 @@ EDK II needs more unit tests... help us write them!
 * Mentor:
 * Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
-More information: TODO
-
 === Test Harness Improvements ===
 
 Improvements to the test harness in the edk2-test staging branch. https://github.com/tianocore/edk2-staging/tree/edk2-test
