@@ -28,6 +28,7 @@ Building: This project can be completed on any edk2 supported OS or toolchain. I
 * https://tianocore-docs.github.io/edk2-MinimumPlatformSpecification/draft/
 * https://github.com/tianocore/edk2-platforms/tree/master/Platform/Intel/MinPlatformPkg
 * https://github.com/tianocore/edk2/tree/master/OvmfPkg
+* https://github.com/universalpayload/fspsdk/tree/qemu_fsp_x64
 * https://www.qemu.org/
 
 # Further Discussion
