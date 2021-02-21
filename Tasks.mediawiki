@@ -1,4 +1,4 @@
-These tasks have been identified by our community. Many of these tasks would make good [[GSoC|GSoC2021]] projects. They are currently open for development by community members, and would be a great way to get involved and start contributing. Please let us know on [[edk2-devel|https://edk2.groups.io/g/devel]] if you plan to work on one of these tasks (to prevent duplicated effort). Also, please provide status updates on [[edk2-devel|https://edk2.groups.io/g/devel]] so the community will know the project is still being actively developed.
+These tasks have been identified by our community. Many of these tasks would make good [[GSoC2021|GSoC]] projects. They are currently open for development by community members, and would be a great way to get involved and start contributing. Please let us know on [[edk2-devel|https://edk2.groups.io/g/devel]] if you plan to work on one of these tasks (to prevent duplicated effort). Also, please provide status updates on [[edk2-devel|https://edk2.groups.io/g/devel]] so the community will know the project is still being actively developed.
 
 = Project Ideas =
 
