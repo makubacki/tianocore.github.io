@@ -20,13 +20,15 @@ The original EBC compiler is the Intel C Compiler for EFI Byte Code. This compil
 His [second attempt](https://github.com/yabits/llvm/tree/retrage/ebc) uses Clang & LLVM. While this showed great promise, it has not been completed yet. One of the roadblocks at the time was the lack of a PE/COFF linker for LLVM. Since LLVM 9.0, the LLVM linker now supports PE/COFF output, making a version of clang that can output EBC more attainable. Rebasing his work up to the latest LLVM 11 is the recommended starting point for any future work.
 
 # Development Environment
-Building: This project should ideally support all edk2 supported OSes when it is finished. Though Linux would likely be the easiest starting point since the existing LLVM work was done on Linux. Getting the compiler stable on Linux should be the first goal. Testing generated EBC binaries can be done with [EmulatorPkg](https://github.com/tianocore/edk2/tree/master/EmulatorPkg) without the need for any emulation software like Qemu. ([@retrage](https://github.com/retrage)) has also created his own userspace [ebcvm](https://github.com/yabits/ebcvm), however we would recommend EmulatorPkg over it since EmulatorPkg runs the exact EBC interpreter that will be used on real systems.
+Building: This project should ideally support all edk2 supported OSes when it is finished. Though Linux would likely be the easiest starting point since the existing LLVM work was done on Linux. Getting the compiler stable on Linux should be the first goal. Testing generated EBC binaries can be done with [EmulatorPkg](https://github.com/tianocore/edk2/tree/master/EmulatorPkg) without the need for any emulation software like Qemu. [@retrage](https://github.com/retrage) has also created his own userspace [ebcvm](https://github.com/yabits/ebcvm), however we would recommend EmulatorPkg over it since EmulatorPkg runs the exact EBC interpreter that will be used on real systems.
 
 # Links for More Information
 * https://github.com/yabits/llvm/tree/retrage/ebc
 * https://translate.google.com/translate?hl=&sl=ja&tl=en&u=https%3A%2F%2Fretrage.github.io%2F2019%2F07%2F20%2Fllvm-backend-for-ebc.html
 * https://speakerdeck.com/retrage/llvm-backend-development-for-efi-byte-code
 * http://vzimmer.blogspot.com/2015/08/efi-byte-code.html
+* https://github.com/tianocore/edk2/tree/master/EmulatorPkg
+* https://github.com/yabits/ebcvm
 * https://github.com/pbatard/fasmg-ebc
 * https://github.com/retrage/elvm/tree/retrage/ebc-v2
 
