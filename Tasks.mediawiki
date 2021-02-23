@@ -290,48 +290,9 @@ Develop a read-only ext2 filesystem driver. http://en.wikipedia.org/wiki/Ext2
 
 More information: [[Tasks-ext2 file-system driver]]
 
-=== Compatibility Support Module ===
+= Obsolete Projects =
 
-A [[CSM]] allows a UEFI system to boot legacy operating systems on IA32 & X64 systems. In other words, most current production OS's. Strong preference is for a BSD licensed solution, as this is license used by nearly all of our code. A SeaBIOS based solution could be considered, but would not be as widely usable (GPL license). http://www.coreboot.org/SeaBIOS
-* Difficulty: Hard
-* Language: Assembly, C
-* Mentor:
-* Suggested by: bjjohnson
-* Status: No longer a priority, since UEFI OS support is mainstream. SeaBIOS can be built as a CSM, but a BSD licensed alternative is still not available.
-
-= Low Priority Projects =
-
-=== Build a C compiler for EBC ===
-
-''' :red_circle: Low priority because EBC is no longer required by the UEFI spec. :red_circle: '''
-
-''' :red_circle: EBC's use for cross-architecture OpROMs is asymptotically approaching zero. :red_circle: '''
-
-Build a C compiler that is able to generate EBC (EFI Byte Code).
-
-* Difficulty: Hard
-* Language: C, Assembly
-* Mentor: 
-* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
-
-More information: [[Tasks-Build-a-C-compiler-for-EBC]]
-
-=== Intel Galileo Platform Improvements ===
-
-''' :red_circle: Low priority because Galileo is no longer manufactured. :red_circle: '''
-
-Add features to [[Intel Galileo|Galileo]] based on open source platform in EDK II. https://github.com/tianocore/edk2/tree/master/QuarkPlatformPkg 
-* Switch from private SD/MMC stack to standard one in [[MdeModulePkg]].
-* Debugger/Console using USB client mode for multiple high perf UARTs in ESRAM 
-* Logging and Debugger support over USB using ESRAM for DMA.
-Mentor: [[@mdkinney|https://github.com/mdkinney]]
-
-=== Implement I2C Stack for PI 1.3 ===
-
-''' :red_circle: Low priority because Galileo and MinnowBoard are no longer manufactured. :red_circle: '''
-
-Build I2C support as a [[UEFI PI|PI]] component, based on the PI 1.3 specification. Initial development on [[Intel Galileo|Galileo]] or [[MinnowBoard Max/Turbot|MinnowBoardMax]] platforms.
-* Mentor: [[@mdkinney|https://github.com/mdkinney]]
+* See [[Obsolete-Tasks]]
 
 = Previously Complete Projects =
 
