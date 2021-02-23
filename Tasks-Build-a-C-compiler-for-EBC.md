@@ -9,7 +9,7 @@ Build a C compiler that is able to generate EBC (EFI Byte Code)
 
 # Background
 
-**EBC is no longer required by the UEFI spec, its's use for cross-architecture OpROMs is asymptotically approaching zero.**
+**EBC is no longer required by the UEFI spec, which has caused its use for cross-architecture OpROMs to asymptotically approach zero.**
 
 EBC (EFI Byte Code) is an interpreted intermediate language for building processor independent UEFI device drivers. Unlike most other intermediate languages, EBC was primarily designed for compiling portable C code in an architecture independent way. The reason it was invented is to enable PCIe add-in card vendors to build universal Option ROMs (OpROMs) that function on multiple native instruction set architectures. For example, a PCIe add-in card with a EBC OpROM would be able to work out-of-box on both a regular 64-bit x86 PC and a ARM microserver.
 
