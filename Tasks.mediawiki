@@ -109,14 +109,6 @@ Improvements to the test harness in the edk2-test staging branch. https://github
 * Performance improvements of test harness
 Mentor: [[@mdkinney|https://github.com/mdkinney]], Supreeth Venkatesh
 
-=== Coverity Static Analysis Tools ===
-
-Enable Coverity Scan for all EDK II projects. https://scan.coverity.com/
-* Evaluate open source CI tools to fine best one to periodically auto run Coverity static analysis
-* Look into ways to auto-post results to TianoCore (website, wiki, or git repo).
-* Look into ways to automate Bugzilla issue generation based on Coverity results.
-Mentor: [[@mdkinney|https://github.com/mdkinney]], [[@shijunjing|https://github.com/shijunjing]]
-
 === Continuous Integration For EDK II Platforms ===
 
 Azure pipelines CI is currently only enabled for core EDK II.  Extend this by implementing Azure pipelines to test patches submitted for open source platforms hosted in edk2-platforms.
@@ -144,14 +136,6 @@ linked lists. Find better data structures.
 * Language: C
 * Mentor:
 * Suggested by: bjjohnson
-
-=== Optimize OVMF for Xen HVM domains ===
-
-Add Xen specific support in [[OVMF]] to improve boot & runtime performance. http://www.xen.org/
-* Difficulty: Medium/Hard
-* Language: C
-* Mentor:
-* Suggested by:  andreiwarkentin, Bei Guan
 
 == Debug Tool Improvements ==
 
@@ -345,6 +329,22 @@ Build I2C support as a [[UEFI PI|PI]] component, based on the PI 1.3 specificati
 * Mentor: [[@mdkinney|https://github.com/mdkinney]]
 
 = Previously Complete Projects =
+
+=== <s>Optimize OVMF for Xen HVM domains</s> ===
+
+Add Xen specific support in [[OVMF]] to improve boot & runtime performance. http://www.xen.org/
+* Difficulty: Medium/Hard
+* Language: C
+* Mentor:
+* Suggested by:  andreiwarkentin, Bei Guan
+
+=== <s>Coverity Static Analysis Tools</s> ===
+
+Enable Coverity Scan for all EDK II projects. https://scan.coverity.com/
+* Evaluate open source CI tools to fine best one to periodically auto run Coverity static analysis
+* Look into ways to auto-post results to TianoCore (website, wiki, or git repo).
+* Look into ways to automate Bugzilla issue generation based on Coverity results.
+Mentor: [[@mdkinney|https://github.com/mdkinney]], [[@shijunjing|https://github.com/shijunjing]]
 
 === <s>Port EmulatorPkg to Windows</s> ===
 
