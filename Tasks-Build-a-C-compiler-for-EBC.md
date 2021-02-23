@@ -1,11 +1,15 @@
 Build a C compiler that is able to generate EBC (EFI Byte Code)
 
+**:red_circle: EBC is no longer required by the UEFI spec, its's use for cross-architecture OpROMs is asymptotically approaching zero. :red_circle:**
+
 * Difficulty: Hard
 * Language: C, Assembly
 * Mentor: 
 * Suggested by: [@nate-desimone](https://github.com/nate-desimone)
 
 # Background
+**:red_circle: This project is not recommended as the relevance of EBC has waned. :red_circle:**
+
 EBC (EFI Byte Code) is an interpreted intermediate language for building processor independent UEFI device drivers. Unlike most other intermediate languages, EBC was primarily designed for compiling portable C code in an architecture independent way. The reason it was invented is to enable PCIe add-in card vendors to build universal Option ROMs (OpROMs) that function on multiple native instruction set architectures. For example, a PCIe add-in card with a EBC OpROM would be able to work out-of-box on both a regular 64-bit x86 PC and a ARM microserver.
 
 Historically, there are some old proposals for EBC usage that never materialized. It was suggested that an EBC interpreter could be added to operating systems to enable EBC device drivers to be used in the OS as a "plan B" for when OS native drivers are not available. The two use cases considered were graphics and network. EBC graphics drivers would be used for basic display output immediately after the OS was installed, but before the user has been able to install OS native graphics drivers. The currently used UEFI GOP drivers provide this capability as well, but EBC graphics drivers would have enabled resolution changes at runtime, similar to legacy VGA BIOS. This feature that was lost when the industry moved to UEFI GOP drivers. UEFI UNDIs could be used as a basic network drivers for cases where the OS media did not have the needed network drivers in-box. The UNDI would allow the system to access the Internet to download OS native drivers. Vincent Zimmer has a good history of EBC on his [blog](http://vzimmer.blogspot.com/2015/08/efi-byte-code.html).
