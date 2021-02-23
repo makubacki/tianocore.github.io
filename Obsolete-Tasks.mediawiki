@@ -8,8 +8,6 @@ These are tasks had been previously identified by our community but for various 
 
 ''' :red_circle: Low priority because EBC is no longer required by the UEFI spec. :red_circle: '''
 
-''' EBC's use for cross-architecture OpROMs is asymptotically approaching zero. '''
-
 Build a C compiler that is able to generate EBC (EFI Byte Code).
 
 * Difficulty: Hard
