@@ -45,16 +45,6 @@ LLVM Static Analysis to extend Address Sanitation for FW security
 * Mentor:
 * Suggested by: [[@shijunjing|https://github.com/shijunjing]]
 
-=== Build a C compiler for EBC ===
-Build a C compiler that is able to generate EBC (EFI Byte Code).
-
-* Difficulty: Hard
-* Language: C, Assembly
-* Mentor: 
-* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
-
-More information: [[Tasks-Build-a-C-compiler-for-EBC]]
-
 == New Platforms and Boards ==
 
 === MinPlatform Qemu Support ===
@@ -310,6 +300,21 @@ A [[CSM]] allows a UEFI system to boot legacy operating systems on IA32 & X64 sy
 * Status: No longer a priority, since UEFI OS support is mainstream. SeaBIOS can be built as a CSM, but a BSD licensed alternative is still not available.
 
 = Low Priority Projects =
+
+=== Build a C compiler for EBC ===
+
+''' :red_circle: Low priority because EBC is no longer required by the UEFI spec. :red_circle: '''
+
+''' :red_circle: EBC's use for cross-architecture OpROMs is asymptotically approaching zero. :red_circle: '''
+
+Build a C compiler that is able to generate EBC (EFI Byte Code).
+
+* Difficulty: Hard
+* Language: C, Assembly
+* Mentor: 
+* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
+
+More information: [[Tasks-Build-a-C-compiler-for-EBC]]
 
 === Intel Galileo Platform Improvements ===
 
