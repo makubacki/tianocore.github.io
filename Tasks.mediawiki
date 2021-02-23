@@ -277,7 +277,19 @@ Simplify EDK II development:
 Languages: C, Python
 Mentor: [[@mdkinney|https://github.com/mdkinney]]
 
-= Partially Complete or Deferred Projects =
+= Partially Complete Projects =
+
+=== Read-only FFS file-system driver ===
+
+Develop a read-only filesystem driver which allows the contents of
+each PI 1.2 FFS in the system to appear as a pseudo-file system.
+* Difficulty: Medium
+* Language: C
+* Mentor:
+* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
+* Status: Ready for integration into main edk2 tree from external repo: https://github.com/cfdrake/FileSystemPkg 
+
+More information: [[Tasks-Read-only FFS file-system driver]]
 
 === Read-only ext2 driver ===
 
@@ -295,113 +307,7 @@ More information: [[Tasks-ext2 file-system driver]]
 * See [[Obsolete-Tasks]]
 
 = Previously Complete Projects =
-
-=== <s>Optimize OVMF for Xen HVM domains</s> ===
-
-Add Xen specific support in [[OVMF]] to improve boot & runtime performance. http://www.xen.org/
-* Difficulty: Medium/Hard
-* Language: C
-* Mentor:
-* Suggested by:  andreiwarkentin, Bei Guan
-
-=== <s>Coverity Static Analysis Tools</s> ===
-
-Enable Coverity Scan for all EDK II projects. https://scan.coverity.com/
-* Evaluate open source CI tools to fine best one to periodically auto run Coverity static analysis
-* Look into ways to auto-post results to TianoCore (website, wiki, or git repo).
-* Look into ways to automate Bugzilla issue generation based on Coverity results.
-Mentor: [[@mdkinney|https://github.com/mdkinney]], [[@shijunjing|https://github.com/shijunjing]]
-
-=== <s>Port EmulatorPkg to Windows</s> ===
-
-Port [[EmulatorPkg]] to Microsoft Windows (32/64 bit), as a replacement for [[NT32]].
-* Difficulty: Medium
-* Language: C
-* Mentor:
-* Suggested by: [[@ajfish|https://github.com/ajfish]]
-
-More information: [[Tasks-EmulatorPkg for Windows]]
-
-=== <s>Add Visual Studio 2017 Support</s> ===
-
-Microsoft Visual Studio will be released March 7, 2017. Add VS2017 build support to EDK II.
-
-=== <s>Read-only FFS file-system driver</s> ===
-
-Develop a read-only filesystem driver which allows the contents of
-each PI 1.2 FFS in the system to appear as a pseudo-file system.
-* Difficulty: Medium
-* Language: C
-* Mentor:
-* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
-* Status: Ready for integration into main edk2 tree from external repo: https://github.com/cfdrake/FileSystemPkg 
-
-More information: [[Tasks-Read-only FFS file-system driver]]
-
-=== <s>Port Intel Firmware Engine SDK Extensions to OVMF</s> ===
-
-Intel Firmware Engine adds UserExtensions in the SDK to describe connections between modules and module parameters (as "Patchable In Binary" PCDs). This enables binary distribution of configurable firmware components. Porting these extensions to a branch of OVMF would allow development and testing of these concepts on a virtual platform.
-
-* Status: This application has EOL'd as of Aug 2019
-* Languages: C, Python
-* Mentor: [[@jcarsey|https://github.com/jcarsey]]
-
-=== <s>Shell editor improvements</s> ===
-
-Various improvements for the Shell editor
-
-* Difficulty: Medium
-* Language: C
-* Mentor: [[@jljusten|https://github.com/jljusten]]
-* Suggested by: [[@jljusten|https://github.com/jljusten]], [[@ErikBjorge|https://github.com/ErikBjorge]], [[@jcarsey|https://github.com/jcarsey]]
-* Status: Available in main edk2 tree
-
-More information: [[Tasks-Text Editor]]
-
-=== <s>Enable Xen Support in OVMF</s> ===
-
-Get Xen to boot UEFI with [[OVMF]].
-* Difficulty: Hard (depending on tasks taken on)
-* Language: C
-* Mentor: andreiwarkentin, [[@jljusten|https://github.com/jljusten]]
-* Suggested by:  andreiwarkentin
-* Status: Available in main edk2 tree
-
-=== <s>USB-to-serial driver</s> ===
-
-Develop a USB driver for a common USB-to-serial adapter.
-* Difficulty: Medium
-* Language: C
-* Mentor: [[@ErikBjorge|https://github.com/ErikBjorge]]
-* Suggested by: [[@jljusten|https://github.com/jljusten]]
-* Status: Implemented as a [[GSoC2012]] project by [[@ashedesimone|https://github.com/ashedesimone]].
-* Available at [[edk2-platforms/Drivers/OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe|https://github.com/tianocore/edk2-platforms/tree/master/Drivers/OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe]]
-
-More information: [[Tasks-USB Serial Adapter driver]]
-
-=== <s>Multiprocessor support in UefiCpuPkg/CpuDxe</s> ===
-
-Enable multiprocessor support for IA32 & X64 within UefiCpuPkg/CpuDxe.
-(Implement MdePkg/Include/Protocol/MpService.h)
-* Difficulty: Medium
-* Language: Assembly, C
-* Mentor:
-* Suggested by: [[@jljusten|https://github.com/jljusten]]
-* Status: Available in EDK II tree
-
-More information: [[Tasks-UefiCpuPkg-CpuDxe MP support]]
-
-=== <s>Enable Link-time Code Optimization for Linux builds</s> ===
-
-Enable Link-time Code Optimization on Linux for either GCC or LLVM/CLANG. http://gcc.gnu.org/wiki/LinkTimeOptimization
-
-This feature hopefully would significantly reduce code generation size
-for Linux based builds.
-* Difficulty: Medium
-* Language: C
-* Mentor:
-* Suggested by: [[@ajfish|https://github.com/ajfish]], [[@jljusten|https://github.com/jljusten]]
-* Status: Available in GCC5 & CLANG38 toolchains
+* See [[Complete-Tasks]]
 
 = See Also =
 * [[How To Contribute]]
