@@ -302,12 +302,7 @@ Develop a read-only ext2 filesystem driver. http://en.wikipedia.org/wiki/Ext2
 
 More information: [[Tasks-ext2 file-system driver]]
 
-= Obsolete Projects =
-
-* See [[Obsolete-Tasks]]
-
-= Previously Complete Projects =
-* See [[Complete-Tasks]]
-
 = See Also =
+* [[Complete-Tasks|Previously Complete Projects]]
+* [[Obsolete-Tasks|Obsolete Projects]]
 * [[How To Contribute]]
