@@ -1,6 +1,6 @@
 ''' :red_circle: It is not recommended that anyone work on these tasks. :red_circle: '''
 
-These are tasks had been previously identified by our community but for various reasons are no longer relevant and are largely historical. Please let us know on [[edk2-devel|https://edk2.groups.io/g/devel]] if you plan to work on one of these tasks anyway (to prevent duplicated effort).
+These are tasks had been previously identified by our community but for various reasons are no longer relevant and are largely historical. We do not plan to accept any GSoC proposals for these projects. Please let us know on [[edk2-devel|https://edk2.groups.io/g/devel]] if you plan to work on one of these tasks anyway (to prevent duplicated effort).
 
 = Obsolete Tasks =
 
