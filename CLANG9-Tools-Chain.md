@@ -92,6 +92,7 @@ $ qemu-system-x86_64 -m 5120 -smp 1 -bios ~/your/local/path/to/edk2/Build/Ovmf32
 
 ### The verbos build and run steps in Windows:
 ```
+$ Download the latest version Python from https://www.python.org/downloads/ and install it
 $ Download http://releases.llvm.org/9.0.0/LLVM-9.0.0-win64.exe and install it
 $ Download Visual Studio 2015 or 2017 or 2019 and install it, make sure nmake.exe, cl.exe, lib.exe and link.exe be ready.
 $ Download nasm compiler http://www.nasm.us/, copy nasm.exe to C:\nasm\ directory.
