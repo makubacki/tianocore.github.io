@@ -25,6 +25,7 @@
 * [BaseTools: Convert the Split tool from C language to Python](https://bugzilla.tianocore.org/show_bug.cgi?id=3165)
 * [ArmPkg: Add Universal/Smbios](https://bugzilla.tianocore.org/show_bug.cgi?id=3225)
 * [Move to Pip based Basetools python](https://bugzilla.tianocore.org/show_bug.cgi?id=3231)
+* [Add support for use of FF-A calls](https://bugzilla.tianocore.org/show_bug.cgi?id=3230)
 * TBD
 
 ## Wiki
