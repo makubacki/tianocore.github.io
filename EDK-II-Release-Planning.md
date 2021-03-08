@@ -11,6 +11,8 @@
 | 2021-05-28           | Release                                  |
 
 ## Proposed Features
+* [OVMF RFE: VCPU hot-unplug with SMI](https://bugzilla.tianocore.org/show_bug.cgi?id=3132)
+* [Add non-MMRAM memory protection for Standalone MM environment](https://bugzilla.tianocore.org/show_bug.cgi?id=3168)
 * TBD
 
 ## Wiki
