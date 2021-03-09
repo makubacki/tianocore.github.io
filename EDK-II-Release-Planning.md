@@ -19,7 +19,10 @@
 * TBD
 
 ## Update Notes
-* TBD
+* MdeModulePkg VariableSmmRuntimeDxe.inf depends on library class MmUnblockMemoryLib. Platforms supporting variable service through SMM should configure platform DSC in [LibraryClasses] 
+```MmUnblockMemoryLib|MdePkg/Library/MmUnblockMemoryLib/MmUnblockMemoryLibNull.inf```
+* SecurityPkg Tcg2Smm is split into 2 drivers: Tcg2Smm and Tcg2Acpi. Platforms supporting TCG2 Physical Presence and Memory Clear through ACPI method should add a new entry in [Components] section of platform DSC as well as the corresponding FV section in platform FDF
+```SecurityPkg/Tcg/Tcg2Acpi/Tcg2Acpi.inf```
 
 # edk2-stable202108 tag planning
 
