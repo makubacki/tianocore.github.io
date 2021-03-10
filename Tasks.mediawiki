@@ -295,7 +295,7 @@ Simplify EDK II development:
 * GUI helper tool to configure FLASH layout, Recovery, and Capsules.
 * Automatically set values in [[target.txt]] based on platform configuration (compiler, thread count, etc.).
 Languages: C, Python
-Mentor: [[@mdkinney|https://github.com/mdkinney]]
+Mentor: [[@ashedesimone|https://github.com/ashedesimone]], [[@mdkinney|https://github.com/mdkinney]]
 
 = Partially Complete Projects =
 
