@@ -289,7 +289,7 @@ Improvements to existing [[UEFI Driver Wizard]]
 === Various Ease-Of-Use Tools ===
 
 Simplify EDK II development:
-* GUI helper tool to pull multiple repos and setup WORKSPACE.
+* GUI frontend for [[EdkRepo|https://github.com/tianocore/edk2-edkrepo]].
 * GUI helper tool to configure and launch a build.
 * GUI helper tool to configure platform PCDs.
 * GUI helper tool to configure FLASH layout, Recovery, and Capsules.
