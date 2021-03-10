@@ -1,5 +1,6 @@
 ==News==
-* Tianocore is applying to be a mentoring organization for the Google Summer of Code 2012
+* This page is about GSoC 2012 and is now historical. For the current year, please see [[GSoC2021]].
+* GSoC 2012 has wrapped up. Both of our students this year were successful!
 * Here is the [http://www.google-melange.com/gsoc/events/google/gsoc2012 official GSoC 2012 timeline]
 
 ==Students==
@@ -52,6 +53,7 @@ To become a mentor for our project:
 For most questions, please email the [[edk2-devel|https://edk2.groups.io/g/devel]] email list.  If this doesn't work, contact jljusten directly.
 
 ==See Also==
+* [[GSoC2021]]
 * [[GSOC2011]]
 * [[Tasks]]
 
