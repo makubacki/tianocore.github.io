@@ -127,6 +127,26 @@ linked lists. Find better data structures.
 * Mentor:
 * Suggested by: bjjohnson
 
+== Accessibility ==
+
+=== Audio Output device support ===
+
+The first step towards an audio interface is enabling standardised support for audio output.
+This task means prototyping an AUDIO_OUTPUT_PROTOCOL, and implementing at least one device driver producing this protocol.
+The initial drivers envisioned are `virtio-sound` (for use with QEMU), `USB Audio Class`, and `HDA`. The HDA driver would additionally need to prototype an HDA_CODEC_PROTOCOL and implement it in a driver targeting a specific hardware codec.
+
+* Difficulty: Medium ... Hard
+* Language: C
+* Mentor: [[@leiflindholm|https://github.com/leiflindholm]]
+* Suggested by: [[@leiflindholm|https://github.com/leiflindholm]]
+
+=== Follow-on tasks ===
+
+* HII integration of Audio output
+* HII integration of Speech synthesis?
+* Audio Input device support
+* Voice control
+
 == Debug Tool Improvements ==
 
 === SourceLevelDebugPkg & GDB ===
