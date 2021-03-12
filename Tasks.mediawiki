@@ -115,7 +115,9 @@ Optimize cursor motion sequences; support Linux/UNIX standard (xterm/konsole/gno
 * Difficulty: Medium
 * Language: C
 * Mentor:
-* Suggested by: bjjohnson
+* Suggested by: bjjohnson, [[@nate-desimone|https://github.com/nate-desimone]]
+
+More information: [[Tasks-Terminal-driver-improvements]]
 
 === DataHub & GCD scalability ===
 
