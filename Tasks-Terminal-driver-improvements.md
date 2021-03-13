@@ -86,33 +86,49 @@ The terminal driver has fully supported both the legacy CP437 encoding and the U
 The default terminal type is PC_ANSI, which uses CP437. In this day and age that is probably not the right default anymore, though one could argue whether PC_ANSI being the default is a "bug". Here is the list of supported terminal types:
 
 UEFI Spec Defined:
-- PC_ANSI
-- VT_100
-- VT_100_PLUS
-- VT_UTF8
+* PC_ANSI
+* VT_100
+* VT_100_PLUS
+* VT_UTF8
 
 EDK II Extensions:
-- TTY_TERM
-- LINUX
-- XTERM_R6
-- VT_400
-- SCO
+* TTY_TERM
+* LINUX
+* XTERM_R6
+* VT_400
+* SCO
 
 Currently all of these terminal types except for VT_UTF8 output the box drawing characters using CP437, this is a bug. The VT-100 did not use CP437 for box drawing characters. On the VT-100, the terminal driver should output the escape sequence "ESC ( 0" to switch the character set from ASCII to "DEC Special Graphics". Then, while in DEC Special Graphics mode, ┌ , ─ , and ┐ , are encoded as 0x6C, 0x71, and 0x6B respectively. After outputting the box drawing characters, the terminal driver should switch back to ASCII using the escape sequence "ESC ( B". Implementing this will introduce the interesting problem of optimizing display performance by limiting the number of character mode switches.
 
-For all the modes listed above, the VT-100 method should be used for drawing box characters (and other characters in the DEC special graphics character set) with the exception of PC_ANSI and VT_UTF8, which should use CP437 and UTF-8 respectively. In general, DEC special graphics has been around for such a long time that all terminal emulators support it, so it should be the preferred method of outputting characters outside the initial 0-127 basic ASCII codes, with UTF-8 as a fallback if the character can't be encoded by either basic ASCII or DEC special graphics. The difference between VT_UTF8 and the other modes is that DEC special graphics should never be used. PC_ANSI mode should never use DEC special graphics either. VT_100 should output data that would be renderable on a actual [DEC VT100](https://en.wikipedia.org/wiki/VT100) and as such should replace any character outside of basic ASCII or DEC Special Graphics with "?".
+For most the modes listed above, the VT-100 method should be used for drawing box characters (and other characters in the DEC special graphics character set). DEC special graphics has been around for such a long time that most terminal emulators support it. However the very popular [PuTTY](https://www.putty.org) application is an exception to this, and since 2016 XTerm and most other Linux terminal emulators have enabled UTF-8 by default. So, UTF-8 it should be the preferred method of outputting characters outside the initial 0-127 basic ASCII codes for most modern terminal emulators. For older terminal emulators from the 2000's era, DEC Special Graphics should be attempted first with UTF-8 as a fallback if the character can't be encoded by either basic ASCII or DEC special graphics. VT_UTF8 should exclusively output UTF-8. PC_ANSI mode should exclusively output CP437. VT_100 should output data that would be render-able on a actual [DEC VT100](https://en.wikipedia.org/wiki/VT100) and as such should replace any character outside of basic ASCII or DEC Special Graphics with "?".
+
+## Expected Behavior
 
 | Terminal Type | DEC Special Graphics Allowed | Simple Box Drawing (┌ , ─ , ┐ , etc.) | Advanced Box Drawing ( ╔ , ═ , ╗ , etc.) |  UTF-8 Fallback |
 |-------------|--------------------|----------------------|------------------------------------------|----|
 | PC_ANSI     | :x:                | CP437                | CP437 | :x: (If character is not in CP437, output "?") |
 | VT_100      | :heavy_check_mark: | DEC Special Graphics | Convert to Simple Box Drawing and use DEC Special Graphics | :x: (If character is not in basic ASCII or DEC Special Graphics, output "?") |
-| VT_100_PLUS | :heavy_check_mark: | DEC Special Graphics | UTF-8 | :heavy_check_mark: |
+| VT_100_PLUS | :heavy_check_mark: | DEC Special Graphics | Convert to Simple Box Drawing and use DEC Special Graphics | :x: (If character is not in basic ASCII or DEC Special Graphics, output "?") |
 | VT_UTF8     | :x:                | UTF-8                | UTF-8 | :heavy_check_mark: |
-| TTY_TERM    | :heavy_check_mark: | DEC Special Graphics | UTF-8 | :heavy_check_mark: |
-| LINUX       | :heavy_check_mark: | DEC Special Graphics | UTF-8 | :heavy_check_mark: |
+| TTY_TERM    | :x:                | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not in basic ASCII, output "?") |
+| LINUX       | :x:                | UTF-8                | UTF-8 | :heavy_check_mark: |
 | XTERM_R6    | :heavy_check_mark: | DEC Special Graphics | UTF-8 | :heavy_check_mark: |
-| VT_400      | :heavy_check_mark: | DEC Special Graphics | UTF-8 | :heavy_check_mark: |
+| VT_400      | :heavy_check_mark: | DEC Special Graphics | Convert to Simple Box Drawing and use DEC Special Graphics | :x: (If character is not in basic ASCII or DEC Special Graphics, output "?") |
 | SCO         | :heavy_check_mark: | DEC Special Graphics | UTF-8 | :heavy_check_mark: |
+
+## Current Behavior (Which is wrong)
+
+| Terminal Type | Simple Box Drawing (┌ , ─ , ┐ , etc.) | Advanced Box Drawing ( ╔ , ═ , ╗ , etc.) |  UTF-8 Fallback |
+|-------------|-------|-------|------------------------------------------|
+| PC_ANSI     | CP437 | CP437 | :x: (If character is not basic ASCII or box drawing, output "?") |
+| VT_100      | CP437 | CP437 | :x: (If character is not basic ASCII or box drawing, output "?") |
+| VT_100_PLUS | CP437 | CP437 | :x: (If character is not basic ASCII or box drawing, output "?") |
+| VT_UTF8     | UTF-8 | UTF-8 | :heavy_check_mark: |
+| TTY_TERM    | CP437 | CP437 | :x: (If character is not basic ASCII or box drawing, output "?") |
+| LINUX       | CP437 | CP437 | :x: (If character is not basic ASCII or box drawing, output "?") |
+| XTERM_R6    | CP437 | CP437 | :x: (If character is not basic ASCII or box drawing, output "?") |
+| VT_400      | CP437 | CP437 | :x: (If character is not basic ASCII or box drawing, output "?") |
+| SCO         | CP437 | CP437 | :x: (If character is not basic ASCII or box drawing, output "?") |
 
 Now, here is the second bug. That BIOS setup menu page that OVMF has for configuring the serial port has a field for setting the terminal type. But, changing the value in that field doesn't actually change the configuration data that is sent to the terminal driver. So the terminal driver always ends up using PC_ANSI mode even if the user changes that setting. This isn’t a bug in the terminal driver really, it’s a bug in OVMF's setup menu implementation. But it does create the appearance of a problem in the terminal driver and should be fixed as part of this GSoC project. This should be fixed in both he OVMF implementation and the MinPlatform implementation.
 
@@ -120,6 +136,15 @@ Now, here is the second bug. That BIOS setup menu page that OVMF has for configu
 Building: This project should support all edk2 supported OSes and toolchains.
 
 # Links for More Information
+* https://github.com/tianocore/edk2/tree/master/MdeModulePkg/Universal/Console/TerminalDxe
+* https://github.com/tianocore/edk2/tree/master/OvmfPkg
+* https://en.wikipedia.org/wiki/Box-drawing_character
+* https://en.wikipedia.org/wiki/UTF-8
+* https://en.wikipedia.org/wiki/Code_page_437
+* https://en.wikipedia.org/wiki/DEC_Special_Graphics
+
+* https://en.wikipedia.org/wiki/VT100
+* https://www.putty.org
 
 # Further Discussion
 Interested parties are welcome to discuss this project on [edk2-devel](https://edk2.groups.io/g/devel).
