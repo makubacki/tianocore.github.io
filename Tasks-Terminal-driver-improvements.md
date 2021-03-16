@@ -116,7 +116,7 @@ For most the modes listed above, the VT-100 method should be used for drawing bo
 | VT_400      | :heavy_check_mark: | DEC Special Graphics | Convert to Simple Box Drawing and use DEC Special Graphics | :x: (If character is not in basic ASCII or DEC Special Graphics, output "?") |
 | SCO         | :heavy_check_mark: | DEC Special Graphics | UTF-8 | :heavy_check_mark: |
 
-## Current Behavior (Which is wrong)
+## Current Behavior
 
 | Terminal Type | Simple Box Drawing (┌ , ─ , ┐ , etc.) | Advanced Box Drawing ( ╔ , ═ , ╗ , etc.) |  UTF-8 Fallback |
 |-------------|-------|-------|------------------------------------------|
