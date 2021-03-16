@@ -107,7 +107,7 @@ For most the modes listed above, the VT-100 method should be used for drawing bo
 | Terminal Type | DEC Special Graphics Allowed | Simple Box Drawing (┌ , ─ , ┐ , etc.) | Advanced Box Drawing ( ╔ , ═ , ╗ , etc.) |  UTF-8 Fallback |
 |-------------|--------------------|----------------------|------------------------------------------|----|
 | PC_ANSI     | :x:                | CP437                | CP437 | :x: (If character is not in CP437, output "?") |
-| VT_100      | :heavy_check_mark: | DEC Special Graphics | Convert to Simple Box Drawing and use DEC Special Graphics | :x: (If character is not in basic ASCII or DEC Special Graphics, output "?") |
+| VT_100      | :x: | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not in basic ASCII or DEC Special Graphics, output "?") |
 | VT_100_PLUS | :heavy_check_mark: | DEC Special Graphics | Convert to Simple Box Drawing and use DEC Special Graphics | :x: (If character is not in basic ASCII or DEC Special Graphics, output "?") |
 | VT_UTF8     | :x:                | UTF-8                | UTF-8 | :heavy_check_mark: |
 | TTY_TERM    | :x:                | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not in basic ASCII, output "?") |
