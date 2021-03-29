@@ -4,6 +4,14 @@ These tasks have been identified by our community. Many of these tasks would mak
 
 == New Languages and Compilers ==
 
+=== Dynamic Linking enabling ===
+Current [[EDK II]] doesn't support the dynamic linking (https://en.wikipedia.org/wiki/Dynamic_linker), which limits UEFI firmware to be split into modular components that can be distributed separately in binary and loaded only when necessary. This project is to add native dynamic library build support (ELF first) and introduce a dynamic linker in edk2 core.
+
+* Difficulty: Hard
+* Language: C, C++
+* Mentor: [[@shijunjing|https://github.com/shijunjing]]
+* Suggested by: [[@shijunjing|https://github.com/shijunjing]]
+
 === Enable Clang/LLVM Build for Microsoft Windows ===
 
 [[LLVM|https://llvm.org/]] support in [[EDK II]] is currently limited to Linux builds. Getting LLVM running on Windows would enable the TianoCore project to support Clang and the LLVM toolchain more robustly. Microsoft Windows 10 should be the primary target.
