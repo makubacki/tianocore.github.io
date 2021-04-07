@@ -14,6 +14,8 @@
 * [OVMF RFE: VCPU hot-unplug with SMI](https://bugzilla.tianocore.org/show_bug.cgi?id=3132)
 * [Add non-MMRAM memory protection for Standalone MM environment](https://bugzilla.tianocore.org/show_bug.cgi?id=3168)
 * [OpenSSL Update OpenSSL version to version 1.1.1j to include CVE fix](https://bugzilla.tianocore.org/show_bug.cgi?id=3266)
+* [Add a new library class RegisterFilterLib](https://bugzilla.tianocore.org/show_bug.cgi?id=3246)
+* [Add a new MicrocodeLib for microcode loading](https://bugzilla.tianocore.org/show_bug.cgi?id=3303)
 * TBD
 
 ## Wiki
