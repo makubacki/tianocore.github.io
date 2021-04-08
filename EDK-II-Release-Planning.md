@@ -16,6 +16,9 @@
 * [OpenSSL Update OpenSSL version to version 1.1.1j to include CVE fix](https://bugzilla.tianocore.org/show_bug.cgi?id=3266)
 * [Add a new library class RegisterFilterLib](https://bugzilla.tianocore.org/show_bug.cgi?id=3246)
 * [Add a new MicrocodeLib for microcode loading](https://bugzilla.tianocore.org/show_bug.cgi?id=3303)
+* [EDKII Redfish Config Handler Protocol](https://bugzilla.tianocore.org/show_bug.cgi?id=2911)
+* [Implementation of UEFI spec 31.1 Redfish Discover Protocol](https://bugzilla.tianocore.org/show_bug.cgi?id=2906)
+* [Add RedfishLib (from libredfish)](https://bugzilla.tianocore.org/show_bug.cgi?id=3304)
 * TBD
 
 ## Wiki
@@ -26,6 +29,7 @@
 ```MmUnblockMemoryLib|MdePkg/Library/MmUnblockMemoryLib/MmUnblockMemoryLibNull.inf```
 * SecurityPkg Tcg2Smm is split into 2 drivers: Tcg2Smm and Tcg2Acpi. Platforms supporting TCG2 Physical Presence and Memory Clear through ACPI method should add a new entry in [Components] section of platform DSC as well as the corresponding FV section in platform FDF
 ```SecurityPkg/Tcg/Tcg2Acpi/Tcg2Acpi.inf```
+* Platform DSC needs to include ```MdePkg/MdeLibs.dsc.inc``` for the required library instance.
 
 # edk2-stable202108 tag planning
 
