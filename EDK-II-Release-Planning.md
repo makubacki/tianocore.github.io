@@ -19,6 +19,8 @@
 * [EDKII Redfish Config Handler Protocol](https://bugzilla.tianocore.org/show_bug.cgi?id=2911)
 * [Implementation of UEFI spec 31.1 Redfish Discover Protocol](https://bugzilla.tianocore.org/show_bug.cgi?id=2906)
 * [Add RedfishLib (from libredfish)](https://bugzilla.tianocore.org/show_bug.cgi?id=3304)
+* [Add the ArmPlatformPkg to the azurepipeline](https://bugzilla.tianocore.org/show_bug.cgi?id=3349)
+* [Add the ArmPkg to the azurepipeline](https://bugzilla.tianocore.org/show_bug.cgi?id=3348)
 * TBD
 
 ## Wiki
