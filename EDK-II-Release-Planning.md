@@ -21,6 +21,8 @@
 * [Add RedfishLib (from libredfish)](https://bugzilla.tianocore.org/show_bug.cgi?id=3304)
 * [Add the ArmPlatformPkg to the azurepipeline](https://bugzilla.tianocore.org/show_bug.cgi?id=3349)
 * [Add the ArmPkg to the azurepipeline](https://bugzilla.tianocore.org/show_bug.cgi?id=3348)
+* [Support Tcg2Smm under Standalone MM environment](https://bugzilla.tianocore.org/show_bug.cgi?id=3169)
+* [UefiCpuPkg/SmmCpuFeaturesLib: Add Standalone MM support](https://bugzilla.tianocore.org/show_bug.cgi?id=3218)
 * TBD
 
 ## Wiki
