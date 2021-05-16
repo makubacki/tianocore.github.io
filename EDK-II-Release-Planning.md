@@ -24,6 +24,7 @@
 * [Support Tcg2Smm under Standalone MM environment](https://bugzilla.tianocore.org/show_bug.cgi?id=3169)
 * [UefiCpuPkg/SmmCpuFeaturesLib: Add Standalone MM support](https://bugzilla.tianocore.org/show_bug.cgi?id=3218)
 * [Add support for AARCH64 to RngDxe and BaseRngLib](https://bugzilla.tianocore.org/show_bug.cgi?id=3368)
+* [Add support for RSASSA-PSS signature scheme in Crypto package](https://bugzilla.tianocore.org/show_bug.cgi?id=3314)
 * TBD
 
 ## Wiki
