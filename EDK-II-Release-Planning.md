@@ -14,6 +14,7 @@
 * [OvmfPkg: remove Xen support from OvmfPkg*.dsc, in favor of OvmfXen.dsc](https://bugzilla.tianocore.org/show_bug.cgi?id=2122)
 * [Add CLANGDWARF toolchain for generating ELF+DWARF](https://bugzilla.tianocore.org/show_bug.cgi?id=3431)
 * [NetworkPkg/IScsiDxe: remotely exploitable buffer overflows](https://bugzilla.tianocore.org/show_bug.cgi?id=3356)
+* [Create header files and multiple Hobs for Universal Payload](https://bugzilla.tianocore.org/show_bug.cgi?id=3447)
 * TBD
 
 # edk2-stable202111 tag planning
