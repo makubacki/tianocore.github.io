@@ -13,4 +13,4 @@ feature freeze, an announcement email is sent to the
 [edk2-devel](https://edk2.groups.io/g/devel) mailing list.
 The announcement is posted by one of the maintainers that are listed in
 [Maintainers.txt](https://github.com/tianocore/edk2/blob/master/Maintainers.txt),
-in section `EDK II Releases`. And, tag edk2-stablexxxxxxxx-rc1 will be created.
+in section `EDK II Releases`. And, tag edk2-stablexxxxxx-rc1 will be created.
