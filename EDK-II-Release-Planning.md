@@ -13,7 +13,14 @@
 * [OvmfPkg: remove Xen support from OvmfPkg*.dsc, in favor of OvmfXen.dsc](https://bugzilla.tianocore.org/show_bug.cgi?id=2122)
 * [Add CLANGDWARF toolchain for generating ELF+DWARF](https://bugzilla.tianocore.org/show_bug.cgi?id=3431)
 * [NetworkPkg/IScsiDxe: remotely exploitable buffer overflows](https://bugzilla.tianocore.org/show_bug.cgi?id=3356)
+* [NetworkPkg/IScsiDxe: add sha256 support to CHAP](https://bugzilla.tianocore.org/show_bug.cgi?id=3355)
 * [Create header files and multiple Hobs for Universal Payload](https://bugzilla.tianocore.org/show_bug.cgi?id=3447)
+* [Add search feature in config editor](https://bugzilla.tianocore.org/show_bug.cgi?id=3482)
+* [Add additional build option to treat Dynamic Pcd as DynamicEx Pcd](https://bugzilla.tianocore.org/show_bug.cgi?id=1688)
+* [Add a new MicrocodeLib for microcode loading](https://bugzilla.tianocore.org/show_bug.cgi?id=3303)
+* [Implement key enrolment from default key variables](https://bugzilla.tianocore.org/show_bug.cgi?id=3481)
+* [StandaloneMm support for 32bit Arm machines](https://bugzilla.tianocore.org/show_bug.cgi?id=3381)
+* [Add firmware support for Cloud Hypervisor on arm64](https://bugzilla.tianocore.org/show_bug.cgi?id=3393)
 * TBD
 
 # edk2-stable202111 tag planning
