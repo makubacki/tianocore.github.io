@@ -1,17 +1,12 @@
-This page provides step-by-step instructions for setting up a [http://www.tianocore.org/edk2/ EDK II] build environment on Mac OS X systems using the Xcode development tools.  These steps have been verified with macOS Sierra Version 10.12.4
+This page provides step-by-step instructions for setting up a [EDK II](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II) build environment on macOS systems using the Xcode development tools.  These steps have been verified with macOS Big Sur 11.3.1
 
-# Mac OS X Xcode
-Download the latest version of [Xcode](https://developer.apple.com/xcode) (9.4.1 as of this writing) from the Mac App Store.  After installing Xcode, you will additionally need to install the extra command-line tools.  To do this, at a Terminal prompt, enter:
+# macOS Xcode
+Download the latest version of [Xcode](https://developer.apple.com/xcode) (12.5 as of 2021-05-09) from the Mac App Store.  After installing Xcode, you will additionally need to install the extra command-line tools.  To do this, at a Terminal prompt, enter:
 ```
 $ xcode-select --install
 ```
 ## Additional Development Tools
-While Xcode provides a full development environment as well as a suite of different utilities, it does not provide all tools required for Tianocore development.  These tools can be provided in a number of ways, but the two most popular ways come from [Brew](https://brew.sh) and [MacPorts](https://www.macports.org/install.php).  Installation information is provided at the previous links.
-
-### MacPorts Tips
-* If you work behind a firewall and need to pass your network traffic through a proxy, ensure you set the environment variable RSYNC_PROXY to your http proxy in the form of `proxy.dns.name:port_number`.
-   * Remember that `sudo` by default drops most environment variables.  Add the `-E` option to tell `sudo` to keep your environment variables.
-* When installing MacPorts packages, if you would like to build from source like traditional [FreeBSD Ports](https://en.wikipedia.org/wiki/FreeBSD_Ports) systems, add the `-s` option to the command line.  Otherwise, default behavior is to pull precompiled packages. 
+While Xcode provides a full development environment as well as a suite of different utilities, it does not provide all tools required for TianoCore development.  These tools can be provided in a number of ways, but the most popular way comes from [Brew](https://brew.sh).  Installation information is provided at the previous link.
 
 ## Install mtoc
 The mtoc utility is required to convert from the macOS Mach-O image format to the PE/COFF format as required by the UEFI specification.
@@ -20,24 +15,14 @@ The mtoc utility is required to convert from the macOS Mach-O image format to th
 ```
 $ brew install mtoc
 ```
-## MacPorts Instructions
-```
-$ sudo port install cctools
-```
-By default, this will install `mtoc` at `/opt/local/bin/mtoc`.
 # Install NASM
 
-The assembler used for EDK II builds is Netwide Assembler (NASM). The latest version of NASM is available from http://www.nasm.us/.
+The assembler used for EDK II builds is Netwide Assembler (NASM). The latest version of NASM is available from https://nasm.us/.
 ## Brew Instructions
 ```
 $ brew install nasm
 $ brew upgrade nasm
 ```
-## MacPorts Instructions
-```
-$ sudo port install nasm
-```
-By default this installs `nasm` at `/opt/local/bin/nasm`.
 
 # Install ACPI Compiler
 
@@ -47,37 +32,26 @@ In order to support EDK II firmware builds, the latest version of the ASL compil
 $ brew install acpica
 $ brew upgrade acpica
 ```
-## MacPorts Install
-```
-$ sudo port install acpica
-```
-By default this installs `iasl` at `/opt/local/bin/iasl`
+
+# Install XQuartz
+
+The EmulatorPkg requires headers from X11, which are provided by the XQuartz project. Install it from https://www.xquartz.org/.
 
 # Install QEMU Emulator
 
-On order to support running the OVMF platforms from the OvmfPkg, the QEMU emulator from http://www.qemu.org/ must be installed.
+On order to support running the OVMF platforms from the OvmfPkg, the QEMU emulator from https://www.qemu.org/ must be installed.
 
 ## Brew Install
 ```
 $ brew install qemu
 $ brew upgrade qemu
 ```
-## MacPorts Install
-```
-$ sudo port install qemu
-```
-By default qemu is installed in `/opt/local/bin`.
 ## Update PATH environment variable
 
 Tools installed using the `brew` command are placed in `/usr/local/bin`.  The `PATH` environment variable must be updated so the newly installed tools are used instead of older pre-installed tools.
 
 ```
 export PATH=/usr/local/bin:$PATH
-```
-
-Tools installed using the `port` should automatically be in your shell's PATH.  If not, you can manually set it by:
-```
-export PATH=/opt/local/bin:$PATH
 ```
 
 # Verify tool versions
@@ -97,84 +71,94 @@ Pick the location you want to down load the files to and `cd` to that directory:
 ```
 cd ~/work
 git clone https://github.com/tianocore/edk2.git
+cd edk2
+git submodule update --init
 ```
 
-# Build from Command Line/Debug with gdb
+# Build from Command Line/Debug with lldb
 
-Build the UnixPkg:
+Build the EmulatorPkg:
 
 ```
-cd ~/work/edk2/UnixPkg
+cd ~/work/edk2/EmulatorPkg
 ./build.sh
 ```
 
-Debug the UnixPkg
+Debug the EmulatorPkg
 
 ```
 ./build.sh run
 
-Building from: /Users/fish/work/edk2
+Initializing workspace
+/Users/bcran/src/edk2/BaseTools
+Loading previous configuration from /Users/bcran/src/edk2/Conf/BuildEnv.sh
+Using EDK2 in-source Basetools
+WORKSPACE: /Users/bcran/src/edk2
+EDK_TOOLS_PATH: /Users/bcran/src/edk2/BaseTools
+CONF_PATH: /Users/bcran/src/edk2/Conf
 using prebuilt tools
-Reading symbols for shared libraries ...... done
-Breakpoint 1 at 0xce84: file /Users/fish/work/edk2/UnixPkg/Sec/SecMain.c, line 1070.
-(gdb) 
+(lldb) target create "./Host"
+Current executable set to '/Users/bcran/src/edk2/Build/EmulatorX64/DEBUG_XCODE5/X64/Host' (x86_64).
+(lldb) command script import /Users/bcran/src/edk2/EmulatorPkg/Unix/lldbefi.py
+Type r to run emulator. SecLldbScriptBreak armed. EFI modules should now get source level debugging in the emulator.
+(lldb) script lldb.debugger.SetAsync(True)
+(lldb) run
+Process 12155 launched: '/Users/bcran/src/edk2/Build/EmulatorX64/DEBUG_XCODE5/X64/Host' (x86_64)
+
+EDK II UNIX Host Emulation Environment from http://www.tianocore.org/edk2/
+  BootMode 0x00
+  OS Emulator passing in 128 KB of temp RAM at 0x102000000 to SEC
+  FD loaded from ../FV/FV_RECOVERY.fd at 0x102020000 contains SEC Core
+...
 ```
 
-Type `r` at the gdb prompt (don't forget to hit carriage return) to boot the emulator. Ctrl-c in the terminal window will break in to gdb. bt is the stack backtrace command:
+Type `process interrupt` at the lldb prompt (don't forget to hit carriage return) to pause execution. Ctrl-c in the terminal window will quit lldb. `bt` is the stack backtrace command:
 
 ```
-^C
-Program received signal SIGINT, Interrupt.
-0x92423806 in __semwait_signal ()
-(gdb) bt
-#0  0x92423806 in __semwait_signal ()
-#1  0x9244f441 in nanosleep$UNIX2003 ()
-#2  0x0000b989 in msSleep (Milliseconds=0x14) at /Users/fish/work/Migration/edk2/UnixPkg/Sec/UnixThunk.c:102
-#3  0x0000acf5 in UgaCheckKey (UgaIo=0x2078d0) at /Users/fish/work/Migration/edk2/UnixPkg/Sec/UgaX11.c:380
-#4  0x0000d8b7 in _GasketUintn () at /Users/fish/work/Migration/edk2/Build/Unix/DEBUG_XCODE32/IA32/UnixPkg/Sec/SecMain/OUTPUT/Ia32/Gasket.iii:63
-#5  0x0000d801 in GasketUgaCheckKey (UgaIo=0x2078d0) at /Users/fish/work/Migration/edk2/UnixPkg/Sec/Gasket.c:406
-#6  0x454a25fb in UnixUgaSimpleTextInWaitForKey (Event=0x45603610, Context=0x45382110) at /Users/fish/work/Migration/edk2/UnixPkg/UnixUgaDxe/UnixUgaInput.c:169
-#7  0x45faad3a in CoreDispatchEventNotifies (Priority=0x10) at /Users/fish/work/Migration/edk2/MdeModulePkg/Core/Dxe/Event/Event.c:185
-#8  0x45faa639 in CoreRestoreTpl (NewTpl=0x4) at /Users/fish/work/Migration/edk2/MdeModulePkg/Core/Dxe/Event/Tpl.c:114
-#9  0x45f9f197 in CoreReleaseLock (Lock=0x45fb1024) at /Users/fish/work/Migration/edk2/MdeModulePkg/Core/Dxe/Library/Library.c:102
-#10 0x45faabd6 in CoreReleaseEventLock () at /Users/fish/work/Migration/edk2/MdeModulePkg/Core/Dxe/Event/Event.c:113
-#11 0x45fab26c in CoreCheckEvent (UserEvent=0x45603210) at /Users/fish/work/Migration/edk2/MdeModulePkg/Core/Dxe/Event/Event.c:562
-#12 0x45fab2db in CoreWaitForEvent (NumberOfEvents=0x1, UserEvents=0x45f94cc4, UserIndex=0x45f94cb8) at /Users/fish/work/Migration/edk2/MdeModulePkg/Core/Dxe/Event/Event.c:621
-#13 0x49ce9557 in ?? ()
-#14 0x49cf0344 in ?? ()
-#15 0x49ce3bc2 in ?? ()
-#16 0x49ce3ae1 in ?? ()
-#17 0x45f9e4e3 in CoreStartImage (ImageHandle=0x49e31e10, ExitDataSize=0x45f94eec, ExitData=0x45f94ee8) at /Users/fish/work/Migration/edk2/MdeModulePkg/Core/Dxe/Image/Image.c:1260
-#18 0x4550cccc in BdsLibBootViaBootOption (Option=0x49ffa110, DevicePath=0x49ffa190, ExitDataSize=0x45f94eec, ExitData=0x45f94ee8) at /Users/fish/work/Migration/edk2/IntelFrameworkModulePkg/Library/GenericBdsLib/BdsBoot.c:382
-#19 0x455252a9 in BdsBootDeviceSelect () at /Users/fish/work/Migration/edk2/IntelFrameworkModulePkg/Universal/BdsDxe/BdsEntry.c:214
-#20 0x455255bc in BdsEntry (This=0x4552d01c) at /Users/fish/work/Migration/edk2/IntelFrameworkModulePkg/Universal/BdsDxe/BdsEntry.c:356
-#21 0x45fad7e8 in DxeMain (HobStart=0x45f70010) at /Users/fish/work/Migration/edk2/MdeModulePkg/Core/Dxe/DxeMain/DxeMain.c:425
-#22 0x45fadd1d in ProcessModuleEntryPointList (HobStart=0x42020000) at /Users/fish/work/Migration/edk2/Build/Unix/DEBUG_XCODE32/IA32/MdeModulePkg/Core/Dxe/DxeMain/DEBUG/AutoGen.c:287
-#23 0x45f97773 in _ModuleEntryPoint (HobStart=0x42020000) at /Users/fish/work/Migration/edk2/MdePkg/Library/DxeCoreEntryPoint/DxeCoreEntryPoint.c:54
-(gdb) 
+Process 12420 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+    frame #0: 0x00007fff2033cc22 libsystem_kernel.dylib:__semwait_signal() + 10
+libsystem_kernel.dylib`__semwait_signal:
+->  0x7fff2033cc22 <+10>: jae    0x7fff2033cc2c            ; <+20>
+    0x7fff2033cc24 <+12>: movq   %rax, %rdi
+    0x7fff2033cc27 <+15>: jmp    0x7fff2033b72d            ; cerror
+    0x7fff2033cc2c <+20>: retq
+Target 0: (Host) stopped.
+(lldb) bt
+* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+  * frame #0: 0x00007fff2033cc22 libsystem_kernel.dylib:__semwait_signal() + 10
+    frame #1: 0x00007fff202bcc2a libsystem_c.dylib:nanosleep() + 196
+    frame #2: 0x0000000100005e55 Host:SecCpuSleep() + 37 at /Users/bcran/src/edk2/EmulatorPkg/Unix/Host/EmuThunk.c:334
+    frame #3: 0x000000010000e96e Host:GasketSecCpuSleep() + 11 at /Users/bcran/src/edk2/Build/EmulatorX64/DEBUG_XCODE5/X64/EmulatorPkg/Unix/Host/Host/OUTPUT/X64/Gasket.iiii:283
+    frame #4: 0x0000000106f985e9 DxeCore.dll:CoreDispatchEventNotifies() + 264 at /Users/bcran/src/edk2/MdeModulePkg/Core/Dxe/Event/Event.c:194
+    frame #5: 0x0000000106f97fce DxeCore.dll:CoreRestoreTpl() + 227 at /Users/bcran/src/edk2/MdeModulePkg/Core/Dxe/Event/Tpl.c:131
+    frame #6: 0x0000000106f989db DxeCore.dll:CoreSignalEvent() + 111 at /Users/bcran/src/edk2/MdeModulePkg/Core/Dxe/Event/Event.c:566
+    frame #7: 0x0000000106f98b01 DxeCore.dll:CoreWaitForEvent() + 94 at /Users/bcran/src/edk2/MdeModulePkg/Core/Dxe/Event/Event.c:707
+    frame #8: 0x0000000113e8e54c BdsDxe.dll:BdsWaitForSingleEvent() + 127 at /Users/bcran/src/edk2/MdeModulePkg/Universal/BdsDxe/BdsEntry.c:250
+    frame #9: 0x0000000113e8e70b BdsDxe.dll:BdsWait() + 215 at /Users/bcran/src/edk2/MdeModulePkg/Universal/BdsDxe/BdsEntry.c:328
+    frame #10: 0x0000000113e8dffb BdsDxe.dll:BdsEntry() + 2612 at /Users/bcran/src/edk2/MdeModulePkg/Universal/BdsDxe/BdsEntry.c:1012
+    frame #11: 0x0000000106f9bbd6 DxeCore.dll:DxeMain() + 2791 at /Users/bcran/src/edk2/MdeModulePkg/Core/Dxe/DxeMain/DxeMain.c:551
+    frame #12: 0x0000000106f9ed8f DxeCore.dll:_ModuleEntryPoint() + 20 at /Users/bcran/src/edk2/MdePkg/Library/DxeCoreEntryPoint/DxeCoreEntryPoint.c:48
+    frame #13: 0x0000000106fdd02f DxeIpl.dll:InternalSwitchStack() + 15
+    frame #14: 0x0000000106fdc0b6 DxeIpl.dll:HandOffToDxeCore() + 546 at /Users/bcran/src/edk2/MdeModulePkg/Core/DxeIplPeim/X64/DxeLoadFunc.c:126
+    frame #15: 0x0000000106fda78a DxeIpl.dll:DxeLoadCore() + 1354 at /Users/bcran/src/edk2/MdeModulePkg/Core/DxeIplPeim/DxeLoad.c:449
+    frame #16: 0x0000000106ff1d7c
+    frame #17: 0x00000001020255c6 PeiCore.dll:PeiCore() + 1982 at /Users/bcran/src/edk2/MdeModulePkg/Core/Pei/PeiMain/PeiMain.c:331
+    frame #18: 0x000000010202a82c PeiCore.dll:PeiCheckAndSwitchStack() + 1171 at /Users/bcran/src/edk2/MdeModulePkg/Core/Pei/Dispatcher/Dispatcher.c:842
+    frame #19: 0x000000010202b853 PeiCore.dll:PeiDispatcher() + 1206 at /Users/bcran/src/edk2/MdeModulePkg/Core/Pei/Dispatcher/Dispatcher.c:1609
+(lldb)
+
 ```
 
 # Build and Debug from Xcode
-To build from the Xcode GUI open ~/work/edk2/UnixPkg/Xcode/xcode_project/xcode_project.xcodeproj. You can build, clean, and source level debug   from the Xcode GUI. You can hit the Build and Debug button to start the build process. You need to need to hit command-shift-B to show the output of the build. Click Pause to break into the debugger.
-
-[[File:Xcode.jpg]]
+To build from the Xcode GUI open ~/work/edk2/EmulatorPkg/Unix/Xcode/xcode_project64/xcode_project.xcodeproj. You can build, clean, and source level debug from the Xcode GUI. You can hit the Build and Debug button to start the build process. You need to need to hit command-shift-B to show the output of the build. Click Pause to break into the debugger.
 
 The stack trace contains items that show as ?? since the default shell is checked in as a binary. `nanosleep$UNIX2003` and `__semwait_signal` are POSIX library calls and you do not get C source debug with these symbols.
 
-# Source Level Debug Shell 
-
-It is possible to get source level debug for the EFI Shell by pulling these projects from source control and building them.
-
-Instructions for building and hooking in the shell are located in the [https://sourceforge.net/apps/mediawiki/tianocore/index.php?title=Gcc-shell gcc-shell] project.
-
-Please note the gcc-shell and UnixPkg build separately, so if you update shell code you need to build the shell to see the changes. The following screen shot shows being able to source level debug the shell:
-
-[[File:Xcode_good.jpg]]
+*Note* The Xcode project is currently (as of 2021-05-09) broken.
 
 # See Also
 
-* [[Step-by-step instructions]]
-
 # Continue with common instructions
 
-The [remaining instructions](../Common-instructions) are common for most UNIX-like systems.
+The [remaining instructions](https://github.com/tianocore/tianocore.github.io/wiki/Common-instructions-for-Unix) are common for most UNIX-like systems.
