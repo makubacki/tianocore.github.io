@@ -21,6 +21,8 @@
 * [Implement key enrolment from default key variables](https://bugzilla.tianocore.org/show_bug.cgi?id=3481)
 * [StandaloneMm support for 32bit Arm machines](https://bugzilla.tianocore.org/show_bug.cgi?id=3381)
 * [Add firmware support for Cloud Hypervisor on arm64](https://bugzilla.tianocore.org/show_bug.cgi?id=3393)
+* [Support architecture-specific openssl acceleration](https://bugzilla.tianocore.org/show_bug.cgi?id=2507)
+* [Support measured AMD SEV boot with kernel/initrd/cmdline](https://bugzilla.tianocore.org/show_bug.cgi?id=3457)
 * TBD
 
 # edk2-stable202111 tag planning
