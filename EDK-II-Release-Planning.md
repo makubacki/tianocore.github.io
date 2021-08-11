@@ -23,7 +23,7 @@
 * [Add firmware support for Cloud Hypervisor on arm64](https://bugzilla.tianocore.org/show_bug.cgi?id=3393)
 * [Support architecture-specific openssl acceleration](https://bugzilla.tianocore.org/show_bug.cgi?id=2507)
 * [Support measured AMD SEV boot with kernel/initrd/cmdline](https://bugzilla.tianocore.org/show_bug.cgi?id=3457)
-* TBD
+* [Add ACPI 6.4 header](https://bugzilla.tianocore.org/show_bug.cgi?id=3516)
 
 # edk2-stable202111 tag planning
 
