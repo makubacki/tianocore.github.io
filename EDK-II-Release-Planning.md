@@ -24,6 +24,7 @@
 * [Support architecture-specific openssl acceleration](https://bugzilla.tianocore.org/show_bug.cgi?id=2507)
 * [Support measured AMD SEV boot with kernel/initrd/cmdline](https://bugzilla.tianocore.org/show_bug.cgi?id=3457)
 * [Add ACPI 6.4 header](https://bugzilla.tianocore.org/show_bug.cgi?id=3516)
+* [Add new BootDiscoveryPolicyUiLib](https://bugzilla.tianocore.org/show_bug.cgi?id=3551)
 
 # edk2-stable202111 tag planning
 
