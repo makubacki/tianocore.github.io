@@ -107,10 +107,10 @@ For most the modes listed above, the VT-100 method should be used for drawing bo
 | Terminal Type | DEC Special Graphics Allowed | Simple Box Drawing (┌ , ─ , ┐ , etc.) | Advanced Box Drawing ( ╔ , ═ , ╗ , etc.) |  UTF-8 Fallback |
 |-------------|--------------------|----------------------|------------------------------------------|----|
 | PC_ANSI     | :x:                | CP437                | CP437 | :x: (If character is not in CP437, output "?") |
-| VT_100      | :x: | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not in basic ASCII or DEC Special Graphics, output "?") |
+| VT_100      | :x: | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | :x: (If character is not in basic ASCII or DEC Special Graphics, output "?") |
 | VT_100_PLUS | :heavy_check_mark: | DEC Special Graphics | Convert to Simple Box Drawing and use DEC Special Graphics | :x: (If character is not in basic ASCII or DEC Special Graphics, output "?") |
 | VT_UTF8     | :x:                | UTF-8                | UTF-8 | :heavy_check_mark: |
-| TTY_TERM    | :x:                | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not in basic ASCII, output "?") |
+| TTY_TERM    | :x:                | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | :x: (If character is not in basic ASCII, output "?") |
 | LINUX       | :x:                | UTF-8                | UTF-8 | :heavy_check_mark: |
 | XTERM_R6    | :heavy_check_mark: | DEC Special Graphics | UTF-8 | :heavy_check_mark: |
 | VT_400      | :heavy_check_mark: | DEC Special Graphics | Convert to Simple Box Drawing and use DEC Special Graphics | :x: (If character is not in basic ASCII or DEC Special Graphics, output "?") |
@@ -121,14 +121,14 @@ For most the modes listed above, the VT-100 method should be used for drawing bo
 | Terminal Type | Simple Box Drawing (┌ , ─ , ┐ , etc.) | Advanced Box Drawing ( ╔ , ═ , ╗ , etc.) |  UTF-8 Fallback |
 |-------------|-------|-------|------------------------------------------|
 | PC_ANSI     | CP437 | CP437 | :x: (If character is not basic ASCII or box drawing, output "?") |
-| VT_100      | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not basic ASCII or box drawing, output "?") |
-| VT_100_PLUS | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not basic ASCII or box drawing, output "?") |
+| VT_100      | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | :x: (If character is not basic ASCII or box drawing, output "?") |
+| VT_100_PLUS | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | :x: (If character is not basic ASCII or box drawing, output "?") |
 | VT_UTF8     | UTF-8 | UTF-8 | :heavy_check_mark: |
-| TTY_TERM    | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not basic ASCII or box drawing, output "?") |
-| LINUX       | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not basic ASCII or box drawing, output "?") |
-| XTERM_R6    | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not basic ASCII or box drawing, output "?") |
-| VT_400      | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not basic ASCII or box drawing, output "?") |
-| SCO         | Convert to poor man's ASCII (+ , - , &#124; ) | Convert to poor man's ASCII (+ , - , &#124; ) | :x: (If character is not basic ASCII or box drawing, output "?") |
+| TTY_TERM    | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | :x: (If character is not basic ASCII or box drawing, output "?") |
+| LINUX       | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | :x: (If character is not basic ASCII or box drawing, output "?") |
+| XTERM_R6    | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | :x: (If character is not basic ASCII or box drawing, output "?") |
+| VT_400      | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | :x: (If character is not basic ASCII or box drawing, output "?") |
+| SCO         | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | Convert to poor man's ASCII (+ , - , &#124; , \ , / ) | :x: (If character is not basic ASCII or box drawing, output "?") |
 
 Now, here is the second bug. That BIOS setup menu page that OVMF has for configuring the serial port has a field for setting the terminal type. But, changing the value in that field doesn't actually change the configuration data that is sent to the terminal driver. So the terminal driver always ends up using PC_ANSI mode even if the user changes that setting. This isn’t a bug in the terminal driver really, it’s a bug in OVMF's setup menu implementation. But it does create the appearance of a problem in the terminal driver and should be fixed as part of this GSoC project. This should be fixed in both he OVMF implementation and the MinPlatform implementation.
 
