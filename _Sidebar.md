@@ -8,6 +8,7 @@
 [[Reporting Issues]]<br />
 [[Reporting Security Issues]]<br />
 [[Community Information]]<br/>
+[[Inclusive Language | Inclusive Language Guidelines]]<br/>
 [[Additional Projects]] & [[Tasks]]<br/>
 [[Training]]<br/>
 [[Community Support]]<br/>
