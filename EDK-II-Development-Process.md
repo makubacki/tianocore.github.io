@@ -229,3 +229,4 @@ Updating your master branch
 
 -   [[Commit-Message-Format]]
 -   [[Code-Style]]
+-   [[Inclusive Language Guidelines]]
