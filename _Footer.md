@@ -1,1 +1,1 @@
-[[Home]] | [[Getting Started with EDK II]] | [[Inclusive Language | Inclusive Language Guidelines]] | [[Reporting Issues]] | [[Community Information]] | [[Community Support]] | [[Tasks]] | [[BSD+Patent|BSD Plus Patent License]]
+[[Home]] | [[Getting Started with EDK II]] | [[Inclusive Language | Inclusive Language Guidelines]] | [[Reporting Issues]] | [[Community Information]] | [[Community Support]] | [[Inclusive Language | Inclusive Language Guidelines]] | [[Tasks]] | [[BSD+Patent|BSD Plus Patent License]]
