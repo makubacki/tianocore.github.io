@@ -1,6 +1,6 @@
 # EDK II Code Formatting
 
-To better achieve the goals of the [EDK II C Coding Standards Specification](https://edk2-docs.gitbook.io/edk-ii-c-coding-standards-specification/),
+To better realize the goals of the [EDK II C Coding Standards Specification](https://edk2-docs.gitbook.io/edk-ii-c-coding-standards-specification/),
 EDK II code formatting is automated using a source code beautifier called Uncrustify. Uncrustify is compatible with
 C/C++ in addition to other languages. In EDK II, it is used to format C language source code.
 
@@ -20,11 +20,11 @@ standard:
   header.
 * **default_function_header.txt** - A text file containing a template that is placed above functions that are missing
   a function header.
-* **Readme.md** - A file that contains details about how the plugin works and how to use it.
+* [**Readme.md**](https://github.com/tianocore/edk2/blob/master/.pytool/Plugin/UncrustifyCheck/Readme.md) - A file that contains details about how the plugin works and how to use it.
 * **uncrustify_ext_dep.yml** - An "external dependency" file that is used to get the current version of the Uncrustify
   application used by the plugin. This file contains the NuGet feed URL and the version currently used.
 * **uncrustify_plug_in.yaml** - A file that contains information to describe the plugin to the build environment.
-* **uncrustify.cfg** - A file used by the Uncrustify application to control how it formats code. If you want to tweak
+* [**uncrustify.cfg**](https://github.com/tianocore/edk2/blob/master/.pytool/Plugin/UncrustifyCheck/uncrustify.cfg) - A file used by the Uncrustify application to control how it formats code. If you want to tweak
   particular formatting details, this is the place to start.
 * **UncrustifyCheck.py** - The actual Python file that is the CI plugin. Like all CI plugins, this plugin can be run
   in local CI and server CI.
@@ -32,7 +32,7 @@ standard:
 ## EDK II Uncrustify Fork
 
 Due to nuances in the way EDK II formats code, some changes were made to the upstream Uncrustify application. These
-were changes that could not be made purely through the Uncrustify configuration file. For more details about the fork,
+were changes that could not be controlled purely through the Uncrustify configuration file. For more details about the fork,
 please visit that project overview in the link below.
 
 * Uncrustify upstream repository: https://github.com/uncrustify/uncrustify
@@ -52,8 +52,9 @@ The recommended flow is:
 2. Use the `stuart*` commands to pull the Uncrustify application into the edk2 workspace
 3. Set up the ability to run Uncrustify locally (for example, using the Visual Studio Code Uncrustify plugin)
 4. Make and test code changes
-5. Run EDK II CI locally to verify UncrustifyCheck passes
-6. Send the code patch to the EDK II mailing list
+5. Format code locally using Uncrustify (for example, using the Visual Studio Code Uncrustify plugin)
+6. Run EDK II CI locally to verify UncrustifyCheck passes
+7. Send the code patch to the EDK II mailing list
 
 ## Installing Uncrustify
 
@@ -65,7 +66,7 @@ and ultimately published into a NuGet feed in that fork project.
 It is strongly recommended to follow this flow. It sets up the workspace to work with local CI and automatically gets
 the current supported version of the application.
 
-The Uncrustify tool is installed automatically when the Pytools environment is used and the `stuart*` commands are run
+The Uncrustify tool is installed automatically when the pytools environment is used and the `stuart*` commands are run
 to complete environment setup. Review the edk2 [.pytool/Readme.md](https://github.com/tianocore/edk2/tree/master/.pytool#running-ci-locally)
 file for details on `stuart` and this overall flow.
 
@@ -76,9 +77,9 @@ application.
 
 ### Manual Installation: Download from the fork project
 
-The release pipeline in the EDK II Uncrustify fork project contains the build information for each release. Each build
-in this pipeline represents a release. By going to a specific build, the details mapping the build to source code
-(such as the branch and commit) are present.
+The [release pipeline](https://dev.azure.com/projectmu/Uncrustify/_build?definitionId=89) in the EDK II Uncrustify fork
+project contains the build information for each release. Each build in this pipeline represents a release. By going to
+a specific build, the details mapping the build to source code (such as the branch and commit) are present.
 
 The build content is published as a NuGet package to a NuGet feed. This is the same feed, the recommended installation
 instructions automatically pull from. The NuGet feed is available in the ["Artifacts"](https://dev.azure.com/projectmu/Uncrustify/_packaging?_a=feed&feed=mu_uncrustify)
@@ -132,13 +133,48 @@ the configuration details are set once in the editor configuration file.
 These instructions are written for Windows 10. These activities could be further automated into a high-level script
 but that has not been done yet.
 
+#### Manual Usage - Generate File List
+
+Uncrustify must be given a list of files to run against. This can be done by redirecting the list to stdin or by
+providing a text file. Examples of how perform both approaches are given below.
+
+##### Manual Usage - Generate File List via stdin
+
+This is the recommended way to manually run Uncrustify. It is works across Linux and Windows and reduces the number of
+overall steps.
+
+Example to run against all .c and .h files in `DynamicTablesPkg` executed from the root of the edk2 workspace.
+
+Linux:
+
+```shell
+git ls-files DynamicTablesPkg*.c DynamicTablesPkg*.h | ./.pytool/Plugin/UncrustifyCheck/mu-uncrustify-release_extdep/Linux-x86/uncrustify -c ./.pytool/Plugin/UncrustifyCheck/uncrustify.cfg -F - --replace --no-backup --if-changed
+```
+
+Windows:
+
+```shell
+git ls-files DynamicTablesPkg*.c DynamicTablesPkg*.h | .\.pytool\Plugin\UncrustifyCheck\mu-uncrustify-release_extdep\Windows-x86\uncrustify.exe -c .\.pytool\Plugin\UncrustifyCheck\uncrustify.cfg -F - --replace --no-backup --if-changed
+```
+
+* The `git ls-files` command is used to gather the list of .c and .h files in `DynamicTablesPkg`
+* The output from `git ls-files` is redirected to `uncrustify`
+* The following options are given to the Uncrustify application:
+  * `-c`: The path to the Uncrustify configuration file
+  * `-F`: Read the files one per line. `-` indicates the list should be read from stdin.
+  * `--replace`: Replace the source files in place (convenient to diff formatting with git)
+  * `--no-backup`: Replace files with no backup (again, useful to diff formatting with git)
+  * `--if-changed`: Only produce output if a change is detected.
+
+##### Manual Usage - Generate File List via Text File
+
 1. Generate a list of the files to run against. This example generates a recursive list of all .c and .h files.
 
    * It is recommended to run this in cleanly cloned edk2 repo without submodules to prevent submodule files
      (such as Brotli files in MdeModulePkg) from getting included in the file list (if you are running against all
      files). Including all files will significantly increase the amount of time Uncrustify takes to run.
 
-   * Sample Powershell command to recursively write all .c and .h files in a given package to a text file:
+   * Sample Powershell command to recursively write all .c and .h files in a given package to a text file (this can of course be done with other languages/commands):
 
      ```powershell
      Get-ChildItem -Path .\MdePkg\* -Include *.c, *.h -Recurse -Force | %{$_.fullname} | Out-File
@@ -147,16 +183,24 @@ but that has not been done yet.
 
    > **WARNING** Powershell will put the UTF-8 BOM at the beginning of the output file. Uncrustify does not recognize the BOM
    and it should be removed before passing the file as input to Uncrustify. If it is not removed, Uncrustify will
-   not read the first file path in the text file properly which will cause the file to not be formatted.
+   not read the first file path in the text file properly which will cause the file to not be formatted. **Keep this in mind regardless of the method used for generating the text file.**
 
 2. Run Uncrustify using the generated text file as input
 
-   The following assume you move the EDK II Uncrustify configuration file to the directory .uncrustify in your edk2
-   workspace.
+Example to run against all .c and .h files in `MdePkg` executed from the root of the edk2 workspace.
+
+   Windows:
 
    ```shell
-   uncrustify.exe -c .\.pytool\Plugin\UncrustifyCheck\uncrustify.cfg -F MdePkgFiles.txt --replace --no-backup --if-changed
+   .\.pytool\Plugin\UncrustifyCheck\mu-uncrustify-release_extdep\Windows-x86\uncrustify.exe -c .\.pytool\Plugin\UncrustifyCheck\uncrustify.cfg -F MdePkgFiles.txt --replace --no-backup --if-changed
    ```
+
+* The following options are given to the Uncrustify application:
+  * `-c`: The path to the Uncrustify configuration file
+  * `-F`: Read the files one per line from the file `MdePkgFiles.txt`
+  * `--replace`: Replace the source files in place (convenient to diff formatting with git)
+  * `--no-backup`: Replace files with no backup (again, useful to diff formatting with git)
+  * `--if-changed`: Only produce output if a change is detected.
 
    > *Note:* When testing a configuration change, it is sometimes useful to run Uncrustify against a particular file
      and check the debug output to understand what rule was applied and why it was applied. The command shows an
@@ -164,12 +208,14 @@ but that has not been done yet.
      file is forced to be treated as C, the debug output is written to `uncrustify_debug.txt` and the log severity level
      is set to "all".
 
+   Windows:
+
    ```shell
-   uncrustify.exe -c .\.pytool\Plugin\UncrustifyCheck\uncrustify.cfg -f .\MdeModulePkg\Universal\Variable\RuntimeDxe\VariableSmm.c -o output.c -l C -p uncrustify_debug.txt -L A 2>verbose_debug.txt
+   .\.pytool\Plugin\UncrustifyCheck\mu-uncrustify-release_extdep\Windows-x86\uncrustify.exe -c .\.pytool\Plugin\UncrustifyCheck\uncrustify.cfg -f .\MdeModulePkg\Universal\Variable\RuntimeDxe\VariableSmm.c -o output.c -l C -p uncrustify_debug.txt -L A 2>verbose_debug.txt
    ```
 
 Uncrustify will update the source files in-place (with the commands given). This allows you to diff the results with
-git. From here, you can iteratively tweak the configuration file and check the results until your satisfied with the
+git. From here, you can iteratively tweak the configuration file and check the results until you are satisfied with the
 outcome.
 
 ## Uncrustify in CI
@@ -192,7 +238,9 @@ terminal output in local CI and the build output log in server CI.
 Read the [UncrustifyCheck Readme.md](https://github.com/tianocore/edk2/blob/master/.pytool/Plugin/UncrustifyCheck/Readme.md)
 to understand more about how the plugin can be configured for CI.
 
-## Extra Reading: Tracing History Across the Uncrustify Changes
+## Extra Reading: Tracing History Across the Uncrustify Transition in edk
+
+Note: Most users do not need to read this section.
 
 It might be helpful to view the entire history rewritten with Uncrustify formatting on every commit. For example, an
 alternate version of the edk2 repository that serves as "documentation" with the entire history re-written.
@@ -206,7 +254,7 @@ A tool called git-filter-repo can be used to perform this transformation and run
 The following steps can be used to perform this transformation. This is the Windows process. A Linux process will be
 added in the future.
 
-  > **WARNING**  This operation modifies (rewrites) all the commits in the local  copy of the repo.  Do not perform
+  > **WARNING**  This operation modifies (rewrites) all the commits in the local copy of the repo. Do not perform
                  these steps on a local repo you are using for active development.
 
 1. Clone edk2 into a new directory (see **WARNING**)
