@@ -59,7 +59,20 @@ The developer process for the EDK II project
 
     `$ git rebase origin/master`
 
-9. Create patch (serial) to the [[edk2-devel]] mailing list
+9. Run the automated code formatting tool (Uncrustify) against your changes
+
+   - [EDK-II-Code-Formatting](EDK-II-Code-Formatting "wikilink")
+
+   - The changes must pass local CI which includes a code formatting check
+     in order to be merged into the code base.
+
+   - It is strongly recommended that you format the code after each commit.
+     The code can then be easily amended with the formatted output. Some
+     developers might also prefer to format frequently while writing the
+     code using the plugin instructions described in the code formatting
+     wiki page.
+
+10. Create patch (serial) to the [[edk2-devel]] mailing list
 
     - Clean out any old patches: `$ rm *.patch`
 
@@ -73,7 +86,7 @@ The developer process for the EDK II project
 
     - `$ git send-email *.patch`
 
-10. Modify local commits based on the review feedbacks and repeat steps
+11. Modify local commits based on the review feedbacks and repeat steps
     3 to 9
 
     - For the latest commit, you can use `$ git commit --amend`
