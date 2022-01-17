@@ -72,7 +72,37 @@ The developer process for the EDK II project
      code using the plugin instructions described in the code formatting
      wiki page.
 
-10. Create patch (serial) to the [[edk2-devel]] mailing list
+10. (Optional) Push changes to the developer's fork of the EDK II project
+    repository.
+
+    - How to create a [GitHub fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+      - **NOTE:** A GitHub fork can also be created using the command line
+        utility called [`hub`](https://github.com/github/hub/releases).  The
+        `hub` usage information can be found [here](https://hub.github.com/hub.1.html).
+
+    - Add remote to the developer's fork of the EDK II project
+
+    `$ git remote add <developer-id> https://github.com/<developer-id>/edk2.git`
+
+    - Push the integration branch.
+
+    `$ git push <developer-id> <new-integration-branch>`
+
+11. (Optional) Create a GitHub pull request from the developer's
+    <new-integration-branch> to edk2/master to run CI check.
+
+    - How to create a [GitHub pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+      - **NOTE:** A GitHub pull request can also be created using the command
+        line utility called [`hub`](https://github.com/github/hub/releases).
+        The `hub` usage information can be found [here](https://hub.github.com/hub.1.html).
+
+    - Declare that it is for CI check test in the pull request title and
+      description.
+
+    - Resolve GitHub pull request issues if it fails. Please refrence step 8
+      in the below **The maintainer process for the EDK II project**
+
+12. Create patch (serial) to the [[edk2-devel]] mailing list
 
     - Clean out any old patches: `$ rm *.patch`
 
@@ -84,10 +114,15 @@ The developer process for the EDK II project
       - Add the `--subject-prefix="PATCH v2"` if you are sending out a
         second version of the patch series.
 
-    - `$ git send-email *.patch`
+    - `$ git send-email *.patch --to devel@edk2.groups.io`
 
-11. Modify local commits based on the review feedbacks and repeat steps
-    3 to 9
+    - If it is the first time to send mail to edk2 mail list, please join
+      https://edk2.groups.io/g/devel and expect there will be delay because
+      the mail needs manual approval from the admin (gaoliming@byosoft.com.cn
+      or michael.d.kinney@intel.com) of https://edk2.groups.io/g/devel
+
+13. Modify local commits based on the review feedbacks and repeat steps
+    3 to 11
 
     - For the latest commit, you can use `$ git commit --amend`
 
