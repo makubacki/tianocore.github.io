@@ -10,7 +10,16 @@
 | 2022-02-25           | Release                                  |
 
 ## Proposed Features
-TBD
+* [Add TDVF to OvmfPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3429)
+* [Add new APIs to UefiCpuPkg/UefiCpuLib](https://bugzilla.tianocore.org/show_bug.cgi?id=3698)
+* [Add AMD Secure Nested Paging Support](https://bugzilla.tianocore.org/show_bug.cgi?id=3275)
+* [Add SSDT PCI generator in DynamicTablesPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3682)
+* [Support ACPI 6.4 PPTT changes](https://bugzilla.tianocore.org/show_bug.cgi?id=3697)
+* [Add FdtHwInfoParser library](https://bugzilla.tianocore.org/show_bug.cgi?id=3741)
+* [Add DynamicPlatRepo library](https://bugzilla.tianocore.org/show_bug.cgi?id=3743)
+* [Make package and platform builds reproducible across source format changes](https://bugzilla.tianocore.org/show_bug.cgi?id=3688)
+* [Add Uncrustify CI Plugin](https://bugzilla.tianocore.org/show_bug.cgi?id=3748)
+* [Apply uncrustify changes to all package C and H files](https://bugzilla.tianocore.org/show_bug.cgi?id=3737)
 
 # edk2-stable202205 tag planning
 
