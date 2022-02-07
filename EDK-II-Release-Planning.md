@@ -10,6 +10,7 @@
 | 2022-02-25           | Release                                  |
 
 ## Proposed Features
+* [OvmfPkg Add new target for Cloud Hypervisor](https://bugzilla.tianocore.org/show_bug.cgi?id=3823)
 * [Add TDVF to OvmfPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3429)
 * [Add new APIs to UefiCpuPkg/UefiCpuLib](https://bugzilla.tianocore.org/show_bug.cgi?id=3698)
 * [Add AMD Secure Nested Paging Support](https://bugzilla.tianocore.org/show_bug.cgi?id=3275)
