@@ -99,6 +99,18 @@ EDK II needs more unit tests... help us write them!
 * Mentor:
 * Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
+=== Host-based Unit Tests using Google Test  ===
+
+Add support for the [[GoogleTestLLVM|https://google.github.io/googletest/]] mocking framework to
+the EDK II [[UnitTestFrameworkPkg|https://github.com/tianocore/edk2/tree/master/UnitTestFrameworkPkg]
+to support implementing host based tests.  Also port the cmocka based unit tests to GoogleTest to
+test the mocking framework and provide GoogleTest examples to the rest of the EDK II Community.
+
+* Difficulty: Medium...Hard
+* Language: C
+* Mentor:
+* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
+
 === Test Harness Improvements ===
 
 Improvements to the test harness in the edk2-test staging branch. https://github.com/tianocore/edk2-staging/tree/edk2-test
@@ -284,6 +296,37 @@ Suggested by: [[@ajfish|https://github.com/ajfish]], [[@jljusten|https://github.
 * Language: C
 * Mentor:
 * Suggested by: bjjohnson
+
+=== Python3 for UEFI Shell: Add GCC & CLANG tool chain support ===
+
+Python3 in the edk2-libc [[AppPkg|https://github.com/tianocore/edk2-libc/tree/master/AppPkg/Applications/Python/Python-3.6.8]]
+supports Visual Studio builds.  Update the sources and the build files to support the GCC and CLANG compilers.
+
+* Difficulty: Medium
+* Language: C
+* Mentor:
+* Suggested by: [[@jpshivakavi|https://github.com/jpshivakavi]]
+
+=== Python3 for UEFI Shell: Add AARCH64 CPU Architecture ===
+
+Python3 in the edk2-libc [[AppPkg|https://github.com/tianocore/edk2-libc/tree/master/AppPkg/Applications/Python/Python-3.6.8]]
+supports IA32/X64.  Update the sources and the build files to support AARCH64.
+
+* Difficulty: Medium
+* Language: C
+* Mentor:
+* Suggested by: [[@jpshivakavi|https://github.com/jpshivakavi]]
+
+=== Python3 for UEFI Shell: Python modules for standard UEFI Services and Protocols ===
+
+Python3 in the edk2-libc [[AppPkg|https://github.com/tianocore/edk2-libc/tree/master/AppPkg/Applications/Python/Python-3.6.8]]
+can be used to implement UEFI firmware tests.  In order to increase the scope of possible tests, it would be valuable
+to have python modules that wrap the UEFI Boot Services, UEFI Runtime Services, and the commonly used UEFI Protocols.
+
+* Difficulty: Medium ... Hard
+* Language: C
+* Mentor:
+* Suggested by: [[@jpshivakavi|https://github.com/jpshivakavi]]
 
 == Tools for EDK II Ease-of-Use ==
 
