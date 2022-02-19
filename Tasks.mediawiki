@@ -88,6 +88,20 @@ Build a MinPlatform board port for the Raspberry Pi.
 
 More information: [[Tasks-MinPlatform-Port-to-Raspberry-Pi]]
 
+=== Add CI (Continuous Integration) Boot Testing for EDK II Platforms ===
+
+Update EDK II CI to support testing of platforms in the 
+[[edk2-plaforms|https://github.com/tianocore/edk2-platforms]] repository.
+The CI tests can be run in simulators or on physical HW.  This task involves 
+defining a standard interface between EDK II CI agents and remote CI agents
+that take as input a FW image built by an EDK II CI agent and provides 
+pass/fail results back to the EDK II CI agent.
+
+* Difficulty: Hard
+* Language: YAML, Python, C
+* Mentor:
+* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
+
 == Testing and Quality Improvements ==
 
 === Write Unit Tests for EDK II ===
