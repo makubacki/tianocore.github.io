@@ -141,6 +141,23 @@ Azure pipelines CI is currently only enabled for core EDK II.  Extend this by im
 * Mentor:
 * Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
+=== Add CLANG Compiler coverage to EDK II CI ===
+
+EDK II CI currently supports GCC and VS2019.  Add EDK II CI tests to build using CLANG compilers
+for Windows and Linux.
+* Difficulty: Medium
+* Language: Python, C
+* Mentor:
+* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
+
+=== Upgrade EDK II CI Agents from Ubuntu 18 to Ubuntu 20 ===
+
+Address all blocking issues that prevent EDK II CI agents from using Ubuntu 20.
+* Difficulty: Medium
+* Language: Python, C
+* Mentor:
+* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
+
 == EDK II Core Improvements ==
 
 === Terminal driver improvements ===
@@ -162,6 +179,17 @@ linked lists. Find better data structures.
 * Language: C
 * Mentor:
 * Suggested by: bjjohnson
+
+=== Intrinsic Libraries for VS20xx, GCC, and CLANG ===
+
+Implement intrinsic libraries for the supported compilers for memcpy(), memset(),
+and 64-bit integer math operations.  This improves compatibility of EDK II with
+standard C sources.
+
+* Difficulty: Medium ... Hard
+* Language: Python
+* Mentor:
+* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
 
 == Accessibility ==
 
@@ -341,6 +369,28 @@ to have python modules that wrap the UEFI Boot Services, UEFI Runtime Services, 
 * Language: C
 * Mentor:
 * Suggested by: [[@jpshivakavi|https://github.com/jpshivakavi]]
+
+== EDK II BaseTools ==
+
+=== Resource Compiler ===
+
+Implement a resource compiler in Python that can add resource sections defined by the 
+UEFI Specification to a PE/COFF image.
+
+* Difficulty: Medium
+* Language: Python
+* Mentor:
+* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
+
+=== Port C Tools to Python ===
+
+Port tools currently implemented in C to Python.  This removes the need to run a
+C compiler to build the tools required to build EDK II firmware.   
+
+* Difficulty: Medium ... Hard
+* Language: Python
+* Mentor:
+* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
 
 == Tools for EDK II Ease-of-Use ==
 
