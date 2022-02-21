@@ -26,6 +26,18 @@ More information: [[Tasks-ext2 file-system driver]]
 * Status: Completed :heavy_check_mark: as [[GSoC2021]] project by Yuqi Chen ([[@alyssachne|https://github.com/alyssachne]]).
 * Available at: [[https://github.com/tianocore/edk2-staging/tree/2021-gsoc-llvm-gnumake]]
 
+=== <s>Terminal driver improvements</s> ===
+
+Optimize cursor motion sequences; support Linux/UNIX standard (xterm/konsole/gnome-terminal/etc.) key codes and line-drawing characters (currently one must set their terminal emulator to use code page 437 for correct line drawing.)
+* Difficulty: Medium
+* Language: C
+* Mentor: [[@nate-desimone|https://github.com/nate-desimone]] and Rocio Hernandez Fabian
+* Suggested by: bjjohnson, [[@nate-desimone|https://github.com/nate-desimone]]
+* Status: Completed :heavy_check_mark: as [[GSoC2021]] project by Caden Kline ([[@Pokemod97|https://github.com/Pokemod97]]).
+* Available at: [[https://github.com/Pokemod97/edk2/tree/terminal-driver-characters-v3]]
+
+More information: [[Tasks-Terminal-driver-improvements]]
+
 == GSoC 2012 ==
 
 === <s>USB-to-serial driver</s> ===
