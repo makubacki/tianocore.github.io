@@ -12,14 +12,6 @@ Current [[EDK II]] doesn't support the dynamic linking (https://en.wikipedia.org
 * Mentor: [[@shijunjing|https://github.com/shijunjing]]
 * Suggested by: [[@shijunjing|https://github.com/shijunjing]]
 
-=== Enable Clang/LLVM Build for Microsoft Windows ===
-
-[[LLVM|https://llvm.org/]] support in [[EDK II]] is currently limited to Linux builds. Getting LLVM running on Windows would enable the TianoCore project to support Clang and the LLVM toolchain more robustly. Microsoft Windows 10 should be the primary target.
-* Difficulty: Medium
-* Language: C, Python
-* Mentor:
-* Suggested by: [[@shijunjing|https://github.com/shijunjing]]
-
 === Add Rust Support to EDK II ===
 
 Add support for the Rust programming language to EDK II
@@ -427,17 +419,6 @@ each PI 1.2 FFS in the system to appear as a pseudo-file system.
 * Status: Ready for integration into main edk2 tree from external repo: https://github.com/cfdrake/FileSystemPkg 
 
 More information: [[Tasks-Read-only FFS file-system driver]]
-
-=== Read-only ext2 driver ===
-
-Develop a read-only ext2 filesystem driver. http://en.wikipedia.org/wiki/Ext2
-* Difficulty: Medium ... Hard
-* Language: C
-* Mentor:
-* Suggested by: rsun3
-* Status: Some progress was made during [[GSOC2011]]. May be a duplicate of other work, see https://github.com/pbatard/efifs/tree/master/
-
-More information: [[Tasks-ext2 file-system driver]]
 
 = See Also =
 * [[Complete-Tasks|Previously Complete Projects]]
