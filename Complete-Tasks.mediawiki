@@ -2,6 +2,36 @@ These tasks have already been completed and are examples of successful projects 
 
 = Previously Complete Projects =
 
+== GSoC 2021 ==
+
+=== <s>ext4 driver</s> ===
+
+Develop a read-only ext2 filesystem driver. http://en.wikipedia.org/wiki/Ext2
+* Difficulty: Medium ... Hard
+* Language: C
+* Mentor:
+* Suggested by: rsun3
+* Status: Completed :heavy_check_mark: as [[GSoC2021]] project by Pedro Falcato ([[@heatd|https://github.com/heatd]]).
+* Available at: [[edk2-platforms/tree/master/Features/Ext4Pkg|https://github.com/tianocore/edk2-platforms/tree/master/Features/Ext4Pkg]]
+
+More information: [[Tasks-ext2 file-system driver]]
+
+== GSoC 2012 ==
+
+=== <s>USB-to-serial driver</s> ===
+
+Develop a USB driver for a common USB-to-serial adapter.
+* Difficulty: Medium
+* Language: C
+* Mentor: [[@ErikBjorge|https://github.com/ErikBjorge]]
+* Suggested by: [[@jljusten|https://github.com/jljusten]]
+* Status: Completed :heavy_check_mark: as a [[GSoC2012]] project by [[@ashedesimone|https://github.com/ashedesimone]].
+* Available at [[edk2-platforms/Drivers/OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe|https://github.com/tianocore/edk2-platforms/tree/master/Drivers/OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe]]
+
+More information: [[Tasks-USB Serial Adapter driver]]
+
+== Other Completed Projects ==
+
 === <s>Shell editor improvements</s> ===
 
 Various improvements for the Shell editor
@@ -13,18 +43,6 @@ Various improvements for the Shell editor
 * Status: Available in main edk2 tree
 
 More information: [[Tasks-Text Editor]]
-
-=== <s>USB-to-serial driver</s> ===
-
-Develop a USB driver for a common USB-to-serial adapter.
-* Difficulty: Medium
-* Language: C
-* Mentor: [[@ErikBjorge|https://github.com/ErikBjorge]]
-* Suggested by: [[@jljusten|https://github.com/jljusten]]
-* Status: Implemented as a [[GSoC2012]] project by [[@ashedesimone|https://github.com/ashedesimone]].
-* Available at [[edk2-platforms/Drivers/OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe|https://github.com/tianocore/edk2-platforms/tree/master/Drivers/OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe]]
-
-More information: [[Tasks-USB Serial Adapter driver]]
 
 === <s>Optimize OVMF for Xen HVM domains</s> ===
 
