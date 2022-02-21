@@ -22,7 +22,7 @@ Current [[EDK II]] doesn't support the dynamic linking (https://en.wikipedia.org
 
 Add support for the Rust programming language to EDK II
 
-* Language: Rust, C, Assembly
+* Language: Rust, C, Assembly, Python
 * Mentor:
 * Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
