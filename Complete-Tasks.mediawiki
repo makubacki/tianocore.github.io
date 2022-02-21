@@ -16,6 +16,16 @@ Develop a read-only ext2 filesystem driver. http://en.wikipedia.org/wiki/Ext2
 
 More information: [[Tasks-ext2 file-system driver]]
 
+=== <s>Enable Clang/LLVM Build for Microsoft Windows</s> ===
+
+[[LLVM|https://llvm.org/]] support in [[EDK II]] is currently limited to Linux builds. Getting LLVM running on Windows would enable the TianoCore project to support Clang and the LLVM toolchain more robustly. Microsoft Windows 10 should be the primary target.
+* Difficulty: Medium
+* Language: C, Python
+* Mentor: [[@shijunjing|https://github.com/shijunjing]]
+* Suggested by: [[@shijunjing|https://github.com/shijunjing]]
+* Status: Completed :heavy_check_mark: as [[GSoC2021]] project by Yuqi Chen ([[@alyssachne|https://github.com/alyssachne]]).
+* Available at: [[https://github.com/tianocore/edk2-staging/tree/2021-gsoc-llvm-gnumake]]
+
 == GSoC 2012 ==
 
 === <s>USB-to-serial driver</s> ===
@@ -25,7 +35,7 @@ Develop a USB driver for a common USB-to-serial adapter.
 * Language: C
 * Mentor: [[@ErikBjorge|https://github.com/ErikBjorge]]
 * Suggested by: [[@jljusten|https://github.com/jljusten]]
-* Status: Completed :heavy_check_mark: as a [[GSoC2012]] project by [[@ashedesimone|https://github.com/ashedesimone]].
+* Status: Completed :heavy_check_mark: as a [[GSoC2012]] project by Ashley DeSimone ([[@ashedesimone|https://github.com/ashedesimone]]).
 * Available at [[edk2-platforms/Drivers/OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe|https://github.com/tianocore/edk2-platforms/tree/master/Drivers/OptionRomPkg/Bus/Usb/FtdiUsbSerialDxe]]
 
 More information: [[Tasks-USB Serial Adapter driver]]
