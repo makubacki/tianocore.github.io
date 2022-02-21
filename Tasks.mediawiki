@@ -196,7 +196,7 @@ More information: TODO
 
 ==== Audio Output device support ====
 
-The first step towards an audio interface is enabling standardised support for audio output.
+The first step towards an audio interface is enabling standardized support for audio output.
 This task means prototyping an AUDIO_OUTPUT_PROTOCOL, and implementing at least one device driver producing this protocol.
 The initial drivers envisioned are `virtio-sound` (for use with QEMU), `USB Audio Class`, and `HDA`. The HDA driver would additionally need to prototype an HDA_CODEC_PROTOCOL and implement it in a driver targeting a specific hardware codec.
 
@@ -418,18 +418,6 @@ Languages: C, Python
 Mentor: [[@ashedesimone|https://github.com/ashedesimone]], [[@mdkinney|https://github.com/mdkinney]]
 
 = Partially Complete Projects =
-
-=== Read-only FFS file-system driver ===
-
-Develop a read-only filesystem driver which allows the contents of
-each PI 1.2 FFS in the system to appear as a pseudo-file system.
-* Difficulty: Medium
-* Language: C
-* Mentor:
-* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
-* Status: Ready for integration into main edk2 tree from external repo: https://github.com/cfdrake/FileSystemPkg 
-
-More information: [[Tasks-Read-only FFS file-system driver]]
 
 = See Also =
 * [[Complete-Tasks|Previously Complete Projects]]
