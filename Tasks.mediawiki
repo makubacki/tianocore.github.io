@@ -1,53 +1,57 @@
 These tasks have been identified by our community. Many of these tasks would make good [[GSoC2022|GSoC]] projects. They are currently open for development by community members, and would be a great way to get involved and start contributing. Please let us know on [[edk2-devel|https://edk2.groups.io/g/devel]] if you plan to work on one of these tasks (to prevent duplicated effort). Also, please provide status updates on [[edk2-devel|https://edk2.groups.io/g/devel]] so the community will know the project is still being actively developed.
 
+Starting with GSoC 2021, GSoC contributors now have the option of choosing a full-time or half-time project. This task list has been organized to reflect which projects are half-time versus full-time.
+
 = Project Ideas =
 
 == New Languages and Compilers ==
 
-=== Dynamic Linking enabling ===
+=== Large Projects ===
+
+==== Dynamic Linking enabling ====
 Current [[EDK II]] doesn't support the dynamic linking (https://en.wikipedia.org/wiki/Dynamic_linker), which limits UEFI firmware to be split into modular components that can be distributed separately in binary and loaded only when necessary. This project is to add native dynamic library build support (ELF first) and introduce a dynamic linker in edk2 core.
 
-* Difficulty: Hard
 * Language: C, C++
 * Mentor: [[@shijunjing|https://github.com/shijunjing]]
 * Suggested by: [[@shijunjing|https://github.com/shijunjing]]
 
-=== Add Rust Support to EDK II ===
+==== Add Rust Support to EDK II ====
 
 Add support for the Rust programming language to EDK II
 
-* Difficulty: Hard
 * Language: Rust, C, Assembly
 * Mentor:
 * Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
 More information: [[Tasks-Add-Rust-Support-to-EDK-II]]
 
-=== Port the Go language to UEFI ===
+==== Port the Go language to UEFI ====
 
 Add support for the Go programming language to EDK II
 
-* Difficulty: Hard
 * Language: Go, C, Assembly
 * Mentor:
 * Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
 More information: TODO
 
-=== LLVM Optimizations ===
+=== Medium Projects ===
+
+==== LLVM Optimizations ====
 
 LLVM Address Sanitation using Intel MPX to detect buffer overflows
 * Depends on compiler & hardware that supports the Intel MPX compiler
 * Focus on firmware components
-LLVM Static Analysis to extend Address Sanitation for FW security
-* Difficulty: Medium..Hard
+* LLVM Static Analysis to extend Address Sanitation for FW security
 * Language: C, Assembly
 * Mentor:
 * Suggested by: [[@shijunjing|https://github.com/shijunjing]]
 
 == New Platforms and Boards ==
 
-=== MinPlatform Qemu Support ===
+=== Large Projects ===
+
+==== MinPlatform Qemu Support ====
 
 Build a MinPlatform Board Port for Qemu.
 
@@ -58,7 +62,7 @@ Build a MinPlatform Board Port for Qemu.
 
 More information: [[Tasks-MinPlatform-QemuOpenBoardPkg]]
 
-=== Port MinPlatform to a New Motherboard ===
+==== Port MinPlatform to a New Motherboard ====
 
 Build a MinPlatform board port for a new motherboard of your choice.
 
@@ -69,7 +73,7 @@ Build a MinPlatform board port for a new motherboard of your choice.
 
 More information: [[Tasks-MinPlatform-Board-Port]]
 
-=== Add a MinPlatform Board Port for the Raspberry Pi ===
+==== Add a MinPlatform Board Port for the Raspberry Pi ====
 
 Build a MinPlatform board port for the Raspberry Pi.
 
@@ -80,7 +84,7 @@ Build a MinPlatform board port for the Raspberry Pi.
 
 More information: [[Tasks-MinPlatform-Port-to-Raspberry-Pi]]
 
-=== Add CI (Continuous Integration) Boot Testing for EDK II Platforms ===
+==== Add CI (Continuous Integration) Boot Testing for EDK II Platforms ====
 
 Update EDK II CI to support testing of platforms in the 
 [[edk2-plaforms|https://github.com/tianocore/edk2-platforms]] repository.
