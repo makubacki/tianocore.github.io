@@ -204,7 +204,7 @@ The initial drivers envisioned are `virtio-sound` (for use with QEMU), `USB Audi
 * Mentor: [[@leiflindholm|https://github.com/leiflindholm]]
 * Suggested by: [[@leiflindholm|https://github.com/leiflindholm]]
 
-**Follow-on tasks**
+'''Follow-on tasks'''
 * HII integration of Audio output
 * HII integration of Speech synthesis?
 * Audio Input device support
