@@ -1,5 +1,5 @@
 ==News==
-* This page is about GSoC 2012 and is now historical. For the current year, please see [[GSoC2021]].
+* This page is about GSoC 2012 and is now historical. For the current year, please see [[GSoC2022]].
 * GSoC 2012 has wrapped up. Both of our students this year were successful!
 * Here is the [http://www.google-melange.com/gsoc/events/google/gsoc2012 official GSoC 2012 timeline]
 
