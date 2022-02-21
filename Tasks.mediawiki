@@ -152,16 +152,6 @@ Address all blocking issues that prevent EDK II CI agents from using Ubuntu 20.
 
 == EDK II Core Improvements ==
 
-=== Terminal driver improvements ===
-
-Optimize cursor motion sequences; support Linux/UNIX standard (xterm/konsole/gnome-terminal/etc.) key codes and line-drawing characters (currently one must set their terminal emulator to use code page 437 for correct line drawing.)
-* Difficulty: Medium
-* Language: C
-* Mentor:
-* Suggested by: bjjohnson, [[@nate-desimone|https://github.com/nate-desimone]]
-
-More information: [[Tasks-Terminal-driver-improvements]]
-
 === DataHub & GCD scalability ===
 
 The DXE core's DataHub and GCD (Global Coherency Domain) layers don't scale well
