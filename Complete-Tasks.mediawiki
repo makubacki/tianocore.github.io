@@ -32,7 +32,7 @@ More information: [[https://gist.github.com/benjamindoron/cf9ce28bba0b6356113918
 
 * Language: C
 * Mentors: Bret Barkelew ([[@corthon|https://github.com/corthon]]) and Benjamin You ([[@BenjaminYou|https://github.com/BenjaminYou]])
-* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
+* Suggested by: [[@mhaeuser|https://github.com/mhaeuser]]
 * Status: Completed :heavy_check_mark: as [[GSoC2021]] project by Marvin Häuser ([[@mhaeuser|https://github.com/mhaeuser]]).
 
 More information: [[https://github.com/mhaeuser/gsoc-2021-edk2-pe-loader]]
