@@ -9,7 +9,7 @@ These tasks have already been completed and are examples of successful projects 
 Develop a read-only ext4 filesystem driver. http://en.wikipedia.org/wiki/Ext4
 * Difficulty: Medium ... Hard
 * Language: C
-* Mentors: [[Mike Kinney|https://github.com/mdkinney]] and [[Bret Barkelew|https://github.com/corthon]]
+* Mentors: Mike Kinney ([[@mdkinney|https://github.com/mdkinney]]) and Bret Barkelew ([[@corthon|https://github.com/corthon]])
 * Suggested by: rsun3
 * Status: Completed :heavy_check_mark: as [[GSoC2021]] project by Pedro Falcato ([[@heatd|https://github.com/heatd]]).
 * Available at: [[edk2-platforms/tree/master/Features/Ext4Pkg|https://github.com/tianocore/edk2-platforms/tree/master/Features/Ext4Pkg]]
@@ -21,12 +21,21 @@ More information: [[Tasks-ext2 file-system driver]]
 Build a MinPlatform board port for the Acer Aspire VN7-572G.
 
 * Language: C
-* Mentors: [[@nate-desimone|https://github.com/nate-desimone]], [[@iworam|https://github.com/iworam]], and [[@makubacki|https://github.com/makubacki]]
+* Mentors: Nate DeSimone ([[@nate-desimone|https://github.com/nate-desimone]]), Isaac Oram ([[@iworam|https://github.com/iworam]]), and Michael Kubacki ([[@makubacki|https://github.com/makubacki]])
 * Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
-* Status: Completed :heavy_check_mark: as [[GSoC2021]] project by Benjamin Doron ([[@benjamindoron|https://gist.github.com/benjamindoron]]).
+* Status: Completed :heavy_check_mark: as [[GSoC2021]] project by Benjamin Doron ([[@benjamindoron|https://github.com/benjamindoron]]).
 * Available at: [[edk2-platforms/tree/master/Platform/Intel/KabylakeOpenBoardPkg/AspireVn7Dash572G|https://github.com/tianocore/edk2-platforms/tree/master/Platform/Intel/KabylakeOpenBoardPkg/AspireVn7Dash572G]]
 
 More information: [[https://gist.github.com/benjamindoron/cf9ce28bba0b6356113918a40814af30]]
+
+=== <s>Formally Verified PE/COFF Loader</s> ===
+
+* Language: C
+* Mentors: Bret Barkelew ([[@corthon|https://github.com/corthon]]) and Benjamin You ([[@BenjaminYou|https://github.com/BenjaminYou]])
+* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
+* Status: Completed :heavy_check_mark: as [[GSoC2021]] project by Marvin Häuser ([[@mhaeuser|https://github.com/mhaeuser]]).
+
+More information: [[https://github.com/mhaeuser/gsoc-2021-edk2-pe-loader]]
 
 === <s>Enable Clang/LLVM Build for Microsoft Windows</s> ===
 
