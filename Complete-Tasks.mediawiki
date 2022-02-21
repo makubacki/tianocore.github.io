@@ -16,6 +16,18 @@ Develop a read-only ext4 filesystem driver. http://en.wikipedia.org/wiki/Ext4
 
 More information: [[Tasks-ext2 file-system driver]]
 
+=== <s>Port MinPlatform to the Acer Aspire VN7-572G</s> ===
+
+Build a MinPlatform board port for the Acer Aspire VN7-572G.
+
+* Language: C
+* Mentors: [[@nate-desimone|https://github.com/nate-desimone]], [[@iworam|https://github.com/iworam]], and [[@makubacki|https://github.com/makubacki]]
+* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
+* Status: Completed :heavy_check_mark: as [[GSoC2021]] project by Benjamin Doron ([[@benjamindoron|https://gist.github.com/benjamindoron]]).
+* Available at: [[edk2-platforms/tree/master/Platform/Intel/KabylakeOpenBoardPkg/AspireVn7Dash572G|https://github.com/tianocore/edk2-platforms/tree/master/Platform/Intel/KabylakeOpenBoardPkg/AspireVn7Dash572G]]
+
+More information: [[https://gist.github.com/benjamindoron/cf9ce28bba0b6356113918a40814af30]]
+
 === <s>Enable Clang/LLVM Build for Microsoft Windows</s> ===
 
 [[LLVM|https://llvm.org/]] support in [[EDK II]] is currently limited to Linux builds. Getting LLVM running on Windows would enable the TianoCore project to support Clang and the LLVM toolchain more robustly. Microsoft Windows 10 should be the primary target.
