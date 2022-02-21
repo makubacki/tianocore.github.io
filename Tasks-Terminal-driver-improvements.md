@@ -1,9 +1,15 @@
 Optimize cursor motion sequences; support Linux/UNIX standard (xterm/konsole/gnome-terminal/etc.) key codes and line-drawing characters (currently one must set their terminal emulator to use code page 437 for correct line drawing.)
 
+* Status: Complete :heavy_check_mark:
 * Difficulty: Medium
 * Language: C
 * Mentor: 
 * Suggested by: bjjohnson, [@nate-desimone](https://github.com/nate-desimone)
+
+# Status
+* Completed :heavy_check_mark:.
+* Work done by Caden Kline ([@Pokemod97](https://github.com/Pokemod97)) as a [[GSoC2021]] Student.
+* Available at: [https://github.com/Pokemod97/edk2/tree/terminal-driver-characters-v3](https://github.com/Pokemod97/edk2/tree/terminal-driver-characters-v3)
 
 # Background
 The Terminal driver is located at https://github.com/tianocore/edk2/tree/master/MdeModulePkg/Universal/Console/TerminalDxe
