@@ -73,6 +73,23 @@ Develop a USB driver for a common USB-to-serial adapter.
 
 More information: [[Tasks-USB Serial Adapter driver]]
 
+== GSoC 2011 ==
+
+=== <s>Read-only FFS file-system driver</s> ===
+
+Develop a read-only filesystem driver which allows the contents of
+each PI 1.2 FFS in the system to appear as a pseudo-file system.
+* Difficulty: Medium
+* Language: C
+* Mentor:
+* Suggested by: [[@mdkinney|https://github.com/mdkinney]]
+* Status: Completed :heavy_check_mark: as a [[GSOC2011]] project by Colin Drake ([[@cfdrake|https://github.com/cfdrake]]).
+* Available at: [[edk2/tree/master/MdeModulePkg/Universal/FvSimpleFileSystemDxe|https://github.com/tianocore/edk2/tree/master/MdeModulePkg/Universal/FvSimpleFileSystemDxe]]
+
+More information:
+* [[Tasks-Read-only FFS file-system driver]]
+* [[https://github.com/cfdrake/FileSystemPkg]]
+
 == Other Completed Projects ==
 
 === <s>Shell editor improvements</s> ===
