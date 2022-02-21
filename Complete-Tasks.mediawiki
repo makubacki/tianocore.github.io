@@ -6,7 +6,7 @@ These tasks have already been completed and are examples of successful projects 
 
 === <s>ext4 driver</s> ===
 
-Develop a read-only ext2 filesystem driver. http://en.wikipedia.org/wiki/Ext2
+Develop a read-only ext4 filesystem driver. http://en.wikipedia.org/wiki/Ext4
 * Difficulty: Medium ... Hard
 * Language: C
 * Mentors: [[Mike Kinney|https://github.com/mdkinney]] and [[Bret Barkelew|https://github.com/corthon]]
