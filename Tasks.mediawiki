@@ -418,6 +418,7 @@ Languages: C, Python
 Mentor: [[@ashedesimone|https://github.com/ashedesimone]], [[@mdkinney|https://github.com/mdkinney]]
 
 = Partially Complete Projects =
+None at the moment.
 
 = See Also =
 * [[Complete-Tasks|Previously Complete Projects]]
