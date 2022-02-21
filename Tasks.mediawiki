@@ -11,7 +11,7 @@ These tasks have been identified by our community. Many of these tasks would mak
 
 === Large Projects ===
 
-==== Dynamic Linking enabling ====
+==== Dynamic Linking ====
 Current [[EDK II]] doesn't support the dynamic linking (https://en.wikipedia.org/wiki/Dynamic_linker), which limits UEFI firmware to be split into modular components that can be distributed separately in binary and loaded only when necessary. This project is to add native dynamic library build support (PE/COFF first) and introduce a dynamic linker in edk2 core.
 
 * Language: C, C++
