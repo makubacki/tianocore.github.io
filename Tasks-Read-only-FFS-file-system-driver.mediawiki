@@ -11,7 +11,6 @@ Develop a read-only file system driver which allows the contents of each PI 1.2 
 * Completed :heavy_check_mark:
 * Work done by Colin Drake as a [[GSOC2011]] student.
 ** Source: https://github.com/cfdrake/FileSystemPkg
-* Still needs to be integrated into edk2.
 
 =Details=
 The PI 1.2 Firmware File System (FFS) allows firmware elements to be packed efficiently into flash memory.
