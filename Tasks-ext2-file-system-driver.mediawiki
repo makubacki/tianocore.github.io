@@ -2,13 +2,20 @@
 <!-- [[Category:Tasks]] -->
 Develop an [[ext2|https://en.wikipedia.org/wiki/Ext2]] filesystem driver.  (read-only support would be useful as a first step)
 
+* Status: Complete :heavy_check_mark:
 * Difficulty: Medium ... Hard
 * Language: C
-* Mentor: [[@ErikBjorge|https://github.com/ErikBjorge]]
+* Mentors: [[Mike Kinney|https://github.com/mdkinney]] and [[Bret Barkelew|https://github.com/corthon]]
 * Suggested by: rsun3
 
 = Status =
-* Some progress was made during [[GSOC2011]] by Alin Rus
+* Completed :heavy_check_mark:.
+* Instead of implementing an ext2 driver as originally proposed, a much more useful [[ext4|https://en.wikipedia.org/wiki/Ext4]] driver was implemented instead!
+* Work done by Pedro Falcato ([[@heatd|https://github.com/heatd]]) as a [[GSoC2021]] Student.
+
+
+= Older Work =
+* Before GSoC 2021, some progress was made during [[GSOC2011]] by Alin Rus
 ** Source: https://github.com/GunioRobot/Ext2Pkg
 * A newer effort has been started based on GRUB filesystem drivers, however this code cannot be merged to TianoCore due to GRUB being licensed under the GPL.
 ** https://github.com/pbatard/efifs/tree/master/
