@@ -1,5 +1,6 @@
 Build a MinPlatform board port for the Raspberry Pi.
 
+* Project Size: Large
 * Difficulty: Medium
 * Language: C
 * Mentor: 
