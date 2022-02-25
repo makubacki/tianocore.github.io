@@ -352,7 +352,7 @@ More information: [[Tasks-Network Block Device]]
 
 ==== DNS Proxy Support ====
 
-Implement DNS proxy on EDK II. 
+Implement DNS proxy on EDK II. Expected outcome is being able to resolve hostnames via a tunneled DNS connection. TCP/IP utilities like ping can be used to test and demonstrate this.
 * Project Size: Medium
 * Difficulty: Medium
 * Language: C
