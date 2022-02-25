@@ -5,6 +5,9 @@ These tasks have been identified by our community. Many of these tasks would mak
 * Medium Project should take about 175 hours to complete.
 * [[GSoC2022|GSoC Contributors]] that choose large projects will be paid a '''double stipend'''.
 
+'''Skills Required'''
+A good knowledge of the programming languages listed for each project will be required to be successful. We do not expect prior knowledge of firmware or UEFI, our mentors will help you learn those details. Having some experience finding your way around a large codebase is helpful but not required.
+
 = Project Ideas =
 
 == New Languages and Compilers ==
