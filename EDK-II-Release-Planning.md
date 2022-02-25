@@ -34,7 +34,7 @@
 | 2022-05-27           | Release                                  |
 
 ## Proposed Features
-TBD
+* [Generate CloudHv target as PVH ELF binary](https://bugzilla.tianocore.org/show_bug.cgi?id=3848)
 
 # edk2-stable202208 tag planning
 
