@@ -38,7 +38,7 @@ More information: [[Tasks-Add-Rust-Support-to-EDK-II]]
 
 ==== Port the Go language to UEFI ====
 
-Add support for the Go programming language to EDK II
+Add support for the Go programming language to EDK II. Requires implementing a new "GOOS" target OS in the Go compiler. Bonus points if you can get this new GOOS upstreamed.
 
 * Project Size: Large
 * Difficulty: Hard
