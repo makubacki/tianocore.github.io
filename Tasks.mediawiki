@@ -248,7 +248,7 @@ The initial drivers envisioned are `virtio-sound` (for use with QEMU), `USB Audi
 
 ==== SourceLevelDebugPkg & GDB ====
 
-A fully functional gdb stub for x86/x64, attaching to SourceLevelDebugPkg's remote protocol.
+Implement a fully functional gdb stub for x86/x64, attaching to SourceLevelDebugPkg's remote protocol. Expected outcome is the ability to debug GCC binaries via the software debugger attached to Qemu via an emulated serial port.
 * Project Size: Large
 * Difficulty: Medium...Hard
 * Language: Python, C
@@ -278,7 +278,7 @@ Summary:
 
 ==== MP safe Print, DEBUG, and ASSERT ====
 
-Allow APs to safely print and use DEBUG trace messages.
+Create a thread safe version of the DEBUG and ASSERT trace functions. This will allow APs (CPUs other than the Boot Strap Processor (BSP)) to safely print and use DEBUG trace messages.
 
 * Project Size: Medium
 * Difficulty: Medium
@@ -288,7 +288,7 @@ Allow APs to safely print and use DEBUG trace messages.
 
 ==== Port EmulatorPkg to ARM ====
 
-Create a ARM based host environment for [[EmulatorPkg]].
+Create a ARM based host environment for [[EmulatorPkg]]. Expected outcome is being able to run ARM UEFI binaries on top of Linux running on an ARM system.
 * Project Size: Medium
 * Difficulty: Medium
 * Language: C
@@ -297,7 +297,7 @@ Create a ARM based host environment for [[EmulatorPkg]].
 
 ==== EmulatorPkg network support for Linux ====
 
-Port [[EmulatorPkg]]/EmuSnpDxe to support Linux.
+Port [[EmulatorPkg]]/EmuSnpDxe to support Linux. Expected outcome is being able to open TCP/IP connections from UEFI shell applications running in EmulatorPkg on top of Linux.
 * Project Size: Medium
 * Difficulty: Medium
 * Language: C
@@ -330,7 +330,7 @@ Summary:
 
 ==== SMB network share support ====
 
-Enable accessing content on an SMB network share
+Enable accessing content on an SMB network share. Expected outcome is being able to read data from an SMB network share via the UEFI shell. Bonus points if you implement EFI_SIMPLE_FILESYSTEM_PROTOCOL, which allows the network share to be mounted as a disk.
 * Project Size: Large
 * Difficulty: Hard
 * Language: C
@@ -352,7 +352,7 @@ More information: [[Tasks-Network Block Device]]
 
 ==== DNS Proxy Support ====
 
-Implement DNS proxy on EDK II
+Implement DNS proxy on EDK II. 
 * Project Size: Medium
 * Difficulty: Medium
 * Language: C
