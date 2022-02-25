@@ -1,5 +1,6 @@
 Add support for the Rust programming language to EDK II
 
+* Project Size: Large
 * Difficulty: Hard
 * Language: Rust, C, Assembly
 * Mentor: 
