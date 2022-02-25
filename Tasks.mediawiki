@@ -18,6 +18,7 @@ A good knowledge of the programming languages listed for each project will be re
 ==== Dynamic Linking ====
 Current [[EDK II]] doesn't support the dynamic linking (https://en.wikipedia.org/wiki/Dynamic_linker), which limits UEFI firmware to be split into modular components that can be distributed separately in binary and loaded only when necessary. This project is to add native dynamic library build support (PE/COFF first) and introduce a dynamic linker in edk2 core.
 
+* Project Size: Large
 * Difficulty: Hard
 * Language: C, C++
 * Mentor: [[@shijunjing|https://github.com/shijunjing]]
@@ -27,6 +28,7 @@ Current [[EDK II]] doesn't support the dynamic linking (https://en.wikipedia.org
 
 Add support for the Rust programming language to EDK II
 
+* Project Size: Large
 * Difficulty: Hard
 * Language: Rust, C, Assembly, Python
 * Mentor:
@@ -38,6 +40,7 @@ More information: [[Tasks-Add-Rust-Support-to-EDK-II]]
 
 Add support for the Go programming language to EDK II
 
+* Project Size: Large
 * Difficulty: Hard
 * Language: Go, C, Assembly
 * Mentor:
@@ -53,6 +56,7 @@ LLVM Address Sanitation using Intel MPX to detect buffer overflows
 * Depends on compiler & hardware that supports the Intel MPX compiler
 * Focus on firmware components
 * LLVM Static Analysis to extend Address Sanitation for FW security
+* Project Size: Medium
 * Difficulty: Medium...Hard
 * Language: C, Assembly
 * Mentor:
@@ -66,6 +70,7 @@ LLVM Address Sanitation using Intel MPX to detect buffer overflows
 
 Build a MinPlatform Board Port for Qemu.
 
+* Project Size: Large
 * Difficulty: Medium
 * Language: C
 * Mentor:
@@ -77,6 +82,7 @@ More information: [[Tasks-MinPlatform-QemuOpenBoardPkg]]
 
 Build a MinPlatform board port for a new motherboard of your choice.
 
+* Project Size: Large
 * Difficulty: Medium...Hard
 * Language: C
 * Mentor:
@@ -88,6 +94,7 @@ More information: [[Tasks-MinPlatform-Board-Port]]
 
 Build a MinPlatform board port for the Raspberry Pi.
 
+* Project Size: Large
 * Difficulty: Medium
 * Language: C
 * Mentor:
@@ -99,6 +106,7 @@ More information: [[Tasks-MinPlatform-Port-to-Raspberry-Pi]]
 
 Currently MinPlatform does not support S3 resume, so let's implement it! This will require implementing support for the SMM lock box, parsing of the DRAM scatter-gather list, and restore of system state. Demonstrate working S3 resume on at least one real board.
 
+* Project Size: Large
 * Difficulty: Medium
 * Language: C
 * Mentor:
@@ -113,6 +121,7 @@ defining a standard interface between EDK II CI agents and remote CI agents
 that take as input a FW image built by an EDK II CI agent and provides 
 pass/fail results back to the EDK II CI agent.
 
+* Project Size: Large
 * Difficulty: Hard
 * Language: YAML, Python, C
 * Mentor:
@@ -126,6 +135,7 @@ pass/fail results back to the EDK II CI agent.
 
 EDK II needs more unit tests... help us write them!
 
+* Project Size: Medium
 * Difficulty: Easy...Medium
 * Language: C, Assembly
 * Mentor:
@@ -138,6 +148,7 @@ the EDK II [[UnitTestFrameworkPkg|https://github.com/tianocore/edk2/tree/master/
 to support implementing host based tests.  Also port the cmocka based unit tests to GoogleTest to
 test the mocking framework and provide GoogleTest examples to the rest of the EDK II Community.
 
+* Project Size: Medium
 * Difficulty: Medium...Hard
 * Language: C
 * Mentor:
@@ -148,6 +159,7 @@ test the mocking framework and provide GoogleTest examples to the rest of the ED
 Improvements to the test harness in the edk2-test staging branch. https://github.com/tianocore/edk2-staging/tree/edk2-test
 * Test Harness for PEI using Capsule Update or Recovery feature to deliver tests
 * Test Harness for SMM using Capsule Update or Recovery feature to deliver tests
+* Project Size: Medium
 * Performance improvements of test harness
 * Difficulty: Medium
 Mentor: [[@mdkinney|https://github.com/mdkinney]], Supreeth Venkatesh
@@ -155,6 +167,7 @@ Mentor: [[@mdkinney|https://github.com/mdkinney]], Supreeth Venkatesh
 ==== Continuous Integration For EDK II Platforms ====
 
 Azure pipelines CI is currently only enabled for core EDK II.  Extend this by implementing Azure pipelines to test patches submitted for open source platforms hosted in edk2-platforms.
+* Project Size: Medium
 * Difficulty: Easy
 * Language: Python
 * Mentor:
@@ -164,6 +177,7 @@ Azure pipelines CI is currently only enabled for core EDK II.  Extend this by im
 
 EDK II CI currently supports GCC and VS2019.  Add EDK II CI tests to build using CLANG compilers
 for Windows and Linux.
+* Project Size: Medium
 * Difficulty: Easy...Medium
 * Language: Python, C
 * Mentor:
@@ -172,6 +186,7 @@ for Windows and Linux.
 ==== Upgrade EDK II CI Agents from Ubuntu 18 to Ubuntu 20 ====
 
 Address all blocking issues that prevent EDK II CI agents from using Ubuntu 20.
+* Project Size: Medium
 * Difficulty: Medium
 * Language: Python, C
 * Mentor:
@@ -186,6 +201,7 @@ Address all blocking issues that prevent EDK II CI agents from using Ubuntu 20.
 The DXE core's DataHub and GCD (Global Coherency Domain) layers don't scale well
 as the number of data items gets large, since they are based on simple
 linked lists. Find better data structures.
+* Project Size: Medium
 * Difficulty: Medium
 * Language: C
 * Mentor:
@@ -196,6 +212,7 @@ linked lists. Find better data structures.
 Implement intrinsic libraries for the supported compilers for memcpy(), memset(),
 and 64-bit integer math operations.  This improves compatibility of EDK II with
 standard C sources.
+* Project Size: Medium
 * Difficulty: Medium...Hard
 * Language: C, Python
 * Mentor:
@@ -211,6 +228,7 @@ The first step towards an audio interface is enabling standardized support for a
 This task means prototyping an AUDIO_OUTPUT_PROTOCOL, and implementing at least one device driver producing this protocol.
 The initial drivers envisioned are `virtio-sound` (for use with QEMU), `USB Audio Class`, and `HDA`. The HDA driver would additionally need to prototype an HDA_CODEC_PROTOCOL and implement it in a driver targeting a specific hardware codec.
 
+* Project Size: Large
 * Difficulty: Medium...Hard
 * Language: C
 * Mentor: [[@leiflindholm|https://github.com/leiflindholm]]
@@ -229,6 +247,7 @@ The initial drivers envisioned are `virtio-sound` (for use with QEMU), `USB Audi
 ==== SourceLevelDebugPkg & GDB ====
 
 A fully functional gdb stub for x86/x64, attaching to SourceLevelDebugPkg's remote protocol.
+* Project Size: Large
 * Difficulty: Medium...Hard
 * Language: Python, C
 * Mentor:
@@ -245,7 +264,9 @@ Make use of __builtin_return_address(n) & _ReturnAddress to add debug & data gat
 * Performance profile library calls EFI boot and runtime services calls.
 * gBS is set up by a library so it could point to a debug wrapper for the functions.
 * Post process raw output (PDB name + offset in PE/COFF) to include function names via parsing .map files.
+
 Summary:
+* Project Size: Large
 * Difficulty: Medium
 * Language: C
 * Mentor:
@@ -257,6 +278,7 @@ Summary:
 
 Allow APs to safely print and use DEBUG trace messages.
 
+* Project Size: Medium
 * Difficulty: Medium
 * Language: C
 * Mentor:
@@ -265,14 +287,16 @@ Allow APs to safely print and use DEBUG trace messages.
 ==== Port EmulatorPkg to ARM ====
 
 Create a ARM based host environment for [[EmulatorPkg]].
+* Project Size: Medium
 * Difficulty: Medium
 * Language: C
 * Mentor:
 * Suggested by: [[@ajfish|https://github.com/ajfish]]
 
-==== [[EmulatorPkg]] network support for Linux ====
+==== EmulatorPkg network support for Linux ====
 
-Port EmulatorPkg/EmuSnpDxe to support Linux.
+Port [[EmulatorPkg]]/EmuSnpDxe to support Linux.
+* Project Size: Medium
 * Difficulty: Medium
 * Language: C
 * Mentor:
@@ -290,7 +314,9 @@ Note: There are many ideas here. Please feel free to gather any reasonable subse
 * Add a library class for a module to access/initiate leak checking.
 * Add sample based profiling to [[EmulatorPkg]]/[[Nt32Pkg]]. On a Mac this would be figuring out how to use Instruments to profile the emulator.
 * Add a sampling based profiling tool to a real EFI system. Note this requires the ability to capture a stack trace and then post process it (likely on the build system).
+
 Summary:
+* Project Size: Medium
 * Difficulty: Medium ... Hard
 * Language: C
 * Mentor:
@@ -303,6 +329,7 @@ Summary:
 ==== SMB network share support ====
 
 Enable accessing content on an SMB network share
+* Project Size: Large
 * Difficulty: Hard
 * Language: C
 * Mentor:
@@ -313,6 +340,7 @@ Enable accessing content on an SMB network share
 ==== Network Block Device (NBD) client ====
 
 http://nbd.sourceforge.net/
+* Project Size: Medium
 * Difficulty: Medium
 * Language: C
 * Mentor:
@@ -323,6 +351,7 @@ More information: [[Tasks-Network Block Device]]
 ==== DNS Proxy Support ====
 
 Implement DNS proxy on EDK II
+* Project Size: Medium
 * Difficulty: Medium
 * Language: C
 * Mentor:
@@ -338,6 +367,7 @@ A command-line based HII browser, suitable for automation. Either a
 shell command or set of commands for locating, dumping, and modifying
 configuration values, or commands for dumping and loading HII data
 to/from a file in an easily-edited format.
+* Project Size: Large
 * Difficulty: Medium...Hard
 * Language: C
 * Mentor:
@@ -349,6 +379,7 @@ Python3 in the edk2-libc [[AppPkg|https://github.com/tianocore/edk2-libc/tree/ma
 can be used to implement UEFI firmware tests.  In order to increase the scope of possible tests, it would be valuable
 to have python modules that wrap the UEFI Boot Services, UEFI Runtime Services, and the commonly used UEFI Protocols.
 
+* Project Size: Large
 * Difficulty: Medium
 * Language: C, Python
 * Mentor:
@@ -361,6 +392,7 @@ to have python modules that wrap the UEFI Boot Services, UEFI Runtime Services, 
 Port portions of ACPI-CA to a shell application to enable dumping and disassembly of ACPI tables.
 * Based on https://acpica.org/node/126 
 * Table Verifier: AML method execution for testing without booting to an OS.
+* Project Size: Medium
 * Difficulty: Medium
 * Language: C
 * Mentor: TBD
@@ -369,6 +401,7 @@ Port portions of ACPI-CA to a shell application to enable dumping and disassembl
 ==== Port OpenSSH as a shell application ====
 
 Port OpenSSH to the UEFI shell. Use the UEFI networking stack to establish TCP/IP connections to remote systems. Should be able to demonstrate working remote shell session from the UEFI shell.
+* Project Size: Medium
 * Difficulty: Medium...Hard
 * Language: C
 * Mentor:
@@ -378,6 +411,7 @@ Port OpenSSH to the UEFI shell. Use the UEFI networking stack to establish TCP/I
 
 Python3 in the edk2-libc [[AppPkg|https://github.com/tianocore/edk2-libc/tree/master/AppPkg/Applications/Python/Python-3.6.8]]
 supports Visual Studio builds.  Update the sources and the build files to support the GCC and CLANG compilers.
+* Project Size: Medium
 * Difficulty: Medium
 * Language: C
 * Mentor:
@@ -387,6 +421,7 @@ supports Visual Studio builds.  Update the sources and the build files to suppor
 
 Python3 in the edk2-libc [[AppPkg|https://github.com/tianocore/edk2-libc/tree/master/AppPkg/Applications/Python/Python-3.6.8]]
 supports IA32/X64.  Update the sources and the build files to support AARCH64.
+* Project Size: Medium
 * Difficulty: Medium
 * Language: C
 * Mentor:
@@ -400,6 +435,7 @@ supports IA32/X64.  Update the sources and the build files to support AARCH64.
 
 Port tools currently implemented in C to Python.  This removes the need to run a
 C compiler to build the tools required to build EDK II firmware.
+* Project Size: Large
 * Difficulty: Hard
 * Language: C, Python
 * Mentor:
@@ -411,6 +447,7 @@ C compiler to build the tools required to build EDK II firmware.
 
 Implement a resource compiler in Python that can add resource sections defined by the 
 UEFI Specification to a PE/COFF image.
+* Project Size: Medium
 * Difficulty: Medium
 * Language: Python
 * Mentor:
@@ -426,6 +463,7 @@ Improvements to existing [[UEFI Driver Wizard]]
 * Update to latest version of wxPython
 * Update for latest UEFI Specifications
 * Consider adding PI module types (PEIMs, DXE Drivers, DXE Runtime Drivers, SMM Drivers)
+* Project Size: Medium
 * Difficulty: Easy
 * Mentor: [[@mdkinney|https://github.com/mdkinney]]
 
@@ -437,6 +475,7 @@ Simplify EDK II development:
 * GUI helper tool to configure platform PCDs.
 * GUI helper tool to configure FLASH layout, Recovery, and Capsules.
 * Automatically set values in [[target.txt]] based on platform configuration (compiler, thread count, etc.).
+* Project Size: Medium
 * Difficulty: Easy...Medium
 * Languages: C, Python
 * Mentor: [[@ashedesimone|https://github.com/ashedesimone]], [[@mdkinney|https://github.com/mdkinney]]
