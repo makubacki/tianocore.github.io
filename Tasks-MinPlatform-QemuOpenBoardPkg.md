@@ -1,5 +1,6 @@
 Build a MinPlatform Board Port for Qemu.
 
+* Project Size: Large
 * Difficulty: Medium
 * Language: C
 * Mentor: 
