@@ -102,16 +102,6 @@ Build a MinPlatform board port for the Raspberry Pi.
 
 More information: [[Tasks-MinPlatform-Port-to-Raspberry-Pi]]
 
-==== Add S3 Resume Support to MinPlatform ====
-
-Currently MinPlatform does not support S3 resume, so let's implement it! This will require implementing support for the SMM lock box, parsing of the DRAM scatter-gather list, and restore of system state. Demonstrate working S3 resume on at least one real board.
-
-* Project Size: Large
-* Difficulty: Medium
-* Language: C
-* Mentor:
-* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
-
 ==== Add CI (Continuous Integration) Boot Testing for EDK II Platforms ====
 
 Update EDK II CI to support testing of platforms in the 
@@ -126,6 +116,18 @@ pass/fail results back to the EDK II CI agent.
 * Language: YAML, Python, C
 * Mentor:
 * Suggested by: [[@mdkinney|https://github.com/mdkinney]]
+
+=== Medium Projects ===
+
+==== Add S3 Resume Support to MinPlatform ====
+
+Currently MinPlatform does not support S3 resume, so let's implement it! This will require implementing support for the SMM lock box, parsing of the DRAM scatter-gather list, and restore of system state. Demonstrate working S3 resume on at least one real board.
+
+* Project Size: Medium
+* Difficulty: Medium..Hard
+* Language: C
+* Mentor:
+* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
 == Testing and Quality Improvements ==
 
