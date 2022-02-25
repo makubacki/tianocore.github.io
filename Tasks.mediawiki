@@ -197,15 +197,6 @@ standard C sources.
 * Mentor:
 * Suggested by: [[@mdkinney|https://github.com/mdkinney]]
 
-==== Dynamic Generation of Terminal Device Setup Pages ====
-
-* Difficulty: Medium
-* Language: C
-* Mentor:
-* Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
-
-More information: TODO
-
 == Accessibility ==
 
 === Large Projects ===
