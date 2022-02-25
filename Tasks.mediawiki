@@ -3,7 +3,7 @@ These tasks have been identified by our community. Many of these tasks would mak
 '''Medium versus Large Projects'''
 * Large Projects should take about 350 hours to complete.
 * Medium Project should take about 175 hours to complete.
-* [[GSoC2022|GSoC Contributors]] that choose large projects will be paid a '''double stipend'''.
+* Large projects are paid a different stipend rate. Please see the [[stipend page|https://developers.google.com/open-source/gsoc/help/student-stipends]] for exact amounts.
 
 '''Skills Required'''
 
