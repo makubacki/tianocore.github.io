@@ -11,8 +11,10 @@ The [tianocore-training](https://github.com/tianocore-training/Tianocore_Trainin
 1. Overview and EDK II Build
 2. UEFI Drivers
 3. Platform Porting and Debug
-4. Advanced Topics (Network, Security, Capsule Update, HII, ...)
+4. Unit Test Framework for Developer validation
+5. Minimum Platform Architecture for the Intel Open Board platforms
+6. Advanced Topics (Network, Security, Capsule Update, HII, ...)
 
 Hands-on labs are available on Microsoft Windows and Linux for multiple platforms: [[OVMF]], [[MinnowBoard Max/Turbot|MinnowBoardMax]], [[Aaeon UpSquared|IntelAtomProcessorE3900]].
 
-Training materials can be viewed directly in a web browser using <a href="https://gitpitch.com/docs/">gitpitch</a>. Supplemental lab materials are available for download.
+Training material presentation PDFs can be viewed directly in a web browser  <a href="https://github.com/tianocore-training/Tianocore_Training_Contents/wiki/Catalog_of_Training#suggested-schedule-with-labs">Presentation PDFs</a>. Supplemental lab materials are available for download <a href="https://github.com/tianocore-training/Lab_Material_FW/archive/main.zip"> Lab_Material_FW.zip </a>
