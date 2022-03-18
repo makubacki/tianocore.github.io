@@ -11,6 +11,7 @@
 
 ## Proposed Features
 * [Generate CloudHv target as PVH ELF binary](https://bugzilla.tianocore.org/show_bug.cgi?id=3848)
+* [Add parallel hash feature into BaseCryptLib](https://bugzilla.tianocore.org/show_bug.cgi?id=3596)
 * TBD
 
 # edk2-stable202208 tag planning
