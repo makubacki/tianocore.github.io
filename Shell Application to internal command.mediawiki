@@ -1,4 +1,3 @@
-{{UEFIShell}}
 
 Internal commands of the shell application are almost the same as a UEFI Application, but they have to register with the shell binary that they are compiled into.  This means that they are made as libraries and use the initialization routine of the library to perform this registration. Internal commands also have a slight increase in the abilities they can have.
 All of this extra requirements and features are contained within ShellCommandLib and most only function when linked within the shell binary image.

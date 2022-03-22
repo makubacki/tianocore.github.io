@@ -1,4 +1,3 @@
-{{UEFIShell}}
 
 = Shell Requirements =
 The shell is explicitly defined as a UEFI 2.1+ Application.  That means that is has a requirement on a completed system table and many protocols.  

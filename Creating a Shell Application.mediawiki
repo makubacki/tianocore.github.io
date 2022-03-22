@@ -1,4 +1,3 @@
-{{UEFIShell}}
 
 A Shell application is a UEFI Application that consumes a shell protocol.  For clarity a UEFI application is a binary that is unloaded upon return from the entry point routine.  The protocols are produced by the shell are EFI_SHELL_PROTOCOL (produced on the shell handle) and EFI_SHELL_PARAMETERS_PROTOCOL (produced on the child application’s handle).  
  Use OpenProtocol function to get the protocol pointers.

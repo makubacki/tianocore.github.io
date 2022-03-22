@@ -1,12 +1,4 @@
-<!-- [[category:FAQ]] -->
-<!-- [[category:EDKII]] -->
-<!-- [[category:UEFI_Shell]] -->
-<!-- [[category:Script]] -->
-[[category:.nsh]]
-
-
-
-{{shell}}
+[[shell]]
 
 Shell questions
 ===Can you write a shell app in EBC?===
