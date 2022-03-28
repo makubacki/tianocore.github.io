@@ -477,6 +477,7 @@ Simplify EDK II development:
 * GUI helper tool to configure platform PCDs.
 * GUI helper tool to configure FLASH layout, Recovery, and Capsules.
 * Automatically set values in [[target.txt]] based on platform configuration (compiler, thread count, etc.).
+* Output a compile_commands.json at build time that can be consumed by various tools like clangd, etc.
 * Project Size: Medium
 * Difficulty: Easy...Medium
 * Languages: C, Python
