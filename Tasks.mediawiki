@@ -50,17 +50,17 @@ More information: TODO
 
 === Medium Projects ===
 
-==== LLVM Optimizations ====
+==== LLVM Sanitizer support ====
 
-LLVM Address Sanitation using Intel MPX to detect buffer overflows
-* Depends on compiler & hardware that supports the Intel MPX compiler
+Add AddressSanitizer, UBSan, and possibly MSAN support to EDK2
+* Depends on the toolchain and possibly CPU architecture
 * Focus on firmware components
-* LLVM Static Analysis to extend Address Sanitation for FW security
+* A branch with UBSan and ASAN already exists, although it's incomplete: https://github.com/shijunjing/edk2/tree/sanitizer2
 * Project Size: Medium
 * Difficulty: Medium...Hard
 * Language: C, Assembly
 * Mentor:
-* Suggested by: [[@shijunjing|https://github.com/shijunjing]]
+* Suggested by: [[@shijunjing|https://github.com/shijunjing]], [[@heatd|https://github.com/heatd]]
 
 == New Platforms and Boards ==
 
