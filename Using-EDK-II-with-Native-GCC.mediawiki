@@ -47,6 +47,36 @@ bash$ export ftp_proxy=$http_proxy
 
 To utilize the subversion source control command behind an internet firewall with a web proxy, you should configure the ~/.subversion/servers file.
 
+===Ubuntu 20.04 LTS===
+
+Note: These instructions utilize GCC5 & NASM compiler support (added in early 2016), along with git (replaces subversion). GCC 4.x is still supported. GCC5 is not mandatory.
+
+====Open the GNOME Terminal program====
+
+These instructions will utilize Ubuntu's built in command shell (bash) via the GNOME Terminal application.  To open the Terminal application, locate it under the Applications menu and the Accessories sub-menu.
+
+====Install required software from apt====
+
+Several Ubuntu packages will be needed to set up the build environment for EDK II. The following command will install all required packages:
+
+<pre>
+bash$ sudo apt install build-essential uuid-dev iasl git  nasm  python-is-python3
+</pre>
+
+:build-essential - Informational list of build-essential packages 
+:uuid-dev -  Universally Unique ID library (headers and static libraries)
+:iasl - Intel ASL compiler/decompiler (also provided by acpica-tools)
+:git - support for git revision control system 
+:nasm - General-purpose x86 assembler
+:python-is-python3 - Ubuntu 20.04 python command is 'python3' but edk2 tools use 'python'
+
+
+===Continue with common instructions===
+
+The [[Common instructions|remaining instructions]] are common for most UNIX-like systems.
+
+
+
 ===Ubuntu 16.04 LTS / Ubuntu 16.10===
 
 Note: These instructions utilize GCC5 & NASM compiler support (added in early 2016), along with git (replaces subversion). GCC 4.x is still supported. GCC5 is not mandatory.
