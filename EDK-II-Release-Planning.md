@@ -10,6 +10,11 @@
 | 2022-05-27           | Release                                  |
 
 ## Proposed Features
+* [Support PEI 64bit in IntelFsp2Pkg and IntelFsp2WrapperPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3893)
+* [IntelFsp2Pkg: BaseFspCommonLib Support for X64 Build](https://bugzilla.tianocore.org/show_bug.cgi?id=3867)
+* [Add PrmPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3812)
+* [BaseTools Enhance GenFw to support PRM GCC build](https://bugzilla.tianocore.org/show_bug.cgi?id=3802)
+* [Enable Intel TDX in OvmfPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3429)
 * [Generate CloudHv target as PVH ELF binary](https://bugzilla.tianocore.org/show_bug.cgi?id=3848)
 * [Add parallel hash feature into BaseCryptLib](https://bugzilla.tianocore.org/show_bug.cgi?id=3596)
 * TBD
