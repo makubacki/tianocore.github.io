@@ -29,6 +29,98 @@ standard:
 * **UncrustifyCheck.py** - The actual Python file that is the CI plugin. Like all CI plugins, this plugin can be run
   in local CI and server CI.
 
+## How to Find Uncrustify Formatting Errors in Continuous Integration (CI)
+
+The EDK II project uses Azure Pipelines to check that pull requests meet the compilation and formatting requirements
+for new code submissions. If a code formatting error is found, the UncrustifyCheck plugin will indicate the files that
+contained errors and, if the option is enabled (it currently is by default), a detailed diff of the formatting changes
+required for the code to pass the formatting checks.
+
+This section provides the instructions on how to locate these pieces of information in the Azure Pipelines UI. It
+is based on a PR that intentionally introduces a code formatting issue in MdeModulePkg/Core/Dxe/DxeMain/DxeMain.c.
+
+1. Recognize the problem in the GitHub PR
+
+   EDK II pull requests are tracked in the [`"Pull Requests"`](https://github.com/tianocore/edk2/pulls) tab.
+
+   The CI build results are visible in real-time. If any checks fail, the pipeline that contained the failure will be
+   associated with a red "x" (as opposed to a green check mark).
+
+   **Example:**
+
+   ![Failure in Pull Request](images/edk-ii-code-formatting/github-pr-failure-message.png "Failure in Pull Request")
+
+   We are going to follow the first pipeline "Ubuntu GCC5 PR" to investigate the problem by clicking `"Details"`.
+
+2. Determine the Failure Reason
+
+   ![Reasons for PR Failure](images/edk-ii-code-formatting/github-pr-build-failure-uncrustifycheck.png "Reasons for PR Failure")
+
+   On this page, it is shown that 1 failure occurred and that is due to 1 incorrectly formatted file in MdeModulePkg.
+
+   To get more information, we need to go to the pipeline. That is done by clicking `"View more details on Azure
+   Pipelines"`.
+
+3. Find the Failing Job in the Pipeline
+
+   We are now presented with a list of jobs that make up the pipeline. At least one should have failed. In the case
+   shown below, it is "Build_GCC5 TARGET_MDEMODULE_RELEASE".
+
+   ![Failing Job in Pipeline](images/edk-ii-code-formatting/azure-devops-job-failure.png "Failing Job in Pipeline")
+
+   To get more information about this job, click it (`Build_GCC5 TARGET_MDEMODULE_RELEASE`).
+
+4. Find the Build Failure Information in the Build Step
+
+   Now a series of steps that make up that build job are shown. At least one should have failed, which led to the job
+   failure. In the case below, it is "Build and Test MdeModulePkg".
+
+   ![Failing Step in Job](images/edk-ii-code-formatting/azure-devops-build-log-file-failure.png "Failing Step in Job")
+
+   This confirms the failure occurred from the UncrustifyCheck plugin for one file -
+   MdeModulePkg/Core/Dxe/DxeMain/DxeMain.c.
+
+5. Go to the Job's Test Results
+
+   At this point, we could go run Uncrustify locally against the file ([directions on this page](#how-to-run-uncrustify)).
+
+   However, we are going to see exactly what changes led to the formatting issue in the file as reported from the CI
+   results.
+
+   Back in the job page, a summary is shown at the top of the page like the following:
+
+   ![Build Test Results](images/edk-ii-code-formatting/azure-pipelines-pr-summary-test-failed-percentage.png "Build Test Results")
+
+   To learn more about the test results, click the text. In this case, `92.5% passed`.
+
+6. Go to the Failing Test Results
+
+   We can see the test that failed is the "coding standard compliance" test in MdeModulePkg. We expected that based on
+   the earlier information we found.
+
+   To learn more about this failure, click the test. In this case,
+   `Check file coding standard compliance in Edk2CiBuild.Edk2.MdeModulePkg`.
+
+   ![Failing Test Result](images/edk-ii-code-formatting/azure-devops-test-results-failure-screen.png "Failing Test Result")
+
+7. Go to the Test Attachments
+
+   We can again see this failure is regarding 1 file in MdeModulePkg. Click `Attachments` to get the error log which
+   has the detailed information.
+
+   ![Coding Standard Test Result](images/edk-ii-code-formatting/azure-devops-test-results-coding-standard-result.png "Coding Standard Test Result")
+
+8. Go to the Error Log  Attachment
+
+   Now, click the error log to get the error output. In this case, click `Standard_Error_Output.log`.
+
+   ![Standard Output Error Log](images/edk-ii-code-formatting/azure-devops-test-failed-standard-error-output.png "Standard Output Error Log")
+
+   This log shows the exact changes that are needed to pass code formatting.
+
+   If the changes are not visible, verify whitespace requirements such as line endings being CRLF are present in the
+   files, especially in newly added files.
+
 ## EDK II Uncrustify Fork
 
 Due to nuances in the way EDK II formats code, some changes were made to the upstream Uncrustify application. These
