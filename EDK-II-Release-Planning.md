@@ -17,6 +17,7 @@
 * [Enable Intel TDX in OvmfPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3429)
 * [Generate CloudHv target as PVH ELF binary](https://bugzilla.tianocore.org/show_bug.cgi?id=3848)
 * [Add parallel hash feature into BaseCryptLib](https://bugzilla.tianocore.org/show_bug.cgi?id=3596)
+* [Configure/Enable elliptic curve ciphers in OpenSSL](https://bugzilla.tianocore.org/show_bug.cgi?id=3679)
 * [Add FMMT tool into edk2 BaseTools](https://bugzilla.tianocore.org/show_bug.cgi?id=1847)
 * TBD
 
