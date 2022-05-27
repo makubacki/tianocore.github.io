@@ -19,7 +19,7 @@
 * [Add parallel hash feature into BaseCryptLib](https://bugzilla.tianocore.org/show_bug.cgi?id=3596)
 * [Configure/Enable elliptic curve ciphers in OpenSSL](https://bugzilla.tianocore.org/show_bug.cgi?id=3679)
 * [Add FMMT tool into edk2 BaseTools](https://bugzilla.tianocore.org/show_bug.cgi?id=1847)
-* TBD
+* [Dynamic variable flash information cannot be passed in Standalone MM](https://bugzilla.tianocore.org/show_bug.cgi?id=3479)
 
 # edk2-stable202208 tag planning
 
