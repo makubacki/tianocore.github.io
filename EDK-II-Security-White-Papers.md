@@ -10,13 +10,16 @@ A list of White Papers and information for EDK II Security from multiple sources
 
 
 **General:**
-* [uefi.org - Threat Modeling for Modern System FW.pdf](http://www.uefi.org/sites/default/files/resources/Intel-UEFI-ThreatModel.pdf) (July 2013)
+* [Book - building secure firmware](https://www.amazon.com/Building-Secure-Firmware-Armoring-Foundation/dp/1484261054) (October 2020)
 * [uefi.org - An Introduction to Platform Security](http://www.uefi.org/sites/default/files/resources/Intel_An%20Introduction%20to%20Platform%20.pdf) (Spring 2018)
+* [uefi.org - Threat Modeling for Modern System FW.pdf](http://www.uefi.org/sites/default/files/resources/Intel-UEFI-ThreatModel.pdf) (July 2013)
 
 **EDK II Code:**
 * [A Tour Beyond BIOS - Security Design Guide in_EDK_II.pdf](https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Security_Design_Guide_in_EDK_II.pdf) (Sept 2016)
 * [EDK II Secure Coding Guide ](https://tianocore-docs.github.io/EDK_II_Secure_Coding_Guide/draft/) (June 2019) 
 * [EDK II Secure Code Review Guide ](https://tianocore-docs.github.io/EDK_II_Secure_Code_Review_Guide/draft/) (June 2019)
+* [OCP - Secure Firmware Development Best Practices](https://github.com/opencomputeproject/Security/blob/master/SecureFirmwareDevelopmentBestPractices.md) (May 2020)
+* [Universal Scalable Firmware - Security](https://universalscalablefirmware.github.io/documentation/5_security.html) (October 2021)
 
 **Memory Protection:**
 * [A Tour Beyond BIOS – Memory Protection in UEFI BIOS - gitbook](https://edk2-docs.gitbook.io/a-tour-beyond-bios-memory-protection-in-uefi-bios)  (March 2017)
@@ -27,15 +30,15 @@ A list of White Papers and information for EDK II Security from multiple sources
 * [uefi.org - SMM Protection in EDK II ](http://www.uefi.org/sites/default/files/resources/Jiewen%20Yao%20-%20SMM%20Protection%20in%20%20EDKII_Intel.pdf) (Spring 2017)
 
 **SecureBoot/AuthVariable:**
-* [A Tour Beyond BIOS - Implementing UEFI Authenticated Variables in SMM with EDK II](https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf) (Oct 2015)
 * [Understanding the UEFI Secure Boot Chain](https://tianocore-docs.github.io/Understanding_UEFI_Secure_Boot_Chain/draft/) (June 2019)
+* [A Tour Beyond BIOS - Implementing UEFI Authenticated Variables in SMM with EDK II](https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf) (Oct 2015)
 
 **TrustedBoot/TPM2:**
-* [A Tour Beyond BIOS - with the UEFI TPM2 Support in EDK II](https://software.intel.com/sites/default/files/managed/94/2d/a_tour_beyond_bios_implementing_tpm2_support_in_edkii.pdf) (Sept 2014)
 * [Understanding the Trusted Boot Chain Implementation](https://tianocore-docs.github.io/edk2-TrustedBootChain/release-1.00/edk2-TrustedBootChain-release-1.00.pdf) (Nov 2020)
+* [A Tour Beyond BIOS - with the UEFI TPM2 Support in EDK II](https://software.intel.com/sites/default/files/managed/94/2d/a_tour_beyond_bios_implementing_tpm2_support_in_edkii.pdf) (Sept 2014)
 
 **DMA:**
-[A Tour Beyond BIOS - Using IOMMU for DMA Protection in UEFI firmware](https://software.intel.com/sites/default/files/managed/8d/88/intel-whitepaper-using-iommu-for-dma-protection-in-uefi.pdf ) (Oct 2017)
+[A Tour Beyond BIOS - Using IOMMU for DMA Protection in UEFI firmware](https://software.intel.com/sites/default/files/managed/8d/88/intel-whitepaper-using-iommu-for-dma-protection-in-uefi.pdf) (Oct 2017)
 
 **Capsule/Recovery:**
 [A Tour Beyond BIOS - Capsule Update and Recovery in EDK II](https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Capsule_Update_and_Recovery_in_EDK_II.pdf) (Dec 2016)
@@ -47,9 +50,9 @@ A list of White Papers and information for EDK II Security from multiple sources
 [A Tour Beyond BIOS - Implementing Profiling in EDK_II ](https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_Profiling_in_EDK_II.pdf) (July 2016)
 
 **STM/VMM:**
-* [A Tour Beyond BIOS -  Launching STM to Monitor SMM in EDK II](https://software.intel.com/sites/default/files/managed/f0/46/a_tour_beyond_bios_launching_stm_to_monitor_smm_in_efi_developer_kit_ii.pdf) (Aug 2015)
-* [ A Tour Beyond BIOS - Launching a VMM in EDK II](https://software.intel.com/sites/default/files/managed/7a/3c/a_tour_beyond_bios_launching_vmm_in_efi_developer_kit_ii_0.pdf) (Oct 2015)
-* [A Tour Beyond BIOS - Supporting SMM Resource Monitor using EDK II ](https://software.intel.com/sites/default/files/managed/85/7d/a_tour_beyond_bios_supporting_smm_resource_monitor_using_the_efi_developer_kit_ii.pdf) (June 2015)
+* [A Tour Beyond BIOS -  Launching STM to Monitor SMM in EDK II](https://www.intel.com/content/dam/develop/external/us/en/documents/a-tour-beyond-bios-launching-stm-to-monitor-smm-in-efi-developer-kit-ii-819978.pdf) (Aug 2015)
+* [ A Tour Beyond BIOS - Launching a VMM in EDK II](https://www.intel.com/content/dam/develop/external/us/en/documents/a-tour-beyond-bios-launching-vmm-in-efi-developer-kit-ii-0-819978.pdf) (Oct 2015)
+* [A Tour Beyond BIOS - Supporting SMM Resource Monitor using EDK II ](https://docplayer.net/18646000-A-tour-beyond-bios-supporting-an-smm-resource-monitor-using-the-efi-developer-kit-ii.html) (June 2015)
 
 **StandaloneMM:**
-[A Tour Beyond BIOS - Launching Standalone SMM Drivers in the PEI Phase using EDK II](https://software.intel.com/sites/default/files/managed/46/ba/a_tour_beyond_bios_launching_standalone_smm_drivers_in_pei_using_the_efi_developer_kit_ii.pdf) (May 2015)
+[A Tour Beyond BIOS - Launching Standalone SMM Drivers in the PEI Phase using EDK II](https://raw.githubusercontent.com/vincentjzimmer/Documents/master/A_Tour_Beyond_BIOS_Launching_Standalone_SMM_Drivers_in_PEI_using_the_EFI_Developer_Kit_II.pdf) (May 2015)
