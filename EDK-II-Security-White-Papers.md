@@ -35,7 +35,7 @@ A list of White Papers and information for EDK II Security from multiple sources
 
 **TrustedBoot/TPM2:**
 * [Understanding the Trusted Boot Chain Implementation](https://tianocore-docs.github.io/edk2-TrustedBootChain/release-1.00/edk2-TrustedBootChain-release-1.00.pdf) (Nov 2020)
-* [A Tour Beyond BIOS - with the UEFI TPM2 Support in EDK II](https://software.intel.com/sites/default/files/managed/94/2d/a_tour_beyond_bios_implementing_tpm2_support_in_edkii.pdf) (Sept 2014)
+* [A Tour Beyond BIOS - with the UEFI TPM2 Support in EDK II](https://pdfslide.net/documents/white-paper-a-tour-beyond-bios-with-the-uefi-tpm2-support-paper-a-tour-beyond.html) (Sept 2014)
 * [FSP2 Measurement and Attestation](https://cdrdv2.intel.com/v1/dl/getContent/644001) (July 2021)
 * [uefi.org - Traceable Firmware Bill of Materials Overview](https://uefi.org/sites/default/files/resources/Traceable%20Firmware%20Bill%20of%20Materials%20-%2020211207%20-%20007.pdf)
 
@@ -54,7 +54,7 @@ A list of White Papers and information for EDK II Security from multiple sources
 **STM/VMM:**
 * [A Tour Beyond BIOS -  Launching STM to Monitor SMM in EDK II](https://www.intel.com/content/dam/develop/external/us/en/documents/a-tour-beyond-bios-launching-stm-to-monitor-smm-in-efi-developer-kit-ii-819978.pdf) (Aug 2015)
 * [ A Tour Beyond BIOS - Launching a VMM in EDK II](https://www.intel.com/content/dam/develop/external/us/en/documents/a-tour-beyond-bios-launching-vmm-in-efi-developer-kit-ii-0-819978.pdf) (Oct 2015)
-* [A Tour Beyond BIOS - Supporting SMM Resource Monitor using EDK II ](https://docplayer.net/18646000-A-tour-beyond-bios-supporting-an-smm-resource-monitor-using-the-efi-developer-kit-ii.html) (June 2015)
+* [A Tour Beyond BIOS - Supporting SMM Resource Monitor using EDK II](https://docplayer.net/18646000-A-tour-beyond-bios-supporting-an-smm-resource-monitor-using-the-efi-developer-kit-ii.html) (June 2015)
 
 **StandaloneMM:**
-[A Tour Beyond BIOS - Launching Standalone SMM Drivers in the PEI Phase using EDK II](https://docplayer.net/30761219-A-tour-beyond-bios-launching-standalone-smm-drivers-in-the-pei-phase-using-the-efi-developer-kit-ii.html) (May 2015)
+[A Tour Beyond BIOS - Launching Standalone SMM Drivers in the PEI Phase using EDK II](https://www.intel.com/content/dam/develop/public/us/en/documents/a-tour-beyond-bios-launching-standalone-smm-drivers-in-pei-using-the-efi-developer-kit-ii.pdf) (May 2015)
