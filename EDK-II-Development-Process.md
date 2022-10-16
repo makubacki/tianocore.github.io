@@ -257,6 +257,23 @@ The maintainer process for the EDK II project
 
     - Mark BZ issues as Resolved/Fixed.
 
+The maintainer process for the EDK II BaseTools project
+-------------------------------------------------------
+
+[EDK II BaseTools project](https://github.com/tianocore/edk2-basetools) is a Tianocore-maintained project consisting of the python source files that make up EDK2 basetools. It provides an easy way to organize and share python code to facilitate reuse across environments, tools, and scripts. In the future, this project will be the only location of the EDK II BaseTools python source code, and the EDK II project will remove all BaseTools python source code. 
+
+Now, we are in the phase where the BaseTools python code is in both the [edk2](https://github.com/tianocore/edk2) repository and the [edk2-basetools](https://github.com/tianocore/edk2-basetools) repository. The BaseTools maintainer should follow the following steps to keep the code in sync. 
+
+1. After the patch gets reviewed, the maintainer creates a PR to edk-basetools repo, and merges it into edk2-basetools repo if the CI checks pass.
+2. Wait for the new version pip module generated in pypi.org.
+3. Update edk2-basetools value to the latest basetools pip module version from edk2/pip-requirements.txt file. Create a PR to the edk2 repo to trigger edk2 CI to do the packages build tests.
+4. Create a pip-requirement patch and send it to community review.
+5. Get the Reviewed-by from the reviewers.
+6. Create a PR and merge the pip-requirement change to edk2 repository.
+7. Create a PR and merge the basetools patch to edk2 repository.
+
+
+
 Updating your master branch
 ---------------------------
 
