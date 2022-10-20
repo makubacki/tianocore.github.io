@@ -4,8 +4,8 @@ to automatically format C code to match the EDK II C Coding Standard. Details on
 and run uncrustify for EDK II can be found at [[EDK II Code Formatting]].
 
 The official C Coding Standards specification can be found at:
+* EDK II C Coding Standards 2.2 [https://tianocore-docs.github.io/edk2-CCodingStandardsSpecification/release-2.20/ HTML] | [https://tianocore-docs.github.io/edk2-CCodingStandardsSpecification/release-2.20/edk2-CCodingStandardsSpecification-release-2.20.pdf .PDF]
 
-* [https://github.com/tianocore-docs/Docs/raw/master/Specifications/CCS_2_1_Draft.pdf EDK II C Coding Standards_2.1 Draft .PDF]
 __TOC__
 
 
