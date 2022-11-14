@@ -10,6 +10,8 @@
 | 2022-11-25           | Release                                  |
 
 ## Proposed Features
+* [CryptoPkg remove EC PCD and merge optimized openssl libs](https://bugzilla.tianocore.org/show_bug.cgi?id=4149)
+* [Add GoogleTest unit test support to UnitTestFrameworkPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=4134)
 * [Add Raw algorithm support using Arm FW-TRNG interface](https://bugzilla.tianocore.org/show_bug.cgi?id=3668)
 * [TDVF Lazy Accept in OvmfPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=3937)
 * [Debug code to audit BIOS TPM extend operations](https://bugzilla.tianocore.org/show_bug.cgi?id=2858)
