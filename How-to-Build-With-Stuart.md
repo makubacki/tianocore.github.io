@@ -16,6 +16,7 @@ If you've already completed these steps you don't need to run them again.
 <details>
   <summary>Pre-requisites (Git, Python, Compiler)</summary>
   <hr>
+
   <ul>
   <li>
   <strong>Git - Source Control Management (SCM) Tool</strong>
@@ -61,50 +62,127 @@ If you've already completed these steps you don't need to run them again.
     </details>
     <li><a href="https://visualstudio.microsoft.com/downloads/" target="_blank">Visual Studio</a> on Windows</li>
     <details>
-    <summary>Visual Studio Installation Instructions (Windows)</summary>
-    <br>
-    Note that you can find the latest version of Visual Studio supported by edk2 on the
-    <a href="https://github.com/tianocore/edk2#core-ci-build-status" target="_blank">CI Status</a> section of the repo readme file.
-    <ul>
-      <li><a href="https://aka.ms/vs/17/release/vs_BuildTools.exe" target="_blank">Visual Studio 2022 Build Tools</a>
-      <li><a href="https://aka.ms/vs/16/release/vs_BuildTools.exe" target="_blank">Visual Studio 2019 Build Tools</a>
-      <li><a href="https://aka.ms/vs/15/release/vs_BuildTools.exe" target="_blank">Visual Studio 2017 Build Tools</a>
-    </ul>
-    <br>
-    <ol>
-      <li>
-      Open an <strong>Administrator Command Prompt</strong> by right-clicking on <strong>Command Prompt</strong> and
-      select <strong>Run as Administrator</strong>
-      </li>
-      <li>
-      Change to the directory where you downloaded the <code>vs_BuildTools.exe</code> file
-      (e.g. <code>C:\Downloads</code>)
-      </li>
-      <li>
-      Enter the following command:
+      <summary>Visual Studio Installation Instructions (Windows)</summary>
       <br>
-      <kbd>start /w vs_BuildTools.exe --quiet --add Microsoft.VisualStudio.Workload.VCTools;includeRecommended --noUpdateInstaller --norestart</kbd>
-      </li>
-    </ol>
-    <br>
+      <details>
+        <summary>Visual Studio 2022 Installation Instructions</summary>
+        <hr>
+        <p>
+          Click to download <a href="https://aka.ms/vs/17/release/vs_BuildTools.exe" target="_blank">Visual Studio 2022 Build Tools</a>
+        </p>
+        <ol>
+          <li>
+            Open an <strong>Administrator Command Prompt</strong> by right-clicking on <strong>Command Prompt</strong> and
+            select <strong>Run as Administrator</strong>
+          </li>
+          <li>
+            Change to the directory where you downloaded the <code>vs_BuildTools.exe</code> file
+            (e.g. <code>C:\Downloads</code>)
+          </li>
+          <li>
+            Enter the following command:
+            <br>
+            <kbd>
+              start /w vs_BuildTools.exe --quiet --wait --norestart --nocache --installPath C:\BuildTools ^
+              --add Microsoft.VisualStudio.Component.VC.CoreBuildTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 ^
+              --add Microsoft.VisualStudio.Component.Windows11SDK.22000 --add Microsoft.VisualStudio.Component.VC.Tools.ARM ^
+              --add Microsoft.VisualStudio.Component.VC.Tools.ARM64
+            </kbd>
+          </li>
+        </ol>
+        <hr>
+    </details>
+    <details>
+      <summary>Visual Studio 2019 Installation Instructions</summary>
+      <hr>
+      <p>
+        Click to download <a href="https://aka.ms/vs/16/release/vs_BuildTools.exe" target="_blank">Visual Studio 2019 Build Tools</a>
+      </p>
+      <ol>
+        <li>
+          Open an <strong>Administrator Command Prompt</strong> by right-clicking on <strong>Command Prompt</strong> and
+          select <strong>Run as Administrator</strong>
+        </li>
+        <li>
+          Change to the directory where you downloaded the <code>vs_BuildTools.exe</code> file
+          (e.g. <code>C:\Downloads</code>)
+        </li>
+        <li>
+          Enter the following command:
+          <br>
+          <kbd>
+            start /w vs_BuildTools.exe --quiet --wait --norestart --nocache --installPath C:\BuildTools ^
+            --add Microsoft.VisualStudio.Component.VC.CoreBuildTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 ^
+            --add Microsoft.VisualStudio.Component.Windows10SDK.19041 --add Microsoft.VisualStudio.Component.VC.Tools.ARM ^
+            --add Microsoft.VisualStudio.Component.VC.Tools.ARM64
+          </kbd>
+        </li>
+      </ol>
+      <hr>
+    </details>
+    <details>
+      <summary>Visual Studio 2017 Installation Instructions</summary>
+      <hr>
+      <p>
+        Click to download <a href="https://aka.ms/vs/15/release/vs_BuildTools.exe" target="_blank">Visual Studio 2017 Build Tools</a>
+      </p>
+      <ol>
+        <li>
+        Open an <strong>Administrator Command Prompt</strong> by right-clicking on <strong>Command Prompt</strong> and
+        select <strong>Run as Administrator</strong>
+        </li>
+        <li>
+        Change to the directory where you downloaded the <code>vs_BuildTools.exe</code> file
+        (e.g. <code>C:\Downloads</code>)
+        </li>
+        <li>
+          Enter the following command:
+          <br>
+          <kbd>
+            start /w vs_BuildTools.exe --quiet --wait --norestart --nocache --installPath C:\BuildTools ^
+            --add Microsoft.VisualStudio.Component.VC.CoreBuildTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 ^
+            --add Microsoft.VisualStudio.Component.Windows10SDK.17763 --add Microsoft.VisualStudio.Component.VC.Tools.ARM ^
+            --add Microsoft.VisualStudio.Component.VC.Tools.ARM64
+          </kbd>
+        </li>
+      </ol>
+      <hr>
+    </details>
     <p>
-    Download the Windows Software Development Kit (SDK) from
-    <a href="https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/" target="_blank">Windows Dev Center - Windows SDK</a>
+      <ul>
+        <li>
+          Note: You can find the latest version of Visual Studio supported by edk2 on the
+          <a href="https://github.com/tianocore/edk2#core-ci-build-status" target="_blank">CI Status</a> section of the repo readme file.
+        </li>
+        <li>
+          Note: If you still run into build problems finding tools in the SDK, try installing the Windows SDK manually
+          using the following instructions.
+        </li>
+      </ul>
     </p>
-    <p>
-    Follow the default options until you reach the "<strong>Select the features you want to install</strong>" page.
-    </p>
-    Select the following options:
-    <ul>
-    <li>Windows SDK Signing Tools for Desktop Apps</li>
-    <li>Windows SDK for UWP Managed Apps</li>
-    <li>Windows SDK for UWP C++ Apps</li>
-    <li>Windows SDK for Desktop C++ x86 Apps</li>
-    <li>Windows SDK for Desktop C++ amd64 Apps</li>
-    <li>Windows SDK for Desktop C++ arm Apps</li>
-    </ul>
-    <br>
-    Click <strong>Download</strong> and complete the installation process.
+    <details>
+      <summary>Optional: Install the Windows SDK manually</summary>
+      <hr>
+      <p>
+        Download the Windows Software Development Kit (SDK) from
+        <a href="https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/" target="_blank">Windows Dev Center - Windows SDK</a>
+      </p>
+      <p>
+        Follow the default options until you reach the "<strong>Select the features you want to install</strong>" page.
+      </p>
+      Select the following options:
+      <ul>
+        <li>Windows SDK Signing Tools for Desktop Apps</li>
+        <li>Windows SDK for UWP Managed Apps</li>
+        <li>Windows SDK for UWP C++ Apps</li>
+        <li>Windows SDK for Desktop C++ x86 Apps</li>
+        <li>Windows SDK for Desktop C++ amd64 Apps</li>
+        <li>Windows SDK for Desktop C++ arm Apps</li>
+      </ul>
+      <p>
+        Click <strong>Download</strong> and complete the installation process.
+      </p>
+      <hr>
     </details>
   </ul>
   </li>
@@ -194,94 +272,306 @@ session and return.
 
 That's it to do a basic build.
 
-The remainder of this page contains more details about the `stuart_ci_build` command.
+The remainder of this page contains more details about the `stuart_ci_build` and `stuart_build` commands.
 
 ---
 
 <details>
 <summary>More Advanced <code>stuart_ci_build</code> Options</summary>
-<i>Todo</i>
+<i>Todo - Talk about reports, skipping certain build points, clean build, shell config files, etc.</i>
 </details>
 
 ## Examples
 
 <details>
 <summary>Example: I want to build MdeModulePkg to test a change I made there.</summary>
-<i>Todo</i>
+<hr>
+<p>
+The important parameter here is the <code>-p</code> parameter which specifies that <code>MdeModulePkg</code> should
+be built.
+</p>
+<p>
+The example below uses:
+<ul>
+<li>
+The <code>TOOL_CHAIN_TAG</code> parameter to specify the build should use <code>VS2019</code> (Visual Studio 2019).
+</li>
+<li>
+The <code>-a</code> parameter is used to specify that the <code>IA32</code> and <code>X64</code> architectures should
+be built.
+</li>
+</ul>
+</p>
+
+<kbd>stuart_ci_build -c .pytool/CISettings.py -p MdeModulePkg -a IA32,X64 TOOL_CHAIN_TAG=VS2019</kbd>
+<hr>
 </details>
 
 <details>
 <summary>Example: I want to build OvmfPkg to test a change I made there.</summary>
-<i>Todo</i>
+<hr>
+<p>
+OvmfPkg is considered a "platform firmware" for the
+<a href="https://www.qemu.org/" target="_blank">QEMU open-source emulator</a>.
+
+<ul>
+<li>
+Therefore, it provides a platform build file (see <a href="#what-is-platformbuild-py">What is PlatformBuild.py?</a>)
+<ul>
+<li>
+Located at <a href="https://github.com/tianocore/edk2/blob/master/OvmfPkg/PlatformCI/PlatformBuild.py" target="_blank">OvmfPkg/PlatformCI/PlatformBuild.py</a>
+</li>
+</ul>
+</li>
+<li>
+Because we are building a platform build file, the build command will be <code>stuart_build</code> instead of
+<code>stuart_ci_build</code> to compile the code
+</li>
+</ul>
+
+<kbd>stuart_build -c PlatformBuild.py -p OvmfPkg -a IA32,X64 TOOL_CHAIN_TAG=VS2019</kbd>
+
+<p>
+If you want to run CI checks such as CI plugins, you can use <code>stuart_ci_build</code> with the CI build file.
+</p>
+
+<kbd>stuart_ci_build -c .pytool/CISettings.py -p OvmfPkg -a IA32,X64 TOOL_CHAIN_TAG=VS2019</kbd>
+
+<hr>
 </details>
 <details>
 
 <summary>Example: I want to build OvmfPkg and automatically run with my firmware after build.</summary>
-<i>Todo</i>
+<hr>
+<p>
+OvmfPkg is considered a "platform firmware" for the
+<a href="https://www.qemu.org/" target="_blank">QEMU open-source emulator</a>.
+
+<ul>
+<li>
+Therefore, it provides a platform build file (see <a href="#what-is-platformbuild-py">What is PlatformBuild.py?</a>)
+<ul>
+<li>
+Located at <a href="https://github.com/tianocore/edk2/blob/master/OvmfPkg/PlatformCI/PlatformBuild.py" target="_blank">OvmfPkg/PlatformCI/PlatformBuild.py</a>
+</li>
+</ul>
+</li>
+<li>
+Because we are building a platform build file, the build command will be <code>stuart_build</code> instead of
+<code>stuart_ci_build</code>
+</li>
+</ul>
+
+To see what parameters are supported by this platform build file (at the time this page was written), we can pass the
+<code>--help</code> argument to the <code>stuart_build</code> command:
+
+<pre>
+❯ stuart_build -c PlatformBuild.py --help
+usage: stuart_build [-h] [--SKIPBUILD] [--SKIPPREBUILD] [--SKIPPOSTBUILD] [--FLASHONLY] [--FLASHROM]
+                    [--UPDATECONF] [--CLEAN] [--CLEANONLY] [--OUTPUTCONFIG OUTPUTCONFIG] [-a BUILD_ARCH]
+                    [--build-config BUILD_CONFIG] [--verbose]
+
+options:
+  -h, --help            show this help message and exit
+  --SKIPBUILD, --skipbuild, --SkipBuild
+                        Skip the build process
+  --SKIPPREBUILD, --skipprebuild, --SkipPrebuild
+                        Skip prebuild process
+  --SKIPPOSTBUILD, --skippostbuild, --SkipPostBuild
+                        Skip postbuild process
+  --FLASHONLY, --flashonly, --FlashOnly
+                        Flash rom after build.
+  --FLASHROM, --flashrom, --FlashRom
+                        Flash rom. Rom must be built previously.
+  --UPDATECONF, --updateconf, --UpdateConf
+                        Update Conf. Builders Conf files will be replaced with latest template files
+  --CLEAN, --clean, --CLEAN
+                        Clean. Remove all old build artifacts and intermediate files
+  --CLEANONLY, --cleanonly, --CleanOnly
+                        Clean Only. Do clean operation and don't build just exit.
+  --OUTPUTCONFIG OUTPUTCONFIG, --outputconfig OUTPUTCONFIG, --OutputConfig OUTPUTCONFIG
+                        Provide shell variables in a file
+  -a BUILD_ARCH, --arch BUILD_ARCH
+                        Optional - CSV of architecture to build. IA32 will use IA32 for Pei & Dxe. X64 will use
+                        X64 for both PEI and DXE. IA32,X64 will use IA32 for PEI and X64 for DXE. default is
+                        IA32,X64
+  --build-config BUILD_CONFIG
+                        Provide shell variables in a file
+  --verbose, --VERBOSE, -v
+                        verbose
+
+positional arguments:
+  <key>=<value>              - Set an env variable for the pre/post build process
+  BLD_*_<key>=<value>        - Set a build flag for all build types
+                               (key=value will get passed to build process)
+  BLD_<TARGET>_<key>=<value> - Set a build flag for build type of <target>
+                               (key=value will get passed to build process for given build type)
+</pre>
+</p>
+<p>
+The <code>--flashonly</code> and <code>--flashrom</code> commands are especially useful with OvmfPkg. They
+automatically load QEMU with the newly built firmware.
+
+The example below uses:
+<ul>
+<li>The <code>TOOL_CHAIN_TAG</code> parameter to specify that the build should use <code>GCC5</code>
+to build with GCC.
+</li>
+<li>
+The <code>-a</code> parameter is used to specify the <code>IA32</code> and <code>X64</code> architectures should be
+built.
+</li>
+<li>
+The <code>--flashrom</code> parameter is used to load the firmware in QEMU and boot QEMU after the firmware build
+is completed.
+</li>
+</ul>
+</p>
+
+<kbd>stuart_build -c PlatformBuild.py -p OvmfPkg -a IA32,X64 TOOL_CHAIN_TAG=GCC5 --flashrom</kbd>
+<hr>
 </details>
 
 <details>
 <summary>Example: I want to build BaseTools.</summary>
-<i>Todo</i>
+<hr>
+<a href="#what-are-basetools">BaseTools</a> has its own build script that leverages
+<a href="#what-are-edk2-pytools">edk2-pytools</a> to build the BaseTools applications.
+<br>
+<br>
+<details>
+<summary>Linux (Ubuntu) Pre-Steps</summary>
+<kbd>sudo apt-get update</kbd>
+<br>
+<kbd>sudo apt-get install gcc g++ make uuid-dev</kbd>
+</details>
+<p>
+The file <a href="https://github.com/tianocore/edk2/blob/master/BaseTools/Edk2ToolsBuild.py" target="_blank">BaseTools/Edk2ToolsBuild.py</a>
+can be called as a standalone Python script. You just need to pass the tool chain tag you would like to build with.
+
+Example:
+<kbd>python BaseTools/Edk2ToolsBuild.py -t GCC5</kbd>
+</p>
+<hr>
 </details>
 
 <details>
 <summary>Example: I just want to check if my changes will pass all the non-compiler checks in CI.</summary>
-<i>Todo</i>
+<hr>
+<p>
+The <code>NO-TARGET</code> build target specifies that the actual firmware source code should not be built for any
+particular target and, instead, the other parts of the CI process will be active such as the non-compiler checks
+(<a href="#what-are-plugins">plugins</a>).
+</p>
+<p>
+In the following example, the CI plugins will be run against all packages supported by the
+<a href="#what-is-ci-settings-py">CISettings.py</a> file.
+</p>
+<kbd>stuart_ci_build -c .pytool/CISettings.py -t NO-TARGET</kbd>
+<p>
+The CI checks could be run against a single package (or a selection of packages) by passing the package names to
+with the <code>-p</code> parameter.
+</p>
+<kbd>stuart_ci_build -c .pytool/CISettings.py -p MdePkg,UefiCpuPkg -t NO-TARGET</kbd>
+<hr>
 </details>
 
 <details>
 <summary>Example: I want to fix all the spelling errors in my package. How do I just run the spell
          check plugin?</summary>
-<i>Todo</i>
+<hr>
+<p>
+Plugins are automatically discovered in the workspace by stuart.
+</p>
+<p>The easiest way to have stuart only one run plugin if many others are present (as is the case in edk2) is to simply
+delete the other plugin directories so they are not discovered. You can then test with the remaining plugins and then
+use git to restore the deleted plugin directories back when done testing.
+</p>
+<p>
+For example, to only test with the <code>SpellCheck</code> plugin, delete every other plugin folder from
+<a href="https://github.com/tianocore/edk2/tree/master/.pytool/Plugin" target="_blank">.pytool/Plugin</a> in your
+workspace.
+</p>
+<p>
+Run the command to only perform CI checks:
+<br>
+<kbd>stuart_ci_build -c .pytool/CISettings.py -t NO-TARGET</kbd>
+</p>
+<p>
+When done, restore the other plugin directories:
+<br>
+<kbd>git restore .pytool/Plugin/**</kbd>
+</p>
+<hr>
 </details>
 
 ## Common Questions
 
 <details>
-<summary>What is CI?</summary>
+<summary id="what-is-ci">What is CI?</summary>
 <i>Todo</i>
 </details>
 
 <details>
-<summary>What is CISettings.py?</summary>
+<summary id="what-are-basetools">What are BaseTools?</summary>
 <i>Todo</i>
 </details>
 
 <details>
-<summary>What does <code>stuart_ci_build</code> do exactly?</summary>
+<summary id="what-are-edk2-pytools">What are edk2-pytools?</summary>
 <i>Todo</i>
 </details>
 
 <details>
-<summary>How do I get more detailed information if an error happens?</summary>
+<summary id="what-is-ci-settings-py">What is CISettings.py?</summary>
 <i>Todo</i>
 </details>
 
 <details>
-<summary>How do I know what tool chain, package, architecture, and targets are available?</summary>
+<summary id="what-is-platformbuild-py">What is PlatformBuild.py?</summary>
+<i>Todo</i>
+</a>
+</details>
+
+<details>
+<summary id="stuart-ci-build-vs-stuart-build">What is the difference between <code>stuart_ci_build</code> and <code>stuart_build</code>?</summary>
+<i>Todo</i>
+</details>
+
+<details>
+<summary id="what-does-stuart-ci-build-do">What does <code>stuart_ci_build</code> do exactly?</summary>
+<i>Todo</i>
+</details>
+
+<details>
+<summary id="how-do-i-get-more-detailed-error-info">How do I get more detailed information if an error happens?</summary>
+<i>Todo</i>
+</details>
+
+<details>
+<summary id="tool-chain-package-etc-available">How do I know what tool chain, package, architecture, and targets are available?</summary>
 <ul>
   <li>
     <details>
-    <summary>How do I know what tool chain tags are available?</summary>
+    <summary id="tool-chain-tags-available">How do I know what tool chain tags are available?</summary>
     <i>Todo</i>
     </details>
   </li>
   <li>
     <details>
-    <summary>How do I know what packages are available?</summary>
+    <summary id="packages-available">How do I know what packages are available?</summary>
     <i>Todo</i>
     </details>
   </li>
   <li>
     <details>
-    <summary>How do I know what architectures are available?</summary>
+    <summary id="architectures-available">How do I know what architectures are available?</summary>
     <i>Todo</i>
     </details>
   </li>
   <li>
     <details>
-    <summary>How do I know what targets are available?</summary>
+    <summary id="targets-available">How do I know what targets are available?</summary>
     <i>Todo</i>
     </details>
   </li>
@@ -289,26 +579,26 @@ The remainder of this page contains more details about the `stuart_ci_build` com
 </details>
 
 <details>
-<summary>What are "plugins"?</summary>
+<summary id="what-are-plugins">What are "plugins"?</summary>
 <i>Todo</i>
 </details>
 
 <details>
-<summary>Where are plugins stored?</summary>
+<summary id="where-are-plugins-stored">Where are plugins stored?</summary>
 <i>Todo</i>
 </details>
 
 <details>
-<summary>How are plugins configured?</summary>
+<summary id="how-are-plugins-configured">How are plugins configured?</summary>
 <i>Todo</i>
 </details>
 
 <details>
-<summary>How do I skip a certain plugin from running?</summary>
+<summary id="how-do-i-skip-a-plugin">How do I skip a certain plugin from running?</summary>
 <i>Todo</i>
 </details>
 
 <details>
-<summary>How do I skip all plugins from running?</summary>
+<summary id="how-do-skip-all-plugins">How do I skip all plugins from running?</summary>
 <i>Todo</i>
 </details>
