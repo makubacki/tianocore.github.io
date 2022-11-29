@@ -10,7 +10,9 @@
 | 2023-02-24           | Release                                  |
 
 ## Proposed Features
-TBD
+[TDVF Optimization - Enable Separate-Fv in OvmfPkg/IntelTdx](https://bugzilla.tianocore.org/show_bug.cgi?id=4152)
+[TDVF Optimization - Pre-alloc shared memory for TDVF DMA](https://bugzilla.tianocore.org/show_bug.cgi?id=4171)
+[TDVF Optimization - Enable Multi-core based lazy-accept](https://bugzilla.tianocore.org/show_bug.cgi?id=4172)
 
 # edk2-stable202305 tag planning
 
