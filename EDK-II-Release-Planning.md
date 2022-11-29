@@ -13,6 +13,7 @@
 * [TDVF Optimization - Enable Separate-Fv in OvmfPkg/IntelTdx](https://bugzilla.tianocore.org/show_bug.cgi?id=4152)
 * [TDVF Optimization - Pre-alloc shared memory for TDVF DMA](https://bugzilla.tianocore.org/show_bug.cgi?id=4171)
 * [TDVF Optimization - Enable Multi-core based lazy-accept](https://bugzilla.tianocore.org/show_bug.cgi?id=4172)
+* [TDVF - Fix Instruction Pointer Incrementation by TD #VE MMIO Handler](https://bugzilla.tianocore.org/show_bug.cgi?id=4169)
 
 # edk2-stable202305 tag planning
 
