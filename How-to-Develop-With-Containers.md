@@ -108,3 +108,13 @@ And example of a devcontainer used for a QEMU platform repo is included below.
   "privileged": true
 }
 ```
+
+## Pipeline Builds
+
+Both Azure pipelines and github workflows have native support for containers. Information
+on this can be found in the [Azure Pipeline Documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/container-phases?view=azure-devops)
+and the [Github Workflow Documentation](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions).
+
+One important detail to note is that Azure pipelines will create a new user in the
+docker image during the pipeline. This user is used for all tasks and operations
+and so certain local user install locations may not be by default on the path.
