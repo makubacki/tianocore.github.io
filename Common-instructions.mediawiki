@@ -1,6 +1,11 @@
 __NOTOC__
 =Common EDK II Build Instructions for Linux=
 
+  Note: New build instructions are available. It is recommended to start with the new instructions if learning how to
+        build edk2 for the first time. This page is retained for reference.
+
+New instructions: [[Build-Instructions.md|Build Instructions]]
+
 These instructions assume you have installed Linux packages required for an [[EDK II]] build environment, including git (example: [https://github.com/tianocore/tianocore.github.io/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610|Ubuntu 16.04/16.10]). The following instructions are common to the majority of Linux environments.
 
 ===Get the edk2 source tree using Git ===

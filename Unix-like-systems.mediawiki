@@ -1,3 +1,8 @@
+  Note: New build instructions are available. It is recommended to start with the new instructions if learning how to
+        build edk2 for the first time. This page is retained for reference.
+
+New instructions: [[Build-Instructions.md|Build Instructions]]
+
 This page provides ''step-by-step instructions'' for setting up a [http://www.tianocore.org/edk2/ EDK II] build environment on various Unix-like systems.
 
 '''Note''': These instructions are not recommended for most EDK II developers. If you are working with a supported Linux distribution, then the [[Using EDK II with Native GCC]] instructions are faster, easier, and produce a smaller UEFI binary image.
@@ -12,7 +17,7 @@ Often these instructions will contain a command which needs to be executed in th
 bash$ echo this bold text is a sample command
 </pre>
 
-To execute this command, highlight the bold text of the command in your web browser.  Most web browsers should be able to copy the text by selecting Copy under the Edit menu.  Now, change back to the terminal application, and there should be a Paste operation under the Edit menu.  After pasting the command into the shell, you may need to press the enter or return key to execute the command. 
+To execute this command, highlight the bold text of the command in your web browser.  Most web browsers should be able to copy the text by selecting Copy under the Edit menu.  Now, change back to the terminal application, and there should be a Paste operation under the Edit menu.  After pasting the command into the shell, you may need to press the enter or return key to execute the command.
 
 Of course, there may be other ways to copy and paste the command into the terminal which are specific to the windowing environment and applications that you are using.  If all else fails, however, you can type the command by hand.
 

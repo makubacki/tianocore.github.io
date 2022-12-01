@@ -1,6 +1,11 @@
 __NOTOC__
 ==Common instructions for Unix ==
 
+  Note: New build instructions are available. It is recommended to start with the new instructions if learning how to
+        build edk2 for the first time. This page is retained for reference.
+
+New instructions: [[Build-Instructions.md|Build Instructions]]
+
 A significant portion of the steps are common on the various UNIX-like platforms.  You should start with the instructions for the operating system that most closely matches your platform, and it will direct you here at the appropriate time.
 
 Note these instructions are not for current Linux distributions, only UNIX-like systems that do not work with the [[Using EDK II with Native GCC]] instructions. Please follow the [[Using EDK II with Native GCC]] guide for mainstream Linux distros.
@@ -135,7 +140,7 @@ Find the following statement in Conf/tools_def.txt and comment the line out:
 DEFINE UNIXGCC_IA32_PETOOLS_PREFIX = /opt/tiano/i386-tiano-pe/i386-tiano-pe/bin/
 </pre>
 
-Next, find the following statement and uncomment the line: 
+Next, find the following statement and uncomment the line:
 
 <pre>
 DEFINE UNIXGCC_IA32_PETOOLS_PREFIX = ENV(HOME)/programs/gcc/ia32/bin/i686-pc-mingw32-

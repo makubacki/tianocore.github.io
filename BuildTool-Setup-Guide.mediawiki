@@ -1,15 +1,20 @@
 =GitHub Help=
 
-GitHub (https://help.github.com/index.html) provides step-by-step instructions for user registration and basic features supported by GitHub 
+  Note: New build instructions are available. It is recommended to start with the new instructions if learning how to
+        build edk2 for the first time. This page is retained for reference.
+
+New instructions: [[Build-Instructions.md|Build Instructions]]
+
+GitHub (https://help.github.com/index.html) provides step-by-step instructions for user registration and basic features supported by GitHub
 
 * Setup GitHub for Linux | Windows | MAC | All (https://help.github.com/articles/set-up-git)
 * To download and install a Git GUI interface (http://git-scm.com/)
 
 =='''GitHub EDK II Project Repositories'''==
 
-* The EDK II BaseTools are part of the EDK II project repository. 
-* The EDK II project repository is available at https://github.com/tianocore/edk2. 
-* Prebuilt Windows tools are available at https://github.com/tianocore/edk2-BaseTools-win32. 
+* The EDK II BaseTools are part of the EDK II project repository.
+* The EDK II project repository is available at https://github.com/tianocore/edk2.
+* Prebuilt Windows tools are available at https://github.com/tianocore/edk2-BaseTools-win32.
 * Content that is not released under an accepted open source license can be found at https://github.com/tianocore/edk2-non-osi.<BR>
 = Getting the extra tools=
 == Compiler ==
@@ -21,15 +26,13 @@ The BaseTools build supports the Makefile based build for EDK II. All Tools are 
 The tools in this section are NOT required to build the EDK II project; they are needed to compile the
 BaseTools used to build the EDK II project.
 
-The Python 2.7.x tools may be obtained from http://www.python.org/, while additional Python modules may be installed using setuptools or pip. Be sure to check-out the appropriate tool set for your OS.
-
-*Linux and OS/X developers using a command line, create a directory that will be used to hold the files, then change to that directory. 
+*Linux and OS/X developers using a command line, create a directory that will be used to hold the files, then change to that directory.
 **Replace URL with apropriate one from [[Python Tools]]. Installation and configuration for these tools are left to the developer.
 
 
 
 
-Refer to documentation in either the UserManuals or Source folders for more information. 
+Refer to documentation in either the UserManuals or Source folders for more information.
 * BuildTools [https://github.com/tianocore/buildtools-BaseTools/tree/master/UserManuals User Manuals]
 
 ='''How to Setup the EDK II Tree'''=

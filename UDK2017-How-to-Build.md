@@ -1,4 +1,10 @@
-# How to Build [[UDK2017]] 
+# How to Build [[UDK2017]]
+
+> Note: New build instructions are available. It is recommended to start with the new instructions if learning how to
+> build edk2 for the first time and not specifically targeting UDK2017. This page is retained for reference.
+
+New instructions: [Build Instructions](Build-Instructions.md)
+
 Table of Contents
 1) [HOW TO BUILD (WINDOWS SYSTEM)](#how-to-build-windows-system)
 2) [ HOW TO BUILD (LINUX-LIKE SYSTEM)](#how-to-build-linux-like-system)
@@ -20,7 +26,7 @@ The steps below are verified on Microsoft Windows 10 Enterprise*:
 2.  Create the full Source Code directory for the UDK2017 release
     1)  Create a working space directory in the build machine, for example, C:\MyWorkspace
     2)  Download the official UDK2017 release .zip file from the [UDK2017 Release Page](https://github.com/tianocore/edk2/releases/tag/vUDK2017)
-        1) Download - UDK2017 edk-vUDK2017 Workspace [Source code (zip file)](https://github.com/tianocore/edk2/archive/vUDK2017.zip) 
+        1) Download - UDK2017 edk-vUDK2017 Workspace [Source code (zip file)](https://github.com/tianocore/edk2/archive/vUDK2017.zip)
         2) Extract files in [edk2-vUDK2017] to the working space directory C:\MyWorkspace.
     3) **OR**  Checkout the vUDK2017 Tag from GitHub with the following "git" command <br>
         1) run  `git clone  https://github.com/tianocore/edk2.git vUDK2017`
@@ -32,18 +38,18 @@ The steps below are verified on Microsoft Windows 10 Enterprise*:
          4)  Run the command `git checkout 0e088c19ab31fccd1d2f55d9e4fe0314b57c0097`
          5)  `Cd C:\MyWorkSpace`
          6)  Rename this folder from edk2-BaseTools-win32 to win32, then copy the win32
-           directory into the BaseTools/Bin directory under the workspace. 
-           (e.g. "C:\MyWorkspace\BaseTools\Bin\")        
+           directory into the BaseTools/Bin directory under the workspace.
+           (e.g. "C:\MyWorkspace\BaseTools\Bin\")
 3.  Generate OpenSSL* Crypto Library
     1)  Open file "C:\MyWorkspace\CryptoPkg\Library\OpensslLib\OpenSSL-HOWTO.txt"
         and follow the instruction to install OpenSSL* for UEFI building.
         For this release, please use OpenSSL-1.1.0e.
 
-4.  Compile the BaseTools (Skip if Optional Step 2.iv was done above) See: 
+4.  Compile the BaseTools (Skip if Optional Step 2.iv was done above) See:
      https://github.com/tianocore/tianocore.github.io/wiki/Windows-systems#compile-tools
     1)  Open a Microsoft Visual Studio* command prompt, type `cd C:\MyWorkspace`
         to enter the  workspace directory
-    2)  Compile the BaseTools C source tools  
+    2)  Compile the BaseTools C source tools
 <pre>
 	set PYTHON_HOME=C:\Python27
         set EDK_TOOLS_PATH=%CD%\BaseTools
@@ -86,19 +92,19 @@ The below steps are verified on Ubuntu 16.04 LTS Desktop*:
         install it.
         You can also download the source package from https://acpica.org/downloads
         and install it following the instruction on the website.
-     4) Install the C Compiler- Ubuntu 16.04 LTS  you can use GNU C compiler (v5.4.0) 
+     4) Install the C Compiler- Ubuntu 16.04 LTS  you can use GNU C compiler (v5.4.0)
         At Ubuntu, you can type `"sudo apt-get install gcc-5"` under terminal prompt to install it.
 
 
 2.  Create the full Source Code directory for the UDK2017 release
     1)  Create a working space directory in the build machine, for example, ~/src/MyWorkspace
     2)  Download the official UDK2017 release .tar file from the [UDK2017 Release Page](https://github.com/tianocore/edk2/releases/tag/vUDK2017)
-        1) Download - UDK2017 edk-vUDK2017 Workspace [Source code (tar.gz file)](https://github.com/tianocore/edk2/archive/vUDK2017.tar.gz) 
+        1) Download - UDK2017 edk-vUDK2017 Workspace [Source code (tar.gz file)](https://github.com/tianocore/edk2/archive/vUDK2017.tar.gz)
         2) Extract files in [edk2-vUDK2017] to the working space directory ~/src/MyWorkspace.
-    3) **OR**  Checkout the vUDK2017 tag from GitHub with the following "git" command 
+    3) **OR**  Checkout the vUDK2017 tag from GitHub with the following "git" command
         1)  Run `"git clone https://github.com/tianocore/edk2.git vUDK2017"`
         2)  Move all files and folders under "vUDK2017" to "~/src/MyWorkspace"
-	 
+
 3.  Generate OpenSSL* Crypto Library
     1)  Open file "~/src/MyWorkspace/CryptoPkg/Library/OpensslLib/OpenSSL-HOWTO.txt"
         and follow the instruction to install OpenSSL* for UEFI building.
@@ -108,9 +114,9 @@ The below steps are verified on Ubuntu 16.04 LTS Desktop*:
     *** MdeModulePkg ***
     1)  Open a terminal and type `"cd ~/src/MyWorkspace"` to enter the workspace
         directory.
-    2)  First build the BaseTools by typing 
+    2)  First build the BaseTools by typing
         `"make -C BaseTools"`
-    3)  Initialize the build environment by typing 
+    3)  Initialize the build environment by typing
         `". edksetup.sh"`.
     4)  Type following command to build platforms using GCC v5.4.0 <BR>
         `"build  -p MdeModulePkg/MdeModulePkg.dsc -t GCC5"`
