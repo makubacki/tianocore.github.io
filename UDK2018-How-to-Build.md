@@ -1,4 +1,10 @@
-# How to Build [[UDK2018]] 
+# How to Build [[UDK2018]]
+
+> Note: New build instructions are available. It is recommended to start with the new instructions if learning how to
+> build edk2 for the first time and not specifically targeting UDK2018. This page is retained for reference.
+
+New instructions: [Build Instructions](Build-Instructions.md)
+
 Table of Contents
 1) [HOW TO BUILD (WINDOWS SYSTEM)](#how-to-build-windows-system)
 2) [ HOW TO BUILD (LINUX-LIKE SYSTEM)](#how-to-build-linux-like-system)
@@ -17,15 +23,15 @@ The steps below are verified on Microsoft Windows 10 Enterprise*:
     4)  Download and install Python2.7.x  https://www.python.org/ for building the BaseTools
         Default install directory is: C:/Python27
     5)  Download the pre-compiled Openssl binary from https://wiki.openssl.org/index.php/Binaries.  Search for a
-        Windows binary in the list of "_Third Party OpenSSL Related Binary Distributions_" table that will be 
+        Windows binary in the list of "_Third Party OpenSSL Related Binary Distributions_" table that will be
         Windows binary. Go to the third party site to download the latest version of Windows x64 86 or Win32 binary.
-        Download and extract to C:\Openssl. Make sure C:\Openssl is added to system environment 
-        variable 'PATH'. 
+        Download and extract to C:\Openssl. Make sure C:\Openssl is added to system environment
+        variable 'PATH'.
 
 2.  Create the full Source Code directory for the UDK2018 release
     1)  Create a working space directory in the build machine, for example, C:\MyWorkspace
     2)  Download the official UDK2018 release .zip file from the [UDK2018 Release Page](https://github.com/tianocore/edk2/releases/tag/vUDK2018)
-        1) Download - UDK2018 edk-vUDK2018 Workspace [Source code (zip file)](https://github.com/tianocore/edk2/archive/vUDK2018.zip) 
+        1) Download - UDK2018 edk-vUDK2018 Workspace [Source code (zip file)](https://github.com/tianocore/edk2/archive/vUDK2018.zip)
         2) Extract files in [edk2-vUDK2018] to the working space directory C:\MyWorkspace.
     3) **OR**  Checkout the vUDK2018 Tag from GitHub with the following "git" command <br>
         1)  run  `git clone  https://github.com/tianocore/edk2.git vUDK2018`
@@ -35,16 +41,16 @@ The steps below are verified on Microsoft Windows 10 Enterprise*:
 3.  Generate OpenSSL* Crypto Library
     1)  Open file "C:\MyWorkspace\CryptoPkg\Library\OpensslLib\OpenSSL-HOWTO.txt"
         and follow the instruction to install OpenSSL* for UEFI building.
-        For this release, please use OpenSSL-1.1.0g. Download it from 
+        For this release, please use OpenSSL-1.1.0g. Download it from
         https://github.com/openssl/openssl/archive/OpenSSL_1_1_0g.zip
         Extract it to C:\MyWorkspace\CryptoPkg\Library\OpensslLib,
         and rename its directory name to openssl
 
-4.  Compile the BaseTools See: 
+4.  Compile the BaseTools See:
      https://github.com/tianocore/tianocore.github.io/wiki/Windows-systems#compile-tools
     1)  Open a Microsoft Visual Studio* command prompt, type `cd C:\MyWorkspace`
         to enter the  workspace directory
-    2)  Compile the BaseTools C source tools  
+    2)  Compile the BaseTools C source tools
 <pre>
 	set PYTHON_HOME=C:\Python27
         edksetup.bat Rebuild
@@ -93,17 +99,17 @@ The below steps are verified on Ubuntu 16.04 LTS Desktop*:
 2.  Create the full Source Code directory for the UDK2018 release
     1)  Create a working space directory in the build machine, for example, ~/src/MyWorkspace
     2)  Download the official UDK2018 release .tar file from the [UDK2018 Release Page](https://github.com/tianocore/edk2/releases/tag/vUDK2018)
-        1) Download - UDK2018 edk-vUDK2018 Workspace [Source code (tar.gz file)](https://github.com/tianocore/edk2/archive/vUDK2018.tar.gz) 
+        1) Download - UDK2018 edk-vUDK2018 Workspace [Source code (tar.gz file)](https://github.com/tianocore/edk2/archive/vUDK2018.tar.gz)
         2) Extract files in [edk2-vUDK2018] to the working space directory ~/src/MyWorkspace.
-    3) **OR**  Checkout the vUDK2018 tag from GitHub with the following "git" command 
+    3) **OR**  Checkout the vUDK2018 tag from GitHub with the following "git" command
         1)  Run `"git clone https://github.com/tianocore/edk2.git vUDK2018"`
         2)  Go to the vUDK2018 directory, and from there run: `git checkout tags/vUDK2018 -b vUDK2018`
         3)  Move all files and folders under "vUDK2018" to "~/src/MyWorkspace"
-	 
+
 3.  Generate OpenSSL* Crypto Library
     1)  Open file "~/src/MyWorkspace/CryptoPkg/Library/OpensslLib/OpenSSL-HOWTO.txt"
         and follow the instruction to install OpenSSL* for UEFI building.
-        For this release, please use OpenSSL-1.1.0g.       Download it from 
+        For this release, please use OpenSSL-1.1.0g.       Download it from
         https://github.com/openssl/openssl/archive/OpenSSL_1_1_0g.zip
         Extract it to ~/src/MyWorkspace/CryptoPkg/Library/OpensslLib,
         and rename its directory name to openssl
@@ -113,9 +119,9 @@ The below steps are verified on Ubuntu 16.04 LTS Desktop*:
     *** MdeModulePkg ***
     1)  Open a terminal and type `"cd ~/src/MyWorkspace"` to enter the workspace
         directory.
-    2)  First build the BaseTools by typing 
+    2)  First build the BaseTools by typing
         `"make -C BaseTools"`
-    3)  Initialize the build environment by typing 
+    3)  Initialize the build environment by typing
         `". edksetup.sh"`.
     4)  Type following command to build platforms using GCC v5.4.0 <BR>
         `"build  -p MdeModulePkg/MdeModulePkg.dsc -t GCC5"`
