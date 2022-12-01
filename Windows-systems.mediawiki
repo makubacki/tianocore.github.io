@@ -1,11 +1,17 @@
 __NOTOC__
+
+  Note: New build instructions are available. It is recommended to start with the new instructions if learning how to
+        build edk2 for the first time. This page is retained for reference.
+
+New instructions: [[Build-Instructions.md|Build Instructions]]
+
 This page provides step-by-step instructions or setting up a [http://www.tianocore.org/edk2/ EDK II] build environment on Windows systems.
 
 <u>''Table of Contents''</u>
 * [[Windows-systems#github-help|GitHub Help]]
 * [[Windows-systems#how-to-setup-the-edk-ii-tree| How to Setup the EDK II Tree]]
-* [[Windows-systems#download| Download]]  Checkout EDK II source tree from Github 
-* [[Windows-systems#compile-tools |Compile Tools]] Build EDK II BaseTools for Windows 
+* [[Windows-systems#download| Download]]  Checkout EDK II source tree from Github
+* [[Windows-systems#compile-tools |Compile Tools]] Build EDK II BaseTools for Windows
 * [[Windows-systems#build | BUILD]] EDK II
 
 ==GitHub Help==
@@ -18,11 +24,11 @@ GitHub (https://help.github.com/index.html) provides step-by-step instructions f
 
 =='''GitHub EDK II Project Repositories'''==
 
-* The EDK II project repository is available at https://github.com/tianocore/edk2. 
+* The EDK II project repository is available at https://github.com/tianocore/edk2.
 
 Content that is not released under an accepted open source license can be found at https://github.com/tianocore/edk2-non-osi.<br />
 &nbsp;<br />
-Note: the steps below will pull the latest code from edk2 master. To work from a stable release, please refer to the Microsoft Windows build steps for [[UDK2017]]: https://github.com/tianocore/tianocore.github.io/wiki/UDK2017-How-to-Build#how-to-build-windows-system 
+Note: the steps below will pull the latest code from edk2 master. To work from a stable release, please refer to the Microsoft Windows build steps for [[UDK2017]]: https://github.com/tianocore/tianocore.github.io/wiki/UDK2017-How-to-Build#how-to-build-windows-system
 
 ===Internet proxies===
 
@@ -47,9 +53,9 @@ Download/Checkout the EDK II source tree from Github
 ## Click on the ''Clone or Download'' button (Right Green)
 ## Click on Download ZIP
 ## Unzip to C:/
-## Rename directory “edk2-master” to “edk2”  
+## Rename directory “edk2-master” to “edk2”
 
-Continue to [[Windows-systems#compile-tools |Compile Tools]] 
+Continue to [[Windows-systems#compile-tools |Compile Tools]]
 
 === Using '''Git for Windows''' Application ===
 ==== ''Git GUI''====
@@ -77,7 +83,7 @@ Continue to [[Windows-systems#compile-tools |Compile Tools]] and then [[Windows-
 *	Change to the workspace directory
 *	Clone the EDK II project repository (See [[Windows-systems#download| Download]] section above)
 **	Example: git clone https://github.com/tianocore/edk2
-* Install Python37 or late version (https://www.python.org/)  to run python tool from source 
+* Install Python37 or late version (https://www.python.org/)  to run python tool from source
 * Compile BaseTools C source tools
 Example:
 * Inside Git Bash
@@ -95,7 +101,7 @@ Example:
 
 =='''Build'''==
 * Set up the [[Nasm-Setup| Nasm]] open source assembly compiler
-* Set up the [[Asl Setup| ASL Compiler]] 
+* Set up the [[Asl Setup| ASL Compiler]]
 * [[Windows-systems#compile-tools |Compile Tools]] above
 * Open a Windows CMD prompt:
 * Change to the edk2 directory
@@ -121,7 +127,7 @@ ACTIVE_PLATFORM should look like this in Conf\target.txt:
 ACTIVE_PLATFORM       = MdeModulePkg/MdeModulePkg.dsc
 </pre>
 
-Modify TOOL_CHAIN_TAG in target.txt for the toolchain installed on your system. There are many options, so review the tools_def.txt to find the appropriate toolchain for your system.  Search for 'Supported Tool Chains' in tools_def.txt to see the valid options for TOOL_CHAIN_TAG. 
+Modify TOOL_CHAIN_TAG in target.txt for the toolchain installed on your system. There are many options, so review the tools_def.txt to find the appropriate toolchain for your system.  Search for 'Supported Tool Chains' in tools_def.txt to see the valid options for TOOL_CHAIN_TAG.
 <pre>
 TOOL_CHAIN_TAG        = VS2015x86
 </pre>
