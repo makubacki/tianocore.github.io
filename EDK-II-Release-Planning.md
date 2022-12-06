@@ -16,6 +16,7 @@
 * [TDVF Optimization - Introduce on-demand accept memory size](https://bugzilla.tianocore.org/show_bug.cgi?id=4181)
 * [TDVF - Fix Instruction Pointer Incrementation by TD #VE MMIO Handler](https://bugzilla.tianocore.org/show_bug.cgi?id=4169)
 * [TDVF - Incorrect implementation in the TDX RTMR implementation](https://bugzilla.tianocore.org/show_bug.cgi?id=4179)
+* [TDVF - Incorrect protocol and structure version in the TDX CC measurement](https://bugzilla.tianocore.org/show_bug.cgi?id=4184)
 
 # edk2-stable202305 tag planning
 
