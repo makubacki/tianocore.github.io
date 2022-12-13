@@ -3,7 +3,7 @@
 EDK II packages are easy to build with set of tools called "stuart".
 
 >💡 If you are familiar with the `build` command and would like to learn about `build` vs `stuart`,
->   [click here](Build-Instructions.md#build-option-comparison).
+>   [click here](https://github.com/tianocore/tianocore.github.io/wiki/Build-Instructions#build-option-comparison).
 
 Steps are split into two categories: [(1) one-time](#one-time-steps) and [(2) regular use](#regular-use-steps).
 
