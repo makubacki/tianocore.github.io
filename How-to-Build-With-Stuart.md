@@ -197,7 +197,7 @@ If you've already completed these steps you don't need to run them again.
 1. Clone the edk2 repo
    - Open a command-prompt in the directory where you would like to keep the edk2 repo
    - Clone the repo
-     - Example: `git clone edk2`
+     - Example: `git clone https://github.com/tianocore/edk2.git`
 
 2. Change into the edk2 directory
    - `cd edk`
@@ -206,7 +206,7 @@ If you've already completed these steps you don't need to run them again.
     - Note that the steps differ between Linux and Windows.
       - <details>
         <summary>Linux Instructions</summary>
-        <code>python -m venv .venv</code>
+        <code>python3 -m venv .venv</code>
         <br>
         <code>source .venv/bin/activate</code>
         </details>
