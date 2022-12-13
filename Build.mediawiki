@@ -4,7 +4,7 @@
         view the new set of build instructions that describe how to develop using containers and build with the Stuart
         application.
 
-New instructions: [[Build-Instructions.md|Build Instructions]]
+New instructions: [[Build Instructions|Build Instructions]]
 
 ==Regarding the Build for EDK II, how do you specify a different compiler tool chain on the command line?==
 

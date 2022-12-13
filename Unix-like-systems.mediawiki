@@ -1,7 +1,7 @@
   Note: New build instructions are available. It is recommended to start with the new instructions if learning how to
         build edk2 for the first time. This page is retained for reference.
 
-New instructions: [[Build-Instructions.md|Build Instructions]]
+New instructions: [[Build Instructions|Build Instructions]]
 
 This page provides ''step-by-step instructions'' for setting up a [http://www.tianocore.org/edk2/ EDK II] build environment on various Unix-like systems.
 

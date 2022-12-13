@@ -4,7 +4,7 @@ __NOTOC__
   Note: New build instructions are available. It is recommended to start with the new instructions if learning how to
         build edk2 for the first time. This page is retained for reference.
 
-New instructions: [[Build-Instructions.md|Build Instructions]]
+New instructions: [[Build Instructions|Build Instructions]]
 
 A significant portion of the steps are common on the various UNIX-like platforms.  You should start with the instructions for the operating system that most closely matches your platform, and it will direct you here at the appropriate time.
 

@@ -3,7 +3,7 @@
 > Note: New build instructions are available. It is recommended to start with the new instructions if learning how to
 > build edk2 for the first time and not specifically targeting UDK2017. This page is retained for reference.
 
-New instructions: [Build Instructions](Build-Instructions.md)
+New instructions: [Build Instructions](https://github.com/tianocore/tianocore.github.io/wiki/Build-Instructions)
 
 Table of Contents
 1) [HOW TO BUILD (WINDOWS SYSTEM)](#how-to-build-windows-system)
