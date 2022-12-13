@@ -6,9 +6,9 @@ firmware code.
 
 There's currently three high-level approaches to build (listed in recommended order):
 
-1. [Containers](How-to-Develop-With-Containers.md)
-2. [Stuart](How-to-Build-With-Stuart.md)
-3. [build](Getting-Started-with-EDK-II.mediawiki)
+1. [[How to Develop With Containers]]
+2. [[How to Build With Stuart]]
+3. [build](https://github.com/tianocore/tianocore.github.io/wiki/Getting-Started-with-EDK-II)
 
 ## Build Option Comparison
 
