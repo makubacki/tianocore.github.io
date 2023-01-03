@@ -289,6 +289,12 @@ session and return.
 1. Update other dependencies (like binaries)
     - `stuart_update -c .pytool/CISettings.py`
 
+       > **Note:** It is recommended to specify the architecture and tool chain in the update command (see the
+       > `stuart_ci_build` command below) so any binaries specific to that architecture and tool chain are
+       > downloaded in this step.
+
+       > **Note:** The binaries downloaded by this step can be very large, it may take a long time to complete.
+
 2. Run CI build (--help will give you options)
     - `stuart_ci_build -c .pytool/CISettings.py TOOL_CHAIN_TAG=<your tag here>`
 
