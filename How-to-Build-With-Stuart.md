@@ -279,7 +279,7 @@ The recommended steps to update dependencies are in this section.
 
 #### Rebuild BaseTools
 
-See the [BaseTools build example](#example-i-want-to-build-basetools).
+See the [BaseTools build example](#i-want-to-build-basetools).
 
 ### Before Each Build Steps
 
@@ -311,7 +311,7 @@ The remainder of this page contains more details about the `stuart_ci_build` and
 
 ## Examples
 
-### Example: I want to build MdeModulePkg to test a change I made there
+### I want to build MdeModulePkg to test a change I made there
 
 <details>
   <summary>Example</summary>
@@ -331,7 +331,7 @@ The example below uses:
 
 </details>
 
-### Example: I want to build OvmfPkg to test a change I made there
+### I want to build OvmfPkg to test a change I made there
 
 <details>
   <summary>Example</summary>
@@ -340,7 +340,7 @@ The example below uses:
 
 OvmfPkg is considered a "platform firmware" for the [QEMU open-source emulator](https://www.qemu.org).
 
-- Therefore, it provides a platform build file (see [What is PlatformBuild.py](#what-is-platformbuild-py)?</a>)
+- Therefore, it provides a platform build file (see [What is PlatformBuild.py](#what-is-platformbuildpy)?</a>)
   - Located at [OvmfPkg/PlatformCI/PlatformBuild.py](https://github.com/tianocore/edk2/blob/master/OvmfPkg/PlatformCI/PlatformBuild.py)
 - Because we are building a platform build file, the build command will be `stuart_build` instead of `stuart_ci_build`
   to compile the code
@@ -355,7 +355,7 @@ If you want to run CI checks such as CI plugins, you can use `stuart_ci_build` w
 
 </details>
 
-### Example: I want to build OvmfPkg and automatically run with my firmware after build
+### I want to build OvmfPkg and automatically run with my firmware after build
 
 <details>
   <summary>Example</summary>
@@ -364,7 +364,7 @@ If you want to run CI checks such as CI plugins, you can use `stuart_ci_build` w
 
 OvmfPkg is considered a "platform firmware" for the [QEMU open-source emulator](https://www.qemu.org).
 
-- Therefore, it provides a platform build file (see [What is PlatformBuild.py?](#what-is-platformbuild-py)</a>)
+- Therefore, it provides a platform build file (see [What is PlatformBuild.py?](#what-is-platformbuildpy)</a>)
   - Located at [OvmfPkg/PlatformCI/PlatformBuild.py](https://github.com/tianocore/edk2/blob/master/OvmfPkg/PlatformCI/PlatformBuild.py)
 - Because we are building a platform build file, the build command will be `stuart_build` instead of `stuart_ci_build`
 
@@ -429,7 +429,7 @@ The example below uses:
 
 </details>
 
-### Example: I want to build BaseTools
+### I want to build BaseTools
 
 <details>
   <summary id="example-i-want-to-build-basetools">Example</summary>
@@ -457,7 +457,7 @@ Example:
 
 </details>
 
-### Example: I just want to check if my changes will pass all the non-compiler checks in CI
+### I just want to check if my changes will pass all the non-compiler checks in CI
 
 <details>
   <summary>Example</summary>
@@ -469,7 +469,7 @@ particular target and, instead, the other parts of the CI process will be active
 ([plugins](#what-are-plugins)).
 
 In the following example, the CI plugins will be run against all packages supported by the
-[CISettings.py](#what-is-ci-settings-py) file.
+[CISettings.py](#what-is-platformbuildpy) file.
 
 `stuart_ci_build -c .pytool/CISettings.py -t NO-TARGET`
 
@@ -482,7 +482,7 @@ with the `-p` parameter.
 
 </details>
 
-### Example: I want to fix all the spelling errors in my package. How do I just run the spell check plugin?
+### I want to fix all the spelling errors in my package. How do I just run the spell check plugin?
 
 <details>
   <summary>Example</summary>
@@ -536,6 +536,7 @@ Also see
 
 <details>
   <summary id="what-are-basetools">Answer</summary>
+
 ---
 
 A collection of build related tools for edk2.
@@ -667,17 +668,15 @@ The two main places to look for CI settings are:
 </details>
 
 ### How do I get more detailed information if an error happens?
+
 <details>
-  <summary id="how-do-i-get-more-detailed-error-info">
-    How do I get more detailed information if an error happens?
-  </summary>
+  <summary id="how-do-i-get-more-detailed-error-info">Answer</summary>
 
 ---
 
 You can pass the `-v` argument to Stuart commands to get more detailed output.
 
 Also, look in your `/Build` directory.
-
 
 Each Stuart command produces a separate file. Open the file corresponding to the command you're using that has the
 failure.
@@ -692,10 +691,10 @@ failure.
 
 </details>
 
-<details>
-  <summary id="what-are-plugins">What are plugins?</summary>
-
 ### What are plugins?
+
+<details>
+  <summary id="what-are-plugins">Answer</summary>
 
 ---
 
@@ -707,10 +706,10 @@ page.
 
 </details>
 
-<details>
-  <summary id="how-do-i-get-lower-level-technical-details">How do I get lower-level technical details?</summary>
-
 ### How do I get lower-level technical details?
+
+<details>
+  <summary id="how-do-i-get-lower-level-technical-details">Answer</summary>
 
 ---
 
