@@ -279,7 +279,7 @@ The recommended steps to update dependencies are in this section.
 
 #### Rebuild BaseTools
 
-See the [BaseTools build example](#example-i-want-to-build-basetools).
+See the <a href="#example-i-want-to-build-basetools">BaseTools build example</a>.
 
 ### Before Each Build Steps
 
