@@ -311,10 +311,10 @@ The remainder of this page contains more details about the `stuart_ci_build` and
 
 ## Examples
 
-<details>
-  <summary>Example: I want to build MdeModulePkg to test a change I made there</summary>
-
 ### Example: I want to build MdeModulePkg to test a change I made there
+
+<details>
+  <summary>Example</summary>
 
 ---
 
@@ -331,10 +331,10 @@ The example below uses:
 
 </details>
 
-<details>
-  <summary>Example: I want to build OvmfPkg to test a change I made there</summary>
-
 ### Example: I want to build OvmfPkg to test a change I made there
+
+<details>
+  <summary>Example</summary>
 
 ---
 
@@ -355,10 +355,10 @@ If you want to run CI checks such as CI plugins, you can use `stuart_ci_build` w
 
 </details>
 
-<details>
-  <summary>Example: I want to build OvmfPkg and automatically run with my firmware after build</summary>
-
 ### Example: I want to build OvmfPkg and automatically run with my firmware after build
+
+<details>
+  <summary>Example</summary>
 
 ---
 
@@ -429,10 +429,10 @@ The example below uses:
 
 </details>
 
-<details>
-  <summary id="example-i-want-to-build-basetools">Example: I want to build BaseTools</summary>
-
 ### Example: I want to build BaseTools
+
+<details>
+  <summary id="example-i-want-to-build-basetools">Example</summary>
 
 ---
 
@@ -457,10 +457,10 @@ Example:
 
 </details>
 
-<details>
-  <summary>Example: I just want to check if my changes will pass all the non-compiler checks in CI</summary>
-
 ### Example: I just want to check if my changes will pass all the non-compiler checks in CI
+
+<details>
+  <summary>Example</summary>
 
 ---
 
@@ -482,12 +482,10 @@ with the `-p` parameter.
 
 </details>
 
-<details>
-  <summary>
-    Example: I want to fix all the spelling errors in my package. How do I just run the spell check plugin?
-  </summary>
-
 ### Example: I want to fix all the spelling errors in my package. How do I just run the spell check plugin?
+
+<details>
+  <summary>Example</summary>
 
 ---
 
@@ -513,10 +511,10 @@ When done, restore the other plugin directories:
 
 ## Common Questions
 
-<details>
-  <summary id="what-is-ci">What is CI?</summary>
-
 ### What is CI?
+
+<details>
+  <summary id="what-is-ci">Answer</summary>
 
 ---
 
@@ -534,11 +532,10 @@ Also see
 
 </details>
 
-<details>
-  <summary id="what-are-basetools">What are BaseTools?</summary>
-
 ### What are BaseTools?
 
+<details>
+  <summary id="what-are-basetools">Answer</summary>
 ---
 
 A collection of build related tools for edk2.
@@ -560,10 +557,10 @@ A more complete list of BaseTools is located in the [EDK II Tools List](https://
 
 </details>
 
-<details>
-  <summary id="what-are-edk2-pytools">What are edk2-pytools?</summary>
-
 ### What are edk2-pytools?
+
+<details>
+  <summary id="what-are-edk2-pytools">Answer</summary>
 
 ---
 
@@ -580,10 +577,10 @@ A collection of Python code for working with edk2.
 
 </details>
 
-<details>
-  <summary id="what-is-ci-settings-py">What is CISettings.py?</summary>
-
 ### What is CISettings.py?
+
+<details>
+  <summary id="what-is-ci-settings-py">Answer</summary>
 
 ---
 
@@ -599,10 +596,10 @@ like the following be used with the file:
 
 </details>
 
-<details>
-  <summary id="what-is-platformbuild-py">What is PlatformBuild.py?</summary>
-
 ### What is PlatformBuild.py?
+
+<details>
+  <summary id="what-is-platformbuild-py">Answer</summary>
 
 ---
 
@@ -624,12 +621,10 @@ Like Stuart CI has "CI plugins", the build process has "build plugins". These ca
 
 </details>
 
-<details>
-  <summary id="stuart-ci-build-vs-stuart-build">
-    What is the difference between stuart_ci_build and stuart_build?
-  </summary>
-
 ### What is the difference between stuart_ci_build and stuart_build?
+
+<details>
+  <summary id="stuart-ci-build-vs-stuart-build">Answer</summary>
 
 ---
 
@@ -642,10 +637,10 @@ Like Stuart CI has "CI plugins", the build process has "build plugins". These ca
 
 </details>
 
-<details>
-  <summary id="what-does-stuart-ci-build-do">What does stuart_ci_build do exactly?</summary>
-
 ### What does stuart_ci_build do exactly?
+
+<details>
+  <summary id="what-does-stuart-ci-build-do">Answer</summary>
 
 ---
 
@@ -671,12 +666,11 @@ The two main places to look for CI settings are:
 
 </details>
 
+### How do I get more detailed information if an error happens?
 <details>
   <summary id="how-do-i-get-more-detailed-error-info">
     How do I get more detailed information if an error happens?
   </summary>
-
-### How do I get more detailed information if an error happens?
 
 ---
 
