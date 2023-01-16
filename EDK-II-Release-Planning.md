@@ -18,7 +18,8 @@
 * [TDVF - Incorrect implementation in the TDX RTMR implementation](https://bugzilla.tianocore.org/show_bug.cgi?id=4179)
 * [TDVF - Incorrect protocol and structure version in the TDX CC measurement](https://bugzilla.tianocore.org/show_bug.cgi?id=4184)
 * [TDVF - TdTcg2Dxe lives in the Ovmfpkg instead of the SecurityPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=4194)
-* [TDVF - TDVF need measurement VMM input ACPI table before register](https://bugzilla.tianocore.org/show_bug.cgi?id=4245)
+* [TDVF - need measurement VMM input ACPI table before register](https://bugzilla.tianocore.org/show_bug.cgi?id=4245)
+* [TDVF - need integrate feature in config-B to config-A](https://bugzilla.tianocore.org/show_bug.cgi?id=4243)
 
 
 # edk2-stable202305 tag planning
