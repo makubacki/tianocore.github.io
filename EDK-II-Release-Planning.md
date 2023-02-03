@@ -13,7 +13,6 @@
 * [TDVF Optimization - Enable Separate-Fv in OvmfPkg/IntelTdx](https://bugzilla.tianocore.org/show_bug.cgi?id=4152)
 * [TDVF Optimization - Pre-alloc shared memory for TDVF DMA](https://bugzilla.tianocore.org/show_bug.cgi?id=4171)
 * [TDVF Optimization - Enable Multi-core based lazy-accept](https://bugzilla.tianocore.org/show_bug.cgi?id=4172)
-* [TDVF Optimization - Customize lazy-accepted memory size in build time for OVMF](https://bugzilla.tianocore.org/show_bug.cgi?id=4181)
 * [TDVF - Fix Instruction Pointer Incrementation by TD #VE MMIO Handler](https://bugzilla.tianocore.org/show_bug.cgi?id=4169)
 * [TDVF - Incorrect implementation in the TDX RTMR implementation](https://bugzilla.tianocore.org/show_bug.cgi?id=4179)
 * [TDVF - Incorrect protocol and structure version in the TDX CC measurement](https://bugzilla.tianocore.org/show_bug.cgi?id=4184)
