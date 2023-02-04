@@ -10,6 +10,8 @@
 | 2023-02-24           | Release                                  |
 
 ## Proposed Features
+* [SecurityBoot - remove self-signed PK requirement in SetupMode](https://bugzilla.tianocore.org/show_bug.cgi?id=2506)
+* [SecurityBoot - support Authenticated SetVariable with ContentInfo](https://bugzilla.tianocore.org/show_bug.cgi?id=4305)
 * [TDVF Optimization - Enable Separate-Fv in OvmfPkg/IntelTdx](https://bugzilla.tianocore.org/show_bug.cgi?id=4152)
 * [TDVF Optimization - Pre-alloc shared memory for TDVF DMA](https://bugzilla.tianocore.org/show_bug.cgi?id=4171)
 * [TDVF Optimization - Enable Multi-core based lazy-accept](https://bugzilla.tianocore.org/show_bug.cgi?id=4172)
