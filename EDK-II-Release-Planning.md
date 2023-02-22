@@ -6,8 +6,8 @@
 | ---------------------| ---------------------------------------- |
 | 2022-11-25           | Beginning of development                 |
 | 2023-02-06           | [Soft Feature Freeze](SoftFeatureFreeze) |
-| 2023-02-10           | [Hard Feature Freeze](HardFeatureFreeze) |
-| 2023-02-24           | Release                                  |
+| 2023-02-22           | [Hard Feature Freeze](HardFeatureFreeze) |
+| 2023-03-03           | Release                                  |
 
 ## Proposed Features
 * [SecurityBoot - remove self-signed PK requirement in SetupMode](https://bugzilla.tianocore.org/show_bug.cgi?id=2506)
