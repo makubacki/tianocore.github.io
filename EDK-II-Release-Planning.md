@@ -1,28 +1,3 @@
-# edk2-stable202302 tag planning
-
-## Proposed Schedule
-
-| Date (00:00:00 UTC-8)| Description                              |
-| ---------------------| ---------------------------------------- |
-| 2022-11-25           | Beginning of development                 |
-| 2023-02-06           | [Soft Feature Freeze](SoftFeatureFreeze) |
-| 2023-02-22           | [Hard Feature Freeze](HardFeatureFreeze) |
-| 2023-03-03           | Release                                  |
-
-## Proposed Features
-* [SecurityBoot - remove self-signed PK requirement in SetupMode](https://bugzilla.tianocore.org/show_bug.cgi?id=2506)
-* [SecurityBoot - support Authenticated SetVariable with ContentInfo](https://bugzilla.tianocore.org/show_bug.cgi?id=4305)
-* [TDVF Optimization - Enable Separate-Fv in OvmfPkg/IntelTdx](https://bugzilla.tianocore.org/show_bug.cgi?id=4152)
-* [TDVF Optimization - Pre-alloc shared memory for TDVF DMA](https://bugzilla.tianocore.org/show_bug.cgi?id=4171)
-* [TDVF Optimization - Enable Multi-core based lazy-accept](https://bugzilla.tianocore.org/show_bug.cgi?id=4172)
-* [TDVF - Fix Instruction Pointer Incrementation by TD #VE MMIO Handler](https://bugzilla.tianocore.org/show_bug.cgi?id=4169)
-* [TDVF - Incorrect implementation in the TDX RTMR implementation](https://bugzilla.tianocore.org/show_bug.cgi?id=4179)
-* [TDVF - Incorrect protocol and structure version in the TDX CC measurement](https://bugzilla.tianocore.org/show_bug.cgi?id=4184)
-* [TDVF - TdTcg2Dxe lives in the Ovmfpkg instead of the SecurityPkg](https://bugzilla.tianocore.org/show_bug.cgi?id=4194)
-* [TDVF - need measurement VMM input ACPI table before register](https://bugzilla.tianocore.org/show_bug.cgi?id=4245)
-* [TDVF - need integrate feature in config-B to config-A](https://bugzilla.tianocore.org/show_bug.cgi?id=4243)
-
-
 # edk2-stable202305 tag planning
 
 ## Proposed Schedule
