@@ -1,6 +1,6 @@
 # EDK II Code Formatting
 
-To better realize the goals of the [EDK II C Coding Standards Specification](https://edk2-docs.gitbook.io/edk-ii-c-coding-standards-specification/),
+To better realize the goals of the [EDK II C Coding Standards Specification](https://tianocore-docs.github.io/edk2-CCodingStandardsSpecification/draft/),
 EDK II code formatting is automated using a source code beautifier called Uncrustify. Uncrustify is compatible with
 C/C++ in addition to other languages. In EDK II, it is used to format C language source code.
 

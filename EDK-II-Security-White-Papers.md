@@ -22,7 +22,7 @@ A list of White Papers and information for EDK II Security from multiple sources
 * [Universal Scalable Firmware - Security](https://universalscalablefirmware.github.io/documentation/5_security.html) (October 2021)
 
 **Memory Protection:**
-* [A Tour Beyond BIOS – Memory Protection in UEFI BIOS - gitbook](https://edk2-docs.gitbook.io/a-tour-beyond-bios-memory-protection-in-uefi-bios)  (March 2017)
+* [A Tour Beyond BIOS – Memory Protection in UEFI BIOS - gitbook](https://tianocore-docs.github.io/ATBB-Memory_Protection_in_UEFI_BIOS/draft/)  (March 2017)
 * [A Tour Beyond BIOS - Mitigate Buffer Overflow in UEFI](https://tianocore-docs.github.io/ATBB-Mitigate_Buffer_Overflow_in_UEFI/draft/) (April 2018)
 
 **SMM Protection:**
