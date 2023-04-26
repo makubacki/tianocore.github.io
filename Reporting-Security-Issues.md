@@ -26,6 +26,6 @@ List of current EDK II Security Advisories can be found at this Gitbook :
 **[Security Advisory Log](https://tianocore-docs.github.io/SecurityAdvisory/draft/)**
 
 List of all Third Party EDK II Security Advisories can be found at this Gitbook :
-**[Third Party Security Advisory Log]( https://tianocore-docs.github.io/ThirdPartySecurityAdvisories/draft/)**
+**[Third Party Security Advisory Log]( https://github.com/tianocore/tianocore.github.io/wiki/Third-Party-Security-Advisories)**
 
 
