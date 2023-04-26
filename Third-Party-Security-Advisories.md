@@ -1,4 +1,4 @@
-# 13. [CVE-2023-0464 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-0464)
+# [CVE-2023-0464 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-0464)
 
 ## Published: 03/22/2023
 
@@ -15,7 +15,7 @@ In X509_STORE_CTX_init(), ‘default’ parameter is used (CryptoPkg\Library\Ope
 For X509 verify, no policy parameter is set (CryptoPkg\Library\BaseCryptLib\Pk\CryptX509.c)
  
 
-# 12. [CVE-2023-2086 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-2086)
+# [CVE-2023-2086 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-2086)
 
 ## Published: 02/08/2023
 
@@ -24,7 +24,7 @@ For X509 verify, no policy parameter is set (CryptoPkg\Library\BaseCryptLib\Pk\C
 - OpenSSL 1.1.1t, updated in the edk2-stable202305 stable tag
 
 
-# 11. [CVE-2023-0215 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-0215)
+# [CVE-2023-0215 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-0215)
 
 ## Published: 02/08/2023
 
@@ -33,14 +33,14 @@ For X509 verify, no policy parameter is set (CryptoPkg\Library\BaseCryptLib\Pk\C
 - OpenSSL 1.1.1t, updated in the edk2-stable202305 stable tag
 
 
-# 10. [CVE-2022-4450 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-4450)
+# [CVE-2022-4450 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-4450)
 
 ## Published: 02/08/2023
 
 ## Recommendation:
 
 
-# 9. [CVE-2022-2097 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-2097)
+# [CVE-2022-2097 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-2097)
 
 ## Published: 07/05/2022
 
@@ -54,7 +54,7 @@ Until further notice, the following versions of OpenSSL are appropriate to use w
 - OpenSSL 1.1.1n, updated in the edk2-stable202205 stable tag
 
 
-# 8. [CVE-2022-2068 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-2068)
+# [CVE-2022-2068 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-2068)
 
 ## Published: 06/21/2022
 
@@ -68,7 +68,7 @@ Until further notice, the following versions of OpenSSL are appropriate to use w
 - OpenSSL 1.1.1n, updated in the edk2-stable202205 stable tag
 
 
-# 7. [CVE-2022-1292 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-1292)
+# [CVE-2022-1292 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-1292)
 
 ## Published: 05/03/2022
 
@@ -82,7 +82,7 @@ Until further notice, the following versions of OpenSSL are appropriate to use w
 - OpenSSL 1.1.1n, updated in the edk2-stable202205 stable tag
 
 
-# 6. [CVE-2022-0778 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-0778)
+# [CVE-2022-0778 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-0778)
 
 ## Published: 03/15/2022
 
@@ -96,7 +96,7 @@ Until further notice, the following versions of OpenSSL are appropriate to use w
 - OpenSSL 1.1.1n, updated in the edk2-stable202205 stable tag
 
 
-# 5. [CVE-2021-4160 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2021-4160)
+# [CVE-2021-4160 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2021-4160)
 
 ## Published: 01/28/2022
 
@@ -110,7 +110,7 @@ Until further notice, the following versions of OpenSSL are appropriate to use w
 - OpenSSL 1.1.1n, updated in the edk2-stable202205 stable tag
 
 
-# 4. [CVE-2021-3712 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2021-3172)
+# [CVE-2021-3712 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2021-3172)
 
 ## Published: 08/24/2021
 
@@ -124,7 +124,7 @@ Until further notice, the following versions of OpenSSL are appropriate to use w
 - OpenSSL 1.1.1n, updated in the edk2-stable202205 stable tag
 
 
-# 3. [CVE-2021-3711 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2021-3711)
+# [CVE-2021-3711 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2021-3711)
 
 ## Published: 08/24/2021
 
@@ -138,7 +138,7 @@ Until further notice, the following versions of OpenSSL are appropriate to use w
 - OpenSSL 1.1.1n, updated in the edk2-stable202205 stable tag
 
 
-# 2. [CVE-2021-3450 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2021-3450)
+# [CVE-2021-3450 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2021-3450)
 
 ## Published: 03/25/2021
 
@@ -152,7 +152,7 @@ Until further notice, the following versions of OpenSSL are appropriate to use w
 - OpenSSL 1.1.1n, updated in the edk2-stable202205 stable tag
 
 
-# 1. [CVE-2021-3449 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2021-3449)
+# [CVE-2021-3449 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2021-3449)
 
 ## Published: 03/25/2021
 
