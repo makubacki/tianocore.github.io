@@ -10,7 +10,12 @@
 | 2023-05-26           | Release                                  |
 
 ## Proposed Features
-TBD
+* [Expose IBT/BTI compatible runtime DXE drivers via memory attributes table](https://bugzilla.tianocore.org/show_bug.cgi?id=4405)
+* [Update toolchain support](https://bugzilla.tianocore.org/show_bug.cgi?id=4384)
+* [MdePkg: Support FDT library](https://bugzilla.tianocore.org/show_bug.cgi?id=4392)
+* [Add google mocks support to UnitTestFrameworkPkg GoogleTestLib](https://bugzilla.tianocore.org/show_bug.cgi?id=4389)
+* [Platform Redfish Host Interface library for USBNIC](https://bugzilla.tianocore.org/show_bug.cgi?id=4282)
+* [[OpenSSL] Update OpenSSL version to version 1.1.1t to include CVE fix](https://bugzilla.tianocore.org/show_bug.cgi?id=4342)
 
 # edk2-stable202308 tag planning
 
