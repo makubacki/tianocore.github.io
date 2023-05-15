@@ -16,6 +16,9 @@
 * [Add google mocks support to UnitTestFrameworkPkg GoogleTestLib](https://bugzilla.tianocore.org/show_bug.cgi?id=4389)
 * [Platform Redfish Host Interface library for USBNIC](https://bugzilla.tianocore.org/show_bug.cgi?id=4282)
 * [[OpenSSL] Update OpenSSL version to version 1.1.1t to include CVE fix](https://bugzilla.tianocore.org/show_bug.cgi?id=4342)
+* [Replace pre-standard __FUNCTION__ with C99 __func__ throughout edk2](https://bugzilla.tianocore.org/show_bug.cgi?id=4450)
+* [Implement EFI memory attributes protocol for ARM platforms](https://bugzilla.tianocore.org/show_bug.cgi?id=4452)
+* [Add TraceHubLib Support](https://bugzilla.tianocore.org/show_bug.cgi?id=4144)
 
 # edk2-stable202308 tag planning
 
