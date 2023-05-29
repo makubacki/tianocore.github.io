@@ -1,25 +1,3 @@
-# edk2-stable202305 tag planning
-
-## Proposed Schedule
-
-| Date (00:00:00 UTC-8)| Description                              |
-| ---------------------| ---------------------------------------- |
-| 2023-02-24           | Beginning of development                 |
-| 2023-05-08           | [Soft Feature Freeze](SoftFeatureFreeze) |
-| 2023-05-12           | [Hard Feature Freeze](HardFeatureFreeze) |
-| 2023-05-26           | Release                                  |
-
-## Proposed Features
-* [Expose IBT/BTI compatible runtime DXE drivers via memory attributes table](https://bugzilla.tianocore.org/show_bug.cgi?id=4405)
-* [Update toolchain support](https://bugzilla.tianocore.org/show_bug.cgi?id=4384)
-* [MdePkg: Support FDT library](https://bugzilla.tianocore.org/show_bug.cgi?id=4392)
-* [Add google mocks support to UnitTestFrameworkPkg GoogleTestLib](https://bugzilla.tianocore.org/show_bug.cgi?id=4389)
-* [Platform Redfish Host Interface library for USBNIC](https://bugzilla.tianocore.org/show_bug.cgi?id=4282)
-* [[OpenSSL] Update OpenSSL version to version 1.1.1t to include CVE fix](https://bugzilla.tianocore.org/show_bug.cgi?id=4342)
-* [Replace pre-standard __FUNCTION__ with C99 __func__ throughout edk2](https://bugzilla.tianocore.org/show_bug.cgi?id=4450)
-* [Implement EFI memory attributes protocol for ARM platforms](https://bugzilla.tianocore.org/show_bug.cgi?id=4452)
-* [Add TraceHubLib Support](https://bugzilla.tianocore.org/show_bug.cgi?id=4144)
-
 # edk2-stable202308 tag planning
 
 ## Proposed Schedule
