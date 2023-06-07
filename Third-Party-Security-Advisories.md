@@ -6,13 +6,7 @@
 
 No Impact
 
-According to the CVE description, ‘policy’ processing is disabled by default.
- 
-For PKCS7, the X509 default parameter is used (NULL is passed in CryptoPkg\Library\BaseCryptLib\Pk\CryptPkcs7VerifyCommon.c)
- 
-In X509_STORE_CTX_init(), ‘default’ parameter is used (CryptoPkg\Library\OpensslLib\openssl\crypto\x509\x509_vfy.c)
- 
-For X509 verify, no policy parameter is set (CryptoPkg\Library\BaseCryptLib\Pk\CryptX509.c)
+EDK2 does not use the OpenSSL function X509_VERIFY_PARAM_add0_policy().
  
 
 # [CVE-2023-0465 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-0465)
