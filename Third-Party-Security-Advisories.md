@@ -1,3 +1,37 @@
+# [CVE-2023-0466 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-0466)
+
+## Published: 03/28/2023
+
+## Recommendation:
+
+No Impact
+
+According to the CVE description, ‘policy’ processing is disabled by default.
+ 
+For PKCS7, the X509 default parameter is used (NULL is passed in CryptoPkg\Library\BaseCryptLib\Pk\CryptPkcs7VerifyCommon.c)
+ 
+In X509_STORE_CTX_init(), ‘default’ parameter is used (CryptoPkg\Library\OpensslLib\openssl\crypto\x509\x509_vfy.c)
+ 
+For X509 verify, no policy parameter is set (CryptoPkg\Library\BaseCryptLib\Pk\CryptX509.c)
+ 
+
+# [CVE-2023-0465 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-0465)
+
+## Published: 03/28/2023
+
+## Recommendation:
+
+No Impact
+
+According to the CVE description, ‘policy’ processing is disabled by default.
+ 
+For PKCS7, the X509 default parameter is used (NULL is passed in CryptoPkg\Library\BaseCryptLib\Pk\CryptPkcs7VerifyCommon.c)
+ 
+In X509_STORE_CTX_init(), ‘default’ parameter is used (CryptoPkg\Library\OpensslLib\openssl\crypto\x509\x509_vfy.c)
+ 
+For X509 verify, no policy parameter is set (CryptoPkg\Library\BaseCryptLib\Pk\CryptX509.c)
+ 
+
 # [CVE-2023-0464 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-0464)
 
 ## Published: 03/22/2023
@@ -15,11 +49,13 @@ In X509_STORE_CTX_init(), ‘default’ parameter is used (CryptoPkg\Library\Ope
 For X509 verify, no policy parameter is set (CryptoPkg\Library\BaseCryptLib\Pk\CryptX509.c)
  
 
-# [CVE-2023-2086 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-2086)
+# [CVE-2023-0286 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-0286)
 
 ## Published: 02/08/2023
 
 ## Recommendation:
+
+No impact to EDK2 updating will resolve CVE
 
 - OpenSSL 1.1.1t, updated in the edk2-stable202305 stable tag
 
@@ -38,6 +74,17 @@ For X509 verify, no policy parameter is set (CryptoPkg\Library\BaseCryptLib\Pk\C
 ## Published: 02/08/2023
 
 ## Recommendation:
+
+- OpenSSL 1.1.1t, updated in the edk2-stable202305 stable tag
+
+
+# [CVE-2022-4304 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-4304)
+
+## Published: 02/08/2023
+
+## Recommendation:
+
+- OpenSSL 1.1.1t, updated in the edk2-stable202305 stable tag
 
 
 # [CVE-2022-2097 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2022-2097)
