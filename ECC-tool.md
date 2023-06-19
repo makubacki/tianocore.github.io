@@ -58,10 +58,10 @@ Steps to run the ECC tool:<br>
 
 * 6). You may need to maintain the config.ini and exception.xml files by yourself for your project.
 
- * a) If you want to skip to check some sub-dir or file, you can add them to the SkipDirList, SkipFileList part in the config.ini.
-   A list for skip dirs when scanning source code: `SkipDirList = BUILD, ..., TEST\TEST`
-   A list for skip files when scanning source code: `SkipFileList = .gitignore,...`
+  * a) If you want to skip to check some sub-dir or file, you can add them to the SkipDirList, SkipFileList part in the config.ini.
+  A list for skip dirs when scanning source code: `SkipDirList = BUILD, ..., TEST\TEST`
+  A list for skip files when scanning source code: `SkipFileList = .gitignore,...`
 
-* b) If you want to skip a specific ECC error, you can add them to the exception.xml file.
+  * b) If you want to skip a specific ECC error, you can add them to the exception.xml file.
   The mapping relationship between exception format and ECC error is like below.
   ![](images/EccException.PNG)
