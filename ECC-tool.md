@@ -2,58 +2,66 @@
 ECC is a python tool which helps to detect coding style issues.<br>
 It reports errors for the codes which don't follow [EDK II C Coding Standards Specification](https://tianocore-docs.github.io/edk2-CCodingStandardsSpecification/draft/).<br>
 
-# 2. Where is ECC tool?
+# 2. Where is the ECC tool?
 ECC tool is located in edk2/BaseTools/Source/Python/Ecc.
 
 # 3. How to run ECC tool?<br>
-Steps to run ECC tool:<br>
-**1). Enter edk2 directory, run: **edksetup.bat**** (**on Windows**)<br>
+Steps to run the ECC tool:<br>
+* 1). Enter edk2 directory, run: **edksetup.bat**** (**on Windows**)<br>
       **Enter edk2 directory, run: **source edksetup.sh**** (**on Linux**)<br>
 
-**2). Then in edk2 directory, you can type "Ecc" to run ECC tool directly**.<br>
+* 2). Then in the edk2 directory, you can type "Ecc" to run the ECC tool directly**.<br>
 
-**3). If you meet following errors:**<br>
-**Error 1:**<br>
-    **import antlr3**<br>
-    **ImportError: No module named antlr3**<br>
+* 3). If you meet the following errors:**<br>
+  * Error 1:
+    ```
+    import antlr3
+    ImportError: No module named antlr3
+    ```
+    This error may be met when you run the ECC tool with Python 2.x, then ECC depends on antlr V3.0.1, you can download it from 
+    http://www.antlr3.org/download/Python/.
+    After downloading and extracting it, you can enter the antlr tool directory and run:
 
-This error may be met when you run ECC tool with python 2.x, then ECC depends on antlr V3.0.1, you can download it from http://www.antlr3.org/download/Python/ <br>
-After download and extract it, you can enter the antlr tool directory and run: <br>
-**C:\Python27\python.exe setup.py install** to install it.(**on Windows**) <br>
-**python setup.py install** to install it, root access may be required.(**on Linux**) <br>
+    `C:\Python27\python.exe setup.py install` (_on Windows_)
 
-**Error 2:**<br>
-    **import antlr4 as antlr** <br>
-    **ModuleNotFoundError: No module named 'antlr4'** <br>
+    `python setup.py install` (_on Linux_)
 
-This error may be met when you run ECC tool with python 3.x, then ECC depends on antlr4, you can install it through following command.<br>
-**py -3 -m pip install antlr4-python3-runtime** to install it.(**on Windows**) <br>
-**sudo python3 -m pip install antlr4-python3-runtime** to install it. (**on Linux**) <br>
+  * Error 2:
+    ```
+    import antlr4 as antlr
+    ModuleNotFoundError: No module named 'antlr4'
+    ```
 
-**4). You can type "Ecc -h/Ecc --help" to get the help info of ECC tool**.<br>
+    This error may be met when you run the ECC tool with Python 3.x, then ECC depends on antlr4, you can install it through the following command.
 
-**5). Common usage model:**<br>
-**Ecc -c config file  -e exception file  -t  the target directory which needs to be scanned by ECC -r the ECC scan result CSV file**<br>
-(Notes: Please use the full path when specify the target directory to scan.)
+    `py -3 -m pip install antlr4-python3-runtime==4.7.1` (_on Windows_)
 
-config.ini and exception.xml are in edk2/BaseTools/Source/Python/Ecc dir.<br>
-**Config.ini** is the configuration file of ECC tool. If config file is not specified when run ECC, it will use the one in Edk2/BaseTools/Source/Python/Ecc directory by default.<br>
-**exception.xml** is used to skip some specific coding style issues.<br>
+    `sudo python3 -m pip install antlr4-python3-runtime==4.7.1` (_on Linux_)
 
-For example, run ECC to check the coding style in Mdepkg:<br>
-**Ecc –c  D:/AWORK/edk2/BaseTools/Source/Python/Ecc/config.ini**
-**-e D:/AWORK/edk2/BaseTools/Source/Python/Ecc/exception.xml -t D:/AWORK/edk2/MdePkg -r MdePkgECC.csv** <br>
+* 4). You can type "Ecc -h/Ecc --help" to get the help info of the ECC tool.
 
-(Notes: When running ECC for a specific sub-dir, it may report some errors such as some library instances are not used, but when running ECC for the whole project, these errors are gone. We can ignore such kind of error when running ECC for a specific sub-dir.)<br>
+* 5). Common usage model:
 
-**6). You may need to maintain the config.ini and exception.xml files by yourself for your project.**<br>
+  `Ecc -c <config_file> -e <exception file> -t <to-be-scanned directory> -r <result CSV file>`
 
-**a) If you want to skip to check some sub-dir or file, you can add them to the SkipDirList, SkipFileList part in the config.ini.**<br>
-A list for skip dirs when scaning source code <br>
-SkipDirList = **BUILD, ...,** TEST\\TEST <br>
-A list for skip file when scaning source code <br>
-SkipFileList = **.gitignore,...** <br>
+  > Notes: Please use the full path when specifying the target directory to scan.
+  >
+  > `config.ini` and `exception.xml` are in the `edk2/BaseTools/Source/Python/Ecc` directory.
+  >
+  > `config.ini` is the configuration file of the ECC tool. If the config file is not specified when running ECC, it will use the one in the `Edk2/BaseTools/Source/Python/Ecc` directory by default.
+  > `exception.xml` is used to skip some specific coding style issues.
 
-**b) If you want to skip a specific ECC error, you can add them to the exception.xml file.**<br>
-The mapping relationship between exception format and ECC error like below.
-![](images/EccException.PNG)
+  For example, to run ECC to check the coding style in MdePkg:
+
+  `Ecc –c  D:/AWORK/edk2/BaseTools/Source/Python/Ecc/config.ini -e D:/AWORK/edk2/BaseTools/Source/Python/Ecc/exception.xml -t D:/AWORK/edk2/MdePkg -r MdePkgECC.csv`
+  > Notes: When running ECC for a specific sub-dir, it may report some errors such as some library instances are not used, but when running ECC for the whole project, these errors are gone. We can ignore such kind of errors when running ECC for a specific sub-dir.
+
+* 6). You may need to maintain the config.ini and exception.xml files by yourself for your project.
+
+ * a) If you want to skip to check some sub-dir or file, you can add them to the SkipDirList, SkipFileList part in the config.ini.
+   A list for skip dirs when scanning source code: `SkipDirList = BUILD, ..., TEST\TEST`
+   A list for skip files when scanning source code: `SkipFileList = .gitignore,...`
+
+* b) If you want to skip a specific ECC error, you can add them to the exception.xml file.
+  The mapping relationship between exception format and ECC error is like below.
+  ![](images/EccException.PNG)
