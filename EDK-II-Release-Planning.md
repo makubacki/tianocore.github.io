@@ -10,7 +10,7 @@
 | 2023-08-25           | Release                                  |
 
 ## Proposed Features
-TBD
+[CryptoPkg: consume OpenSSL 3.0](https://bugzilla.tianocore.org/show_bug.cgi?id=3466)
 
 # edk2-stable202311 tag planning
 
