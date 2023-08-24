@@ -200,7 +200,7 @@ If you've already completed these steps you don't need to run them again.
      - Example: `git clone https://github.com/tianocore/edk2.git`
 
 2. Change into the edk2 directory
-   - `cd edk`
+   - `cd edk2`
 
 3. Create a Python virtual environment
     - Note that the steps differ between Linux and Windows.
