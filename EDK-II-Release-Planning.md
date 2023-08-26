@@ -13,6 +13,3 @@
 TBD
 
 ## [Previous edk2 stable tags](https://github.com/tianocore/edk2/tags)
-
----
-[Add RISC-V support to CLANGDWARF toolchain](https://bugzilla.tianocore.org/show_bug.cgi?id=4478)
