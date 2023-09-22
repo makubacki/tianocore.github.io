@@ -1,3 +1,32 @@
+# [CVE-2023-4807 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-4807)
+## Published: 09/08/2023
+## Recommendation:
+No impact. 
+The OpenSSL POLY1305 implementation is disabled by default in the CryptoPkg configuration.
+
+# [CVE-2023-3817 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-3817)
+## Published: 07/31/2023
+## Recommendation:
+No impact. 
+DH code is used in CryptDh.c and TlsLib. In CryptoDh.c, EDK2 does not use DH_check() related functions and existing functions will not call into DH_check(). The TlsLib implementation is not affected by this issue.
+
+# [CVE-2023-3446 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-3446)
+## Published: 07/19/2023
+## Recommendation:
+No impact. 
+The DH code of EDK2 does not call the DH_check() and related functions, or have the risk of using “p” parameters that are too large.
+
+# [CVE-2023-2975 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-2975)
+## Published: 07/14/2023
+## Recommendation:
+No impact. 
+The OpenSSL AES-SIV cipher implementation is disabled by default in the CryptoPkg configuration.
+CVE-2023-2650 - OpenSSL
+Published: 05/30/2023
+Recommendation:
+ - OpenSSL 1.1.1u, updated in the edk2-stable202308 stable tag
+
+
 # [CVE-2023-0466 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-0466)
 
 ## Published: 03/28/2023
