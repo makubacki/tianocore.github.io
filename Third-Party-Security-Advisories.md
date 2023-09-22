@@ -21,9 +21,10 @@ The DH code of EDK2 does not call the DH_check() and related functions, or have 
 ## Recommendation:
 No impact. 
 The OpenSSL AES-SIV cipher implementation is disabled by default in the CryptoPkg configuration.
-CVE-2023-2650 - OpenSSL
-Published: 05/30/2023
-Recommendation:
+
+# [CVE-2023-2650 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-2650)
+## Published: 05/30/2023
+## Recommendation:
  - OpenSSL 1.1.1u, updated in the edk2-stable202308 stable tag
 
 
