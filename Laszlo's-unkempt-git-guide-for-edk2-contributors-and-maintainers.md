@@ -402,11 +402,13 @@ Contributor workflow
      Time to mail-bomb the list! Do the following:
 
      ```
-     git send-email         \
-       --suppress-cc=author \
-       --suppress-cc=self   \
-       --suppress-cc=cc     \
-       --suppress-cc=sob    \
+     git send-email               \
+       --suppress-cc=author       \
+       --suppress-cc=self         \
+       --suppress-cc=cc           \
+       --suppress-cc=sob          \
+       --suppress-cc=misc-by      \
+       --transfer-encoding=base64 \
        *.patch
      ```
 
