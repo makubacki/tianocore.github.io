@@ -1,3 +1,13 @@
+# [CVE-2023-5678 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-5678)
+## Published: 11/06/2023
+## Recommendation:
+No impact. The affected DH params are not used by EDK2. EDK2 does not call any DH_check* related functions.
+
+# [CVE-2023-5363 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-5363)
+## Published: 10/25/2023
+## Recommendation:
+No impact. The affected functions that change the key and IV lengths are not called by EDK2 CryptoPkg.
+
 # [CVE-2023-4807 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-4807)
 ## Published: 09/08/2023
 ## Recommendation:
