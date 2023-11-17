@@ -10,7 +10,7 @@
 | 2023-11-24           | Release                                  |
 
 ## Proposed Features / Bug Fixes
-(The list extends up to and including edk2 commit f945b72331d7.)
+(The list extends up to and including edk2 commit 3db76e6476e4.)
 
 * [UefiPayloadPkg:Enhance the build processing for Universalpayload](https://bugzilla.tianocore.org/show_bug.cgi?id=4532)
 * [SplitFspBin.py cannot support FSP binary with child FV included](https://bugzilla.tianocore.org/show_bug.cgi?id=4502)
@@ -56,5 +56,12 @@
 * [OvmfPkg/AcpiPlatformDxe: Coverity scan flags FORWARD_NULL and UNUSED_VALUE issues](https://bugzilla.tianocore.org/show_bug.cgi?id=4568)
 * [RedfishPkg/RedfishLib: Return HTTP headers to caller](https://edk2.groups.io/g/devel/message/109990)
 * [ArmVirtPkg: support two PL011 UARTs](https://bugzilla.tianocore.org/show_bug.cgi?id=4577)
+* [Update MADT for ACPI 6.5, and add TRBE & ETE support](https://edk2.groups.io/g/devel/message/108996)
+* [Add Variable Policy Audit App and Shell Command](https://edk2.groups.io/g/devel/message/110339)
+* [Use CodeQL CLI](https://edk2.groups.io/g/devel/message/110565)
+* [TDVF: TdVmCall needs handle the retry results for MapGPA](https://bugzilla.tianocore.org/show_bug.cgi?id=4572)
+* [Update GetMaintainer to handle case where a package has only reviewers and no maintainers](https://bugzilla.tianocore.org/show_bug.cgi?id=4593)
+* [Add 0x0B/Platform Runtime Mechanism (PRM) in Address Space ID of Generic Address Structure (GAS)](https://bugzilla.tianocore.org/show_bug.cgi?id=4567)
+* [Fix build error when remove "-Wno-sometimes-uninitialized" option](https://bugzilla.tianocore.org/show_bug.cgi?id=4595)
 
 ## [Previous edk2 stable tags](https://github.com/tianocore/edk2/tags)
