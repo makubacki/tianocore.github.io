@@ -5,9 +5,9 @@
 | Date (00:00:00 UTC-8)| Description                              |
 | ---------------------| ---------------------------------------- |
 | 2023-11-24           | Beginning of development                 |
-| 2024-02-12           | [Soft Feature Freeze](SoftFeatureFreeze) |
-| 2024-02-16           | [Hard Feature Freeze](HardFeatureFreeze) |
-| 2024-03-01           | Release                                  |
+| 2024-02-05           | [Soft Feature Freeze](SoftFeatureFreeze) |
+| 2024-02-09           | [Hard Feature Freeze](HardFeatureFreeze) |
+| 2024-02-23           | Release                                  |
 
 ## Proposed Features / Bug Fixes
 Todo
@@ -18,10 +18,10 @@ Todo
 
 | Date (00:00:00 UTC-8)| Description                              |
 | ---------------------| ---------------------------------------- |
-| 2024-03-01           | Beginning of development                 |
-| 2024-05-13           | [Soft Feature Freeze](SoftFeatureFreeze) |
-| 2024-05-17           | [Hard Feature Freeze](HardFeatureFreeze) |
-| 2024-05-31           | Release                                  |
+| 2024-02-23           | Beginning of development                 |
+| 2024-05-06           | [Soft Feature Freeze](SoftFeatureFreeze) |
+| 2024-05-10           | [Hard Feature Freeze](HardFeatureFreeze) |
+| 2024-05-24           | Release                                  |
 
 ## Proposed Features / Bug Fixes
 Todo
@@ -32,10 +32,10 @@ Todo
 
 | Date (00:00:00 UTC-8)| Description                              |
 | ---------------------| ---------------------------------------- |
-| 2024-05-31           | Beginning of development                 |
-| 2024-08-12           | [Soft Feature Freeze](SoftFeatureFreeze) |
-| 2024-08-16           | [Hard Feature Freeze](HardFeatureFreeze) |
-| 2024-08-30           | Release                                  |
+| 2024-05-24           | Beginning of development                 |
+| 2024-08-05           | [Soft Feature Freeze](SoftFeatureFreeze) |
+| 2024-08-09           | [Hard Feature Freeze](HardFeatureFreeze) |
+| 2024-08-23           | Release                                  |
 
 ## Proposed Features / Bug Fixes
 Todo
@@ -46,10 +46,10 @@ Todo
 
 | Date (00:00:00 UTC-8)| Description                              |
 | ---------------------| ---------------------------------------- |
-| 2024-08-30           | Beginning of development                 |
-| 2024-11-11           | [Soft Feature Freeze](SoftFeatureFreeze) |
-| 2024-11-15           | [Hard Feature Freeze](HardFeatureFreeze) |
-| 2024-11-29           | Release                                  |
+| 2024-08-23           | Beginning of development                 |
+| 2024-11-04           | [Soft Feature Freeze](SoftFeatureFreeze) |
+| 2024-11-08           | [Hard Feature Freeze](HardFeatureFreeze) |
+| 2024-11-22           | Release                                  |
 
 ## Proposed Features / Bug Fixes
 Todo
