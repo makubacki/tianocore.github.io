@@ -1,3 +1,8 @@
+# [CVE-2023-6237 - OpenSSL](https://www.openssl.org/news/secadv/20240115.txt)
+## Published: 1/15/2024
+## Recommendation:
+No impact. The EDK2 CryptoPkg does not use the OpenSSL function EVP_PKEY_public_check(). 
+
 # [CVE-2023-6129 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-6129)
 ## Published: 1/09/2024
 ## Recommendation:
