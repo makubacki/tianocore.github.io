@@ -1,3 +1,8 @@
+# [CVE-2023-6129 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-6129)
+## Published: 1/09/2024
+## Recommendation:
+No impact. The OpenSSL POLY1305 implementation is disabled by default in the EDK2 CryptoPkg configuration. 
+
 # [CVE-2023-5678 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2023-5678)
 ## Published: 11/06/2023
 ## Recommendation:
