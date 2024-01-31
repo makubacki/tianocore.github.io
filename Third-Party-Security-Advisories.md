@@ -1,3 +1,8 @@
+# [CVE-2024-0727 - OpenSSL](https://www.openssl.org/news/secadv/20240125.txt)
+## Published: 1/25/2024
+## Recommendation:
+Not a problem for EDK2. EDK2 CryptoPkg does not use the PKCS12 implementation or the SMIME_write_PKCS7() function. 
+
 # [CVE-2023-6237 - OpenSSL](https://www.openssl.org/news/secadv/20240115.txt)
 ## Published: 1/15/2024
 ## Recommendation:
