@@ -42,4 +42,3 @@ Todo
 
 
 ## [Previous edk2 stable tags](https://github.com/tianocore/edk2/tags)
-[[MdePkg] Add NVMe Sanitize command support to Nvme.h](https://bugzilla.tianocore.org/show_bug.cgi?id=4591)
