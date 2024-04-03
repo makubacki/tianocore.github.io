@@ -27,6 +27,8 @@
   * Exception process is possible based on external factors
 * Embargo Period Ends
 * GHSA PR (Pull Request) Created - GHSA Info is publicly visible at this point
-  * Merged to Main branch within 1 day – under normal circumstances
+  * Merged to Main branch within 1 day – under normal circumstances 
+     - This means maintainer (and/or from infosec participant or community manager or steward) will sign-off via pull request (and avoid patch email review)
+     - To ensure no clerical/formatting overhead recommend running local CI linting tools while in embargo prior to making public
   * Publish GHSA
 * CVE Details Updated - Infosec team updates CVE Detail information and submits to Mitre and make CVE public
