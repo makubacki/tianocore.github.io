@@ -4,16 +4,16 @@
 
 ## Validate that it is a security issue - Infosec Team will determine if report is a security issue. This may require the enlistment of subject matter experts - If not deemed security issue, ask reporter to submit Bugzilla
 * If the report is determined to be a security issue
-  * GHSA Created - Infosec Team creates the GHSA
+  * GHSA Created - Infosec Team may create the GHSA (if from Bugzilla) but typically this is created by the reporter
   * Add infosec team - Infosec add the team members, Maintainers, reviewers and submitter (need Infosec team group - completed)
   * CVSS Scoring - Infosec Team with assistance from submitter set the CVSS Score
   * Assign CWEs - Infosec Team assigns appropriate CWEs
   * Allocate CVE # - Infosec Team allocates CVE# to reference issue
   * Add private fork - Infosec Team creates private fork for patch work to be completed
 * Proposed Patch created or exists
-  * Developer pushes branch to private fork (DevName-FixDesc-version)
+  * Developer pushes branch to private fork (DevName-FixDesc-version) 
   * Developer submits Pull Request to private fork
-  * Developer Leaves comment using the @ mentions  to alert Maintainers & Reviewers
+  * Developer Leaves comment using the @ mentions to alert Maintainers & Reviewers
   * All discussion takes place within the GHSA.
   * Discussion should use @ mentions to tag people / teams for reviews or comments
   * If conversation is needed for documentation Comments need to be at the Advisory comments not file or line
