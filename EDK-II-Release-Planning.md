@@ -10,7 +10,8 @@
 | 2024-05-24           | Release                                  |
 
 ## Proposed Features / Bug Fixes
-Todo
+* [Add EFI Device Authentication Signature Database and SPDM](https://bugzilla.tianocore.org/show_bug.cgi?id=2479)
+* [Add more crypto APIs (AESGCM/PEM/X509/RSA/PKCS5/PKCS7/Authenticode) based on Mbedtls](https://bugzilla.tianocore.org/show_bug.cgi?id=4177)
 
 # edk2-stable202408 tag planning
 
