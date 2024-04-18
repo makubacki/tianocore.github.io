@@ -13,6 +13,7 @@
 * [SecurityPkg:Add EFI Device Authentication Signature Database and SPDM](https://bugzilla.tianocore.org/show_bug.cgi?id=2479)
 * [CryptoPkg:Add more crypto APIs (AESGCM/PEM/X509/RSA/PKCS5/PKCS7/Authenticode) based on Mbedtls](https://bugzilla.tianocore.org/show_bug.cgi?id=4177)
 * CryptoPkg:add additional RSAES-OAEP crypto functions
+* OvmfPkg:Add 5-level paging support
 * [OvmfPkg:SEV-SNP Support for running under an SVSM](https://bugzilla.tianocore.org/show_bug.cgi?id=4654)
 * [OvmfPkg:RBP register shall be cleared in TDVMCALL](https://bugzilla.tianocore.org/show_bug.cgi?id=4696)
 * OvmfPkg:Harden #VC instruction emulation (CVE-2024-25742)
