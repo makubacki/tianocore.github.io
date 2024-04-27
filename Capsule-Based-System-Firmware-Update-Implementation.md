@@ -20,8 +20,8 @@ PerformFlashWrite (
 
 A template of the `PlatformFlashAccessLib` is provided in `SignedCapsulePkg` ([`SignedCapsulePkg/Library/PlatformFlashAccessLibNull`](https://github.com/tianocore/edk2/tree/master/SignedCapsulePkg/Library/PlatformFlashAccessLibNull)). Complete examples of this library can be found in the Intel Galileo Gen 2 & MinnowBoard Max EDK II projects:
 
-* [`QuarkPlatformPkg/Feature/Capsule/Library/PlatformFlashAccessLib`](https://github.com/tianocore/edk2/tree/master/QuarkPlatformPkg/Feature/Capsule/Library/PlatformFlashAccessLib)
-* [`Vlv2TbltDevicePkg/Feature/Capsule/Library/PlatformFlashAccessLib`](https://github.com/tianocore/edk2/tree/master/Vlv2TbltDevicePkg/Feature/Capsule/Library/PlatformFlashAccessLib)
+* [`QuarkPlatformPkg/Feature/Capsule/Library/PlatformFlashAccessLib`](https://github.com/tianocore/edk2-platforms/tree/master/Platform/Intel/QuarkPlatformPkg/Feature/Capsule/Library/PlatformFlashAccessLib)
+* [`Vlv2TbltDevicePkg/Feature/Capsule/Library/PlatformFlashAccessLib`](https://github.com/tianocore/edk2-platforms/tree/master/Platform/Intel/Vlv2TbltDevicePkg/Feature/Capsule/Library/PlatformFlashAccessLib)
 
 It is recommended that this new platform specific library instance be placed in your platform package.
 
@@ -31,10 +31,9 @@ System Firmware Descriptor PEIM
 ===============================
 A PEIM is used to provide a System Firmware Descriptor that provides the current system firmware version information.  This information is stored in a RAW section of the PEIM FFS file.  The PEIM is responsible for reading the RAW section and setting the `VOID*` PCD called `gEfiSignedCapsulePkgTokenSpaceGuid.PcdEdkiiSystemFirmwareImageDescriptor` to the contents of the RAW section.  The Firmware Management Protocol for the system firmware uses this PCD to determine the current version of the system firmware.
 
-Complete examples of this PEIM can be found in the Intel Galileo Gen 2 & MinnowBoard Max EDK II projects:
+Complete examples of this PEIM can be found in the Intel Galileo Gen 2 EDK II project:
 
-* [`QuarkPlatformPkg/Feature/Capsule/SystemFirmwareDescriptor`](https://github.com/tianocore/edk2/tree/master/QuarkPlatformPkg/Feature/Capsule/SystemFirmwareDescriptor)
-* [`Vlv2TbltDevicePkg/Feature/Capsule/SystemFirmwareDescriptor`](https://github.com/tianocore/edk2/tree/master/Vlv2TbltDevicePkg/Feature/Capsule/SystemFirmwareDescriptor)
+* [`QuarkPlatformPkg/Feature/Capsule/SystemFirmwareDescriptor`](https://github.com/tianocore/edk2-platforms/tree/master/Platform/Intel/QuarkPlatformPkg/Feature/Capsule/SystemFirmwareDescriptor)
 
 It is recommended that the System Firmware Descriptor PEIM implementation be placed under your platform package directory.
 
