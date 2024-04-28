@@ -129,7 +129,7 @@ Visual Studio (2003 or 2005), WINDDK, ICC (Intel Compiler) and GCC under
 CYGWIN.
 
 If you are new to EDK II development, [this
-page](Edk2_getting_started "wikilink") may help you get a build
+page](Edk2-getting-started "wikilink") may help you get a build
 environment up and running. OVMF will also require an ASL compiler to be
 installed on the system. The Intel ASL compiler is compatible with many
 operating systems, and is available from <http://www.acpica.org>.
@@ -141,13 +141,13 @@ II dev email list.
 
 ### How can I contribute to OVMF?
 
-Please refer to the [Getting Started](Getting_Started "wikilink") page.
+Please refer to the [Getting Started](Getting-Started "wikilink") page.
 
 ### How do I build OVMF?
 
 Refer to the README document under the OvmfPkg directory within the EDK
 II source repository or on the [building
-OVMF](How_to_build_OVMF "wikilink") wiki page.
+OVMF](How-to-build-OVMF "wikilink") wiki page.
 
 ### How do I enable source level debugging with OVMF?
 
