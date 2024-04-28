@@ -101,7 +101,7 @@ booting the VM. The README file included in the downloaded archive file
 will explain how to run the OVMF firmware image with the supported VM.
 
 More detailed instructions for running OVMF can be found on the [running
-OVMF](How_to_run_OVMF "wikilink") wiki page.
+OVMF](How-to-run-OVMF "wikilink") wiki page.
 
 ### Where is the source code to OVMF?
 
