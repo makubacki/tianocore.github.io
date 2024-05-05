@@ -491,9 +491,17 @@ with the `-p` parameter.
 
 Plugins are automatically discovered in the workspace by stuart.
 
-The easiest way to have stuart only one run plugin if many others are present (as is the case in edk2) is to simply
-delete the other plugin directories so they are not discovered. You can then test with the remaining plugins and
-then use git to restore the deleted plugin directories back when done testing.
+Stuart supports command-line arguments to disable all discovered plugins and only run those explicitly requested.
+The following command disables all plugins and then enables only `SpellCheck`:
+
+`stuart_ci_build -c .pytool/CISettings.py --disable-all SpellCheck=run`
+
+---
+
+**Alternative Method**
+
+You can also simply delete the other plugin directories so they are not discovered. You can then test with the
+remaining plugins and then use git to restore the deleted plugin directories back when done testing.
 
 For example, to only test with the <code>SpellCheck</code> plugin, delete every other plugin folder from
 [.pytool/Plugin](https://github.com/tianocore/edk2/tree/master/.pytool/Plugin) in your workspace.
