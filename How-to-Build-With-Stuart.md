@@ -331,6 +331,26 @@ The example below uses:
 
 </details>
 
+### I only want to run the unit tests in a package
+
+<details>
+  <summary>Example</summary>
+
+---
+
+This example shows how to run only the host-based unit tests in `MdeModulePkg`.
+
+- Normally, all package supported targets are tested including unit tests.
+- Unit tests are run for the `NOOPT` target.
+
+`stuart_ci_build -c .pytool/CISettings.py -p MdeModulePkg -a IA32,X64 TOOL_CHAIN_TAG=VS2019 -t NOOPT`
+
+The important parameter here is the `-t` parameter which specifies that only the `NOOPT` target should be built.
+
+---
+
+</details>
+
 ### I want to build OvmfPkg to test a change I made there
 
 <details>
