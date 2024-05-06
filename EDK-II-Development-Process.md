@@ -1,31 +1,44 @@
-First check out [[Getting Started with EDK II]] for downloading the
-latest EDK II development project with your build environment.
+# EDK II Development Process
 
-Are you new to using git? If so, then the [[New to git]] page may be
-helpful.
+First check out [[Getting Started with EDK II]] for downloading the latest EDK II development project with your build
+environment.
 
-The developer process for the EDK II project
---------------------------------------------
+Are you new to using git? If so, then the [[New to git]] page may be helpful.
 
-1.  Setup the EDK II tree if you do not have one
+> **Note:** Commands that you should directly type into a terminal are preceded with `>$`. Unless otherwise noted,
+> these commands are OS agnostic.
 
-    * This is document on the [[SourceForge to Github Quick Start]] page
+## EDK II Developer Onboarding
 
-2.  Create and checkout a topic branch for new feature or bug fix
+At a high-level, getting started with code development in the EDK II repo consists of the following activities:
 
-    `$ git checkout -b <new-dev-branch> origin/master`
+1. Tool Setup - Performed once per development machine.
+2. Workspace Setup - Performed once per development workspace.
+3. Development and Test - Performed on every code contribution.
+4. Code Review and CI - Performed on every code contribution.
 
-3.  Make changes in the working tree
+## Tool Setup, Workspace Setup, and Development and Test
 
-4.  Break up working tree changes into independent commits that do not
-    break *git bisect*
-    -   [Commit-Partitioning](Commit-Partitioning "wikilink")
+Refer to the [How to Build with Stuart](https://github.com/tianocore/tianocore.github.io/wiki/How-to-Build-With-Stuart)
+documentation. After following those instructions, you should have a workspace setup and understand how to build and
+test the code.
 
-    -  To stage all modifications: `$ git add -u`
+This remainder of this page focuses source management details and how to prepare for code review.
 
-    -  To add new files: `$ git add <path-to-new-file>`
+## Managing Local Changes
 
-    -  To have git prompt you to selectively stage changes: `$ git add -p`
+1. Create and checkout a topic branch for your change.
+
+   `>$ git checkout -b <new-dev-branch> origin/master`
+
+2. Make changes in the working tree.
+
+3. Break up working tree changes into independent commits that do not break *git bisect*.
+   - [Commit-Partitioning](Commit-Partitioning "wikilink")
+
+   - To stage all modifications: `>$ git add -u`
+   - To add new files: `>$ git add <path-to-new-file>`
+   - To have git prompt you to selectively stage changes: `>$ git add -p`
 
 5.  Follow the commit message template given below when writing commit
     messages
@@ -260,9 +273,9 @@ The maintainer process for the EDK II project
 The maintainer process for the EDK II BaseTools project
 -------------------------------------------------------
 
-[EDK II BaseTools project](https://github.com/tianocore/edk2-basetools) is a Tianocore-maintained project consisting of the python source files that make up EDK2 basetools. It provides an easy way to organize and share python code to facilitate reuse across environments, tools, and scripts. In the future, this project will be the only location of the EDK II BaseTools python source code, and the EDK II project will remove all BaseTools python source code. 
+[EDK II BaseTools project](https://github.com/tianocore/edk2-basetools) is a Tianocore-maintained project consisting of the python source files that make up EDK2 basetools. It provides an easy way to organize and share python code to facilitate reuse across environments, tools, and scripts. In the future, this project will be the only location of the EDK II BaseTools python source code, and the EDK II project will remove all BaseTools python source code.
 
-Now, we are in the phase where the BaseTools python code is in both the [edk2](https://github.com/tianocore/edk2) repository and the [edk2-basetools](https://github.com/tianocore/edk2-basetools) repository. The BaseTools maintainer should follow the following steps to keep the code in sync. 
+Now, we are in the phase where the BaseTools python code is in both the [edk2](https://github.com/tianocore/edk2) repository and the [edk2-basetools](https://github.com/tianocore/edk2-basetools) repository. The BaseTools maintainer should follow the following steps to keep the code in sync.
 
 1. After the patch gets reviewed, the maintainer creates a PR to edk-basetools repo, and merges it into edk2-basetools repo if the CI checks pass.
 2. Wait for the new version pip module generated in pypi.org.

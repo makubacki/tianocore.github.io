@@ -1,32 +1,33 @@
+# Commit Message Format
+
 This page documents our source control commit message format.
 
-This format is also documented in [Contributions.txt](https://github.com/tianocore/edk2/raw/master/Contributions.txt) which may be available in the source tree as well.
+This format is also documented in [Contributions.txt](https://github.com/tianocore/edk2/raw/master/Contributions.txt)
+which may be available in the source tree as well.
 
 Use this format for commit messages, and when providing the log message for a patch.
 
-# Commit message format
-
-<pre>
+```txt
 Pkg-Module: Brief-single-line-summary
 
 Full-commit-message
 
-Signed-off-by: Contributor Name &lt;contributor@email.server&gt;
-</pre>
+Signed-off-by: Contributor Name <contributor@email.server>
+```
 
 Where:
-* Pkg-Module is the EDK II Package and optionally the Module
-* Brief-single-line-summary is a short summary of the change
-* The length of 'Pkg-Module: Brief-single-line-summary' should be less
-  than 72 characters
-* CVE fix needs to append CVE number in Brief-single-line-summary. The format is 'Pkg-Module: Brief-single-line-summary (CVE-Year-Number)'. Its length should be less than 92 characters.
-* blank-line is an empty line
-* Full-commit-message is the full message describing the change. Its first lines are bugzilla URL if there are one or more bugzilla. It may include the test items those have been verified. 
-* Line length should be less than 76 characters when possible
-* Signatures is one or more lines with signatures. Please see the
-  [[Commit Signature Format]] page for more information.
-* The entire log message should use only standard ASCII text
-  characters
+
+* **Pkg-Module**: The EDK II package and optionally the module.
+* **Brief-single-line-summary**: A short summary of the change.
+  * The length of `Pkg-Module: Brief-single-line-summary` should be less than 72 characters.
+  * Changes for CVE fixes need to append CVE number in `Brief-single-line-summary`. The format is
+   `Pkg-Module: Brief-single-line-summary (CVE-Year-Number)`. Its length should be less than 92 characters.
+* Blank lines should be an empty line with no whitespace.
+* `Full-commit-message` is the full message describing the change. Its first line may be the bugzilla URL. It may
+  include test items that have been verified.
+  * Line length should be less than 76 characters when possible.
+* Signatures is one or more lines with signatures. Please see the [[Commit Signature Format]] page for more information.
+* The entire log message should use only standard ASCII text characters
 
 An example would be:
 <Pre>
