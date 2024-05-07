@@ -8,6 +8,8 @@ Additional information about Tianocore Bugzilla can be found in [Reporting Issue
 
 When a Tianocore Security Issue is entered, the issue is evaluated by the **infosec** group to determine if the issue is a security issue or not.  If it is not deemed to be a security issue, then the issue is converted to a standard issue and follows the normal issue resolution process.   If the issue is confirmed to be a security issue, then the priority, severity, and impact of the issue is assessed by the **infosec** group.  Discussions, resolution, and patches are completed within Bugzilla.  A date for public disclose is determined, and on that date the issue is made public and added to the list of Security Advisories.
 
+When reporting an issue, the outputs of tools are not sufficient. Although automation tools and fuzzers and scanners are common trade practice in the security community, they often produce many results for further investigation and can yield many false positives. Reports from automated tools or scans must include additional analysis to demonstrate the exploitability of the vulnerability. As such, edkII infosec will not accept issues without this exploitability insight.
+
 If you are interested in being involved in the evaluation of Tianocore Security Issues, then please send an email request to join the Tianocore Bugzilla infosec group to the Tianocore Community Manager or one of the Tianocore Stewards.
 
 **NOTE**: Never send any details related to a security issue in email.
