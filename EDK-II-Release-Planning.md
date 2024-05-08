@@ -17,6 +17,7 @@
 * [OvmfPkg:SEV-SNP Support for running under an SVSM](https://bugzilla.tianocore.org/show_bug.cgi?id=4654)
 * [OvmfPkg:RBP register shall be cleared in TDVMCALL](https://bugzilla.tianocore.org/show_bug.cgi?id=4696)
 * OvmfPkg:Harden #VC instruction emulation (CVE-2024-25742)
+* [Add SPI bus driver stack](https://bugzilla.tianocore.org/show_bug.cgi?id=4753)
 
 # edk2-stable202408 tag planning
 
