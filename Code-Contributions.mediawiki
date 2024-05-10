@@ -8,5 +8,7 @@ See also
 
 [[EDK II Code First Process]]
 
+[[EDK II Development Process]]
+
 [[Inclusive Language Guidelines]]
 

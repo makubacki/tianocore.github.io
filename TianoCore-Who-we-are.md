@@ -1,9 +1,9 @@
 ![](images/TianoCoreLogo.png)
 
 
-# TianoCore Open Source Community 
+# TianoCore Open Source Community
 
-**Rev 1.0** 
+**Rev 1.0**
 
 ## Overview
 
@@ -34,14 +34,14 @@ ecosystem.
 ## Members of the TianoCore Community
 
 
-## Contributor 
+## Contributor
 ------------
 
-### Definition 
+### Definition
 
 A Contributor is anyone with interest in contributing to Tianocore.org
 
-### Role of a Contributor/developer 
+### Role of a Contributor/developer
 
 -   Follow the [process
     rules](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Development-Process)
@@ -63,21 +63,21 @@ A Contributor is anyone with interest in contributing to Tianocore.org
 
 1.  Create a Github account: [https://github.com/](https://github.com/)
 
-2.  Join the EDK II Project Mailing list: [Mailing List](https://github.com/tianocore/tianocore.github.io/wiki/Mailing-Lists) 
+2.  Join the EDK II Project Mailing list: [Mailing List](https://github.com/tianocore/tianocore.github.io/wiki/Mailing-Lists)
 
 3.  Follow the guidelines for submitting a code contribution by the EDK
     II Project Code Contributions process:
     [https://github.com/tianocore/tianocore.github.io/wiki/Code-Contributions](https://github.com/tianocore/tianocore.github.io/wiki/Code-Contributions)
 
-## Maintainer 
+## Maintainer
 -----------
 
-### Definition 
+### Definition
 
 A Maintainer manages one or more packages from the EDK II project of
 Tianocore.org.
 
-### Role 
+### Role
 
 Every EDK II package (top-level directory) has a list of maintainers.
 The role of a maintainer is to:
@@ -95,16 +95,17 @@ The role of a maintainer is to:
     assigned packages. Participate in triaging and analyzing bugs filed
     for their assigned packages.
 
-3.  Responsible for reviewing patches and answering questions from
+3.  Responsible for answering questions from
     contributors, on the edk2-devel mailing list
-    [https://edk2.groups.io/g/devel/](https://edk2.groups.io/g/devel/).
+    [https://edk2.groups.io/g/devel/](https://edk2.groups.io/g/devel/)
+    and reviewing pull requests for their assigned packages.
 
-4.  Responsible for coordinating patch review with co-maintainers and
+4.  Responsible for coordinating pull request review with co-maintainers and
     reviewers of the same package.
 
 5.  Has push / merge access to the merge branch.
 
-6.  Responsible for merging approved patches into the master branch.
+6.  Responsible for merging approved pull requests into the master branch.
 
 7.  Follow the EDK II development
     [process](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Development-Process).
@@ -113,12 +114,13 @@ The role of a maintainer is to:
 
 1.  Process review requests in FIFO order.
 
-2.  Maintainer is responsible for timely responses on emails addressed to them (preferably less than calendar week). 
+2.  Maintainer is responsible for timely responses on emails addressed to them (preferably less than calendar week).
 
 3.  If you are out-of-office for an extended period of time, inform the
     Stewards and/or your co-maintainers about pending requests. Use
     automated out-of-office replies to indicate your return date, if you
-    feel comfortable sharing that info.
+    feel comfortable sharing that info. You can also update your GitHub
+    status to indicate you are out-of-office.
 
 4.  Try to let each patch sit on the list for at least 24h before
     merging it, so that other community members can comment on the
@@ -135,7 +137,7 @@ The role of a maintainer is to:
 2.  An existing maintainer of the package approves the new Maintainer.
 
 3.  One of the stewards or one of the existing maintainers of the
-    package merges the patch.
+    package merges the pull request containing the change.
 
 4.  TianoCore admin will update the permissions for the new maintainer
     with access rights to merge and push updates to the appropriate repo
@@ -146,11 +148,12 @@ The role of a maintainer is to:
 1.  The maintainer who wishes to leave will propose their own removal in
     a patch for Maintainers.txt.
 
-2.  Optimally, this patch should be posted from the email address with
+2.  Optimally, this pull request should be posted from the GitHub account
     which the leaving maintainer is currently represented in
-    Maintainers.txt \-- for example, preferably from the \"old company
-    address\", and not the \"new company address\". Giving up a
-    maintainership, if it was associated with someone\'s job, should
+    Maintainers.txt. The email address used for the git author should ideally
+    be from the currently represented email in Maintainers.txt \-- for example,
+    preferably from the \"old company address\", and not the \"new company address\".
+    Giving up a maintainership, if it was associated with someone\'s job, should
     preferably be part of the exit procedure from that particular job.
 
 3.  The remaining co-maintainer(s) for the same package acknowledge and
@@ -162,7 +165,7 @@ The role of a maintainer is to:
 ## Reviewer
 --------
 
-### Definition 
+### Definition
 
 A Reviewer is anyone with interest in contributing to Tianocore.org
 
@@ -175,7 +178,7 @@ A Reviewer is anyone with interest in contributing to Tianocore.org
     -   shall be reasonably familiar with the Package (or some modules
         thereof)
 
-    -   will be copied on the patch discussions,
+    -   will be copied on the pull request and mailing list discussions,
 
     -   and/or provides testing or regression testing for the Package
         (or some modules thereof), in certain platforms and
@@ -188,12 +191,12 @@ A Reviewer is anyone with interest in contributing to Tianocore.org
 ## Steward
 -------
 
-### Definition 
+### Definition
 
 Steward is an active community member that helps steer the TianoCore
 project and helps drive the community to reach consensus.
 
-### Role 
+### Role
 
 1.  The role of a steward is to influence and enact policies and define
     direction of TianoCore projects.
@@ -238,7 +241,7 @@ interests shift with time too.
 New stewards are elected by existing stewards in recognition of work
 already being done.
 
-### Replacing a Steward 
+### Replacing a Steward
 
 If one of the Stewards decides to retire, they can resign simply by
 sending a patch to modify Maintainers.txt. The remaining Stewards may
@@ -267,7 +270,7 @@ The Release Manager is responsible for driving the quarterly Stable Tags. The Re
 
 
 
-## Community Manager 
+## Community Manager
 ------------------
 
 ### Definition
@@ -295,8 +298,11 @@ A Community Manager manages the TianoCore Community.
 
 3.  Keep an eye on your mailbox, do revisit tagged messages.
 
+#### GitHub
 
-####  Bugzilla
+1.  Use the GitHub interface to create and review pull requests.
+
+#### Bugzilla
 
 1.  Writing bug reports, issues and/or feature requests:
 
@@ -342,7 +348,7 @@ A Community Manager manages the TianoCore Community.
 [https://en.wikipedia.org/wiki/Open\_source\#The\_open-source\_model\_and\_open\_collaboration](https://en.wikipedia.org/wiki/Open_source#The_open-source_model_and_open_collaboration)
 
 Links: [About TianoCore](https://www.tianocore.org/about.html)\|
-[Licensing](https://www.tianocore.org/legalese.html)\| 
+[Licensing](https://www.tianocore.org/legalese.html)\|
 [FAQ](https://www.tianocore.org/faq.html) \| [How to
 Contribute](https://www.tianocore.org/contrib) \| [Code of
 Conduct](https://www.tianocore.org/coc.html) \|

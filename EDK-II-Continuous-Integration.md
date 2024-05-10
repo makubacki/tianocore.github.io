@@ -48,9 +48,9 @@ enhancements and extensions to these services.
    * [Watch a GitHub repository](https://help.github.com/en/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories)
    * [Create a GutHub fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
    * [Create a GitHub pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
-7) HUB Command line Utility to perform GitHub operations
-   * [HUB Releases](https://github.com/github/hub/releases)
-   * [HUB Usage](https://hub.github.com/hub.1.html)
+7) GitHub Command line Utility (`gh`) to perform GitHub operations
+   * [GitHub CLI Download](https://cli.github.com/)
+   * [GitHub CLI Manual](https://cli.github.com/manual/gh)
 8) Azure Pipelines References
    * [Azure Piplelines GitHub App](https://github.com/marketplace/azure-pipelines)
    * [Azure Pipelines TianoCore edk2-ci Project](https://dev.azure.com/tianocore/edk2-ci)
@@ -64,7 +64,6 @@ enhancements and extensions to these services.
 [[EDK II Continuous Integration Administration]]
 
 ## Proposed Pre-Commit Checks in Phase 2
-* Verify Reviewed-by and Acked-by tags are present with correct maintainers
 * Verify no non-ASCII characters in modified files
 * Verify no binary files in set of modified files
 
@@ -93,7 +92,6 @@ enhancements and extensions to these services.
 
 # Possible Continuous Integration Actions
 * PatchCheck.py
-* Verify Reviewed-by and Acked-by tags are maintainers
 * Verify no non-ASCII characters in modified source files
 * Verify no binary files in set of modified files
 * Verify Package Dependency rules in modified files
@@ -144,11 +142,6 @@ enhancements and extensions to these services.
     UEFI shell over the emulated serial port. Used in downstream package builds,
     for packaging a pre-enrolled variable store template file.
     - https://github.com/puiterwijk/qemu-ovmf-secureboot
-
-# Future Enhancements
-* Support non-maintainer GitHub Pull Requests that are submitted after code
-  review is complete.  Maintainers must still be part of the review/approval
-  process before the PR is run through pre-commit tests auto committed.
 
 # Evaluations and Supporting Background Materials
 * Background
