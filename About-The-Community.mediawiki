@@ -1,8 +1,9 @@
 There is a lot to learn about EDK II and the TianoCore open source community. The real magic of any community is when you join and have full access to the tools that the community drivers use to evolve and make their application and its accompanying documentation and tooling. As a community member, you have access to the following:
 
-* [[Mailing Lists]] - Using groups.io. Primary source of communications, including patch review.
+* [[Mailing Lists]] - Using groups.io. Primary source of communications.
 * Issue Tracking - [[Reporting Issues]] via Bugzilla. This tracks feature requests, tasks and issues with the respective project.
-* Source Control - All Projects use github to keep track of different versions of software source code.
+* Source Control - All Projects use github to keep track of different versions of software source code and to manage
+  code contributions via pull requests.
 * [[Community Virtual Meetings]] - video conference for community meetings, bug triage, and design reviews.
 
 As you can see, there is a lot at your disposal as a community member. Excited yet? If so, learn how to get involved here.

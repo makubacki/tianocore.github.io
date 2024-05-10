@@ -146,7 +146,8 @@ The recommended flow is:
 4. Make and test code changes
 5. Format code locally using Uncrustify (for example, using the Visual Studio Code Uncrustify plugin)
 6. Run EDK II CI locally to verify UncrustifyCheck passes
-7. Send the code patch to the EDK II mailing list
+7. Push the code changes to a branch in your fork
+8. Create a pull request in the edk2 repository from the branch on your fork
 
 ## Installing Uncrustify
 

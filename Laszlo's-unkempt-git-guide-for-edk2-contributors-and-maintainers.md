@@ -1,6 +1,14 @@
 Disclaimer
 ==========
 
+**NOTE**: This document describes a deprecated process of contributing changes using
+patches on a mailing list. Information in this document may still be helpful
+for setting up your git configuration, but the latest process for contributing
+changes via pull requests is available in
+[EDK II Development Process](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Development-Process).
+
+---
+
 This is a quick and dirty, simplified and slightly modified description
 of my own edk2 workflow with git. It expressly defers to the [EDK II
 Development Process

@@ -1,8 +1,9 @@
 # How to Contribute
 
 * [[Getting Started with EDK II]]
+* [[EDK II Development Process]]
 * [[Mailing Lists]]
-* [[Training]] 
+* [[Training]]
 * [[EDK II Documents]]
 * [[Reporting Issues]]
 * [[Reporting Security Issues]]

@@ -1,11 +1,10 @@
 # What is the soft feature freeze?
 
 The soft feature freeze is the beginning of the stabilization phase of edk2's
-development process. By the date of the soft feature freeze,  developers must
-have sent their patches to the mailing list **and** received positive
-maintainer reviews (`Reviewed-by` or `Acked-by` tags). This means that
-features, and in particular non-trivial ones, must have been accepted by
-maintainers before the soft freeze date.
+development process. By the date of the soft feature freeze, developers must
+have sent their pull requests to the edk2 repository **and** received maintainer
+review approval. This means that features, and in particular non-trivial ones,
+must have been accepted by maintainers before the soft freeze date.
 
 Between the soft feature freeze and the [hard feature
 freeze](HardFeatureFreeze), previously reviewed and unit-tested features may be

@@ -1,7 +1,7 @@
 === Current Lists ===
-We currently have the below mailing lists for questions, these are also listed on Groups.io: 
+We currently have the below mailing lists for questions, these are also listed on Groups.io:
 
-Development discussion and patch reviews: https://edk2.groups.io/g/devel<br />
+Development discussion: https://edk2.groups.io/g/devel<br />
 Announcements: https://edk2.groups.io/g/announce<br />
 Request for comments: https://edk2.groups.io/g/rfc<br />
 General discussion topics / questions: https://edk2.groups.io/g/discuss<br />
@@ -13,7 +13,7 @@ Please note that with the exception of *edk2-bugs*, the lists below are all arch
 ! !! Developer Discussions !! Source Code Changes !! Issue Tracking
 |-
 | [http://www.tianocore.org/edk2/ EDK II] / [http://www.tianocore.org/udk2014/ UDK]
-| [https://lists.01.org/mailman/listinfo/edk2-devel edk2-devel] 
+| [https://lists.01.org/mailman/listinfo/edk2-devel edk2-devel]
 | [https://lists.sourceforge.net/lists/listinfo/edk2-commits edk2-commits]
 | [https://lists.01.org/mailman/listinfo/edk2-bugs edk2-bugs]
 |-
