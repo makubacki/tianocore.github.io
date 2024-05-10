@@ -30,7 +30,8 @@ Where:
 * The entire log message should use only standard ASCII text characters
 
 An example would be:
-<Pre>
+
+```txt
 Package/Module: Short one line description of change
 
 REF:https://bugzilla.tianocore.org/show_bug.cgi?id=1000
@@ -39,12 +40,12 @@ Several lines of
 description for the
 change.
 
-Signed-off-by: Contributor Name &lt;contributor@email.server&gt;
-Reviewed-by: Reviewer Name &lt;reviewer@reviewer-email.server&gt;
-</Pre>
+Signed-off-by: Contributor Name <contributor@email.server>
+```
 
 A CVE example would be:
-<Pre>
+
+```txt
 Package/Module: Short one line description of change (CVE-2018-12180)
 
 REF:https://bugzilla.tianocore.org/show_bug.cgi?id=2000
@@ -53,10 +54,13 @@ Several lines of
 description for the
 change.
 
-Signed-off-by: Contributor Name &lt;contributor@email.server&gt;
-Reviewed-by: Reviewer Name &lt;reviewer@reviewer-email.server&gt;
-</Pre>
+Signed-off-by: Contributor Name <contributor@email.server>
+```
 
-# See Also
+> After moving to the pull request contribution process, the `Reviewed-by`, `Acked-by`, and `Tested-by` tags are no
+> longer required in commit messages.
+
+## See Also
+
 * [[Code-Style]]
 * [[Oneline Release Notes Generation]]
