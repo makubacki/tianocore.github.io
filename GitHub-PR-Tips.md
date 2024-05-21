@@ -194,4 +194,4 @@ It provides an intuitive interface for performing common Git operations, includi
 changes, and managing pull requests. If you are new to git, you might also find the GitHub desktop documentation
 helpful for getting started.
 
-- [GiitHub Desktop documentation](https://docs.github.com/en/desktop)
+- [GitHub Desktop documentation](https://docs.github.com/en/desktop)
