@@ -85,16 +85,24 @@ This remainder of this page focuses source management details and how to prepare
 
 9. Compile and run local CI checks.
 
-   - [How to Build with Stuart](How-to-Build-With-Stuart.md "wikilink")
+   - [Build Instructions](Build-Instructions.md "wikilink")
 
-   - Stuart can both compile your code and run CI plugins that check other aspects of the code outside compilation.
+   - If you encounter a CI failure, you can use Stuart to run CI checks locally.
 
-   - These are the same CI checks that will run against the code when you create a pull request. By running the tests
-     locally you will be able to get results much more quickly and reduce overhead on CI resources.
+     - [How to Build with Stuart](How-to-Build-With-Stuart.md "wikilink")
 
-   - If you are new to the Stuart build system, first learn about the basics of Stuart in the link above and then
-     read the "I just want to check if my changes will pass all the non-compiler checks in CI" section to learn how to
-     get CI results without having to wait through compilation.
+     - Stuart can both compile your code and run CI plugins that check other aspects of the code outside compilation.
+
+     - These are the same CI checks that will run against the code when you create a pull request. By running the tests
+       locally you will be able to get results much more quickly and reduce overhead on CI resources.
+
+     - However, some aspects of what is used in CI versus your local setup might be different depending on what
+       parameters you pass to Stuart. For example, if CI is using VS2019 and you are using VS2017, you might get
+       different compilation results.
+
+     - If you are new to the Stuart build system, first learn about the basics of Stuart in the link above and then
+       read the "I just want to check if my changes will pass all the non-compiler checks in CI" section to learn how
+       to get CI results without having to wait through compilation.
 
 10. Push changes to the developer's fork of the EDK II project repository.
 
