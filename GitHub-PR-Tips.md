@@ -26,13 +26,17 @@ is meant to show various tips to improve your workflow making it easier to contr
 ### Forking the edk2 Repository
 
 Forking a repository on GitHub creates a copy of the original repository under your GitHub account, allowing you to
-freely experiment with changes without affecting the original project. To fork the edk2 repository:
+freely experiment with changes without affecting the original project. **You must create a fork** of the edk2
+repository to create a pull request. To fork the edk2 repository:
 
 1. Navigate to the edk2 repository on GitHub.
 2. Click on the "Fork" button in the upper-right corner of the repository page.
 3. Select your GitHub username where you want to fork the repository.
 
 - See [Fork a Repo](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) for more information.
+
+Once your fork is setup, you can push a branch to the fork with your changes and then create a pull request into the
+tianocore/edk2 repo from the branch on the fork.
 
 ### Setting Up Notifications for the edk2 Repository
 
