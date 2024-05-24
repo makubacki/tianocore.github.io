@@ -9,7 +9,7 @@ Are you new to using git? If so, then the [[New to git]] page may be helpful.
 > these commands are OS agnostic.
 
 If you are new to GitHub or looking for ways to make you GitHub workflow more efficient, please read
-[GitHub & PR Tips](GitHub-PR-Tips.md "wikilink").
+[GitHub & PR Tips](GitHub-PR-Tips "wikilink").
 
 ## EDK II Developer Onboarding
 
@@ -22,7 +22,7 @@ At a high-level, getting started with code development in the EDK II repo consis
 
 ## Tool Setup, Workspace Setup, and Development and Test
 
-Refer to the [Build Instructions](Build-Instructions.md "wikilink") documentation. After following those
+Refer to the [Build Instructions](Build-Instructions "wikilink") documentation. After following those
 instructions, you should have a workspace setup and understand how to build and test the code.
 
 This remainder of this page focuses source management details and how to prepare for code review.
@@ -85,11 +85,11 @@ This remainder of this page focuses source management details and how to prepare
 
 9. Compile and run local CI checks.
 
-   - [Build Instructions](Build-Instructions.md "wikilink")
+   - [Build Instructions](Build-Instructions "wikilink")
 
    - If you encounter a CI failure, you can use Stuart to run CI checks locally.
 
-     - [How to Build with Stuart](How-to-Build-With-Stuart.md "wikilink")
+     - [How to Build with Stuart](How-to-Build-With-Stuart "wikilink")
 
      - Stuart can both compile your code and run CI plugins that check other aspects of the code outside compilation.
 
