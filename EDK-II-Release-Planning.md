@@ -11,13 +11,15 @@
 
 ## Proposed Features / Bug Fixes
 * [SecurityPkg:Add EFI Device Authentication Signature Database and SPDM](https://bugzilla.tianocore.org/show_bug.cgi?id=2479)
-* [CryptoPkg:Add more crypto APIs (AESGCM/PEM/X509/RSA/PKCS5/PKCS7/Authenticode) based on Mbedtls](https://bugzilla.tianocore.org/show_bug.cgi?id=4177)
 * CryptoPkg:add additional RSAES-OAEP crypto functions
 * OvmfPkg:Add 5-level paging support
 * [OvmfPkg:SEV-SNP Support for running under an SVSM](https://bugzilla.tianocore.org/show_bug.cgi?id=4654)
 * [OvmfPkg:RBP register shall be cleared in TDVMCALL](https://bugzilla.tianocore.org/show_bug.cgi?id=4696)
 * OvmfPkg:Harden #VC instruction emulation (CVE-2024-25742)
 * [Add SPI bus driver stack](https://bugzilla.tianocore.org/show_bug.cgi?id=4753)
+* [NetworkPkg: Predictable TCP ISNs](https://bugzilla.tianocore.org/show_bug.cgi?id=4541)
+* [NetworkPkg: Use of a Weak PseudoRandom Number Generator](https://bugzilla.tianocore.org/show_bug.cgi?id=4542)
+* UefiCpuPkg: Add new SmmRelocationLib library
 
 # edk2-stable202408 tag planning
 
@@ -31,6 +33,7 @@
 | 2024-08-23           | Release                                  |
 
 ## Proposed Features / Bug Fixes
+* [CryptoPkg:Add more crypto APIs (AESGCM/PEM/X509/RSA/PKCS5/PKCS7/Authenticode) based on Mbedtls](https://bugzilla.tianocore.org/show_bug.cgi?id=4177)
 Todo
 
 # edk2-stable202411 tag planning
