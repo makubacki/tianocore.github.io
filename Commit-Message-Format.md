@@ -57,8 +57,8 @@ change.
 Signed-off-by: Contributor Name <contributor@email.server>
 ```
 
-> After moving to the pull request contribution process, the `Reviewed-by`, `Acked-by`, and `Tested-by` tags are no
-> longer required in commit messages.
+> After moving to the pull request contribution process, the `Cc`, `Reviewed-by`, `Acked-by`, and `Tested-by` tags are
+> no longer required in commit messages.
 
 ## See Also
 
