@@ -162,7 +162,6 @@ enhancements and extensions to these services.
 * Azure Pipelines Evaluation with HBFA integration
   + Contacts
     - Sean Brogan <sean.brogan@microsoft.com>
-    - Bret Barkelew <Bret.Barkelew@microsoft.com>
   + https://github.com/spbrogan/edk2-staging/tree/edk2-stuart-ci-latest
   + To work with this branch and run tests immediately, all you need to do is:
 ```
