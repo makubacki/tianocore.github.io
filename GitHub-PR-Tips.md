@@ -46,6 +46,10 @@ understand the types of notifications available and how to set them up:
 - [About Notifications](https://docs.github.com/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications)
 - [Configuring Notifications](https://docs.github.com/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications)
 
+GitHub also provides guidance for filtering emails in your email client. It is recommended to especially review the
+[Filtering email notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#filtering-email-notifications)
+section to learn what options are available.
+
 ### Creating a Pull Request
 
 Creating a pull request is the primary way to contribute changes to a repository on GitHub. There are many ways to
