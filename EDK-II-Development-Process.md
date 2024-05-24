@@ -145,8 +145,11 @@ This remainder of this page focuses source management details and how to prepare
 
     - For multiple commits use `>$ git rebase -i origin/master`
 
-    - Consult your git gurus on edk2-devel or irc channel if you have
-      questions.
+    - Create a [GitHub discussion](https://github.com/tianocore/edk2/discussions) or consult your git gurus on
+      edk2-devel or irc channel if you have git questions.
+
+    - Follow the [PR Conversation Resolution Process](#pr-conversation-resolution-process) to resolve feedback
+      conversations.
 
 13. Update [TianoCore Bugzilla](https://bugzilla.tianocore.org/) issue(s) resolved by the change(s).
 
@@ -186,13 +189,35 @@ This remainder of this page focuses source management details and how to prepare
      - Unlike a generic comment left in the PR, a comment in a code file must be resolved before the PR can be
        completed.
 
-   - An approval means you approve of all the changes applicable to you in the PR.
+   - If you would like to leave a comment on a specific commit, it is recommended to leave a comment on the file
+     and simply reference the commit in the comment. For example, "this change should be in commit `<commit A title>`
+     instead of commit `<commit B title>`".
+
+   - Ensure conversations in the PR follow the [PR Conversation Resolution Process](#pr-conversation-resolution-process).
+
+   - Note: An approval means you approve of all the changes applicable to you in the PR.
+
+   - Apart from generic comments left in the PR and the comments left on specific files mentioned above, you can also
+     leave a comment at the time you "Approve" or "Request changes". In the GitHub Web UI, click the "Files changed"
+     tab and then "Review changes", select the appropriate radio box, leave your comment, and then click
+     "Submit review".
+
+     ![Leaving Feedback on Review](images/github-and-prs/leaving-feedback-in-review.png)
 
 6. Each code area modified in the PR will have a list of reviewers and maintainers assigned to the path in
    [Maintainers.txt](https://github.com/tianocore/edk2/blob/master/Maintainers.txt). If at least one reviewer assigned
-   to each code area has approved the PR, the `"push"` label may be addeed to complete the PR.
+   to each code area has approved the PR, the `"push"` label may be added to complete the PR.
 
    - Note: All PR status checks must succeed and there must be no merge conflicts for the PR to complete.
+
+### PR Conversation Resolution Process
+
+All conversations must be resolved for a PR to be completed. This is the process used to resolve conversations.
+
+1. A PR author is allowed to resolve conversations after they have addressed feedback.
+2. After addressing feedback, a PR author is expected to leave a comment describing their resolution in the
+   conversations.
+3. A conversation cannot be resolved until the PR author and commenter have reached an agreed upon resolution.
 
 ## Maintainer Process for the EDK II BaseTools Project
 
