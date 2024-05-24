@@ -180,6 +180,9 @@ This remainder of this page focuses source management details and how to prepare
      finding changes easier in the future. High quality descriptions make it much easier to understand a set of changes
      in the PR.
 
+     > If you are familiar with the previous mailing list based process, you can think of the PR descritpion like
+     > the cover letter.
+
 3. Verify that the proper set of reviewers are on the pull request. Add any reviewers that are missing.
 
 4. Verify that the commit(s) can individually be submitted to `edk2/master`. Squashing commits is not allowed.
