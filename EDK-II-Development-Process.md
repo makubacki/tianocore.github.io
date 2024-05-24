@@ -22,7 +22,7 @@ At a high-level, getting started with code development in the EDK II repo consis
 
 ## Tool Setup, Workspace Setup, and Development and Test
 
-Refer to the [How to Build with Stuart](How-to-Build-With-Stuart.md "wikilink") documentation. After following those
+Refer to the [Build Instructions](Build-Instructions.md "wikilink") documentation. After following those
 instructions, you should have a workspace setup and understand how to build and test the code.
 
 This remainder of this page focuses source management details and how to prepare for code review.
