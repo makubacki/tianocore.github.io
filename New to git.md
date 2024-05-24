@@ -110,3 +110,7 @@ careful with.
     * For your personal development branches where no one is depending on the branch, it is okay to force push. In
       fact, most people will eventually find that force pushing is a good way to backup the currect state of their
       development work on a remote server.
+
+    * It is also very common to make changes to the commit(s) on your branch based on code review feedback, amend the
+      changes to the commits, and then force push to the branch to your fork which reflects the changes in its
+      associated PR.
