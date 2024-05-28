@@ -40,7 +40,7 @@ tianocore/edk2 repo from the branch on the fork.
 
 When you fork a repository, you should understand how permissions and settings are transferred to protect your fork.
 
-- See [About permissions and visibility of forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-permissions-and-visibility-of-forks)
+- See [About permissions and visibility of forks](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/about-permissions-and-visibility-of-forks)
 
 ### Setting Up Notifications for the edk2 Repository
 
@@ -51,7 +51,7 @@ understand the types of notifications available and how to set them up:
 - [Configuring Notifications](https://docs.github.com/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications)
 
 GitHub also provides guidance for filtering emails in your email client. It is recommended to especially review the
-[Filtering email notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#filtering-email-notifications)
+[Filtering email notifications](https://docs.github.com/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#filtering-email-notifications)
 section to learn what options are available.
 
 ### Creating a Pull Request
@@ -65,6 +65,17 @@ The quickest approach when using the GitHub Web UI is to push the branch to your
 request from the branch you just pushed to your fork.
 
 - See [Creating a Pull Request](https://docs.github.com//pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) for more information.
+
+#### Create a Draft Pull request
+
+Prior to the current pull request process, pull requests were created to test changes against CI and then closed. Now,
+any pull requests that are not targeting completion to the `master` branch must be marked as a draft pull request.
+This still allows PR status checks to run but it indicates that maintainers should not review the pull request.
+
+To create a draft pull request in the GitHub Web UI, click the down arrow next to "Create Pull Request" and select
+"Create Draft Pull Request". An example of how to do this is shown in the link below.
+
+- See [Introducing draft pull requests](https://github.blog/2019-02-14-introducing-draft-pull-requests/)
 
 ### Viewing Changes in a Pull Request
 
@@ -155,7 +166,7 @@ and [Ubuntu](https://github.com/tianocore/containers/pkgs/container/containers%2
 [dev container](https://github.com/tianocore/edk2/blob/master/.devcontainer/devcontainer.json) you can use for your
 Codespaces environment.
 
-- [GitHub Codespaces overview](https://docs.github.com/en/codespaces/overview)
+- [GitHub Codespaces overview](https://docs.github.com/codespaces/overview)
 - [TianoCore containers](https://github.com/tianocore/containers)
 
 ---
@@ -206,4 +217,4 @@ It provides an intuitive interface for performing common Git operations, includi
 changes, and managing pull requests. If you are new to git, you might also find the GitHub desktop documentation
 helpful for getting started.
 
-- [GitHub Desktop documentation](https://docs.github.com/en/desktop)
+- [GitHub Desktop documentation](https://docs.github.com/desktop)

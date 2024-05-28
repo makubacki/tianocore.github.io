@@ -106,7 +106,7 @@ This remainder of this page focuses source management details and how to prepare
 
 10. Push changes to the developer's fork of the EDK II project repository.
 
-    - How to create a [GitHub fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+    - How to create a [GitHub fork](https://help.github.com/github/getting-started-with-github/fork-a-repo)
       - **NOTE:** A GitHub fork can also be created using the command line utility called [`gh`](https://cli.github.com/).
         - See [`gh repo fork`](https://cli.github.com/manual/gh_repo_fork).
 
@@ -120,10 +120,12 @@ This remainder of this page focuses source management details and how to prepare
 
 11. Create a GitHub pull request from the developer's `<new-integration-branch>` to `edk2/master`.
 
-    - How to create a [GitHub pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+    - How to create a [GitHub pull request](https://help.github.com/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
       - **NOTE:** A GitHub pull request can also be created using the command line utility called [`gh`](https://cli.github.com/).
         - See [`gh pr`](https://cli.github.com/manual/gh_pr).
+
+    - If a pull request is only being created to run CI checks, create a [draft pull request](GitHub-PR-Tips.md#create-a-draft-pull-request).
 
     - Add the relevant reviewers and maintainers as reviewers to the pull request.
       - You can find the reiewers and maintains for the code areas touched by your changes in
@@ -172,7 +174,7 @@ This remainder of this page focuses source management details and how to prepare
 1. It is recommended to register for email notifications for pull requests, pushes, and check status results by
    setting up notifications for the EDK II repository ([tianocore/edk2](https://github.com/tianocore/edk2)).
 
-   - [Configuring notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications)
+   - [Configuring notifications](https://docs.github.com/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications)
 
 2. Verify that the Pull Request title and description succinctly describe the changes.
 
