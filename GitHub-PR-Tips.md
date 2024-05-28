@@ -38,6 +38,10 @@ repository to create a pull request. To fork the edk2 repository:
 Once your fork is setup, you can push a branch to the fork with your changes and then create a pull request into the
 tianocore/edk2 repo from the branch on the fork.
 
+When you fork a repository, you should understand how permissions and settings are transferred to protect your fork.
+
+- See [About permissions and visibility of forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-permissions-and-visibility-of-forks)
+
 ### Setting Up Notifications for the edk2 Repository
 
 Notifications help you stay informed about certain activities in the repository. Review the following links to better
