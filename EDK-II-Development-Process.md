@@ -127,12 +127,10 @@ This remainder of this page focuses source management details and how to prepare
 
     - If a pull request is only being created to run CI checks, create a [draft pull request](GitHub-PR-Tips.md#create-a-draft-pull-request).
 
-    - Add the relevant reviewers and maintainers as reviewers to the pull request.
-      - You can find the reiewers and maintains for the code areas touched by your changes in
-        [Maintainers.txt](https://github.com/tianocore/edk2/blob/master/Maintainers.txt).
-
-      - You can also use the [GetMaintainer.py](https://github.com/tianocore/edk2/blob/master/BaseTools/Scripts/GetMaintainer.py)
-        script to find the list of reviewers to add.
+    - The relevant reviewers and maintainers need to be added to the pull request.
+      - If you are a maintainer, you should add the appropriate PR reviewers yourself.
+        - See the step in [Maintainer Process](#maintainer-process)
+      - Otherwise, a maintainer will do this for you.
 
     - Resolve GitHub pull request issues if failures are reported. Common failures are shown below.
 
@@ -176,7 +174,15 @@ This remainder of this page focuses source management details and how to prepare
 
    - [Configuring notifications](https://docs.github.com/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications)
 
-2. Verify that the Pull Request title and description succinctly describe the changes.
+2. Add the relevant reviewers and maintainers as reviewers to the pull request.
+
+   - You can find the reiewers and maintainers for the code areas touched by the changes in
+     [Maintainers.txt](https://github.com/tianocore/edk2/blob/master/Maintainers.txt).
+
+   - You can also use the [GetMaintainer.py](https://github.com/tianocore/edk2/blob/master/BaseTools/Scripts/GetMaintainer.py)
+     script to find the list of reviewers to add.
+
+3. Verify that the Pull Request title and description succinctly describe the changes.
 
    - PR titles and descriptions are used in repo searches and show up in release notes. More precise titles make
      finding changes easier in the future. High quality descriptions make it much easier to understand a set of changes
@@ -184,8 +190,6 @@ This remainder of this page focuses source management details and how to prepare
 
      > If you are familiar with the previous mailing list based process, you can think of the PR descritpion like
      > the cover letter.
-
-3. Verify that the proper set of reviewers are on the pull request. Add any reviewers that are missing.
 
 4. Verify that the commit(s) can individually be submitted to `edk2/master`. Squashing commits is not allowed.
 
