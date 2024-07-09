@@ -1,5 +1,12 @@
 # How to report a Security Issue
 
+**NOTE**
+The latest tracking and update of security issues for EDKII can be found at (https://github.com/tianocore/tianocore.github.io/wiki/GHSA-GitHub-Security-Advisories-Proceess). The below process and details are for the former process that used bugzilla. This content page will be maintained until all of the bugzilla based items under the security purview are closed.
+
+At present the repository tracked by tianocore infosec includes the main edkII repository (https://github.com/tianocore/edk2). For issues found in repos like (https://github.com/tianocore/edk2-platforms) recommend reaching out to the respective component who is named in the subdirectory - you can find a list of relevant companies in this domain at (https://uefi.org/security), for example.
+
+Also, it is encouraged to attach a patch that mitigates the issues with the bug report, if possible.
+
 The bug tracking system used for Tianocore projects is [Tianocore Bugzilla](https://bugzilla.tianocore.org).  An account must be [created](https://bugzilla.tianocore.org/createaccount.cgi) to enter a new issue or update exiting issues.  New security issues must be entered using the **Tianocore Security Issue** product.  Issues in the **Tianocore Security Issue** product are only visible to the **Reporter** of the issue and the members of the **infosec** group.  In your report please include the paths of the modules you believe are involved and a detailed description of the issue.
 
 Additional information about Tianocore Bugzilla can be found in [Reporting Issues](Reporting-Issues "wikilink")
