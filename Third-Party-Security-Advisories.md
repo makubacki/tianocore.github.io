@@ -1,3 +1,18 @@
+# [CVE-2024-4741 - OpenSSL](https://www.openssl.org/news/secadv/20240528.txt)
+## Published: 5/28/2024
+## Recommendation:
+Not a problem for EDK2. EDK2 does not directly call the SSL_free_buffers function.
+
+# [CVE-2024-4603 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2024-4603)
+## Published: 5/16/2024
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support DSA.
+
+# [CVE-2024-2511 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2024-2511)
+## Published: 4/08/2024
+## Recommendation:
+Not a problem for EDK2. This CVE only affects TLS servers supporting TLSv1.3. EDK2 does not support TLS server configurations. EDK2 does not support TLSv1.3.
+
 # [CVE-2024-0727 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2024-0727)
 ## Published: 1/25/2024
 ## Recommendation:
