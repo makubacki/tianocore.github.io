@@ -1,3 +1,8 @@
+# [CVE-2024-5535 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2024-5535)
+## Published: 6/27/2024
+## Recommendation:
+Not a problem for EDK2. EDK2 does not call the SSL_select_next_proto function. 
+
 # [CVE-2024-4741 - OpenSSL](https://www.openssl.org/news/secadv/20240528.txt)
 ## Published: 5/28/2024
 ## Recommendation:
