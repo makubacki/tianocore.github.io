@@ -12,7 +12,7 @@ Things to be aware of:
 
      <img width="396" alt="image" src="https://github.com/user-attachments/assets/a6ab3e65-c222-43e2-9efc-612b2845e168">
 
-If the workflow to add reviewers runs successfully it will like this in the PR Status Checks area. The workflow itself should usually execute in less than a minute.
+If the workflow to add reviewers runs successfully it will look like this in the PR Status Checks area. The workflow itself should usually execute in less than a minute.
 
 <img width="601" alt="image" src="https://github.com/user-attachments/assets/547c9aa1-a019-4687-b5ce-f364a0641b43">
 
@@ -36,7 +36,7 @@ The GitHub workflow is recognized as a workflow due to its placement in the `.gi
 
 ### First Time Contributors
 
-Because this is a GitHub workflow and `edk2` currently does not run workflows for security reasons for first time contributors, a maintainer will need to click the "Approve and run" button to allow the workflow to run for first time contributors to edk2. For this reason, maintainers should have notifications set up on pull requests and edk2 and be ready to approve workflows after reviewing the pull request content. This is already the procedure today for existing workflows.
+Because this is a GitHub workflow and `edk2` currently does not run workflows for security reasons for first time contributors, a maintainer will need to click the "Approve and run" button to allow the workflow to run for first time contributors to edk2. For this reason, maintainers should have notifications set up on pull requests in edk2 and be ready to approve workflows after reviewing the pull request content. This is already the procedure today for existing workflows.
 
 - [More Details](https://docs.github.com/actions/managing-workflow-runs/approving-workflow-runs-from-public-forks#approving-workflow-runs-on-a-pull-request-from-a-public-fork)
 
@@ -51,7 +51,7 @@ The workflow determines the set of commits in the PR branch and calls `GetMainta
 
 ### A Reviewer is not a Collaborator
 
-A GitHub user can only be added as a reviewer if they are a collaborator in the repository. This is true regardless of this workflow. If a reviewer is found that is not a collaborator the following comment will be posted in the pull request and reviewers will not be added.
+A GitHub user can only be added as a reviewer if they are a collaborator in the repository. This is true regardless of this workflow. If a reviewer is found that is not a collaborator, the following comment will be posted in the pull request and reviewers will not be added. The list of GitHub usernames shown in the comment is the total list of which one or more may not be collaborators.
 
 ![image](https://github.com/user-attachments/assets/c91ea771-d6fe-4d70-b2e7-66cd1b71e4cd)
 
