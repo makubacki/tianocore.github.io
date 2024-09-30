@@ -365,7 +365,7 @@ OvmfPkg is considered a "platform firmware" for the [QEMU open-source emulator](
 - Because we are building a platform build file, the build command will be `stuart_build` instead of `stuart_ci_build`
   to compile the code
 
-`stuart_build -c PlatformBuild.py -p OvmfPkg -a IA32,X64 TOOL_CHAIN_TAG=VS2019`
+`stuart_build -c PlatformBuild.py -a IA32,X64 TOOL_CHAIN_TAG=VS2019`
 
 If you want to run CI checks such as CI plugins, you can use `stuart_ci_build` with the CI build file.
 
@@ -443,7 +443,7 @@ The example below uses:
 - The `-a` parameter is used to specify the `IA32` and `X64` architectures should be built.
 - The `--flashrom` parameter is used to load the firmware in QEMU and boot QEMU after the firmware build is completed.
 
-`stuart_build -c PlatformBuild.py -p OvmfPkg -a IA32,X64 TOOL_CHAIN_TAG=GCC5 --flashrom`
+`stuart_build -c PlatformBuild.py -a IA32,X64 TOOL_CHAIN_TAG=GCC5 --flashrom`
 
 ---
 
