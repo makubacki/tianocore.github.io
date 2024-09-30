@@ -286,7 +286,12 @@ The recommended steps to update dependencies are in this section.
 
 #### Rebuild BaseTools
 
-See the [BaseTools build example](#i-want-to-build-basetools).
+In Linux (Ubuntu) rebuilding BaseTools requires a one-time install of various
+dependencies, see the [BaseTools build example](#i-want-to-build-basetools).
+
+Once any required dependencies are installed, the command to rebuild BaseTools (you may need to specify a different toolchain with `-t`) is:
+
+`python3 BaseTools/Edk2ToolsBuild.py -t GCC5`
 
 ### Before Each Build Steps
 
