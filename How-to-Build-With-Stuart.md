@@ -471,7 +471,7 @@ The file [BaseTools/Edk2ToolsBuild.py](https://github.com/tianocore/edk2/blob/ma
 can be called as a standalone Python script. You just need to pass the tool chain tag you would like to build with.
 
 Example:
-`python BaseTools/Edk2ToolsBuild.py -t GCC5`
+`python3 BaseTools/Edk2ToolsBuild.py -t GCC5`
 
 ---
 
