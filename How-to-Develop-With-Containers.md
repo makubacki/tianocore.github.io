@@ -42,6 +42,14 @@ new useful configurations or tools to this documentation.
 > and WSL 2 causes a very significant performance reduction. Instead, clone the
 > repo in the WSL file system and map into the container or directly clone into
 > the container.
+>
+> For example:
+> - Install the WSL extension in VS code
+> - Launch a WSL 2 instance
+> - Clone the repository to a directory within the instance, not a mounted Windows drive
+> - `cd` into the cloned repository directory
+> - Use the command `code .` to start VS Code
+> - VS Code should offer you the option 'Reopen in Container', click on it
 
 ### Manually configuring the container
 
