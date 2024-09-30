@@ -219,8 +219,15 @@ If you've already completed these steps you don't need to run them again.
 
 4. Tell Git to ignore the Python virtual environment
 
-    The problem: Git will try to track your Python virtual environment as new code changes if it is not told to
+    Git will try to track your Python virtual environment as new code if it is not told to
     ignore it.
+    
+    The edk2 project has been set to ignore the `.venv` directory (since
+    [this commit](https://github.com/tianocore/edk2/commit/517019a55302b1222c152ee05226d55883050642)),
+    so if you are working on the current version of edk2 you can ignore this step.
+    
+    If you are working on another project (or older versions of the edk2 project), you can tell
+    git to ignore the virtual environment like this:
 
     - Open the file `.git/info/exclude`
       - `cd .git`
