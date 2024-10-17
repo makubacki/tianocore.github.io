@@ -1,3 +1,10 @@
+# [CVE-2024-6119 - OpenSSL](https://www.cve.org/CVERecord?id=CVE-2024-6119)
+## Published: 6/27/2024
+## Recommendation:
+Impacts EDK2 TlsLib. The issue is only applicable to OpenSSL 3.* branches. Recommend moving to OpenSSL 3.0.15. 
+
+The issue does not impact OpenSSL 1.1.1 branch. 
+
 # [CVE-2024-5535 - OpenSSL](https://nvd.nist.gov/vuln/detail/CVE-2024-5535)
 ## Published: 6/27/2024
 ## Recommendation:
