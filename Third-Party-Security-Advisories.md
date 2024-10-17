@@ -1,5 +1,10 @@
+# [CVE-2024-9143 - OpenSSL](https://www.cve.org/CVERecord?id=CVE-2024-9143)
+## Published: 10/16/2024
+## Recommendation:
+Not a problem for EDK2. GF(2^M) Curves (EC2M) are not enabled in EDK2 CryptoPkg. 
+
 # [CVE-2024-6119 - OpenSSL](https://www.cve.org/CVERecord?id=CVE-2024-6119)
-## Published: 6/27/2024
+## Published: 9/3/2024
 ## Recommendation:
 Impacts EDK2 TlsLib. The issue is only applicable to OpenSSL 3.* branches. Recommend moving to OpenSSL 3.0.15. 
 
