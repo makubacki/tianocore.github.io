@@ -24,15 +24,13 @@ earlier than the soft freeze date. This will give the maintainer enough time to
 review and test your patches. For major features you should probably
 communicate with the maintainer about their intentions. It also helps if you:
 
-- Enter a Bugzilla ticket for the [TianoCore Feature
-  Requests](https://bugzilla.tianocore.org/enter_bug.cgi?product=Tianocore%20Feature%20Requests)
-  product.
+- Report a feature request in github project.
 
 - Optionally, write a Feature page in the [edk2 wiki](Home) describing the
   feature and the motivation.
 
 - On the [release planning wiki page](EDK-II-Release-Planning), link to your
-  Bugzilla entry and/or the feature wiki page.
+  issue entry and/or the feature wiki page.
 
 - Do all this early enough that you can work with the maintainer to get the
   review process underway.

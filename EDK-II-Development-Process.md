@@ -50,8 +50,6 @@ This remainder of this page focuses source management details and how to prepare
 
       - Tip: Add the `-s` parameter to automatically append your `Signed-off-by` tag to the commit message.
 
-    - Note any [TianoCore Bugzilla](https://bugzilla.tianocore.org/) items in the commit message.
-
 5. Use the `PatchCheck.py` script under `edk2/BaseTools/Scripts` directory to verify the commits are correctly
    formatted.
 
@@ -127,6 +125,8 @@ This remainder of this page focuses source management details and how to prepare
 
     - If a pull request is only being created to run CI checks, create a [draft pull request](GitHub-PR-Tips.md#create-a-draft-pull-request).
 
+    - Pull request description needs to include Fixes issue url link, for example: Fixes https://github.com/tianocore/edk2/issues/10626, then PR will automatically be related to github issue.
+
     - The relevant reviewers and maintainers need to be added to the pull request.
       - If you are a maintainer, you should add the appropriate PR reviewers yourself.
         - See the step in [Maintainer Process](#maintainer-process)
@@ -158,14 +158,6 @@ This remainder of this page focuses source management details and how to prepare
 
     - Follow the [PR Conversation Resolution Process](#pr-conversation-resolution-process) to resolve feedback
       conversations.
-
-13. Update [TianoCore Bugzilla](https://bugzilla.tianocore.org/) issue(s) resolved by the change(s).
-
-    - Add a pointer to the GitHub pull request (e.g. [Readme.md: Update EDK II CI build branch name](https://github.com/tianocore/edk2/pull/153)).
-
-    - Add the PR merged to `edk2/master` (e.g. `Completed in PR https://github.com/tianocore/edk2/pull/153`).
-
-    - Mark BZ issues as Resolved/Fixed.
 
 ## Maintainer Process
 

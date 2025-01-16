@@ -1,8 +1,8 @@
 ## Overview
 We will be holding our community bug triage every two weeks. There will be two meetings attempting to cover all timezones. Please contact the list with questions or comments.  
 
-## Bugzilla Links
-See the bottom of the Bugzilla page. Once logged in, there will be a link to "Tianocore Issues UNCONFIRMED". We will triage starting with those bugs.
+## Issues Links
+GitHub Project Issues with label needs-triage
 
 ## Add to Calendar
 Please subcribe to the Groups.io calendar:  

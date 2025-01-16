@@ -27,7 +27,7 @@ See [[EDK II Documents]]
 
 [[Mailing Lists]]
 
-TianoCore uses Bugzilla for [[Reporting Issues]] and [[Reporting Security Issues]].
+TianoCore uses github issues for [[Reporting Issues]] and [[Reporting Security Issues]].
 
 Current list of [[Tasks]] identified by the EDK II community.
 
