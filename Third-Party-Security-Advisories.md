@@ -1,3 +1,8 @@
+# [CVE-2024-12797- OpenSSL](https://www.cve.org/CVERecord?id=CVE-2024-12797)
+## Published: 2/11/2025
+## Recommendation:
+Not a problem for EDK2. The OpenSSL API to enable Raw Public Keys (RPKs) is not available to users of EDK2 CryptoPkg. 
+
 # [CVE-2024-9143 - OpenSSL](https://www.cve.org/CVERecord?id=CVE-2024-9143)
 ## Published: 10/16/2024
 ## Recommendation:
