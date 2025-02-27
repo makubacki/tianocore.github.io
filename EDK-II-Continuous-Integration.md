@@ -16,7 +16,7 @@ enhancements and extensions to these services.
      status provided at top of `edk2/master` [Readme.md](https://github.com/tianocore/edk2/blob/master/Readme.md).
    * [EDK II Pytool Library](https://github.com/tianocore/edk2-pytool-library)
    * [EDK II Pytool Extensions](https://github.com/tianocore/edk2-pytool-extensions)
-   * [TianoCore Bugzilla #2315](https://bugzilla.tianocore.org/show_bug.cgi?id=2315)
+   * [GitHub Issue](https://github.com/tianocore/edk2/issues/8241)
    * Original RFC Proposals
      - https://edk2.groups.io/g/rfc/message/93
      - https://edk2.groups.io/g/devel/message/46607
