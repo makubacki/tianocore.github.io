@@ -9,9 +9,9 @@ RFCs with detailed process for the license change:
   * V2: https://lists.01.org/pipermail/edk2-devel/2019-March/037669.html
   * V1: https://lists.01.org/pipermail/edk2-devel/2019-March/037500.html
 
-# Bugzilla
+# GitHub Issue
 
-https://bugzilla.tianocore.org/show_bug.cgi?id=1373
+https://github.com/tianocore/edk2/issues/7666
 
 # Patch Reviews
 
@@ -312,8 +312,8 @@ Key Dates
   Proposals (RFCs):
       https://lists.01.org/pipermail/edk2-devel/2017-March/008654.html
 
-  TianoCore Bugzilla:
-      https://bugzilla.tianocore.org/show_bug.cgi?id=629
+  TianoCore GitHub Issue:
+      https://github.com/tianocore/edk2/issues/7056
 
 * April 9, 2019
 
@@ -330,8 +330,8 @@ Key Dates
       https://lists.01.org/pipermail/edk2-devel/2019-February/036260.html
       https://lists.01.org/pipermail/edk2-devel/2019-March/037500.html
 
-  TianoCore Bugzilla:
-      https://bugzilla.tianocore.org/show_bug.cgi?id=1373
+  TianoCore GitHub Issue:
+      https://github.com/tianocore/edk2/issues/7666
 
 --------------------------------------------------------------------------------
 License.txt: BSD 2-Clause License
