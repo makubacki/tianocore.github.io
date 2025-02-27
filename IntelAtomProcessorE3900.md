@@ -17,12 +17,12 @@ Developers can download pre-built UEFI firmware images, utilities, binary object
 
 ## Reporting Firmware Issues
 
-Please report any firmware issues in [TianoCore Bugzilla](https://bugzilla.tianocore.org/) using the following field values:
+Please report any firmware issues in [GitHub Issues](https://github.com/tianocore/edk2-platforms/issues) using the following field values:
 
 * Product: EDK2 Platforms
 * Component: Minnowboard 3
 
-See [[Reporting Issues]] for more information on TianoCore Bugzilla. 
+See [[Reporting Issues]] for more information. 
 
 ## Supported Platforms
 
