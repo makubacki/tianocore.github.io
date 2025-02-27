@@ -92,7 +92,8 @@ To run an *i82557b* native test, the UndiRuntimeDxe module must be included in t
 ```
 OptionRomPkg/UndiRuntimeDxe/UndiRuntimeDxe.inf   
 ```
-During *i82557b* native verification, you may encounter issues. For information on known issues, please refer to https://bugzilla.tianocore.org/show_bug.cgi?id=609.
+During *i82557b* native verification, you may encounter issues. For information on known issues, please refer to https://github.com/tianocore/edk2/issues/9587.
+
 
 ## EDKII Network Scalability
 The topology described above creates multiple OVMF guests to create a virtual cluster in one host. Another option creates multiple virtual network devices in one OVMF guest for verifying network scalability. The topology is shown as follows:
