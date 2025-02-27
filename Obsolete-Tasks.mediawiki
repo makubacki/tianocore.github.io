@@ -45,7 +45,7 @@ Mentor: [[@mdkinney|https://github.com/mdkinney]]
 Enable Coverity Scan for all EDK II projects. https://scan.coverity.com/
 * Evaluate open source CI tools to fine best one to periodically auto run Coverity static analysis
 * Look into ways to auto-post results to TianoCore (website, wiki, or git repo).
-* Look into ways to automate Bugzilla issue generation based on Coverity results.
+* Look into ways to automate GitHub issue generation based on Coverity results.
 Mentor: [[@mdkinney|https://github.com/mdkinney]], [[@shijunjing|https://github.com/shijunjing]]
 
 = See Also =
