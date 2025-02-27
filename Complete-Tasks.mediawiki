@@ -111,7 +111,7 @@ Add Xen specific support in [[OVMF]] to improve boot & runtime performance. http
 * Language: C
 * Mentor:
 * Suggested by:  andreiwarkentin, Bei Guan
-* Status: Implemented via https://bugzilla.tianocore.org/show_bug.cgi?id=1689
+* Status: Implemented via https://github.com/tianocore/edk2/issues/7876
 
 
 === <s>Port EmulatorPkg to Windows</s> ===
