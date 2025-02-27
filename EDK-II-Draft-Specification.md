@@ -3,7 +3,7 @@ The documents in this page are the latest draft revisions using the
 source format and published using the [Gitbook Action](https://github.com/marketplace/actions/gitbook-action).
 The source content for these documents are in GIT repositories in the
 [Tianocore-docs](https://github.com/tianocore-docs) organization hosted by [GitHub](https://github.com).
-Document feedback, issues, and feature requests can be entered in [Tianocore Bugzilla](https://bugzilla.tianocore.org).
+Document feedback, issues, and feature requests can be entered as a GitHub Issues in the document GitHub repository.
 
 * **_EDK II Build Specification_** \[ 
 [HTML   ](https://tianocore-docs.github.io/edk2-BuildSpecification/draft/),
