@@ -27,8 +27,7 @@ associated changes, such as links to content within the [TianoCore GitHub](https
 organization, related to the "code first" change.
 
 Code first implementation targeting the EDK II open source project are initially
-held in brances in the [edk2-staging](https://github.com/tianocore/edk2-staging)
-repository and referenced in the GitHub issue.
+held in draft pull requests within a TianoCore GitHub repository.
 
 ### Specification Text Template
 
@@ -97,22 +96,26 @@ Optional Section
    section is filled in per the template in [Specification Text Template](#specification-text-template).
    - Note: The primary repository will most frequently be [edk2](https://github.com/tianocore/edk2).
    - Note: Ensure all specifications impacted by the change are selected in the form.
-     - Note: A specification draft change must be included for each specification impacted.
+     - Note: A specification draft change must be included in the issue for each specification impacted.
 2. Make the changes in a new branch with the prefix `GI####-<BranchName>` that
    meets the content requirements for the code first process described in this document.
     - Note: `####` in `GI####` is the GitHub issue number from *step 1*.
     - Note: `<BranchName>` is a brief description of the change.
     - Note: Code content must follow the coding style and naming conventions in
       the [Source Code](#source-code) section of this document.
-3. Push the branch with the changes to [edk2-staging](https://github.com/tianocore/edk2-staging).
-4. Add a comment to the GitHub issue created in *step 1* with a link to the branch in edk2-staging.
+3. Push the branch to your fork of the relevant repository.
+4. Create a draft pull request into the default branch on the repository from the fork branch.
+   - Check the "Code First" box in the PR template so the `type:code-first` label is applied to the PR.
+5. Add a comment in the PR to the GitHub issue created in *step 1*.
 
 If the change impacts repsoitories other than edk2, such as integration changes in
 [edk2-platforms](https://github.com/tianocore/edk2-platforms), those changes should
-be kept in a branch on a fork of the repository. The branch name on the fork should
-have the same name as the branch in `edk-staging` with the prefix `GI####-<BranchName>`.
+be kept in a branch on a fork of the repository and the PR process described above
+should be followed in that repository as well.
 
-Any such branches on forks should be linked in the GitHub issue created in *step 1* for the change.
+Any other relevant branches, issues, discussions, or forks should be linked to the issue in *step 1*.
+
+When the change is ready for review, the PR should be marked as ready for review (taken out of draft status).
 
 ## Source Code
 
