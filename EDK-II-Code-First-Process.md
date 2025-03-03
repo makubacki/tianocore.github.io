@@ -14,45 +14,21 @@ specification update is then submitted to the appropriate working group as an
 Engineering Change Request (ECR), and voted on. For the UEFI Forum, this is a
 change in workflow, not a change in process.
 
-ECRs are tracked in a UEFI Forum Mantis instance, access restricted to UEFI
-Forum Members. TianoCore enables this new process by providing areas on
-[TianoCore Bugzilla](https://bugzilla.tianocore.org) to track both specification
-updates and reference implementations and new repositories under
-[TianoCore GitHub](https://github.com/tianocore) dedicated to hold "code first".
+## UEFI Forum Tracking
 
-## TianoCore Bugzilla
+ECRs are tracked in a [UEFI Forum Mantis](https://mantis.uefi.org/) instance,
+with access restricted to UEFI Forum Members.
 
-[TianoCore Bugzilla](bugzilla.tianocore.org) has product categories for:
+## TianoCore Tracking
 
-- ACPI Specification
-- UEFI Shell Specification
-- UEFI Platform Initialization Distribution Packaging Specification
-- UEFI Platform Initialization Specification Specification
-- UEFI Specification
+TianoCore enables this process by using [GitHub issues](https://github.com/features/issues)
+to track specification updates, reference implementations, and any other
+associated changes, such as links to content within the [TianoCore GitHub](https://github.com/tianocore)
+organization, related to the "code first" change.
 
-Each product category has separate components for:
-
-- Specification
-- Reference implementation
-
-## TianoCore GitHub
-
-Reference implementations targeting the EDK II open source project are held
-in branches in the [edk2-staging](https://github.com/tianocore/edk2-staging)
-repository.
-
-Additional repositories for implementing reference features in additional open
-source projects can be added in the future, as required.
-
-Specification text changes are held within the affected source repository,
-using the GitHub flavor of markdown, in a file (or split across several files)
-with .md suffix.  Multiple files are required if changes impact multiple
-specifications or if the specification is large and is easier to maintain
-if the changes are split across multiple files.
-
-- NOTE: This one may break down where we have a specification change affecting
-  multiple specifications, but at that point we can track it with multiple
-  TianoCore Bugzilla entries.
+Code first implementation targeting the EDK II open source project are initially
+held in brances in the [edk2-staging](https://github.com/tianocore/edk2-staging)
+repository and referenced in the GitHub issue.
 
 ### Specification Text Template
 
@@ -116,30 +92,33 @@ Optional Section
 
 ## Intended workflow
 
-The entity initiating a specification change enters a Bugzilla in the appropriate
-area of [TianoCore Bugzilla](bugzilla.tianocore.org). This entry contains the
-outline of the change, and the full initial draft text is attached.
+1. Create a new GitHub issue in the primary TianoCore repository for the change
+   using the "Code First" form. Ensure that the **"Specification Draft Change"**
+   section is filled in per the template in [Specification Text Template](#specification-text-template).
+   - Note: The primary repository will most frequently be [edk2](https://github.com/tianocore/edk2).
+   - Note: Ensure all specifications impacted by the change are selected in the form.
+     - Note: A specification draft change must be included for each specification impacted.
+2. Make the changes in a new branch with the prefix `GI####-<BranchName>` that
+   meets the content requirements for the code first process described in this document.
+    - Note: `####` in `GI####` is the GitHub issue number from *step 1*.
+    - Note: `<BranchName>` is a brief description of the change.
+    - Note: Code content must follow the coding style and naming conventions in
+      the [Source Code](#source-code) section of this document.
+3. Push the branch with the changes to [edk2-staging](https://github.com/tianocore/edk2-staging).
+4. Add a comment to the GitHub issue created in *step 1* with a link to the branch in edk2-staging.
 
-If multiple specification updates are interdependent, especially if between
-different specifications, then multiple Bugzilla entries should be created.
-These Bugzilla entries *must* be linked together with dependencies.
+If the change impacts repsoitories other than edk2, such as integration changes in
+[edk2-platforms](https://github.com/tianocore/edk2-platforms), those changes should
+be kept in a branch on a fork of the repository. The branch name on the fork should
+have the same name as the branch in `edk-staging` with the prefix `GI####-<BranchName>`.
 
-After the Bugzillas have been created, new branches should be created in the
-relevant repositories for each Bugzilla.  The branch names must use the following
-format where `####` is the Bugzilla ID and \<Brief Description\> is an optional
-description of the change.
-
-`BZ####-<Brief Description>`
-
-If multiple Bugzilla entries must coexist on a single branch, one of them is
-designated the *top-level*, with dependencies properly tracked. That Bugzilla
-is be the one naming the branch.
+Any such branches on forks should be linked in the GitHub issue created in *step 1* for the change.
 
 ## Source Code
 
 In order to ensure draft code does not accidentally leak into production use,
 and to signify when the changeover from draft to final happens, *all* new or
-modified[1] identifiers must be prefixed with the relevant BZ#### identifiers.
+modified[1] identifiers must be prefixed with the relevant `GI####` identifiers.
 
 - [1] Modified in a non-backwards-compatible way. If, for example, a statically
       sized array is grown - this does not need to be prefixed. But a tag in a
@@ -147,7 +126,7 @@ modified[1] identifiers must be prefixed with the relevant BZ#### identifiers.
 
 ### File names
 
-New public header files require the prefix (i.e. `Bz1234MyNewProtocol.h`).
+New public header files require the prefix (i.e. `Gi1234MyNewProtocol.h`).
 Private header files do not need the prefix.
 
 ### Contents
@@ -157,8 +136,8 @@ Examples:
 
 | Released in spec | Draft version in tree | Comment |
 | ---              | ---                   | ---     |
-| `FunctionName`   | `Bz1234FunctionName`  |         |
-| `HEADER_MACRO`   | `BZ1234_HEADER_MACRO` |         |
+| `FunctionName`   | `Gi1234FunctionName`  |         |
+| `HEADER_MACRO`   | `GI1234_HEADER_MACRO` |         |
 
 For data structures or enums, any new or non-backwards-compatible structs or
 fields require a prefix. As above, growing an existing array in an existing
@@ -166,21 +145,21 @@ struct requires no prefix.
 
 | Released in spec      | Draft version in tree | Comment               |
 | ---                   | ---                   | ---                   |
-| `typedef SOME_STRUCT` | `BZ1234_SOME_STRUCT`  | Typedef only [2]      |
-| `StructField`         | `Bz1234StructField`   | In existing struct[3] |
-| `typedef SOME_ENUM`   | `BZ1234_SOME_ENUM`    | Typedef only [2]      |
-| `EnumValue`           | `Bz1234EnumValue`     | In existing enum[3]   |
+| `typedef SOME_STRUCT` | `GI1234_SOME_STRUCT`  | Typedef only [2]      |
+| `StructField`         | `Gi1234StructField`   | In existing struct[3] |
+| `typedef SOME_ENUM`   | `GI1234_SOME_ENUM`    | Typedef only [2]      |
+| `EnumValue`           | `Gi1234EnumValue`     | In existing enum[3]   |
 
 - [2] If the struct or enum definition is separate from the typedef in the public
       header, the definition does not need the prefix.
 - [3] Individual fields in newly added struct or enum do not need prefix, the
       struct or enum already carried the prefix.
 
-Variable prefixes indicating global scope ('g' or 'm') go before the BZ prefix.
+Variable prefixes indicating global scope (`g` or `m`) go before the `GI` prefix.
 
 | Released in spec | Draft version in tree | Comment |
 | ---              | ---                   | ---     |
-| `gSomeGuid`      | `gBz1234SomeGuid`     |         |
+| `gSomeGuid`      | `gGi1234SomeGuid`     |         |
 
-Local identifiers, including module-global ones (m-prefixed) do not require a
-BZ prefix.
+Local identifiers, including module-global ones (`m`-prefixed) do not require a
+`GI` prefix.
