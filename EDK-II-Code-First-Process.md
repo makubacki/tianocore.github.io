@@ -1,3 +1,5 @@
+# EDK II Code First Process
+
 The EDK II Code First Process is a process by which new features can be added
 to UEFI Forum specifications after first having been designed and prototyped
 in the open.
@@ -18,20 +20,22 @@ Forum Members. TianoCore enables this new process by providing areas on
 updates and reference implementations and new repositories under
 [TianoCore GitHub](https://github.com/tianocore) dedicated to hold "code first".
 
-# TianoCore Bugzilla
+## TianoCore Bugzilla
 
-[TianoCore Bugzilla](bugzilla.tianocore.org) has product categories for
-  * ACPI Specification
-  * UEFI Shell Specification 
-  * UEFI Platform Initialization Distribution Packaging Specification
-  * UEFI Platform Initialization Specification Specification
-  * UEFI Specification
+[TianoCore Bugzilla](bugzilla.tianocore.org) has product categories for:
 
-Each product category has separate components for
-  * Specification
-  * Reference implementation
+- ACPI Specification
+- UEFI Shell Specification
+- UEFI Platform Initialization Distribution Packaging Specification
+- UEFI Platform Initialization Specification Specification
+- UEFI Specification
 
-# TianoCore GitHub
+Each product category has separate components for:
+
+- Specification
+- Reference implementation
+
+## TianoCore GitHub
 
 Reference implementations targeting the EDK II open source project are held
 in branches in the [edk2-staging](https://github.com/tianocore/edk2-staging)
@@ -46,13 +50,13 @@ with .md suffix.  Multiple files are required if changes impact multiple
 specifications or if the specification is large and is easier to maintain
 if the changes are split across multiple files.
 
-* NOTE: This one may break down where we have a specification change affecting
-  multiple specifications, but at that point we can track it with multiple 
+- NOTE: This one may break down where we have a specification change affecting
+  multiple specifications, but at that point we can track it with multiple
   TianoCore Bugzilla entries.
 
-## Specification Text Template
+### Specification Text Template
 
-The following is a template of specification text changes using the GitHub 
+The following is a template of specification text changes using the GitHub
 flavor of markdown.  The title and complete description of the specification
 changes must be provided in the specification text along with the name and
 version of the specification the change applies.  The `Status` of the
@@ -62,7 +66,7 @@ text are required to use the
 [Creative Commons Attribution 4.0 International](https://spdx.org/licenses/CC-BY-4.0.html)
 license using a `SPDX-License-Identifier` statement.
 
-```
+```txt
 # Title: [Must be Filled In]
 
 # Status: [Status]
@@ -110,7 +114,7 @@ Required Section
 Optional Section
 ```
 
-# Intended workflow
+## Intended workflow
 
 The entity initiating a specification change enters a Bugzilla in the appropriate
 area of [TianoCore Bugzilla](bugzilla.tianocore.org). This entry contains the
@@ -122,31 +126,31 @@ These Bugzilla entries *must* be linked together with dependencies.
 
 After the Bugzillas have been created, new branches should be created in the
 relevant repositories for each Bugzilla.  The branch names must use the following
-format where #### is the Bugzilla ID and <Brief Description> is an optional
+format where `####` is the Bugzilla ID and \<Brief Description\> is an optional
 description of the change.
 
-    BZ####-<Brief Description>
+`BZ####-<Brief Description>`
 
 If multiple Bugzilla entries must coexist on a single branch, one of them is
-designated the _top-level_, with dependencies properly tracked. That Bugzilla
+designated the *top-level*, with dependencies properly tracked. That Bugzilla
 is be the one naming the branch.
 
-# Source Code
+## Source Code
 
 In order to ensure draft code does not accidentally leak into production use,
 and to signify when the changeover from draft to final happens, *all* new or
 modified[1] identifiers must be prefixed with the relevant BZ#### identifiers.
 
-* [1] Modified in a non-backwards-compatible way. If, for example, a statically
+- [1] Modified in a non-backwards-compatible way. If, for example, a statically
       sized array is grown - this does not need to be prefixed. But a tag in a
       comment would be *highly* recommended.
 
-## File names
+### File names
 
 New public header files require the prefix (i.e. `Bz1234MyNewProtocol.h`).
 Private header files do not need the prefix.
 
-## Contents
+### Contents
 
 The tagging must follow the coding style used by each affected code base.
 Examples:
@@ -167,9 +171,9 @@ struct requires no prefix.
 | `typedef SOME_ENUM`   | `BZ1234_SOME_ENUM`    | Typedef only [2]      |
 | `EnumValue`           | `Bz1234EnumValue`     | In existing enum[3]   |
 
-* [2] If the struct or enum definition is separate from the typedef in the public
+- [2] If the struct or enum definition is separate from the typedef in the public
       header, the definition does not need the prefix.
-* [3] Individual fields in newly added struct or enum do not need prefix, the
+- [3] Individual fields in newly added struct or enum do not need prefix, the
       struct or enum already carried the prefix.
 
 Variable prefixes indicating global scope ('g' or 'm') go before the BZ prefix.
