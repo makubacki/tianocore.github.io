@@ -29,66 +29,6 @@ organization, related to the "code first" change.
 Code first implementation targeting the EDK II open source project are initially
 held in draft pull requests within a TianoCore GitHub repository.
 
-### Specification Text Template
-
-The following is a template of specification text changes using the GitHub
-flavor of markdown.  The title and complete description of the specification
-changes must be provided in the specification text along with the name and
-version of the specification the change applies.  The `Status` of the
-specification change always starts in the `Draft` state and is updated based
-on feedback from the industry standard forums.  The contents of the specification
-text are required to use the
-[Creative Commons Attribution 4.0 International](https://spdx.org/licenses/CC-BY-4.0.html)
-license using a `SPDX-License-Identifier` statement.
-
-```txt
-# Title: [Must be Filled In]
-
-# Status: [Status]
-
-[Status] must be one of the following:
-* Draft
-* Submitted to industry standard forum
-* Accepted by industry standard forum
-* Accepted by industry standard forum with modifications
-* Rejected by industry standard forum
-
-# Document: [Title and Version]
-
-Here are some examples of [Title and Version]:
-* UEFI Specification Version 2.8
-* ACPI Specification Version 6.3
-* UEFI Shell Specification Version 2.2
-* UEFI Platform Initialization Specification Version 1.7
-* UEFI Platform Initialization Distribution Packaging Specification Version 1.1
-
-# License
-
-SPDX-License-Identifier: CC-BY-4.0
-
-# Submitter: [TianoCore Community](https://www.tianocore.org)
-
-# Summary of the change
-
-Required Section
-
-# Benefits of the change
-
-Required Section
-
-# Impact of the change
-
-Required Section
-
-# Detailed description of the change [normative updates]
-
-Required Section
-
-# Special Instructions
-
-Optional Section
-```
-
 ## Intended workflow
 
 1. Create a new GitHub issue in the primary TianoCore repository for the change
