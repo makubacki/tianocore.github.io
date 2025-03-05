@@ -43,10 +43,26 @@ held in draft pull requests within a TianoCore GitHub repository.
     - Note: `<BranchName>` is a brief description of the change.
     - Note: Code content must follow the coding style and naming conventions in
       the [Source Code](#source-code) section of this document.
-3. Push the branch to your fork of the relevant repository.
-4. Create a draft pull request into the default branch on the repository from the fork branch.
+    - Note: Code first pull requests may have PR checks performed to verify that these requirements are met.
+3. Push the "code first dev branch" to either:
+    - A fork of the primary repository (e.g. `username/edk2`)
+    - A branch in [edk2-staging](https://github.com/tianocore/edk2-staging).
+    - Note: Consider this branch a collaboration point for yourself and others that may contribute to the change.
+      - If you use a fork of the primary repository, ensure that the fork is public. You may grant permisssions to
+        your fork branch as needed for others to collaborate there.
+      - If you use an `edk2-staging` branch, you might need to reach out to an edk2-staging maintainer so they can
+        grant permissions to the users that need to push changes there.
+        - If you do not have write permission, start an [edk2-staging discussion](https://github.com/tianocore/edk2-staging/discussions)
+          to introduce your branch and identify the GitHub users that need permission to contribute to the branch.
+4. Create a draft pull request into the default branch on the repository from the "code first dev branch" (*step 3*).
    - Check the "Code First" box in the PR template so the `type:code-first` label is applied to the PR.
 5. Add a comment in the PR to the GitHub issue created in *step 1*.
+6. Continue to develop the change in the "code first dev branch" until it is ready for review. Changes pushed to the
+   branch will automatically update the PR.
+7. When the change is ready for review, mark the PR as ready for review (taken out of draft status).
+8. Reviewers will review the PR and provide feedback.
+9. Make changes based on feedback and continue to iterate until the change is ready to be merged.
+10. A maintainer will merge the PR after the change is approved.
 
 If the change impacts repsoitories other than edk2, such as integration changes in
 [edk2-platforms](https://github.com/tianocore/edk2-platforms), those changes should
@@ -57,7 +73,22 @@ Any other relevant branches, issues, discussions, or forks should be linked to t
 
 When the change is ready for review, the PR should be marked as ready for review (taken out of draft status).
 
+### Edk2-Staging Branch and the Draft Pull Request
+
+Something to be aware of is that two parts of the code first process are constant to simplify finding and contributing
+to code first changes.
+
+1. Regardless of the decision made in *step 3*, a `GI####-<BranchName>` branch will always exist in `edk2-staging`.
+2. A draft PR linked to the GitHub issue in *step 1* will always exist in the primary repository.
+
+If the contributor opts to use a fork of the primary repository in *step 3*, an automated process will sync updates to
+the `GI####-<BranchName>` branch in `edk2-staging` any time the draft PR is updated. Thus, even if you do not have
+write permission to `edk2-staging` your branch will still be created there and kept up to date on your behalf. Be aware
+that in this case, the "code first dev branch" is still the branch on the fork as that is the PR branch.
+
 ## Source Code
+
+> Note: This section is currently required as defined. It is being reviewed and the process may change in the future.
 
 In order to ensure draft code does not accidentally leak into production use,
 and to signify when the changeover from draft to final happens, *all* new or
