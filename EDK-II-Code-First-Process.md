@@ -31,12 +31,12 @@ held in draft pull requests within a TianoCore GitHub repository.
 
 ## Intended workflow
 
-1. Create a new GitHub issue in the primary TianoCore repository for the change
-   using the "Code First" form. Ensure that the **"Specification Draft Change"**
-   section is filled in per the template in [Specification Text Template](#specification-text-template).
+1. Create a new GitHub issue in the primary TianoCore repository for the change using the "Code First" form.
    - Note: The primary repository will most frequently be [edk2](https://github.com/tianocore/edk2).
    - Note: Ensure all specifications impacted by the change are selected in the form.
-     - Note: A specification draft change must be included in the issue for each specification impacted.
+     - Note: A specification draft change must be included in a markdown file in the "code first dev branch". A file
+       must be present for each specification if more than one specification is impacted by the change. Base the file
+       content on the template in the Code First GitHub issue submission form.
 2. Make the changes in a new branch with the prefix `GI####-<BranchName>` that
    meets the content requirements for the code first process described in this document.
     - Note: `####` in `GI####` is the GitHub issue number from *step 1*.
@@ -45,21 +45,27 @@ held in draft pull requests within a TianoCore GitHub repository.
       the [Source Code](#source-code) section of this document.
     - Note: Code first pull requests may have PR checks performed to verify that these requirements are met.
 3. Push the "code first dev branch" to either:
-    - A fork of the primary repository (e.g. `username/edk2`)
-    - A branch in [edk2-staging](https://github.com/tianocore/edk2-staging).
-    - Note: Consider this branch a collaboration point for yourself and others that may contribute to the change.
-      - If you use a fork of the primary repository, ensure that the fork is public. You may grant permisssions to
-        your fork branch as needed for others to collaborate there.
-      - If you use an `edk2-staging` branch, you might need to reach out to an edk2-staging maintainer so they can
-        grant permissions to the users that need to push changes there.
-        - If you do not have write permission, start an [edk2-staging discussion](https://github.com/tianocore/edk2-staging/discussions)
-          to introduce your branch and identify the GitHub users that need permission to contribute to the branch.
+    1. A fork of the primary repository (e.g. `username/edk2`)
+    2. A branch in [edk2-staging](https://github.com/tianocore/edk2-staging).
+
+       Consider this branch a collaboration point for yourself and others that may contribute to the change.
+        - If you use a fork of the primary repository, ensure that the fork is public. You may grant permisssions to
+          your fork branch as needed for others to collaborate there.
+        - If you use an `edk2-staging` branch, you might need to reach out to an edk2-staging maintainer so they can
+          grant permissions to the users that need to push changes there.
+          - If you do not have write permission, in the "Anything else?" box of the GitHub issue in *step 1*, notify the
+            admins with `@tianocore/tianocore-admins` and list the GitHub usernames for all collaborators that need
+            permission to the `edk2-staging` branch.
 4. Create a draft pull request into the default branch on the repository from the "code first dev branch" (*step 3*).
    - Check the "Code First" box in the PR template so the `type:code-first` label is applied to the PR.
-5. Add a comment in the PR to the GitHub issue created in *step 1*.
+5. Add a comment in the PR with a link to the GitHub issue created in *step 1*.
+   - It is also recommended to link the pull request to the issue following the methods described in
+     [Linking a pull request to an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue).
 6. Continue to develop the change in the "code first dev branch" until it is ready for review. Changes pushed to the
    branch will automatically update the PR.
-7. When the change is ready for review, mark the PR as ready for review (taken out of draft status).
+7. After all dependent specification changes have been approved and publicly published, the PR with code changes is
+   eligible for review. Mark the PR as ready for review when code changes are final (so it is taken out of draft
+   status).
 8. Reviewers will review the PR and provide feedback.
 9. Make changes based on feedback and continue to iterate until the change is ready to be merged.
 10. A maintainer will merge the PR after the change is approved.
