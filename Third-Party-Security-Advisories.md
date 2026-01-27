@@ -14,7 +14,7 @@ Not a problem for EDK2. EDK2 CryptoPkg does not support CMS.
 
 ***
 
-[CVE-2025-15468 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2025-15468)
+# [CVE-2025-15468 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2025-15468)
 ## Published: 1/27/2026
 ## Recommendation:
 Not a problem for EDK2. EDK2 CryptoPkg does not use SSL_CIPHER_find().  
