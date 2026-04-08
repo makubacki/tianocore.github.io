@@ -1,5 +1,48 @@
 ***
 
+# [CVE-2026-28386 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-28386)
+## Published: 4/7/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not enable AES-CFB.
+***
+
+# [CVE-2026-28387 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-28387)
+## Published: 4/7/2026
+## Recommendation:
+Not a problem for EDK2. DK2 TLS code does not enable DANE.
+***
+
+# [CVE-2026-28388 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-28388)
+## Published: 4/7/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not enable X509_V_FLAG_USE_DELTAS.
+***
+
+# [CVE-2026-28389 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-28389)
+## Published: 4/7/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not use PKCS7/CMS_decrypt.
+***
+
+# [CVE-2026-31789 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-31789)
+## Published: 4/7/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not use OpenSSL print/log.
+***
+
+# [CVE-2026-31790 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-31790)
+## Published: 4/7/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not use EVP_PKEY_encapsulate.
+***
+
+# [CVE-2026-31791 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-31791)
+## Published: 4/7/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not use OCSP_basic_verify.
+
+***
+
 # [CVE-2025-11187 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2025-11187)
 ## Published: 1/27/2026
 ## Recommendation:
