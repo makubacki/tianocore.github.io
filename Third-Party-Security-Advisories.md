@@ -34,12 +34,6 @@ Not a problem for EDK2. EDK2 does not use OpenSSL print/log.
 ## Published: 4/7/2026
 ## Recommendation:
 Not a problem for EDK2. EDK2 does not use EVP_PKEY_encapsulate.
-***
-
-# [CVE-2026-31791 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-31791)
-## Published: 4/7/2026
-## Recommendation:
-Not a problem for EDK2. EDK2 does not use OCSP_basic_verify.
 
 ***
 
