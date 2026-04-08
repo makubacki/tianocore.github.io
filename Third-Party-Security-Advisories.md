@@ -24,6 +24,12 @@ Not a problem for EDK2. EDK2 does not enable X509_V_FLAG_USE_DELTAS.
 Not a problem for EDK2. EDK2 does not use PKCS7/CMS_decrypt.
 ***
 
+# [CVE-2026-28390 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-28390)
+## Published: 4/7/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not use PKCS7/CMS_decrypt.
+***
+
 # [CVE-2026-31789 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-31789)
 ## Published: 4/7/2026
 ## Recommendation:
@@ -40,6 +46,13 @@ Not a problem for EDK2. EDK2 does not use EVP_PKEY_encapsulate.
 ## Published: 4/7/2026
 ## Recommendation:
 Not a problem for EDK2. EDK2 does not use OCSP_basic_verify.
+
+***
+
+# [CVE-2026-2673 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-2673)
+## Published: 3/13/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support TLS1.3.
 
 ***
 
