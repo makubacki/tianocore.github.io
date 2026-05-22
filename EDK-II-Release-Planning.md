@@ -1,14 +1,3 @@
-# edk2-stable202605 tag planning
-
-## Proposed Schedule
-
-| Date (00:00:00 UTC-8)| Description                              |
-| ---------------------| ---------------------------------------- |
-| 2026-02-20           | Beginning of development                 |
-| 2026-05-04           | [Soft Feature Freeze](SoftFeatureFreeze) |
-| 2026-05-08           | [Hard Feature Freeze](HardFeatureFreeze) |
-| 2026-05-22           | Release                                  |
-
 # edk2-stable202608 tag planning
 
 ## Proposed Schedule
