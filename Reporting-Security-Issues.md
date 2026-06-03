@@ -1,7 +1,7 @@
 # How to report a Security Issue
 
 **NOTE**
-The latest tracking and update of security issues for EDKII can be found at (https://github.com/tianocore/tianocore.github.io/wiki/GHSA-GitHub-Security-Advisories-Proceess). 
+The latest tracking and update of security issues for EDKII can be found at [GHSA-GitHub-Security-Advisories-Process](https://github.com/tianocore/tianocore.github.io/wiki/GHSA-GitHub-Security-Advisories-Process-%28Draft%29). 
 
 At present the repository tracked by Tianocore Infosec includes the main EDKII repository (https://github.com/tianocore/edk2). For issues found in repos like (https://github.com/tianocore/edk2-platforms) recommend reaching out to the respective component who is named in the subdirectory - you can find a list of relevant companies in this domain at (https://uefi.org/security), for example.
 
@@ -11,7 +11,21 @@ Also, it is encouraged to attach a patch that mitigates the issues with the bug 
 
 When a Tianocore Security Issue is entered, the issue is evaluated by the **Infosec** group to determine if the issue is a security issue or not.  If it is not deemed to be a security issue, then the issue is converted to a standard issue and follows the normal issue resolution process.   If the issue is confirmed to be a security issue, then the priority, severity, and impact of the issue is assessed by the **Infosec** group.  Discussions, resolution, and patches are completed within GHSA.  A date for public disclose is determined, and on that date the issue is made public and added to the list of Security Advisories.
 
-When reporting an issue, the outputs of tools are not sufficient. Although automation tools and fuzzers and scanners are common trade practice in the security community, they often produce many results for further investigation and can yield many false positives. Reports from automated tools or scans must include additional analysis to demonstrate the exploitability of the vulnerability. As such, EDKII Infosec will not accept issues without this exploitability insight.
+If you believe you have found a security vulnerability (per MITRE’s definition: https://cwe.mitre.org/documents/glossary/index.html#Vulnerability), please submit the report at https://github.com/tianocore/edk2/security/advisories/new. Please include the requested information (as much as you can provide) to help us better understand the nature and scope of the possible issue. 
+
+The following will help us triage and advance the report more quickly:
+* Proof-of-concept or exploit code
+* Proposed patch
+
+Priority will be given to reports that include proof-of-concept or exploit code. EDKII Infosec may decide to reduce the Severity of the report to Low if a proof-of-concept or exploit code is not included in the report. Alternatively, EDKII Infosec may decide not to accept issues without this exploitability insight.
+
+Please analyze AI-generated results before submitting a report. Use the capabilities of AI models to generate proof-of-concept code and suggested patches, then include them in the report.
+
+The outputs of tools are not sufficient. Although automation tools and fuzzers and scanners are common trade practice in the security community, they often produce many results for further investigation and can yield many false positives. Reports from automated tools or scans must include additional analysis to demonstrate the exploitability of the vulnerability.
+
+
+
+***
 
 If you are interested in being involved in the evaluation of Tianocore Security Issues, then please send an email request to join the Tianocore Infosec group to the Tianocore Community Manager or one of the Tianocore Stewards.
 
@@ -27,10 +41,11 @@ The Tianocore Infosec team uses the following flow to evaluate items
 
 # Security Advisories
 
-List of current EDK II Security Advisories can be found at this Gitbook : 
-**[Security Advisory Log](https://tianocore-docs.github.io/SecurityAdvisory/draft/)**
+List of current EDK II Security Advisories can be found at : 
+* **[Published GHSAs](https://github.com/tianocore/edk2/security/advisories?state=published)**
+* **[Security Advisory Log Gitbook](https://tianocore-docs.github.io/SecurityAdvisory/draft/)** (no longer maintained)
 
-List of all Third Party EDK II Security Advisories can be found at this Gitbook :
-**[Third Party Security Advisory Log]( https://github.com/tianocore/tianocore.github.io/wiki/Third-Party-Security-Advisories)**
+List of all Third Party EDK II Security Advisories can be found at :
+* **[Third Party Security Advisory Log]( https://github.com/tianocore/tianocore.github.io/wiki/Third-Party-Security-Advisories)**
 
 
