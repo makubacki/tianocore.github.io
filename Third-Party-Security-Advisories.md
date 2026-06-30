@@ -1,5 +1,113 @@
 ***
 
+# [CVE-2026-45447 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-45447)
+## Published: 6/9/2026
+## Recommendation:
+The affected code is used in Authenticode and PKCS7 Verification. Recommendation: Take the CryptoPkg update to OpenSSL 3.5.7 (https://github.com/tianocore/edk2/pull/12669).
+***
+
+# [CVE-2026-34180 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-34180)
+## Published: 6/9/2026
+## Recommendation:
+The code might pass a certificate or signature larger than 2 GB. Recommendation: Take the CryptoPkg update to OpenSSL 3.5.7 (https://github.com/tianocore/edk2/pull/12669).
+***
+
+# [CVE-2026-34181 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-34181)
+## Published: 6/9/2026
+## Recommendation:
+PKCS12 is used in TlsLib. Recommendation: Take the CryptoPkg update to OpenSSL 3.5.7 (https://github.com/tianocore/edk2/pull/12669).
+***
+
+# [CVE-2026-34182 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-34182)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support CMS.
+***
+
+# [CVE-2026-34183 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-34183)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support quic.
+***
+
+# [CVE-2026-35188 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-35188)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support OCSP.
+***
+
+# [CVE-2026-42764 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-42764)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support quic.
+***
+
+# [CVE-2026-45445 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-45445)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not use EVP_Cipher().
+***
+
+# [CVE-2026-7383 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-7383)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not use ASN1_mbstring_copy.
+***
+
+# [CVE-2026-9076 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-9076)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support CMS.
+***
+
+# [CVE-2026-42765 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-42765)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support OCSP.
+***
+
+# [CVE-2026-42766 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-42766)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support CMS.
+***
+
+# [CVE-2026-42767 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-42767)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support CMP.
+***
+
+# [CVE-2026-42768 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-42768)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not use the affected code.
+***
+
+# [CVE-2026-42769 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-42769)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support CMP.
+***
+
+# [CVE-2026-42770 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-42770)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support the impacted case.
+***
+
+# [CVE-2026-42771 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-42771)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 uses OpenSSL 3.X and does not support OpenSSL 4.0.
+***
+
+# [CVE-2026-45446 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-45446)
+## Published: 6/9/2026
+## Recommendation:
+Not a problem for EDK2. EDK2 does not support the impacted case.***
+***
+
 # [CVE-2026-28386 – OpenSSL](https://openssl-library.org/news/vulnerabilities/#CVE-2026-28386)
 ## Published: 4/7/2026
 ## Recommendation:
