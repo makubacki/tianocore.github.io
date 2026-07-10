@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 UEFI (and Tianocore) supports non-contiguous system memory regions.
 
 === Adding support ===
@@ -107,7 +114,7 @@ efi:   MemMap Size: 0x00000930
 efi:   MemMap Desc. Size: 0x00000030
 efi:   MemMap Desc. Version: 0x00000001
 EFI v2.40 by ARM Fixed Virtual Platform EFI Apr 11 2014 11:55:10
-efi: 
+efi:
 Processing EFI memory map:
   0x000080000000-0x000080000fff [Loader Data]
   0x000080001000-0x00008007ffff [Conventional Memory]

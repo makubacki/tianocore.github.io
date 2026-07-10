@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 
 
 The goal of this section is to enable an engineer to easily take an EDK Shell Extension and move that to an EDK II UEFI Shell 2.0 application.  This means primarily removing and replacing 3 types of references.
@@ -120,7 +127,7 @@ This function is replaced by the EDK II ShellLib functions ShellPrintEx and Shel
 =====Print=====
 This function exists in the EDK II Library class UefiLib.
 =====Output=====
-This function is replaced by the Print() function. 
+This function is replaced by the Print() function.
 =====SPrint=====
 This function is in the process of being ported to EDK II.
 =====PoolPrint=====

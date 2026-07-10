@@ -1,4 +1,11 @@
-EmbeddedPkg provides protocol implementation for memory mapped controllers and EBL. EBL (EDK Boot Loader) - a simpler EFI shell - is aslo part of this package. 
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
+EmbeddedPkg provides protocol implementation for memory mapped controllers and EBL. EBL (EDK Boot Loader) - a simpler EFI shell - is aslo part of this package.
 
 === EmbeddedPkg Protocols ===
 ==== EMBEDDED_EXTERNAL_DEVICE ====

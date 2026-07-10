@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <b><i>Note: this package has been deprecated. Please refer to [[Shell]] and [[ShellPkg]] for the latest info.</i></b>
 
 <!-- [[Category:EDKII]] -->
@@ -26,10 +33,10 @@ It is intended that this project will have a short life. The long term goal is t
 This section assumes you have the [https://sourceforge.net/apps/mediawiki/tianocore/index.php?title=EDK2 edk2] checked out into the edk directory. Use Subversion to check out the GccShellPkg in the edk2 directory with the following commands:<br>
 <pre>
 $ cd edk2
-$ svn co https://gcc-shell.svn.sourceforge.net/svnroot/gcc-shell/trunk/GccShellPkg  GccShellPkg 
+$ svn co https://gcc-shell.svn.sourceforge.net/svnroot/gcc-shell/trunk/GccShellPkg  GccShellPkg
 </pre>
 <br>
-On Windows binary copies of the tools are checked into source control. On Unix like systems the tools must be built. So do the following to build the tools on a Unix like system.  You should only need to do this one time after you checked the code out from source control: 
+On Windows binary copies of the tools are checked into source control. On Unix like systems the tools must be built. So do the following to build the tools on a Unix like system.  You should only need to do this one time after you checked the code out from source control:
 <pre>
 ~/work/edk2$  make -C BaseTools/Source/C
 </pre>
@@ -89,7 +96,7 @@ Building from: /Users/fish/work/Migration/edk2
 using prebuilt tools
 Reading symbols for shared libraries ...... done
 Breakpoint 1 at 0xce84: file /Users/fish/work/Migration/edk2/UnixPkg/Sec/SecMain.c, line 1070.
-(gdb)  
+(gdb)
 </pre>
 Type r and hit return at the gdb prompt to start the emulator. Let the UnixPkg emulator run until it boots the EFI Shell (gcc-shell) and break into gdb with a ctrl-c. Your gdb back trace might vary, depending on where you broke in, but you should see symbols for the EFI-Shell. The current UnixPkg uses an EFI shell binary that was produced with Visual Studio so no symbols will be shown if you use that one.
 

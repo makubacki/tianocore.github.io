@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 '''EdkShellPkg''' contains meta data files for building the [[EDK]] [[Efi-shell|Shell]]. EdkShellPkg has been retired in lieu of [[ShellPkg]] which implements the UEFI Shell 2.x as specified by the UEFI Forum.
 
 ===Source Repository===

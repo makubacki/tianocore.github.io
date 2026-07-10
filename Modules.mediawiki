@@ -1,14 +1,21 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDK]] -->
-The [[EDK]] Module Structure Explained 
+The [[EDK]] Module Structure Explained
 
 The following three tables explain the structure of the EDK source code.
 
-*Module Maintainers: a list of who is responsible for the module. This reponsibility includes ensuring proper management of defects, enhancements and code quality of changes to code that falls within this module. 
-*Directory to Module Table: this table explains the relationship between the CVS directories and the EDK Module List 
-*Definition to Module Table: this table explains the definition of each module 
+*Module Maintainers: a list of who is responsible for the module. This reponsibility includes ensuring proper management of defects, enhancements and code quality of changes to code that falls within this module.
+*Directory to Module Table: this table explains the relationship between the CVS directories and the EDK Module List
+*Definition to Module Table: this table explains the definition of each module
 Important Links:
-EFI and Framework Open Source Defect Resolution Process 
-EDK Project Roles and Responsibilities 
+EFI and Framework Open Source Defect Resolution Process
+EDK Project Roles and Responsibilities
 Questions?
 
 {|class="wikitable"  border="1" width="700"
@@ -16,80 +23,80 @@ Questions?
 |-
 ||	Module	||	Maintainer/Owner
 |-
-|	ATA	||	Stanely Chen 
+|	ATA	||	Stanely Chen
 |-
-|	BDS	||	Charlie Xia 
+|	BDS	||	Charlie Xia
 |-
-|	CirrusLogic	||	Charile Xia 
+|	CirrusLogic	||	Charile Xia
 |-
-|	Compression	||	Mike Rothman 
+|	Compression	||	Mike Rothman
 |-
-|	Console	||	Charile Xia 
+|	Console	||	Charile Xia
 |-
-|	CSM	||	Nickel Shao 
+|	CSM	||	Nickel Shao
 |-
-|	DataHub	||	Charile Xia 
+|	DataHub	||	Charile Xia
 |-
-|	Debug	||	Sean Shang 
+|	Debug	||	Sean Shang
 |-
-|	Disk	||	Charile Xia 
+|	Disk	||	Charile Xia
 |-
-|	DxeCore	||	Mike Rothman 
+|	DxeCore	||	Mike Rothman
 |-
-|	Dxelpl	||	Mike Rothman 
+|	Dxelpl	||	Mike Rothman
 |-
-|	EBC	||	Hua Fang 
+|	EBC	||	Hua Fang
 |-
-|	EDK IPF Tip	||	Jason Liu 
+|	EDK IPF Tip	||	Jason Liu
 |-
 |	FAT	||	Penny Gao
 |-
-|	Flash	||	Stanely Chen 
+|	Flash	||	Stanely Chen
 |-
-|	Generic Definition	||	Jiewan Yao 
+|	Generic Definition	||	Jiewan Yao
 |-
-|	Library	||	Hua Fang 
+|	Library	||	Hua Fang
 |-
-|	Logo	||	Michael Krau 
+|	Logo	||	Michael Krau
 |-
-|	Memory Test	||	Charile Xia 
+|	Memory Test	||	Charile Xia
 |-
-|	Network	||	Michael Krau 
+|	Network	||	Michael Krau
 |-
 |	PCI	||	Penny Gao
 |-
-|	PeiCore	||	Rui Sun 
+|	PeiCore	||	Rui Sun
 |-
-|	Runtime	||	Mike Rothman 
+|	Runtime	||	Mike Rothman
 |-
-|	SCSI	||	Stanely Chen 
+|	SCSI	||	Stanely Chen
 |-
-|	Security	||	Mike Rothman 
+|	Security	||	Mike Rothman
 |-
-|	Shell	||	Hua Fang 
+|	Shell	||	Hua Fang
 |-
-|	StatusCode	||	Mike Rothman 
+|	StatusCode	||	Mike Rothman
 |-
 |	Timer	||	Jean Wang
 |-
 |	Tools	||	Liming Gao
 |-
-|	UI	||	Mike Rothman 
+|	UI	||	Mike Rothman
 |-
 |	USB	||	Penny Gao
 |-
-|	Variable	||	Stanely Chen 
+|	Variable	||	Stanely Chen
 |-
 |	WinNT	||	Jean Wang
 |-
-|	Other	||	Michael Krau 
+|	Other	||	Michael Krau
 |}
 
 
 
 
 {|class="wikitable"  border="1"	width="700"
-|+'''Directory-to-Module Table '''		
+|+'''Directory-to-Module Table '''
 |-
 |	\Edk\Foundation\Core\Dxe	||	DxeCore
 |-
@@ -211,7 +218,7 @@ Questions?
 
 
 
-{|class="wikitable"  border="1"	width="700"		
+{|class="wikitable"  border="1"	width="700"
 |+'''Definition-to-Module Table '''
 |-
 |	Edk\Foundation\Ppi\BaseMemoryTest	||	MemoryTest

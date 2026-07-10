@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 '''EDK II FAQ'''
 
 [[Differences between EDK and EDK II]]
@@ -30,7 +37,7 @@
 
 [[USB stack]] questions
 
-===Is an a priori file checked first?=== 
+===Is an a priori file checked first?===
 Yes
 
 ===Is DXE single threaded now as PEI is?===
@@ -45,7 +52,7 @@ There was a VS .sol for EDK 1, no plan for EDK II.
 ===What specifies flash organization?===
 The flash layout is defined in the .FDF file for the platform
 
-===Why does EDK II use library classes?  Are there different instances?===  
+===Why does EDK II use library classes?  Are there different instances?===
 EDK II’s implementation uses library classes as a way of tying different implementations to the same library name. This will resolve reference and make it so the Firmware developer can map the implementations at different sections of the Boot sequence.  This is done because the implementation may differ for PEI vs DXE  or DXE vs Runtime, etc.
 
 The primary benefit is that code can be highly portable and reusable between different phases.  For example, code written originally for DXE can be rebuilt in PEI without requiring modification.  There are limitations, but there are far fewer differences visible to a programmer if libraries are used properly.
@@ -67,7 +74,7 @@ The flash mapping tool will get platform, flash and module information from targ
 There are no tools to convert a Legacy Option ROM in source/binary form to a UEFI Driver.  There is no such thing as a “UEFI oprom”.  There are PCI Option ROMs, and the PCI Specification defines the binary layout of a PCI Option ROM that may contains multiple images.  These can be Legacy Option ROM images, UEFI Drivers, and many other image types.  The EfiRom utility simply follows the PCI Specification for the binary layout of PCI Option ROMs and provides the ability to put multiple images into a single PCI Option ROM.  The image types supported by the tool are Legacy Option ROM images and UEFI Drivers.
 
 ===What about the libraries with EDK II?===
-EDK II makes use of libraries to allow different implementations for the same functionality. EDKII introduces the concept of Library Class/Library Instance. Library class is a set of standard interfaces for common support routines, and library instance supplies the implementation of these interfaces. Platform integrator can select different implementations upon various application scenarios. 
+EDK II makes use of libraries to allow different implementations for the same functionality. EDKII introduces the concept of Library Class/Library Instance. Library class is a set of standard interfaces for common support routines, and library instance supplies the implementation of these interfaces. Platform integrator can select different implementations upon various application scenarios.
 
 ===Does EDK II support ASL code?===
 EDK II has full support for ASL compilers from Microsoft and ACPICA.  The EDK II has include files for ACPI Specifications up through ACPI 4.0.  These include files are in /MdePkg/Include/IndustryStandard/Acpi.*.  The UDK 2010 supports a number of reference platforms including Lakeport, Stoutland, and Richford.  All of these platforms have source modules for the ACPI Tables and ASL code required for these platforms to boot ACPI complaint operation systems.
@@ -77,15 +84,15 @@ EDK II has full support for ASL compilers from Microsoft and ACPICA.  The EDK II
 No,  BIOS vendors provide that
 
 
-===What does the library code call?=== 
+===What does the library code call?===
 Library functions are either full implementations of the library function with no additional calls, or a library function may call other library functions or services.  It is up to the library implementation to decide if it needs to call another library or service or not.
 
 ===What is recommended for compiling drivers and applications with 64bit?===
-Since the build requires the use of at least one .DSC file the OVMF package could be used as a platform package to insert a driver or applications for building.  Then to just build that driver or platform if you invoke the build in the directory where your driver or application resides, then just your driver or application gets built. 
+Since the build requires the use of at least one .DSC file the OVMF package could be used as a platform package to insert a driver or applications for building.  Then to just build that driver or platform if you invoke the build in the directory where your driver or application resides, then just your driver or application gets built.
 
-Add the path to your Drivers and Applications INF files to your DSC file in the [Components.X64] section.  When the build is started for that DSC file, the newly added Drivers and Applications will be built for X64 and the generated .EFI files will be placed in the build output directory.  If you want the Drivers and Application placed in a FLASH/ROM image, then the paths to the INF files will also have to be added to your FDF file.  
+Add the path to your Drivers and Applications INF files to your DSC file in the [Components.X64] section.  When the build is started for that DSC file, the newly added Drivers and Applications will be built for X64 and the generated .EFI files will be placed in the build output directory.  If you want the Drivers and Application placed in a FLASH/ROM image, then the paths to the INF files will also have to be added to your FDF file.
 
-===For Lib classes (E.G. debuglib) how do you know which packages go with which library class?===  
+===For Lib classes (E.G. debuglib) how do you know which packages go with which library class?===
 Search INF Libclass = . . .
 
 ===In the FDF what is the list of order for final image?===
@@ -111,15 +118,15 @@ CPU breakpoint –comes in as code to cause the processor to halt at that point.
 The EDK II does not have a macro to generate a software breakpoint.  Instead, the BaseLib in the MdePkg has a function called CpuBreakpoint(). When this function is called a SW breakpoint is generated. On IA32/X64 platforms, this is an INT 3.
 
 
-===Can we use the same serial port for FW debug sessions and for an OS channel session?=== 
+===Can we use the same serial port for FW debug sessions and for an OS channel session?===
 No.  You can’t use same serial port for Firmware debug session & os channel session
 
 ===Is there a prescribed method for adding an embedded legacy option ROM to be loaded for legacy boot?===
 The code to support this is part of the file PciPlatform.c found in the platformX example in the directory:
-R8platformX Pkg\Platform\IntelXpg\platformX\PciPlatform\Dxe 
+R8platformX Pkg\Platform\IntelXpg\platformX\PciPlatform\Dxe
 
 Basically, the Option ROM is included in the table (mPciOptionRomTable) where each embedded ROM is defined by:
-File Guid, and PCI Vendor and Device ID.  
+File Guid, and PCI Vendor and Device ID.
 
 In the Procedure:
  EFI_STATUS
@@ -131,7 +138,7 @@ In the Procedure:
   OUT UINTN                             *RomSize
   )
 
-A found device is checked against the table, and if there is an Option Rom available, a pointer to the Rom image is provided for load. 
+A found device is checked against the table, and if there is an Option Rom available, a pointer to the Rom image is provided for load.
 
 
 ===Is there documentation or a guide on the IA32FamilyCpuPkg as far as what needs to be done for the different processor support?===
@@ -166,15 +173,15 @@ b) Because token space is a GUID with a name, and also a token (32 bit ) associa
 
 ===What are the different Packages in EDK II and what are their inner dependences. Can you give a brief description of the packages?===
 There it is supposed to be DEC has file header that has a description about the package and what the package is.
-We do Doxygen for DEC which will create a CHM and a description of the package. 
+We do Doxygen for DEC which will create a CHM and a description of the package.
 Inf has the description of modules and what each module does (what it consumes what it produces)
 EDK II may not have all the documentation and descriptions may be lacking. The plan is to improve over this over time.
 
 ===Is there an example for read memory and or Memory mapped IO functions? Are there 2 separate calls for 32 and 64 bit?===
 There is an IO Library that supports both port IO and memory mapped IO and you give the exact size that you want to do the access (e.g. 8 bit, 16 bit, 32, etc). There are also a number of helper functions (ORing, masking,..) There is also a PCI library for doing PCI access.
- 
+
 ===Is there any EDK I code in the EDK II firmware?===
-No, There can be EDK I with the Edk Compatibility Package( ECP).  EDK II can have EDK I if the ECP is used. ECP allows the building of EDK II with EDK I modules in the EDK II build base. ECP allows for EDK I to be brought up to the Latest UEFI Specs 2.3 and PI 1.2 . ECP does the translations from specs. 
+No, There can be EDK I with the Edk Compatibility Package( ECP).  EDK II can have EDK I if the ECP is used. ECP allows the building of EDK II with EDK I modules in the EDK II build base. ECP allows for EDK I to be brought up to the Latest UEFI Specs 2.3 and PI 1.2 . ECP does the translations from specs.
 
 ===What is the meaning of the different status EFI Status vs other Status code?===
 EFI Status is related to the UEFI Spec “EFI Services” which is part of the DXE phase of the boot flow. One of the goals with the libraries was that there is a specific class of libraries that has a module type is “Base”. What is meant by “Base” is that library is compatible everywhere (SEC, PEI, DXE, SMM, etc.).To do this it cannot make any EFI assumptions so a subset of the EFI status codes was chosen for “return Status”.
@@ -185,14 +192,14 @@ Yes, – put this in the Module .INF dependences
 ===Is there a good example of .Inf.?===
 MdeModulePkg\Application\HelloWorld\HelloWorld.inf
 
-===Is there a good example in the mde pkg?=== 
+===Is there a good example in the mde pkg?===
 MdeModulePkg\Application\HelloWorld\HelloWorld.inf
 
 ===What is there in EDK II relating to the FV and COU microcode patch?===
 Not a way to just change the patch. It has to be part of the build. There is nothing to patch the .FD location. It needs to update the .fdf file. There has been a request for a tool to do this.
 
 ===Is there a tool that can operate on a binary image?===
-The only type of information that can be patched in a binary image is of type PCD VPD (vital product data) that go into an uncompressed section of the binary/ROM image as defined in the .FDF file. Post Build.   
+The only type of information that can be patched in a binary image is of type PCD VPD (vital product data) that go into an uncompressed section of the binary/ROM image as defined in the .FDF file. Post Build.
 The only other type is Patch able in module that allows you to adjust values within a PECOF image within a PEIM or DXE driver.   During build
 
 ===Is the Dispatch order of modules recorded?===
@@ -202,13 +209,13 @@ The report status code is the correct method. But this is not in place for the a
  Suggestion is adding the dispatch order to the end of the Pei and Dxe. It reports status of the exact order
 
 ===Since a lot of boards no longer have a serial port can AMT be used for console redirection port?===
-This is possible but since AMT shows up as PCI device there are issues with serial on PCI because it can init early but the resources might not be the same when the PCI Bus driver enumerates so this method may lose connections. 
+This is possible but since AMT shows up as PCI device there are issues with serial on PCI because it can init early but the resources might not be the same when the PCI Bus driver enumerates so this method may lose connections.
 
 ===How do you assign resource?===
 We are currently working on another library for covering a generic PCI device to manage the redirection port this.
 
 ===What are the Core version to match which spec versions of EDK(s)?===
-EDK II is at the spec level:  UEFI 2.3 / PI 1.2 Spec implementation – 
+EDK II is at the spec level:  UEFI 2.3 / PI 1.2 Spec implementation –
 EDK II builds can use:
 EDK Compatibility Package (ECP) – with EDK 1117 (EDK 1.01) that are at the spec level: UEFI 2.0 and Intel Framework 0.9
 
@@ -216,7 +223,7 @@ EDK Compatibility Package (ECP) – with EDK 1117 (EDK 1.01) that are at the spe
 The easiest way to make a fedora uefi cdrom/dvdrom is to use their boot.iso install image. It is buried on their site though
 Simply burn the boot.iso to a cdrom or dvdrom and boot from your uefi system (in the boot manager select EFI DVDROM/CDROM boot)
 
-The following location is present on all mirrors (IE at univ of Oregon) boot.iso   Should also see the efidisk.img and efiboot.img in the same directory. 
+The following location is present on all mirrors (IE at univ of Oregon) boot.iso   Should also see the efidisk.img and efiboot.img in the same directory.
 http://mirror.uoregon.edu/fedora/linux/development/14/x86_64/os/images/
 
 or
@@ -235,7 +242,7 @@ http://blog.fpmurphy.com/2010/10/methods-to-uefi-install-fedora-14.html
 For Ubuntu goto their cdimage to get the .iso images
 http://cdimage.ubuntu.com/
 
-desktop would be maverick release 
+desktop would be maverick release
 
 http://cdimage.ubuntu.com/releases/10.04.1/release/
 

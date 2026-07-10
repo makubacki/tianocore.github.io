@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 Security Advisory Process
 
 Now using Security reporting through the following: [[Reporting Security Issues]]
@@ -34,7 +41,7 @@ We are aware that BIOS/Boot firmware is rarely updated by consumers or by enterp
 # Describe the issue, its vulernabilities, and the fix to the site's trusted users. The users have 1 week to provide comments and request an embargo.
 # If reasonable rationale is provided for an embargo, the embargo occurs (as in 5 above).
 # The issue is fixed in the public tree, but only the normal bug description is provided.
-# A list of all issues fixed in designated files are provided via a pdf on this page. 
+# A list of all issues fixed in designated files are provided via a pdf on this page.
 
 (As noted above, the embargo in step 5 may also be requested as a part of the initial issue report.)
 

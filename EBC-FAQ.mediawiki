@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 ==Frequently asked questions about EDK and EBC==
 
 === What is EBC? ===
@@ -8,7 +15,7 @@ EFI Byte Code (EBC) compiles UEFI driver C source code into an architecture-inde
 
 Yes, it is possible. There are no known technical issues with using EBC for Shell Applications or UEFI Applications, but there be validation issues.
 
-The UEFI Specification version 2.3, Section 2.6.2, item (19), states that the EBC interpreter is only required if a platform intends to support EBC drivers in containers for add in devices. This means that the EBC interpreter is optional and may not be available on all platforms.  As a result, a Shell Application or UEFI Application that is compiled for EBC may not be able to run on all platforms. 
+The UEFI Specification version 2.3, Section 2.6.2, item (19), states that the EBC interpreter is only required if a platform intends to support EBC drivers in containers for add in devices. This means that the EBC interpreter is optional and may not be available on all platforms.  As a result, a Shell Application or UEFI Application that is compiled for EBC may not be able to run on all platforms.
 
 ===Add-in cards need to support legacy images as well as EBC.  Are there any conversion tools?===
 

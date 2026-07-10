@@ -1,8 +1,15 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 == Installation Overview ==
 ''Note: examples are based on Microsoft Windows 7 with Visual Studio 2008. Please review the release notes for installation on other OS/compiler environments''
 
 # Make sure you have a compiler installed that supports UDK2014
-# Download the UDK2014 Driver Developer Release 
+# Download the UDK2014 Driver Developer Release
 ([https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UDK2014.IHV.zip UDK2014.IHV.zip]).
 # Unzip [https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UDK2014.IHV.zip UDK2014.IHV.zip] into a workspace directory (example: C:\FW\UDK2014.IHV)
 # Download and install the [https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UefiDriverWizard.msi UEFI Driver Wizard .msi]
@@ -17,8 +24,8 @@ The UEFI Driver Wizard requires a subset of UDK2014 or EDK II setup before runni
 After starting the UEFI Driver Wizard, use the 'File -> Open Workspace' option to select the workspace directory (example: C:\FW\SR1.IHV).
 
 
-<img src="https://raw.githubusercontent.com/tianocore/tianocore.github.io/master/images/UEFIDriverWizard01.png" > 
-<br> 
+<img src="https://raw.githubusercontent.com/tianocore/tianocore.github.io/master/images/UEFIDriverWizard01.png" >
+<br>
 <img src="https://raw.githubusercontent.com/tianocore/tianocore.github.io/master/images/UEFIDriverWizard02.png" >
 
 

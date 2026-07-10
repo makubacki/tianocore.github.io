@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 == Set up ARM DS-5 for UEFI development ==
 This tutorial uses DS5 v5.12.<br/>
 Even if this tutorial is based on Linux; it should also work on Windows (after converting the file paths).
@@ -117,7 +124,7 @@ Size          = 0x00280000|gArmTokenSpaceGuid.PcdFdSize         # The size in by
 ErasePolarity = 1</pre>
 
 -m (0x80000000, 0x40000000) is the base address and size of the DRAM. This information is also available in ArmPlatformPkg/ArmVExpressPkg/ArmVExpress-RTSM-A9x4.dsc:
-<pre>  # System Memory (1GB) 
+<pre>  # System Memory (1GB)
   gArmTokenSpaceGuid.PcdSystemMemoryBase|0x80000000
   gArmTokenSpaceGuid.PcdSystemMemorySize|0x40000000</pre>
 

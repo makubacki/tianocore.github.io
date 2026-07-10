@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:GSOC2011]] -->
 <!-- [[Category:Tasks]] -->
 This task involves making several improvements for the standard shell text editor
@@ -37,60 +44,60 @@ Testing
 Here is the current look of the UEFI Editor:
 
 <pre>
-UEFI EDIT 2.0     NewFile.txt                                                   
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-                                                                                 
-   Row: 1  Col: 1       0 Lines Read                            |INS|            
- F1  Go To Line      F2  Save File       F3  Exit                                
- F4  Search          F5  Search/Replace  F6  Cut Line                            
+UEFI EDIT 2.0     NewFile.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Row: 1  Col: 1       0 Lines Read                            |INS|
+ F1  Go To Line      F2  Save File       F3  Exit
+ F4  Search          F5  Search/Replace  F6  Cut Line
  F7  Paste Line      F8  Open File       F9  File Type                           </pre>
 
 =Suggested New Layout=
 
 ==Main window==
 <pre>
-UEFI EDIT 2.0     NewFile.txt                               
-                                                            
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
+UEFI EDIT 2.0     NewFile.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  1,1                                            Help: Ctrl-? </pre>
 
 
@@ -98,118 +105,118 @@ UEFI EDIT 2.0     NewFile.txt
 
 Ctrl-? should popup a help box, something like this:
 <pre>
-UEFI EDIT 2.0     NewFile.txt                               
-                                                            
-  +-- Help --------------------------------------------+     
-  | Ctrl-G, F1  Go To Line      Ctrl-S, F2  Save File  |     
-  | Ctrl-Q, F3  Exit            Ctrl-F, F4  Search     |     
-  | Ctrl-R, F5  Search/Replace  Ctrl-K, F6  Cut Line   |     
-  | Ctrl-U, F7  Paste Line      Ctrl-O, F8  Open File  |     
-  | Ctrl-T, F9  File Type                              |     
-  +----------------------------------------------------+     
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
+UEFI EDIT 2.0     NewFile.txt
+
+  +-- Help --------------------------------------------+
+  | Ctrl-G, F1  Go To Line      Ctrl-S, F2  Save File  |
+  | Ctrl-Q, F3  Exit            Ctrl-F, F4  Search     |
+  | Ctrl-R, F5  Search/Replace  Ctrl-K, F6  Cut Line   |
+  | Ctrl-U, F7  Paste Line      Ctrl-O, F8  Open File  |
+  | Ctrl-T, F9  File Type                              |
+  +----------------------------------------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  1,1                                            Help: Ctrl-? </pre>
 
 Another option might be to display help as if it were a text file:
 <pre>
-UEFI EDIT 2.0     (Editor Help)                             
-Help                                                        
-                                                             
- Control Key   Function Key   Command                        
- -----------   ------------   -----------------              
- Ctrl-G        F1             Go To Line                     
- Ctrl-S        F2             Save File                      
- Ctrl-Q        F3             Exit                           
- Ctrl-F        F4             Search                         
- Ctrl-R        F5             Search/Replace                 
- Ctrl-K        F6             Cut Line                       
- Ctrl-U        F7             Paste Line                     
- Ctrl-O        F8             Open File                      
- Ctrl-T        F9             File Type                      
- Ctrl-W                       Close File                     
-                                                             
- Use Ctrl-W to exit this help                                
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
+UEFI EDIT 2.0     (Editor Help)
+Help
+
+ Control Key   Function Key   Command
+ -----------   ------------   -----------------
+ Ctrl-G        F1             Go To Line
+ Ctrl-S        F2             Save File
+ Ctrl-Q        F3             Exit
+ Ctrl-F        F4             Search
+ Ctrl-R        F5             Search/Replace
+ Ctrl-K        F6             Cut Line
+ Ctrl-U        F7             Paste Line
+ Ctrl-O        F8             Open File
+ Ctrl-T        F9             File Type
+ Ctrl-W                       Close File
+
+ Use Ctrl-W to exit this help
+
+
+
+
+
+
+
  1,1                                            Help: Ctrl-? </pre>
 
 ==Search==
 
 Ctrl-F should ask for text to find on the bottom line:
 <pre>
-UEFI EDIT 2.0     NewFile.txt                               
-                                                            
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
+UEFI EDIT 2.0     NewFile.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  Search for: UserEntersSearchTextHere                        </pre>
 
 ==Search/Replace==
 
 Ctrl-R should ask for the seach/replace on the bottom line.  First the search, then the replace text.
 <pre>
-UEFI EDIT 2.0     NewFile.txt                               
-                                                            
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
-                                                             
+UEFI EDIT 2.0     NewFile.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  Replace with: UserEntersReplacementTextHere                 </pre>
 
 = See Also =

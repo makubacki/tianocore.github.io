@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <div class="t_projects">
 
 <table>
@@ -36,7 +43,7 @@ This document describes the information on how to use an EBC debugger on an EFI 
 </td>
 <td>
 This document describes the information on how to build drivers and applications,
- 
+
 and how to build platforms existing in the EFI Develoment kit. It requires the basic
 
 knowledge about nmake utility..</td>
@@ -67,7 +74,7 @@ This document describes the VFR language in designing and developing products fo
 <td>
 This document is explains the source code of the EDK project.
 
-It is an implementation guide that explains the actual work done by the different 
+It is an implementation guide that explains the actual work done by the different
 
 parts of the code base. </td>
 </tr>

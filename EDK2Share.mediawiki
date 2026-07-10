@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <b>Note: this page is no longer maintained. Information is here for historical purposes and will be archived in an upcoming site revision.</b>
 
 <!-- [[Category:EDKII Share]] -->

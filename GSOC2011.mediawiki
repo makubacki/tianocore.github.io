@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 Tianocore is participating in the [http://socghop.appspot.com Google Summer of Code 2011]. This page provide information for our students and mentors.
 
 ==Contacts==
@@ -68,7 +75,7 @@ Students, please prepare a project proposal with the following information:
 ** past projects/experiences
 ** any previous open source contributions
 * Explain your interest in UEFI or firmware
-* Your plans for the project 
+* Your plans for the project
 ** high level plan
 ** 1st draft timeline
 * Will you be able to become a [[Member Types#Basic Contributor|Basic Contributor]] by agreeing to our [[Contribution Agreement]]?  (Just answer yes or no.  If yes, then we would complete this process separately.)

@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDKIIBuildTools]] -->
 The following tools are required for building [[edk2-buildtools| EDK II BaseTools]] and instructions are provided in the [[BuildTool Setup Guide]].
 

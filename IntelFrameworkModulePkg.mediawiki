@@ -1,4 +1,11 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDKII Packages]] -->
 IntelFrameworkModulePkg Intel Framework Module Package contains the definitions and module implementation
-which follows Intel® Platform Innovation Framework for UEFI and EFI Specifications found at: http://www.intel.com/technology/framework/spec.htm 
+which follows Intel® Platform Innovation Framework for UEFI and EFI Specifications found at: http://www.intel.com/technology/framework/spec.htm
 

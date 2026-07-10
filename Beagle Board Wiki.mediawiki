@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDKII]] -->
 <!-- [[Category:BeagleBoard]] -->
 == Beagle Board==
@@ -15,7 +22,7 @@ If you use the command line version of subversion, then you can easily checkout 
 </pre>
 <br>Build the Beagle Board Package
 <br>
-Now you can run the build.sh script 
+Now you can run the build.sh script
 <br>
 <pre>
 /cygdrive/c/edk2$ cd /cygdrive/c/edk2/BeagleBoardPkg
@@ -77,9 +84,9 @@ This means your ARM compiler is installed in a different location. You will need
 == Boot EFI from RAM on Beagle Board using RealView Debugger ==
 If you have an RealView Debugger hooked up to your Beagle Board you can use /cygdrive/c/edk2/Build/BeagleBoa​rd/DEBUG_RVCT31CYGWI​ N/rvi_boot_from_ram.​inc to down load the EFI image over JTAG and boot it. To load the script go to the Tools menu and select Include Commands from File... You can use edk2/Build/BeagleBoa​rd/DEBUG_RVCT31CYGWI​N/rvi_load_symbols.i​nc to load symbols for the multiple EFI images in the debugger. Note: Some early versions of the RVI have a bug as the script can not access memory and does not work. You need to load the symbols after you break into the debugger.<br>
 <br>
-When the Beagle Board boots from the NAND FLASH the mask ROM on the Beagle Board executes commands out of the start of the NAND to turn on memory and then copies the image from the NAND into system memory and jumps to it. In the EFI world this NAND image is called an FD (Flash Device) image and it contains 520 bytes of image header for the mask ROM and an FV (Firmware Volume). The FV is a simple FLASH file system and the first 4 bytes of the FV contain a jump to the SEC (SEcuirty Core) module. The SEC is a PE/COFF image that contains the reset vector and it is located in an arbitrary location in the FV. When you boot from JTAG the mask ROM on the Beagle Board does not run and the RVD script copies the FD into system memory and sets the PC to first location in the FV.<br> 
+When the Beagle Board boots from the NAND FLASH the mask ROM on the Beagle Board executes commands out of the start of the NAND to turn on memory and then copies the image from the NAND into system memory and jumps to it. In the EFI world this NAND image is called an FD (Flash Device) image and it contains 520 bytes of image header for the mask ROM and an FV (Firmware Volume). The FV is a simple FLASH file system and the first 4 bytes of the FV contain a jump to the SEC (SEcuirty Core) module. The SEC is a PE/COFF image that contains the reset vector and it is located in an arbitrary location in the FV. When you boot from JTAG the mask ROM on the Beagle Board does not run and the RVD script copies the FD into system memory and sets the PC to first location in the FV.<br>
 <br>
-If you have the version of the debugger that does not support the rvi_load_symbols.inc script you can do the following to load symbols. 
+If you have the version of the debugger that does not support the rvi_load_symbols.inc script you can do the following to load symbols.
 Edit the following lines of /cygdrive/c/edk2/BeagleBoardPkg/BeagleBoardPkg.dsc:<br>
 <pre>
 #  PeCoffExtraActionLib|ArmPkg/Library/RvdPeCoffExtraActionLib/RvdPeCoffExtraActionLib.inf
@@ -90,7 +97,7 @@ and convert them to:
   PeCoffExtraActionLib|ArmPkg/Library/RvdPeCoffExtraActionLib/RvdPeCoffExtraActionLib.inf
 #  PeCoffExtraActionLib|MdePkg/Library/BasePeCoffExtraActionLibNull/BasePeCoffExtraActionLibNull.inf
 </pre>
-This will send a series of commands to the RVD console, via semihosting,  that can be used to load symbols. Please note that sending all this data via semihosting slows boot down a lot. After the system gets to the point where you would like to source level debug stop execution on the target. Copy the contents of the StdIO window to a file, and use Tools Include Commands from File...  You should now have source level debug for any EFI module that was loaded in memory. 
+This will send a series of commands to the RVD console, via semihosting,  that can be used to load symbols. Please note that sending all this data via semihosting slows boot down a lot. After the system gets to the point where you would like to source level debug stop execution on the target. Copy the contents of the StdIO window to a file, and use Tools Include Commands from File...  You should now have source level debug for any EFI module that was loaded in memory.
 <br>
 The reset vector code exists in the SEC module located in the FV.  The SEC was relocated to its execution address by the build tool that constructed the FV.  Since this code runs from a fixed address you have to manually load symbols for this code. The SEC loads the DXE Core and that should be the first load command you see in the StdIO window of the debugger.  The following is an example of the first prints that come out of the SEC code. You can cut the load command and past it directly into the RVD Cmd window to source level debug the SEC.<br>
 <pre>
@@ -149,18 +156,18 @@ Boot EFI on the Beagle Board (power cycle if you have it in NAND for example)<br
 '''Step #3:'''<br>
 Use the EFI EBL to flash the image<br>
 <pre>
-BeagleEdk2> cp fs1:\Beagle Board_EFI_flashboot.fd blk0:                
+BeagleEdk2> cp fs1:\Beagle Board_EFI_flashboot.fd blk0:
 </pre>
 
 == Beagle Board Boot Flow ==
 The Beagle Board does not implement PEI. SEC loads the DXE core directly. See the [[PI Boot Flow]] for an overview of PI booting.<br>
 <br>
 '''NAND FLASH Layout'''<br>
-The OMAP3530 used on the Beagle Board contains a mask ROM that initiates the boot process. The image in the NAND FLASH starts with a 512 (0x200) byte Table of Contents (TOC) and a set of configuration headers. The mask ROM uses information in the configuration headers to program clocks and turn on DRAM. After DRAM is initialized the Initial software is copied from NAND to DRAM. The first 4 bytes of the image contain the size of the image, and the next 4 bytes contain the address of where the image should be copied. On the Beagle Board the image is copied to 0x80008208. <br> 
+The OMAP3530 used on the Beagle Board contains a mask ROM that initiates the boot process. The image in the NAND FLASH starts with a 512 (0x200) byte Table of Contents (TOC) and a set of configuration headers. The mask ROM uses information in the configuration headers to program clocks and turn on DRAM. After DRAM is initialized the Initial software is copied from NAND to DRAM. The first 4 bytes of the image contain the size of the image, and the next 4 bytes contain the address of where the image should be copied. On the Beagle Board the image is copied to 0x80008208. <br>
 [[Image:OMAP ROM Boot.key.jpg|600px|OMAP3530 ROM BOOT]]
 <br>
 The values used to initialize clocks and DRAM come from the [https://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/BeagleBoardPkg/ConfigurationHeader.dat ConfigurationHeader.dat] text file. The build process uses the [https://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/BeagleBoardPkg/Tools/generate_image.c GenerateImage] utility to parse the ConfigurationHeader.dat file and patch the information required by the OMPA3530 mask ROM into the beginning of the image.<br><br>
-The edk2 build process creates a Firmware Device (FD) image that has space reserved for the OMAP3530 configuration headers. In the edk2 the FD layout is controlled by a Flash Description File (.fdf). The Flash Description file for the Beagle Board is called [https://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/BeagleBoardPkg/BeagleBoardPkg.fdf BeagleBoardPkg.fdf]. The Beagle Board FD contains 512 (0x200) bytes of OMAP3530 configuration headers followed by 8 bytes of the OMAP3530 image header. The OMAP3530 image header contains the size of the Software Image and the location the image should be loaded in DRAM. For the Beagle Board the Software Image is a Firmware Volume (FV) called FVMAIN_COMPACT. FVMAIN_COMPACT contains two files. The first file is the SEC code that the mask ROM jumps into and the 2nd file is a compressed FV, called FVMAIN.<br> 
+The edk2 build process creates a Firmware Device (FD) image that has space reserved for the OMAP3530 configuration headers. In the edk2 the FD layout is controlled by a Flash Description File (.fdf). The Flash Description file for the Beagle Board is called [https://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/BeagleBoardPkg/BeagleBoardPkg.fdf BeagleBoardPkg.fdf]. The Beagle Board FD contains 512 (0x200) bytes of OMAP3530 configuration headers followed by 8 bytes of the OMAP3530 image header. The OMAP3530 image header contains the size of the Software Image and the location the image should be loaded in DRAM. For the Beagle Board the Software Image is a Firmware Volume (FV) called FVMAIN_COMPACT. FVMAIN_COMPACT contains two files. The first file is the SEC code that the mask ROM jumps into and the 2nd file is a compressed FV, called FVMAIN.<br>
 FVMAIN_COMPACT is called fv0 in the EBL shell. You can use the dir command to see the contents of the FV.
 <pre>
 BeagleEdk2>dir fv0:
@@ -211,7 +218,7 @@ The edk2 build process places all the .fd and .fv files in the FV directory of t
 ! File !! Description
 |-
 ! BeagleBoard_EFI_flashboot.fd
-| Final image that can be placed in FLASH or copied to DRAM @ 0x80008000 
+| Final image that can be placed in FLASH or copied to DRAM @ 0x80008000
 |-
 ! BEAGLEBOARD_EFI.fd
 | Contains FVs, but has not been patched with OMAP3530 configuration headers
@@ -219,21 +226,21 @@ The edk2 build process places all the .fd and .fv files in the FV directory of t
 ! FVMAIN_COMPACT.Fv
 | The Firmware Volume in BEAGLEBOARD_EFI.fd that contains the SEC (reset vector code) and a compressed copy of FVMAIN.Fv
 |-
-! FVMAIN.Fv 
+! FVMAIN.Fv
 | Fimrware Volume containing the EFI drivers used for booting
 |}
-<br> 
+<br>
 If you have your shell set up to build the edk2 the VolInfo command should be in your path and you can use it to dump out the contents of a .Fv file. <br>
 <br>
 '''Reset Vector'''<br>
-The OMAP 3530 mask ROM executes first and used the configuration headers found in [[#NAND FLASH Layout|NAND FLASH Layout]] to turn on DRAM and shadow the NAND FLASH image into memory at 0x80008208. Address 0x8008208 is the beginning of the FVMAIN_COMPACT.Fv. An FV starts with a EFI_FIRMWARE_VOLUME_HEADER data structure. On the Beagle Board the first 4 bytes of the EFI_FIRMWARE_VOLUME_HEADER.ZeroVector has been patched by a build tool to be a branch to the entry point of the SEC PE/COFF Image.  
+The OMAP 3530 mask ROM executes first and used the configuration headers found in [[#NAND FLASH Layout|NAND FLASH Layout]] to turn on DRAM and shadow the NAND FLASH image into memory at 0x80008208. Address 0x8008208 is the beginning of the FVMAIN_COMPACT.Fv. An FV starts with a EFI_FIRMWARE_VOLUME_HEADER data structure. On the Beagle Board the first 4 bytes of the EFI_FIRMWARE_VOLUME_HEADER.ZeroVector has been patched by a build tool to be a branch to the entry point of the SEC PE/COFF Image.
 <pre>
 ///
 /// Describes the features and layout of the firmware volume.
 ///
 typedef struct {
   ///
-  /// The first 16 bytes are reserved to allow for the reset vector of 
+  /// The first 16 bytes are reserved to allow for the reset vector of
   /// processors whose reset vector is at address 0.
   ///
   UINT8                     ZeroVector[16];
@@ -303,7 +310,7 @@ The primary job of the SEC is to load the DXE Core. The DXE Core can be thought 
 * Configure pads for input/output
 * Initialize Clocks
 * Enable Branch Prediction
-* Turn on MMU and caches 
+* Turn on MMU and caches
 * Initialize UART
 * Build HOBs needed by DXE Core
 * Start free running timer for the timer lib
@@ -323,7 +330,7 @@ The DXE Core is for the most part generic code. The DXE core dispatches drivers 
 * TRUE
 * FALSE
 * END
-* SOR (Schedule on Request) 
+* SOR (Schedule on Request)
 <br>
 A file in an FV consists of multiple sections and a driver will contain a PE/COFF section and an optional dependency section. The dependency section contains the byte codes of the dependency grammar. However, the dependency sections are generated from the [Depex] section of the drivers .inf file. The .inf file is the build control file for the driver. [https://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/Omap35xxPkg/TimerDxe/TimerDxe.inf TimerDxe.inf] is an example of an .inf file for a driver that depends on the gHardwareInterruptProtocolGuid to be present before it gets dispatched.<br>
 There are four common dependency expression forms that are used:
@@ -334,19 +341,19 @@ There are four common dependency expression forms that are used:
 <br>
 A Dependency expression of TRUE means the driver can dispatched at any time. In practice the DXE core will dispatch any driver who's dependency expression evaluates to true. If multiple drivers evaluate to true the drivers will be loaded in an arbitrary order, usually the order they were found in the FV. Usually drivers will be coded so they depend on one or more protocol being present and the Depex section in the .inf file will contain a set of protocols that are AND'ed together.<br>
 A driver that contains no dependency expression is a special case. It is not the same as a dependency expression of TRUE. No dependency expression implies that the driver is an EFI driver and depends on all EFI services being present. The PI specification defines protocols, named architectural protocols, that are required by the DXE core to implement the boot and runtime services defined in the UEFI specification. So no dependency expression implies a dependency expression of all the following protocols AND'ed together:
-* gEfiSecurityArchProtocolGuid        
-* gEfiCpuArchProtocolGuid                       
-* gEfiMetronomeArchProtocolGuid            
-* gEfiTimerArchProtocolGuid                   
-* gEfiBdsArchProtocolGuid                        
-* gEfiWatchdogTimerArchProtocolGuid    
-* gEfiRuntimeArchProtocolGuid                
-* gEfiVariableArchProtocolGuid                     
-* gEfiVariableWriteArchProtocolGuid                
-* gEfiCapsuleArchProtocolGuid                      
-* gEfiMonotonicCounterArchProtocolGuid             
-* gEfiResetArchProtocolGuid                        
-* gEfiRealTimeClockArchProtocolGuid              
+* gEfiSecurityArchProtocolGuid
+* gEfiCpuArchProtocolGuid
+* gEfiMetronomeArchProtocolGuid
+* gEfiTimerArchProtocolGuid
+* gEfiBdsArchProtocolGuid
+* gEfiWatchdogTimerArchProtocolGuid
+* gEfiRuntimeArchProtocolGuid
+* gEfiVariableArchProtocolGuid
+* gEfiVariableWriteArchProtocolGuid
+* gEfiCapsuleArchProtocolGuid
+* gEfiMonotonicCounterArchProtocolGuid
+* gEfiResetArchProtocolGuid
+* gEfiRealTimeClockArchProtocolGuid
 <br>
 The debug prints from a DEBUG build of the Beagle Board show the dispatch order on the Beagle Board:
 <pre>
@@ -381,9 +388,9 @@ Loading driver at 0x00087E52000 EntryPoint=0x00087E56539 UsbMassStorageDxe.efi
 </pre>
 
 == How do I load symbols for debugging ==
-The [[#Beagle Board Boot Flow|Beagle Board Boot Flow]] section describes how UEFI, and especially PI, boot by loading a series of PE/COFF images.  A natural question to ask is how load symbols for a debugger, especially when you consider that EFI defaults to load images at arbitrary addresses. Luckily the UEFI specification has a concept know as an EFI Debug Support Table that is defined in section 17.4 of UEFI 2.3 specification. Using the EFI Debug Support Table it is possible to write a debugger script to load symbols.<br> 
+The [[#Beagle Board Boot Flow|Beagle Board Boot Flow]] section describes how UEFI, and especially PI, boot by loading a series of PE/COFF images.  A natural question to ask is how load symbols for a debugger, especially when you consider that EFI defaults to load images at arbitrary addresses. Luckily the UEFI specification has a concept know as an EFI Debug Support Table that is defined in section 17.4 of UEFI 2.3 specification. Using the EFI Debug Support Table it is possible to write a debugger script to load symbols.<br>
 As an example of how to utilize the EFI debug Support Table the Beagle Board port has an extra EBL shell command to dump the symbol table information contained in the EFI Debug Support Table. This extra EBL shell command is called symboltable and the source code can be found in [https://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/BeagleBoardPkg/Library/EblCmdLib/EblCmdLib.c EblCmdLib.c]. The symboltable (sync commands can be shortened  as long as they are unique, we will use sym as a synonym for symboltable) command parses the EFI Debug Support Table and dumps out a set of commands that can be used with a debugger. The default for sym is to dump out RealView Debugger symbol load commands. The following is an example from a Beagle Board.
-<br>  
+<br>
 <pre>
 BeagleEdk2>sym
 load /a /ni /np c:\work\edk2\Build\BeagleBoard\DEBUG_RVCT31\ARM\MdeModulePkg\Core\Dxe\DxeMain\DEBUG\DxeCore.dll & 0x87F2F240
@@ -514,117 +521,117 @@ Platform Configuration Database Report
 PLATFORM: c:\work\edk2\BeagleBoardPkg\BeagleBoardPkg.dsc
 ===============================================================================
 gArmTokenSpaceGuid
-    PcdCpuDxeProduceDebugSupport                        :   FLAG  (BOOLEAN) = FALSE                 
-    PcdArmCacheOperationThreshold                       :  FIXED   (UINT32) = 1024                  
- *P PcdCpuVectorBaseAddress                             :  FIXED   (UINT32) = 0x80000000            
+    PcdCpuDxeProduceDebugSupport                        :   FLAG  (BOOLEAN) = FALSE
+    PcdArmCacheOperationThreshold                       :  FIXED   (UINT32) = 1024
+ *P PcdCpuVectorBaseAddress                             :  FIXED   (UINT32) = 0x80000000
                                                                 DEC DEFAULT = 0xfff00000
- *P PcdCpuResetAddress                                  :  FIXED   (UINT32) = 0x80008000            
+ *P PcdCpuResetAddress                                  :  FIXED   (UINT32) = 0x80008000
                                                                 DEC DEFAULT = 0x00000000
 
 gEfiMdePkgTokenSpaceGuid
-    PcdVerifyNodeInList                                 :   FLAG  (BOOLEAN) = FALSE                 
-    PcdUgaConsumeSupport                                :   FLAG  (BOOLEAN) = TRUE                  
-    PcdUartDefaultBaudRate                              :  FIXED   (UINT64) = 115200                
-    PcdMaximumLinkedListLength                          :  FIXED   (UINT32) = 1000000               
-    PcdMaximumGuidedExtractHandler                      :  FIXED   (UINT32) = 0x10                  
-    PcdMaximumAsciiStringLength                         :  FIXED   (UINT32) = 1000000               
+    PcdVerifyNodeInList                                 :   FLAG  (BOOLEAN) = FALSE
+    PcdUgaConsumeSupport                                :   FLAG  (BOOLEAN) = TRUE
+    PcdUartDefaultBaudRate                              :  FIXED   (UINT64) = 115200
+    PcdMaximumLinkedListLength                          :  FIXED   (UINT32) = 1000000
+    PcdMaximumGuidedExtractHandler                      :  FIXED   (UINT32) = 0x10
+    PcdMaximumAsciiStringLength                         :  FIXED   (UINT32) = 1000000
  *M                                                             EhciDxe.inf = 0x800fffff
-    PcdMaximumUnicodeStringLength                       :  FIXED   (UINT32) = 1000000               
-    PcdDebugClearMemoryValue                            :  FIXED    (UINT8) = 0xAF                  
-    PcdUefiLibMaxPrintBufferSize                        :  FIXED   (UINT32) = 320                   
-    PcdPerformanceLibraryPropertyMask                   :  FIXED    (UINT8) = 0                     
-    PcdUartDefaultStopBits                              :  FIXED    (UINT8) = 1                     
-    PcdUartDefaultDataBits                              :  FIXED    (UINT8) = 8                     
-    PcdUartDefaultParity                                :  FIXED    (UINT8) = 1                     
-    PcdUefiVariableDefaultPlatformLang                  :  FIXED    (VOID*) = "en-US"               
-    PcdUefiVariableDefaultLang                          :  FIXED    (VOID*) = "eng"                 
+    PcdMaximumUnicodeStringLength                       :  FIXED   (UINT32) = 1000000
+    PcdDebugClearMemoryValue                            :  FIXED    (UINT8) = 0xAF
+    PcdUefiLibMaxPrintBufferSize                        :  FIXED   (UINT32) = 320
+    PcdPerformanceLibraryPropertyMask                   :  FIXED    (UINT8) = 0
+    PcdUartDefaultStopBits                              :  FIXED    (UINT8) = 1
+    PcdUartDefaultDataBits                              :  FIXED    (UINT8) = 8
+    PcdUartDefaultParity                                :  FIXED    (UINT8) = 1
+    PcdUefiVariableDefaultPlatformLang                  :  FIXED    (VOID*) = "en-US"
+    PcdUefiVariableDefaultLang                          :  FIXED    (VOID*) = "eng"
 
 gEfiMdeModulePkgTokenSpaceGuid
-    PcdFrameworkCompatibilitySupport                    :   FLAG  (BOOLEAN) = FALSE                 
-    PcdSupportUpdateCapsuleReset                        :   FLAG  (BOOLEAN) = FALSE                 
-    PcdVariableCollectStatistics                        :   FLAG  (BOOLEAN) = FALSE                 
-    PcdUnicodeCollationSupport                          :   FLAG  (BOOLEAN) = TRUE                  
-    PcdUnicodeCollation2Support                         :   FLAG  (BOOLEAN) = TRUE                  
-    PcdTurnOffUsbLegacySupport                          :   FLAG  (BOOLEAN) = FALSE                 
-    PcdLoadModuleAtFixAddressEnable                     :  FIXED   (UINT64) = 0                     
-    PcdMaxSizePopulateCapsule                           :  FIXED   (UINT32) = 0x6400000             
-    PcdMaxSizeNonPopulateCapsule                        :  FIXED   (UINT32) = 0xa00000              
-    PcdHwErrStorageSize                                 :  FIXED   (UINT32) = 0x0000                
-    PcdMaxVariableSize                                  :  FIXED   (UINT32) = 0x400                 
-    PcdEmuVariableNvStoreReserved                       :  FIXED   (UINT64) = 0                     
-    PcdMaxHardwareErrorVariableSize                     :  FIXED   (UINT32) = 0x8000                
-    PcdVariableStoreSize                                :  FIXED   (UINT32) = 0x10000               
-    PcdLoadFixAddressBootTimeCodePageNumber             :  PATCH   (UINT32) = 0                     
-    PcdLoadFixAddressRuntimeCodePageNumber              :  PATCH   (UINT32) = 0                     
+    PcdFrameworkCompatibilitySupport                    :   FLAG  (BOOLEAN) = FALSE
+    PcdSupportUpdateCapsuleReset                        :   FLAG  (BOOLEAN) = FALSE
+    PcdVariableCollectStatistics                        :   FLAG  (BOOLEAN) = FALSE
+    PcdUnicodeCollationSupport                          :   FLAG  (BOOLEAN) = TRUE
+    PcdUnicodeCollation2Support                         :   FLAG  (BOOLEAN) = TRUE
+    PcdTurnOffUsbLegacySupport                          :   FLAG  (BOOLEAN) = FALSE
+    PcdLoadModuleAtFixAddressEnable                     :  FIXED   (UINT64) = 0
+    PcdMaxSizePopulateCapsule                           :  FIXED   (UINT32) = 0x6400000
+    PcdMaxSizeNonPopulateCapsule                        :  FIXED   (UINT32) = 0xa00000
+    PcdHwErrStorageSize                                 :  FIXED   (UINT32) = 0x0000
+    PcdMaxVariableSize                                  :  FIXED   (UINT32) = 0x400
+    PcdEmuVariableNvStoreReserved                       :  FIXED   (UINT64) = 0
+    PcdMaxHardwareErrorVariableSize                     :  FIXED   (UINT32) = 0x8000
+    PcdVariableStoreSize                                :  FIXED   (UINT32) = 0x10000
+    PcdLoadFixAddressBootTimeCodePageNumber             :  PATCH   (UINT32) = 0
+    PcdLoadFixAddressRuntimeCodePageNumber              :  PATCH   (UINT32) = 0
 
 gEmbeddedTokenSpaceGuid
- *P PcdCacheEnable                                      :   FLAG  (BOOLEAN) = TRUE                  
+ *P PcdCacheEnable                                      :   FLAG  (BOOLEAN) = TRUE
                                                                 DEC DEFAULT = FALSE
- *P PcdPrePiProduceMemoryTypeInformationHob             :   FLAG  (BOOLEAN) = TRUE                  
+ *P PcdPrePiProduceMemoryTypeInformationHob             :   FLAG  (BOOLEAN) = TRUE
                                                                 DEC DEFAULT = FALSE
-    PcdEmbeddedDirCmd                                   :   FLAG  (BOOLEAN) = TRUE                  
- *P PcdEmbeddedMacBoot                                  :   FLAG  (BOOLEAN) = TRUE                  
+    PcdEmbeddedDirCmd                                   :   FLAG  (BOOLEAN) = TRUE
+ *P PcdEmbeddedMacBoot                                  :   FLAG  (BOOLEAN) = TRUE
                                                                 DEC DEFAULT = FALSE
-    PcdEmbeddedIoEnable                                 :   FLAG  (BOOLEAN) = FALSE                 
-    PcdEmbeddedHwDebugCmd                               :   FLAG  (BOOLEAN) = TRUE                  
-    PcdEmbeddedHobCmd                                   :   FLAG  (BOOLEAN) = TRUE                  
-    PcdEmbeddedScriptCmd                                :   FLAG  (BOOLEAN) = FALSE                 
- *P PcdEmbeddedPciDebugCmd                              :   FLAG  (BOOLEAN) = TRUE                  
+    PcdEmbeddedIoEnable                                 :   FLAG  (BOOLEAN) = FALSE
+    PcdEmbeddedHwDebugCmd                               :   FLAG  (BOOLEAN) = TRUE
+    PcdEmbeddedHobCmd                                   :   FLAG  (BOOLEAN) = TRUE
+    PcdEmbeddedScriptCmd                                :   FLAG  (BOOLEAN) = FALSE
+ *P PcdEmbeddedPciDebugCmd                              :   FLAG  (BOOLEAN) = TRUE
                                                                 DEC DEFAULT = FALSE
-    PcdGdbSerial                                        :   FLAG  (BOOLEAN) = FALSE                 
- *F PcdEmbeddedFdSize                                   :  FIXED   (UINT32) = 0x00080000            
+    PcdGdbSerial                                        :   FLAG  (BOOLEAN) = FALSE
+ *F PcdEmbeddedFdSize                                   :  FIXED   (UINT32) = 0x00080000
                                                                 DEC DEFAULT = 0x0000000
- *F PcdEmbeddedFdBaseAddress                            :  FIXED   (UINT32) = 0x80008000            
+ *F PcdEmbeddedFdBaseAddress                            :  FIXED   (UINT32) = 0x80008000
                                                                 DEC DEFAULT = 0xffff0000
- *F PcdFlashFvMainSize                                  :  FIXED   (UINT32) = 0x0007FDF8            
+ *F PcdFlashFvMainSize                                  :  FIXED   (UINT32) = 0x0007FDF8
                                                                 DEC DEFAULT = 0x0
-    PcdPrePiStackSize                                   :  FIXED   (UINT32) = 0x20000               
- *P PcdPrePiStackBase                                   :  FIXED   (UINT32) = 0x87FE0000            
+    PcdPrePiStackSize                                   :  FIXED   (UINT32) = 0x20000
+ *P PcdPrePiStackBase                                   :  FIXED   (UINT32) = 0x87FE0000
                                                                 DEC DEFAULT = 0
- *F PcdFlashFvMainBase                                  :  FIXED   (UINT32) = 0x80008208            
+ *F PcdFlashFvMainBase                                  :  FIXED   (UINT32) = 0x80008208
                                                                 DEC DEFAULT = 0x0
-    PcdPrePiTempMemorySize                              :  FIXED   (UINT32) = 0                     
-    PcdMemoryTypeEfiACPIReclaimMemory                   :  FIXED   (UINT32) = 0                     
-    PcdMemoryTypeEfiACPIMemoryNVS                       :  FIXED   (UINT32) = 0                     
-    PcdMemoryTypeEfiReservedMemoryType                  :  FIXED   (UINT32) = 0                     
- *P PcdMemoryTypeEfiRuntimeServicesCode                 :  FIXED   (UINT32) = 40                    
+    PcdPrePiTempMemorySize                              :  FIXED   (UINT32) = 0
+    PcdMemoryTypeEfiACPIReclaimMemory                   :  FIXED   (UINT32) = 0
+    PcdMemoryTypeEfiACPIMemoryNVS                       :  FIXED   (UINT32) = 0
+    PcdMemoryTypeEfiReservedMemoryType                  :  FIXED   (UINT32) = 0
+ *P PcdMemoryTypeEfiRuntimeServicesCode                 :  FIXED   (UINT32) = 40
                                                                 DEC DEFAULT = 0
- *P PcdMemoryTypeEfiBootServicesData                    :  FIXED   (UINT32) = 3000                  
+ *P PcdMemoryTypeEfiBootServicesData                    :  FIXED   (UINT32) = 3000
                                                                 DEC DEFAULT = 0
- *P PcdMemoryTypeEfiLoaderCode                          :  FIXED   (UINT32) = 10                    
+ *P PcdMemoryTypeEfiLoaderCode                          :  FIXED   (UINT32) = 10
                                                                 DEC DEFAULT = 0
-    PcdPrePiBfvBaseAddress                              :  FIXED   (UINT32) = 0                     
-    PcdPrePiBfvSize                                     :  FIXED   (UINT32) = 0                     
- *P PcdMemoryTypeEfiRuntimeServicesData                 :  FIXED   (UINT32) = 80                    
+    PcdPrePiBfvBaseAddress                              :  FIXED   (UINT32) = 0
+    PcdPrePiBfvSize                                     :  FIXED   (UINT32) = 0
+ *P PcdMemoryTypeEfiRuntimeServicesData                 :  FIXED   (UINT32) = 80
                                                                 DEC DEFAULT = 0
- *P PcdPrePiHobBase                                     :  FIXED   (UINT32) = 0x80001000            
+ *P PcdPrePiHobBase                                     :  FIXED   (UINT32) = 0x80001000
                                                                 DEC DEFAULT = 131072
-    PcdMemoryTypeEfiLoaderData                          :  FIXED   (UINT32) = 0                     
-    PcdPrePiCpuMemorySize                               :  FIXED    (UINT8) = 32                    
- *P PcdMemoryTypeEfiBootServicesCode                    :  FIXED   (UINT32) = 400                   
+    PcdMemoryTypeEfiLoaderData                          :  FIXED   (UINT32) = 0
+    PcdPrePiCpuMemorySize                               :  FIXED    (UINT8) = 32
+ *P PcdMemoryTypeEfiBootServicesCode                    :  FIXED   (UINT32) = 400
                                                                 DEC DEFAULT = 0
-    PcdPrePiCpuIoSize                                   :  FIXED    (UINT8) = 0                     
-    PcdEmbeddedPerformanceCounterFreqencyInHz           :  FIXED   (UINT64) = 0x0000000             
- *P PcdEmbeddedFdPerformanceCounterPeriodInNanoseconds  :  FIXED   (UINT32) = 77                    
+    PcdPrePiCpuIoSize                                   :  FIXED    (UINT8) = 0
+    PcdEmbeddedPerformanceCounterFreqencyInHz           :  FIXED   (UINT64) = 0x0000000
+ *P PcdEmbeddedFdPerformanceCounterPeriodInNanoseconds  :  FIXED   (UINT32) = 77
                                                                 DEC DEFAULT = 0x0000000
-    PcdInterruptBaseAddress                             :  FIXED   (UINT32) = 0x38e00000            
-    PcdTimerPeriod                                      :  FIXED   (UINT32) = 100000                
- *P PcdEmbeddedAutomaticBootCommand                     :  FIXED    (VOID*) = ""                    
+    PcdInterruptBaseAddress                             :  FIXED   (UINT32) = 0x38e00000
+    PcdTimerPeriod                                      :  FIXED   (UINT32) = 100000
+ *P PcdEmbeddedAutomaticBootCommand                     :  FIXED    (VOID*) = ""
                                                                 DEC DEFAULT = L""
- *P PcdEmbeddedPrompt                                   :  FIXED    (VOID*) = "BeagleEdk2"          
+ *P PcdEmbeddedPrompt                                   :  FIXED    (VOID*) = "BeagleEdk2"
                                                                 DEC DEFAULT = "Ebl"
-    PcdEmbeddedShellCharacterEcho                       :  FIXED  (BOOLEAN) = TRUE                  
-    PcdEmbeddedDefaultTextColor                         :  FIXED   (UINT32) = 0x07                  
-    PcdEmbeddedMemVariableStoreSize                     :  FIXED   (UINT32) = 0x10000               
-    PcdGdbMaxPacketRetryCount                           :  FIXED   (UINT32) = 10000000              
+    PcdEmbeddedShellCharacterEcho                       :  FIXED  (BOOLEAN) = TRUE
+    PcdEmbeddedDefaultTextColor                         :  FIXED   (UINT32) = 0x07
+    PcdEmbeddedMemVariableStoreSize                     :  FIXED   (UINT32) = 0x10000
+    PcdGdbMaxPacketRetryCount                           :  FIXED   (UINT32) = 10000000
 
 gOmap35xxTokenSpaceGuid
-    PcdBeagleConsoleUart                                :  FIXED   (UINT32) = 3                     
-    PcdBeagleBoardIRAMFullSize                          :  FIXED   (UINT32) = 0x00000000            
-    PcdBeagleFreeTimer                                  :  FIXED   (UINT32) = 4                     
-    PcdBeagleGpmcOffset                                 :  FIXED   (UINT32) = 0x00000000            
-    PcdBeagleMMCHS1Base                                 :  FIXED   (UINT32) = 0x00000000            
-    PcdBeagleArchTimer                                  :  FIXED   (UINT32) = 3                     
+    PcdBeagleConsoleUart                                :  FIXED   (UINT32) = 3
+    PcdBeagleBoardIRAMFullSize                          :  FIXED   (UINT32) = 0x00000000
+    PcdBeagleFreeTimer                                  :  FIXED   (UINT32) = 4
+    PcdBeagleGpmcOffset                                 :  FIXED   (UINT32) = 0x00000000
+    PcdBeagleMMCHS1Base                                 :  FIXED   (UINT32) = 0x00000000
+    PcdBeagleArchTimer                                  :  FIXED   (UINT32) = 3
 
 ===============================================================================
 ===============================================================================

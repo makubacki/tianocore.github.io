@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 == Introduction ==
 To reduce the size of the firmware and also to speed up the boot process (it is sometimes faster to decompress a compressed file than to copy the original file from a block storage), it is often common to compress the DXE & BDS modules.
 

@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <span style="font-size: 15.0pt; text-align: center; font-family: Verdana; color: #004280; font-weight: bold; font-style: normal">
 =='''UDK2015 Roadmap for Tianocore.org '''==
 </span>
@@ -9,7 +16,7 @@
 <tr>
     <th   colspan="2">Feature Details</th>
 </tr>
-   
+
 <tr>
   <th>
     Support UEFI 2.5 Updates
@@ -17,7 +24,7 @@
   <th>
     Support PI 1.4 Updates
   </th>
-  
+
 </tr>
 <tr>
 <td>
@@ -26,7 +33,7 @@
 # UEFI USB Function I/O Protocol (H file only)
 # Add NVM Express Pass Thru Protocol
 # Add UFS stack
-# Add SD Device Path (H file only) 
+# Add SD Device Path (H file only)
 # Add reconnect Browser Action
 # Ability to refresh the entire form
 # The default/options for the Ordered List question
@@ -41,7 +48,7 @@
 # Exposing Memory Redundancy to OSPM
 # ESRT: EFI System Resource Table and component firmware updates
 # IPV6 support from UNDI
-# UEFI “Next”  Feature – 
+# UEFI “Next”  Feature –
 * IP_CONFIG2 Protocol
 * Boot from HTTP (Excluding IPV6)
 * DNSv4 and DNSv6
@@ -94,9 +101,9 @@ Support OpenSSL version 1.0.2d.
 <td colspan="2">
 # Match2 Opcode and EFI_REGULAR_EXPRESSION_PROTOCOL
 # Bluetooth Support (H file only)
-# Errata Boot Manager Policy & SATA Device Path Node 
+# Errata Boot Manager Policy & SATA Device Path Node
 # RamDisk Device Path
-# UEFI “Next”  Feature – 
+# UEFI “Next”  Feature –
 * Boot from HTTP (Excluding IPV6)
 * WIFI support (H file only)
 * EAP2 Protocol (H file only)

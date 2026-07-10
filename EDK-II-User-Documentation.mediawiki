@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 
 <div class="t_projects">
 <table>
@@ -33,10 +40,10 @@ This document provides a definitive list of steps to follow which will result in
 Signing UEFI Images.pdf V1.31 <br>
 Version 1.31. This document describes how to sign UEFI images for the development and test of UEFI Secure Boot using the UDK2010.SR1 release.
 
-*	Provides an overview of UEFI Secure Boot 
-*	Details the steps to sign an UEFI image 
-*	Describes the UEFI Secure Boot policies 
-*	Describes the steps required to set specific UEFI Secure Boot policies 
+*	Provides an overview of UEFI Secure Boot
+*	Details the steps to sign an UEFI image
+*	Describes the UEFI Secure Boot policies
+*	Describes the steps required to set specific UEFI Secure Boot policies
 *	Describes the image authorization flow when UEFI Secure Boot is enabled
 *	Decribes how to use OVMF and NT32Pkg as UEFI Secure Boot reference platforms
 *	Demonstrates several UEFI Secure Boot scenarios using OVMF

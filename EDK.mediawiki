@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 					<div class="t_projects">
 						<table>
 							<tr>
@@ -14,9 +21,9 @@
 								<td>
 								<a class="external text" href="http://sourceforge.net/projects/efidevkit/files/Releases/Official%20Releases/Edk%201.06.zip/download">
 								Edk 1.06.zip</a> </td>
-								<td>Contains UEFI 2.1, Framework 0.9, PI 1.0 and 
-								EFI shell: core and sample driver source code 
-								for EDK build source code environment and 
+								<td>Contains UEFI 2.1, Framework 0.9, PI 1.0 and
+								EFI shell: core and sample driver source code
+								for EDK build source code environment and
 								directory structure. </td>
 								<td>
 								<a class="external text" href="http://sourceforge.net/projects/efi-shell/files/Releases/Official%20Releases/EfiShell%201.06.zip/download">
@@ -57,10 +64,10 @@
 								<a class="external text" href="http://sourceforge.net/projects/efidevkit/files/Releases/Others/Other%20Contribution/EDK1117_Mobile_Framework_Dev_Patch_3.zip/download">
 								Mobile Framework Dev Patch 3</a> <br>
 								<a class="external text" href="http://sourceforge.net/projects/efidevkit/files/Releases/Others/Other%20Contribution/EDK1117_MObile_framework_Dev_Patch_2.zip/download">
-								Mobile Framework Dev Path 2</a> 
+								Mobile Framework Dev Path 2</a>
 </td>
-								<td>Client Framework Patches are an update to 
-								the Green H which Intel utilizes on its client 
+								<td>Client Framework Patches are an update to
+								the Green H which Intel utilizes on its client
 								platforms </td>
 								<td>&nbsp;</td>
 								<td>&nbsp;</td>
@@ -83,7 +90,7 @@
 								<td>
 								<a class="external text" href="https://sourceforge.net/projects/efidevkit/files/Releases/Development%20Snapshots%20Diff%20Patches/">
 								Development Snapshot Diff Patches</a> </td>
-								<td>To see the differences between snapshot 
+								<td>To see the differences between snapshot
 								versions </td>
 								<td>&nbsp;</td>
 								<td>&nbsp;</td>
@@ -107,7 +114,7 @@
 
 							<tr>
 							<td>
-								
+
 								<p>
 								<a class="external text" href="http://sourceforge.net/projects/efidevkit/files/Releases/Others/Other%20Contribution/gig_efi_src_4606.zip/download">
 								Intel Undi UEFI Source 4606.zip</a> </p>
@@ -127,11 +134,11 @@
 								<a class="external text" href="http://sourceforge.net/projects/efidevkit/files/Releases/Others/Other%20Contribution/gig_pci_src_3512.zip/download">
 								gig pci src 3512.zip</a> </td>
 								<td>&nbsp;<p><br>
-								Fix to the Undi EDK Intel(R) PRO/1000 Network 
+								Fix to the Undi EDK Intel(R) PRO/1000 Network
 								Driver </td>
 								<td>&nbsp;</td>
-								<td>&nbsp;</td>							
-							
+								<td>&nbsp;</td>
+
 							</tr>
 						</table>
 					</div>

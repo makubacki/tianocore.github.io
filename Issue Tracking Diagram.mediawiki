@@ -1,10 +1,17 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:Defect Tracking]] -->
 == The EFI and Framework Open Source Defect Resolution Process ==
 
 
 '''Phase 1: Submit and Validate''' - ([http://sourceforge.net/userapps/mediawiki/tianocore/nfs/user/t/ti/tianocore/6/67/SubmitandValidate.gif zoom in])
 
-[[File:SubmitandValidate_sm.gif]] 
+[[File:SubmitandValidate_sm.gif]]
 
 '''Phase 2: Fix and Review''' - ([http://sourceforge.net/userapps/mediawiki/tianocore/nfs/user/t/ti/tianocore/0/0a/FixandReview.gif zoom in])
 

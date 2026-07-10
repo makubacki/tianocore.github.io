@@ -1,5 +1,12 @@
+= Deprecated Wiki =
 
-A Shell application is a UEFI Application that consumes a shell protocol.  For clarity a UEFI application is a binary that is unloaded upon return from the entry point routine.  The protocols are produced by the shell are EFI_SHELL_PROTOCOL (produced on the shell handle) and EFI_SHELL_PARAMETERS_PROTOCOL (produced on the child application’s handle).  
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
+
+A Shell application is a UEFI Application that consumes a shell protocol.  For clarity a UEFI application is a binary that is unloaded upon return from the entry point routine.  The protocols are produced by the shell are EFI_SHELL_PROTOCOL (produced on the shell handle) and EFI_SHELL_PARAMETERS_PROTOCOL (produced on the child application’s handle).
  Use OpenProtocol function to get the protocol pointers.
 ==Using EFI_SHELL_PROTOCOL==
 There may be more than 1 instance of this protocol, and the goal of the application should be to open the instance produced by the immediate parent shell.  From EFI_LOADED_IMAGE_PROTOCOL you would get the handle of your parent and attempt to open the protocol on that handle before doing an open-ended search for the protocol.

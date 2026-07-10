@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 {{CommitProcess}}
 Code reviews are a critical part of producing high quality code. This page documents how to use code reviews within our
 projects, and how to be a code reviewer.

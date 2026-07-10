@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 === How to delete an environement variable ===
 The EBL command 'set' can be used to set an ASCII string value to a UEFI environment variable (eg: 'set myvariable myvalue').
 But this command can also be used to unset a variable by typing:

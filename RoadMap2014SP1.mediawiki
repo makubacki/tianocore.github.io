@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <span style="font-size: 15.0pt; text-align: center; font-family: Verdana; color: #004280; font-weight: bold; font-style: normal">
 =='''UDK2014 SP1 Roadmap for Tianocore.org '''==
 </span>
@@ -9,7 +16,7 @@
 <tr>
     <th   colspan="2">Feature Details</th>
 </tr>
-   
+
 <tr>
   <td> 1. </td>
 
@@ -24,7 +31,7 @@
 INF/DEC files updates
 #Usage information in INF file comment blocks
 #Add Module Extra UNI file
-#PCD information in DEC file comment blocks 
+#PCD information in DEC file comment blocks
 #Add PACKAGE_UNI_FILE UNI file
 #Add Package Extra UNI file
 </td>

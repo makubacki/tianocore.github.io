@@ -1,4 +1,11 @@
-EDK II Application Development Kit for include the Standard C Libraries in UEFI Shell Applications 
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
+EDK II Application Development Kit for include the Standard C Libraries in UEFI Shell Applications
 
 
 <div class="t_projects">
@@ -32,7 +39,7 @@ EDK II Application Development Kit for include the Standard C Libraries in UEFI 
 <td>
 
 EDK II Application Development Kit (EADK) Release 1.02 Package incorporates using the Standard C Library components. Include these into standard "C" applications.  See the AppPkg for "Hello World" example
-* This release is based on SVN:  
+* This release is based on SVN:
 *  https://svn.code.sf.net/p/edk2/code/trunk/edk2/  -r 14804
 
 Packages Included:  (Note: get the latest from the [[UDK2010]] release)
@@ -42,32 +49,32 @@ Packages Included:  (Note: get the latest from the [[UDK2010]] release)
 *''' Enquire ''' This is a program that determines many properties of the                C compiler and the target machine that Enquire is run on.  The                only changes required to port this 1990s era Unix program to                EDK II were the addition of eight pragmas to enquire.c in                order to disable some Microsoft VC++ specific warnings.
 * '''Hello'''    This is a very simple EDK II native application that doesn't use               any features of the Standard C Library.
 
-* '''Main'''     This application is functionally identical to Hello, except that                it uses the Standard C Library to provide a main() entry point. 
+* '''Main'''     This application is functionally identical to Hello, except that                it uses the Standard C Library to provide a main() entry point.
 * '''Python'''   A port of the Python-2.7.2 interpreter for UEFI.  This                application is disabled by default.  Un-comment the line for                PythonCore.inf in the [Components] section of AppPkg.dsc to                enable building Python.
 
-*''' Sockets ''' A collection of applications demonstrating use of the                EDK II Socket Libraries.  These applications include: 
-:*   DataSink                     
+*''' Sockets ''' A collection of applications demonstrating use of the                EDK II Socket Libraries.  These applications include:
+:*   DataSink
 :*   DataSource
-:*   GetAddrInfo                  
+:*   GetAddrInfo
 :*   GetHostByAddr
-:*   GetHostByDns                 
+:*   GetHostByDns
 :*   GetHostByName
-:*   GetNetByAddr                 
+:*   GetNetByAddr
 :*   GetNetByName
-:*   GetServByName                
+:*   GetServByName
 :*   GetServByPort
-:*   OobRx                        
+:*   OobRx
 :*   OobTx
-:*   RawIp4Rx                     
+:*   RawIp4Rx
 :*   RawIp4Tx
-:*   RecvDgram                    
+:*   RecvDgram
 :*   SetHostName
-:*   SetSockOpt                   
+:*   SetSockOpt
 :*   TftpServer
 :*   WebServer
 <br>
 '''2) [[StdLib]]'''
- 
+
 ;- The StdLib package contains the standard header files as well as            implementations of the standard libraries.
 
 

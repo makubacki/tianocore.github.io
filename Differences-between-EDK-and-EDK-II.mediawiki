@@ -1,17 +1,24 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 Note: The original EFI Development Kit ([[EDK]]) is no longer supported. This document is maintained for historical purposes. Please use [[EDK II]] for current UEFI development.
 
 ===What are the differences between EDK and EDK II?===
 
 The main differences are in build architecture. The build description files (.dsc .inf, etc) have been enhanced. The [[EDK II]] build can understand EDK build description files, so an EDK II build can include EDK source code (with limitations). There are also build tool differences: EDK II supports a larger number of operating systems and tool chains.
 
-EDK II has richer libraries (MDELIB, etc.), which makes the source code structure very different. EDK II also uses a package concept, so that the directory and file layout is different. 
+EDK II has richer libraries (MDELIB, etc.), which makes the source code structure very different. EDK II also uses a package concept, so that the directory and file layout is different.
 
-EDK II uses Platform Configuration Database ([[PCD]]) for parameterization and binary patch support, and supports. 
-newer UEFI/PI specifications (see table below for more info). 
+EDK II uses Platform Configuration Database ([[PCD]]) for parameterization and binary patch support, and supports.
+newer UEFI/PI specifications (see table below for more info).
 
 EDK II provides compatibility with EDK-style source code using EdkCompatiblityPkg ([[ECP]]). However, ECP support is being deprecated in current platforms. This is possible because ECP provides binary compatibility for EDK through libraies and thunk code.
 
-EDK II is also designed to work with Doxygen to generate design level specifications. 
+EDK II is also designed to work with Doxygen to generate design level specifications.
 
 In addition, since EDK II supports later versions of the UEFI and PI Specifications, there are newer protocols that will be part of EDK II that do not exist in EDK.
 
@@ -22,11 +29,11 @@ The Platform Initialization boot execution phases are similar. EDK and EDK II ha
 The following table is a side by side comparison.
 {| class="wikitable"
 |-
-! 
+!
 ! EDK
 ! EDK II
 |-
-| Development OS 
+| Development OS
 | WinXP
 | WinXP/7/8/8.1/10, Linux, OS/X
 |-
@@ -43,7 +50,7 @@ The following table is a side by side comparison.
 |POSIX C, Python
 |-
 |Target Platforms (open source)
-|NT32, DUET, 
+|NT32, DUET,
 |See [[EDK II Platforms]]
 |-
 |Distribution

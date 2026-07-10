@@ -1,6 +1,13 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category: EFI Shell]] -->
 <!-- [[Category: EDK]] -->
-These releses are archived for reference. 
+These releses are archived for reference.
 
 To learn more about the EDK codebase see the [[Modules| EDK Module Structure Explained]].
 

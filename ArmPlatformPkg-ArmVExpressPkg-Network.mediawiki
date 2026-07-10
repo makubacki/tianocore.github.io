@@ -1,8 +1,15 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 === Install a DHCP and TFTP servers on your machine ===
 
 To ease my development I have installed a second dedicated ethernet card on my host machine (... do not forget the crossover cable if directly connected to your development board).
 <pre>$ /sbin/ifconfig | grep eth
-eth0      Link encap:Ethernet  HWaddr 00:24:1d:0c:1b:a8  
+eth0      Link encap:Ethernet  HWaddr 00:24:1d:0c:1b:a8
 eth1      Link encap:Ethernet  HWaddr 00:00:5a:11:8b:35</pre>
 The DHCP and TFTP servers will be attached to eth1. The following instructions are based on Ubuntu, this wikipage should not be considered as the reference documentation to install these network services. They are only there for information. Please look at your OS/Linux distribution documentation for a proper settings.
 
@@ -82,7 +89,7 @@ Let's test of TFTP service. From your terminal:
 <pre>tftp 192.168.1.1 69
 tftp> get BOOTARM.EFI</pre>
 
-Now you should see the file you put in /var/lib/tftpboot in the directory you ran tftp from. 
+Now you should see the file you put in /var/lib/tftpboot in the directory you ran tftp from.
 
 ==== Debugging the Ethernet Driver ====
 To debugging the network stack add the bit DEBUG_NET (ie: 0x00004000) to gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel to enable the network specific debug information.

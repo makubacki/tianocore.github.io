@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <span style="font-size: 14.0pt; text-align: center; font-family: Verdana; color: blue; font-weight: bold; font-style: normal">UDK2010 Roadmap for Tianocore.org Feature Details </span>
 
 * Look for the upcoming release available ''' Now'''
@@ -16,7 +23,7 @@
 
 <tr>
 <th colspan="1" style="background-color:#95b3d7"><span style="font-size: 10.0pt;  font-family: Verdana; color: black; font-style: normal">
-Support Asynchronous Block Io 
+Support Asynchronous Block Io
 </span></th>
 </tr>
 
@@ -30,7 +37,7 @@ Secure Storage Protocol: enable [http://www.trustedcomputinggroup.org/developers
 Networking Improvements:
 <span style="font-size: 8.0pt; font-family: Verdana; color: #0f0f0f; font-style: normal">
 * Erata related to  Netboot6-DUID
-* Provide more DHCP4 & DHCP6 API support 
+* Provide more DHCP4 & DHCP6 API support
 </span>
 </span></th>
 </tr>
@@ -38,15 +45,15 @@ Networking Improvements:
 
 <tr>
 <th colspan="1" style="background-color:#dbe5f1"><span style="font-size: 10.0pt; font-family: Verdana; color: black; font-style: normal">
-TCG Physical Presence (PP). Based on the Physical Presence Interface Specification Version 1.20, Revision 1.0. More information at the [http://www.trustedcomputinggroup.org/resources/tcg_physical_presence_interface_specification Trusted Computing Group website]. 
+TCG Physical Presence (PP). Based on the Physical Presence Interface Specification Version 1.20, Revision 1.0. More information at the [http://www.trustedcomputinggroup.org/resources/tcg_physical_presence_interface_specification Trusted Computing Group website].
 </span></th>
 </tr>
 
 
 <tr>
 <th colspan="1" style="background-color:#95b3d7"><span style="font-size: 10.0pt;  font-family: Verdana; color: black; font-style: normal">
-USB 3.0 Controller Support (XHCI)  
- 
+USB 3.0 Controller Support (XHCI)
+
 </span></th>
 </tr>
 
@@ -69,7 +76,7 @@ Security Package (SecurityPkg). Open source package including the following item
 
 <span style="font-size: 8.0pt; font-family: Verdana; color: #0f0f0f; font-style: normal">
 
-* TPM 1.2 Measured Boot 
+* TPM 1.2 Measured Boot
 * UEFI variable support for Secure Boot as defined by UEFI 2.3.1a (EFI_VARIABLE_TIME_BASED_AUTHENTICATED_WRITE_ACCESS attribute with EFI_VARIABLE_AUTHENTICATION_2 and EFI_VARIABLE_AUTHENTICATION support)
 * DXE Image Verification library to support Secure Boot (per UEFI 2.3.1a)
 * User Identity Support (per UEFI 2.3.1a)

@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 [[UEFI]] details interfaces between the OS and platform firmware. Several security features were introduced (e.g. Authenticated Variable Service, Driver Signing, etc) starting in UEFI Specification version 2.2 (http://www.uefi.org). These security features highly depend on cryptography, which is implemented in EDK II using CryptoPkg.
 
 https://github.com/tianocore/edk2/tree/master/CryptoPkg

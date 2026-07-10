@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 =ShellPkg (UEFI Shell 2.x)=
 
 '''[https://github.com/tianocore/edk2/tree/master/ShellPkg ShellPkg]''' is an [[EDKII Packages|EDK II Package]] that provides a native implementation of the UEFI Shell 2.x specifications.
@@ -6,7 +13,7 @@
 
 ==Getting ShellPkg==
 
-This package provides the shell application, a set of NULL-named libraries that provide configurable command sets, and libraries for creating additional applications and UEFI Shell commands. 
+This package provides the shell application, a set of NULL-named libraries that provide configurable command sets, and libraries for creating additional applications and UEFI Shell commands.
 
 ==ShellPkg versus ShellBinPkg==
 

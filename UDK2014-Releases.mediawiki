@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 This page contains the release history for [[UDK2014]].
 
 See [[UDK]]  for current UEFI Development Kit releases
@@ -14,7 +21,7 @@ If you have questions please email the [[edk2-devel]] email list.
     <th width="55%" style="background-color:#fdbb13"> What </th>
     <th width="25%" style="background-color:#fdbb13"> Contents </th>
   </tr>
- 
+
   <tr>
     <th>
      <p><b>UDK2014.SP1.P1</b></p>
@@ -30,7 +37,7 @@ If you have questions please email the [[edk2-devel]] email list.
       w/ WorkSpace Expanded .zip<br/>
       Release <b>Dec 31, 2014</b><br/>
       <a href="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1.P1/UDK2014.SP1.P1-ReleaseNotes-MyWorkSpace.txt/download">Release Notes</a> <br/>
-      
+
     </td>
     <td>
       <p>UEFI development Kit 2014 SP1 Specification Release #1 (UDK2014.SP1.P1) (Complete zip of all packages and documentation where packages are expanded to MyWorkSpace Directory)<br/></p>
@@ -43,10 +50,10 @@ If you have questions please email the [[edk2-devel]] email list.
       <p><b>Features Summary:</b><br/>
       See <a class="externallink" href="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1.P1/UDK2014.SP1.P1-Features.txt/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1/UDK2014.SP1.P1-Features.txt/download">Release Notes Features</a><br/></p>
       <p><b>Supported OS and Build Environments</b></p>
-* [[Using EDK II with Native GCC| Using newer versions of Linux]] 
-* [[Windows systems]] 
-* [[Xcode | Xcode Mac OS X ]] 
-* [[Unix-like systems]] (For older Linux distributions, or using Cygwin or Mac OS X) 
+* [[Using EDK II with Native GCC| Using newer versions of Linux]]
+* [[Windows systems]]
+* [[Xcode | Xcode Mac OS X ]]
+* [[Unix-like systems]] (For older Linux distributions, or using Cygwin or Mac OS X)
     </td>
     <td>
       <p>(UDK2014.SP1.P1)<br/></p>
@@ -57,7 +64,7 @@ If you have questions please email the [[edk2-devel]] email list.
       <a class="externallink" href="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1/UDK2014.SP1.Notes.zip/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1/UDK2014.SP1.Notes.zip/download">Download All</a></p><hr/>
       <p>Documents<br/>
       <a class="externallink" href="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1.P1/UDK2014.SP1.P1.Documents.zip/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1.P1/UDK2014.SP1.P1.Documents.zip/download">Download All</a><br/></p>
-      <p> UDK2014 only 
+      <p> UDK2014 only
       <a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014/UDK2014_Documents_PDF.zip/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014/UDK2014_Documents_PDF.zip/download">Download All PDFs</a><br/></p>
     </td>
   </tr>
@@ -65,7 +72,7 @@ If you have questions please email the [[edk2-devel]] email list.
   <tr>
     <th width="220">
       <h2><span class="mw-headline" id="EDK_II_Specifications">EDK II Specifications</span>
-  
+
       </h2>
     </th>
     <th width="220">What is it?</th>
@@ -87,7 +94,7 @@ If you have questions please email the [[edk2-devel]] email list.
       <p>These documents describe the EDK II build information for the following (Build, DEC, DSC, FDF and INF) file formats and it contains the Errata updates (version 1.24) that are available with the UDK2014.SP1.P1 release.  See details in the Revision History in each of the individual documents for more details.</p>
       <ul>
         <li>Update January, 2015 V 1.24 </li>
-        
+
       </ul>
     </td>
     <td><p>Each document is a .PDF of each of the specifications</p></td>
@@ -160,7 +167,7 @@ which follows Intel EFI Framework Specification.</p>
     <td>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/IntelFrameworkPkg%20Document.chm/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/IntelFrameworkPkg%20Document.chm/download">IntelFrameworkPkg .chm </a></p>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/IntelFrameworkPkg%20Document.zip/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/IntelFrameworkPkg%20Document.zip/download">IntelFrameworkPkg .zip</a></p>
-    
+
     </td>
     <td>
       The [[IntelFrameworkPkg]] Document Package Helper file.  This package provides definitions and libraries that comply to Intel Framework Specifications.
@@ -172,7 +179,7 @@ which follows Intel EFI Framework Specification.</p>
     <td>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdeModulePkg%20Document.chm/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdeModulePkg%20Document.chm/download">MdeModulePkg .chm </a></p>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdeModulePkg%20Document.zip/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdeModulePkg%20Document.zip/download">MdeModulePkg .zip</a></p>
-      
+
     </td>
     <td>
       <p>The [[MdeModulePkg]]  Document Package Helper file. This package provides the modules that conform to UEFI/PI Industry standards.
@@ -186,7 +193,7 @@ which follows Intel EFI Framework Specification.</p>
     <td>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdePkg%20Document%20With%20Libraries.chm/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdePkg%20Document%20With%20Libraries.chm/download">MdePkg w/ Libraries .chm </a></p>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdePkg%20Document%20With%20Libraries.zip/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdePkg%20Document%20With%20Libraries.zip/download">MdePkg w/ Libraries .zip</a></p>
-      
+
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdePkg%20Document.chm/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdePkg%20Document.chm/download">MdePkg .chm</a></p>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdePkg%20Document.zip/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1.P1/MdePkg%20Document.zip/download">MdePkg  .zip</a></p>
          </td>
@@ -225,7 +232,7 @@ which follows Intel EFI Framework Specification.</p>
   <tr>
     <th>
      <p><b>UDK2014.SP1</b></p>
-      <a href="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1/UDK2014.SP1.Complete.MyWorkSpace.zip/download">Download Zip</a>  
+      <a href="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1/UDK2014.SP1.Complete.MyWorkSpace.zip/download">Download Zip</a>
     </th>
     <th> What is it? </th>
     <th> What’s in the package? </th>
@@ -236,7 +243,7 @@ which follows Intel EFI Framework Specification.</p>
       w/ WorkSpace Expanded .zip<br/>
       Release <b>Oct 31, 2014</b><br/>
       <a href="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1/UDK2014.SP1-ReleaseNotes-MyWorkSpace.txt/download">Release Notes</a> <br/>
-      
+
       <b>Nov 13, 2014</b><br/>
       Make sure to <font color="#FF0000">INCLUDE </font>fatal crash fix : <a href="http://sourceforge.net/p/edk2/code/16337"> DHCP Fix Dhcp6Utility.c</a>
     </td>
@@ -250,10 +257,10 @@ which follows Intel EFI Framework Specification.</p>
       <p><b>Features Summary:</b><br/>
       See <a class="externallink" href="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1/UDK2014.SP1-Features.txt/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1/UDK2014.SP1-Features.txt/download">Release Notes Features</a><br/></p>
       <p><b>Supported OS and Build Environments</b></p>
-* [[Using EDK II with Native GCC| Using newer versions of Linux]] 
-* [[Windows systems]] 
-* [[Xcode | Xcode Mac OS X ]] 
-* [[Unix-like systems]] (For older Linux distributions, or using Cygwin or Mac OS X) 
+* [[Using EDK II with Native GCC| Using newer versions of Linux]]
+* [[Windows systems]]
+* [[Xcode | Xcode Mac OS X ]]
+* [[Unix-like systems]] (For older Linux distributions, or using Cygwin or Mac OS X)
     </td>
     <td>
       <p>(UDK2014.SP1)<br/></p>
@@ -364,7 +371,7 @@ which follows Intel EFI Framework Specification.</p>
     <td>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/IntelFrameworkPkg%20Document.chm/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014/IntelFrameworkPkg%20Document.chm/download">IntelFrameworkPkg .chm </a></p>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014/IntelFrameworkPkg%20Document.zip/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014/IntelFrameworkPkg%20Document.zip/download">IntelFrameworkPkg .zip</a></p>
-    
+
     </td>
     <td>
       The [[IntelFrameworkPkg]] Document Package Helper file.  This package provides definitions and libraries that comply to Intel Framework Specifications.
@@ -376,7 +383,7 @@ which follows Intel EFI Framework Specification.</p>
     <td>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdeModulePkg%20Document.chm/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdeModulePkg%20Document.chm/download">MdeModulePkg .chm </a></p>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdeModulePkg%20Document.zip/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdeModulePkg%20Document.zip/download">MdeModulePkg .zip</a></p>
-      
+
     </td>
     <td>
       <p>The [[MdeModulePkg]] Document Package Helper file. This package provides the modules that conform to UEFI/PI Industry standards.
@@ -390,7 +397,7 @@ which follows Intel EFI Framework Specification.</p>
     <td>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdePkg%20Document%20With%20Libraries.chm/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdePkg%20Document%20With%20Libraries.chm/download">MdePkg w/ Libraries .chm </a></p>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdePkg%20Document%20With%20Libraries.zip/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdePkg%20Document%20With%20Libraries.zip/download">MdePkg w/ Libraries .zip</a></p>
-      
+
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdePkg%20Document.chm/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdePkg%20Document.chm/download">MdePkg .chm</a></p>
       <p><a class="externallink" href="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdePkg%20Document.zip/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2014.SP1/MdePkg%20Document.zip/download">MdePkg  .zip</a></p>
          </td>
@@ -441,7 +448,7 @@ which follows Intel EFI Framework Specification.</p>
     <td>
       w/ WorkSpace Expanded .zip<br/>
       Release <b>March 12, 2014</b><br/>
-      <a href="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014/UDK2014-ReleaseNotes-MyWorkSpace.txt/download">Release Notes</a> 
+      <a href="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014/UDK2014-ReleaseNotes-MyWorkSpace.txt/download">Release Notes</a>
     </td>
     <td>
       <p>UEFI development Kit 2014 Specification Release #1 (UDK2014) (Complete zip of all packages and documentation where packages are expanded to MyWorkSpace Directory)<br/></p>
@@ -453,10 +460,10 @@ which follows Intel EFI Framework Specification.</p>
       <p><b>Features Summary:</b><br/>
       See <a class="externallink" href="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014/UDK2014-Features.txt/download" rel="nofollow" title="https://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014/UDK2014-Features.txt/download">Release Notes Features</a><br/></p>
       <p><b>Supported OS and Build Environments</b></p>
-* [[Using EDK II with Native GCC| Using newer versions of Linux]] 
-* [[Windows systems]] 
-* [[Xcode | Xcode Mac OS X ]] 
-* [[Unix-like systems]] (For older Linux distributions, or using Cygwin or Mac OS X) 
+* [[Using EDK II with Native GCC| Using newer versions of Linux]]
+* [[Windows systems]]
+* [[Xcode | Xcode Mac OS X ]]
+* [[Unix-like systems]] (For older Linux distributions, or using Cygwin or Mac OS X)
     </td>
     <td>
       <p>(UDK2014)<br/></p>

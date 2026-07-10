@@ -1,5 +1,12 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 ArmPlatformPkg supports UEFI for ARM delveopment boards and their drivers (ARM RealView EB/RTSM, ARM Versatile Express.
-This package also exposes some common components (such as SEC, PEIMs, BDS) which can be reused by ARM platforms to make the port easier. These components support UniCore and MPCore and are tested on real hardware. 
+This package also exposes some common components (such as SEC, PEIMs, BDS) which can be reused by ARM platforms to make the port easier. These components support UniCore and MPCore and are tested on real hardware.
 
 === How to port Tianocore/UEFI to a new ARM Platform ===
 

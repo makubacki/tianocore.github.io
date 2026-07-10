@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <div class="t_projects">
 
 <table width="600">
@@ -8,11 +15,11 @@
 </tr>
 
 <tr>
-<td> 
+<td>
 Final revisions v1.22 Errata A
 </td>
 <td>
-'''Posted Dec 19, 2011''' 
+'''Posted Dec 19, 2011'''
 * posted on EDK II Specifications Page  [[EDK_II_Specifications| Download]]
 
 </td>

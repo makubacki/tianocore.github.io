@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 {{UDK2010}}
 <span style="font-size: 12.0pt; text-align: center; font-family: Verdana; color: blue; font-weight: bold; font-style: normal">
 UDK2010.SR1 How to build instructions </span>
@@ -6,7 +13,7 @@ Download the UDK2010.SR1 Release with expanded workspace directories [http://sou
 
 
 
-== UDK2010.SR1 Release Files / Directories == 
+== UDK2010.SR1 Release Files / Directories ==
 What is included in the Downloaded zip file
 * UDK2010.SR1.MyWorkSpace.zip
 * BaseTools(Windows)_UDK2010.SR1.zip
@@ -21,17 +28,17 @@ What is included in the Downloaded zip file
 *    1)  Install Microsoft Visual Studio 2008* SP1 in the build machine and make        sure that AMD64 complier was selected when installing.
 *    2)  Download "iasl-win-20070508.zip" from "http://www.acpica.org/downloads/Version_20070508.php"         and extract file "iasl.exe" to C:\ASL
 2.  Extract Common Source Code
-*    1) Extract files in [UDK2010.SR1.MyWorkSpace.zip]  to the working space directory (e.g C:). Note the         Directory "MyWorkSpace" will be created as a result. In this case, it is C:\MyWorkspace. 
+*    1) Extract files in [UDK2010.SR1.MyWorkSpace.zip]  to the working space directory (e.g C:). Note the         Directory "MyWorkSpace" will be created as a result. In this case, it is C:\MyWorkspace.
 *    2) There are two BaseTools package one is for Windows system and another is for UNIX-Like system.        Please make sure BaseTools(Windows)_UDK2010.SR1.zip is used here. Expand the appropriate        BaseTools to C:\MyWorkSpace
 3.  Generate OpenSSL* Crypto Library Note: this does not need to be done for Nt32
 *        Open file "C:\MyWorkspace\CryptoPkg\Library\OpensslLib\Patch-HOWTO.txt" and follow the instruction to install OpenSSL* for UEFI building.
 4.  Build Steps   *** NT32 ***
-*    1)  Open a command prompt, type command "cd C:\MyWorkspace" to enter the         workspace directory, and then type command 
+*    1)  Open a command prompt, type command "cd C:\MyWorkspace" to enter the         workspace directory, and then type command
 >        edksetup
 
 to initialize the         working environment.
 *    2)  Type below commands to build platforms
->        build -t VS2008x86 
+>        build -t VS2008x86
 
 Note: There are two methods to select the tool chain (Use Microsoft Visual Studio 2008*
 as sample):
@@ -67,7 +74,7 @@ Codename:      Karmic*
 
 4.  Build Steps  *** Nt32 ***
 *    1)  Open a terminal and type "cd ~/src/MyWorkSpace" to enter the workspace         directory.
-*    2)  Initialize the build environment by typing 
+*    2)  Initialize the build environment by typing
 
 >. edksetup.sh BaseTools
 

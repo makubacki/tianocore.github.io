@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 {{UDK2014}}
 
 <span style="font-size: 14.0pt; text-align: center; font-family: Verdana; color: blue; font-weight: bold; font-style: normal">UDK2014 Feature Summary </span>
@@ -36,7 +43,7 @@ Support TPM 2.0
 
 <tr>
 <th colspan="1" style="background-color:#95b3d7"><span style="font-size: 10.0pt;  font-family: Verdana; color: black; font-style: normal">
-Support I2C. 
+Support I2C.
 </span></th>
 </tr>
 

@@ -1,8 +1,15 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 ==Frequently asked questions about DEC==
 
 ===How is DSC different from DEC vs INF?===
 
-The [https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Specifications#dec| EDK II Declaration (DEC)] file format supports the building, packaging, and distribution of EDK II modules.  The [https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Specifications#dsc| EDK II Platform Description file (DSC)] format describes a platform, which is (basically) a collection of DSC files. The [https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Specifications#inf| EDK II build information (INF)] file format describes how to build a single EDK II component, which generates a .EFI file. 
+The [https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Specifications#dec| EDK II Declaration (DEC)] file format supports the building, packaging, and distribution of EDK II modules.  The [https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Specifications#dsc| EDK II Platform Description file (DSC)] format describes a platform, which is (basically) a collection of DSC files. The [https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Specifications#inf| EDK II build information (INF)] file format describes how to build a single EDK II component, which generates a .EFI file.
 
 For more info on DEC, please review the specification: https://tianocore-docs.github.io/edk2-DecSpecification/draft/
 
@@ -15,7 +22,7 @@ There is one DSC per Build but each package can have its own DSC. All packages m
 The DEC file declares Protocols, PPIs, GUIDs, Library Classes, and PCDs. It is not used directly to compile the contents of a package.  Instead, the build system uses the declared contents of DEC files when building libraries/modules that reference the Protocols, PPIs, GUIDs, Library Classes, or PCDs that are declared in that DEC file. Module and Library INF files have a [Packages] section. The [Packages] section lists the set of packages that the Module or Library depends on to build.  If a Module or Library uses a Protocol, PPI, GUID, Library Class, or PCD from a package, then the DEC file for that package must be listed in the INF file for that Module or Library.
 
 ===What is DEC publishing?===
-The DEC of a package will publish protocols for consuming, PCDs that can be manipulated by other packages, Libraries and GUIDs. The DEC file declares Protocols, PPIs, GUIDs, Library Classes, and PCDs. 
+The DEC of a package will publish protocols for consuming, PCDs that can be manipulated by other packages, Libraries and GUIDs. The DEC file declares Protocols, PPIs, GUIDs, Library Classes, and PCDs.
 
 <!-- [[category:FAQ]] -->
 <!-- [[category:EDKII]] -->

@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDK]] -->
 The EDK Boot Loader (EBL) is a small EFI application that produces a small command line shell.<br>
 
@@ -8,10 +15,10 @@ The EBL supports the following device types for use with any of its commands: Fi
 <br>
 <device> is the prefix for the command. The command is matched via a case insensitive check for the smallest number of leading characters to make sure the device name is unique. Example: fs for a file system.<br>
 <device number> is a decimal number the differentiates between multiple devices of the same type. The number is usually associated with the order in which the devices are discovered from the protocol database. The  device number is not needed for the Memory Buffer form and can be omitted.<br>
-<device specific info> varies by device type . <br> 
+<device specific info> varies by device type . <br>
 EBL Device Types
 					<table border="1">
-						
+
 						<tr>
 							<th>Type </th>
 							<th>Syntax </th>
@@ -50,10 +57,10 @@ EBL Device Types
 					</table>
 <br>
 '''Filesystem''' (fs)<br>
-A Filesystem device represents an UEFI Simple File System Protocol API. The device number is zero based and represents the location of the protocol API in the handle database. The EBL does not contain file system support and depends on the platform to contain an UEFI driver that produces the Simple File System Protocol. A UEFI system can create a Simple File System Protocol for any block device that contains a FAT12, FAT16, or FAT32 file system. It is possible to have more than one Simple File System Protocol driver in the system, as it is legal to use the Simple File System protocol to abstract other file system types. When issuing filesystem commands it is legal to use "fs" or the Volume name of the device. The device specific portion of this device is a Simple File System compatible file name that is a NULL terminated string of the file to be opened, that can also contain "\", ".". and ".." path modifiers. <br>  
+A Filesystem device represents an UEFI Simple File System Protocol API. The device number is zero based and represents the location of the protocol API in the handle database. The EBL does not contain file system support and depends on the platform to contain an UEFI driver that produces the Simple File System Protocol. A UEFI system can create a Simple File System Protocol for any block device that contains a FAT12, FAT16, or FAT32 file system. It is possible to have more than one Simple File System Protocol driver in the system, as it is legal to use the Simple File System protocol to abstract other file system types. When issuing filesystem commands it is legal to use "fs" or the Volume name of the device. The device specific portion of this device is a Simple File System compatible file name that is a NULL terminated string of the file to be opened, that can also contain "\", ".". and ".." path modifiers. <br>
 <br>
 '''Block IO''' (blk)<br>
-A Block IO device represents an UEFI Block IO protocol API. The device number is zero based and represents the location of the protocol API in the handle database. The EBL does not contain Block IO support and depends on the platform to contain an UEFI drivers that produces the block IO protocol. A UEFI system caries a logical Block IO driver that creates logical Block IO protocol instances for GUID Partition Table (GPT), MBR, and  El Torito (CD-ROM) on top of the Block IO protocol that abstracts a hardware device, such as a disk.  The device specific part for a Block IO device is optional and it is the Logical Block Address (LBA) in the form of a hexadecimal number followed by a semi-colon and a hexadecimal number representing the number of blocks. If no device specific information is present the entire block device is implied.<br> 
+A Block IO device represents an UEFI Block IO protocol API. The device number is zero based and represents the location of the protocol API in the handle database. The EBL does not contain Block IO support and depends on the platform to contain an UEFI drivers that produces the block IO protocol. A UEFI system caries a logical Block IO driver that creates logical Block IO protocol instances for GUID Partition Table (GPT), MBR, and  El Torito (CD-ROM) on top of the Block IO protocol that abstracts a hardware device, such as a disk.  The device specific part for a Block IO device is optional and it is the Logical Block Address (LBA) in the form of a hexadecimal number followed by a semi-colon and a hexadecimal number representing the number of blocks. If no device specific information is present the entire block device is implied.<br>
 <br>
 '''Load File''' (load)<br>
 A Load File device represents an UEFI Load File Protocol API. The device number is zero based and represents the location of the protocol API in the handle database. A Load File protocol is used to boot from devices that are not capable of being modeled as a file system. The most common example of a Load File protocol is a PXE based network boot. In the network boot process an EFI client handshakes with a server and the service returns a boot image based on information sent by the client.  The Load file device does not support device specific extensions.
@@ -62,10 +69,10 @@ A Load File device represents an UEFI Load File Protocol API. The device number 
 A TFTP device represents an IPv4 IP address and the device specific extension if the filename on the server that is the target of the TFTP read or write. <br>
 <br>
 '''Firmware Volume''' (fv)<br>
-A Firmware Volume represents an UEFI PI Firmware Volume protocol API. The device number is zero based and represents the location of the protocol API in the handle database. Firmware Volumes (FVs) are described in the UEFI PI specification and they contain UEFI and PI drivers that can be discovered and dispatched. The EBL for example is a file in an FV. FVs are simple NVRAM file system, that are commonly read only. The file system does not support directories and the file names are GUIDs. Each file can have any number of nested sections or encapsulated sections. The device specific portion of a Firmware Volume device can optionally be the name of a file in the FV. The name can be in the form of a GUID or it can match the name of the UI Section associated with that file, if it exists. 
+A Firmware Volume represents an UEFI PI Firmware Volume protocol API. The device number is zero based and represents the location of the protocol API in the handle database. Firmware Volumes (FVs) are described in the UEFI PI specification and they contain UEFI and PI drivers that can be discovered and dispatched. The EBL for example is a file in an FV. FVs are simple NVRAM file system, that are commonly read only. The file system does not support directories and the file names are GUIDs. Each file can have any number of nested sections or encapsulated sections. The device specific portion of a Firmware Volume device can optionally be the name of a file in the FV. The name can be in the form of a GUID or it can match the name of the UI Section associated with that file, if it exists.
 <br>
 '''Memory Buffer''' (a)<br>
-An a: followed by a hexadecimal memory address, then another : and a hexadecimal size of the memory buffer. This enables any command that works on a device to also work on a memory buffer. 
+An a: followed by a hexadecimal memory address, then another : and a hexadecimal size of the memory buffer. This enables any command that works on a device to also work on a memory buffer.
 <br>
 <br>
 Here is an example of the device types that are visible, via the device command on the Beagle Board:<br>
@@ -89,47 +96,47 @@ Here is an example of the device types that are visible, via the device command 
 <p>Beagle Board Devices </p>
 
 					<table border="1">
-						
+
 						<tr>
 							<th>Device </th>
 							<th>Description </th>
 						</tr>
 						<tr>
 							<th>fv0: </th>
-							<td>FV copied to memory by Beagle Board mask ROM. 
-							Contains reset vector code, SEC, and a compressed 
+							<td>FV copied to memory by Beagle Board mask ROM.
+							Contains reset vector code, SEC, and a compressed
 							copy of fv1: </td>
 						</tr>
 						<tr>
 							<th>fv1: </th>
-							<td>Decompressed FV that contains the UEFI and DXE 
+							<td>Decompressed FV that contains the UEFI and DXE
 							drivers for the BeagleBoard </td>
 						</tr>
 						<tr>
 							<th>fs0: </th>
-							<td>File System that represents a JTAG semihosting 
-							connection. The file names and paths are part of the 
+							<td>File System that represents a JTAG semihosting
+							connection. The file names and paths are part of the
 							system running the debugger. </td>
 						</tr>
 						<tr>
 							<th>fs1: </th>
-							<td>FAT file system on an SD Card that has a volume 
+							<td>FAT file system on an SD Card that has a volume
 							name &quot;ANDREW'S SD&quot;. </td>
 						</tr>
 						<tr>
 							<th>blk0: </th>
-							<td>Block IO device representing the NAND FLASH 
+							<td>Block IO device representing the NAND FLASH
 							</td>
 						</tr>
 						<tr>
 							<th>blk1: </th>
-							<td>Block IO device representing the SD Card plugged 
+							<td>Block IO device representing the SD Card plugged
 							into the Beagle Board </td>
 						</tr>
 						<tr>
 							<th>blk2: </th>
-							<td>Block IO device produced by the partition driver 
-							after parsing the MBR on the SD Card. This block 
+							<td>Block IO device produced by the partition driver
+							after parsing the MBR on the SD Card. This block
 							device contains the FAT file system fs1: </td>
 						</tr>
 					</table>
@@ -183,7 +190,7 @@ The following commands are examples of interacting with an Firmware Volume devic
  00000010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |................|
  BeagleEdk2 fv0:\>hex fv1:\DxeCore:10 0 20
  00000000: 4D 5A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |MZ..............|
- 00000010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |................| 
+ 00000010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |................|
 
 <br>
 <br>
@@ -205,7 +212,7 @@ The fs0: device represents a semihosting connection to the JTAG debugger. It let
 <br>
 <br>The blk1: device represents the Raw SD Card, and LBA zero is the Master Boot Record (MBR). The blk2: device is the partition that contains the FAT file system, and LBA zero of this device represents the BIOS Parameter Block (BPB) of the FAT filesystem . The blk1: example shows how you can use the extended device information for a block device to make the file act like a subset of the blocks on a disk. The blk2: example shows how you can operate on the entire block device with a command that allows you to specify what part of the device you would like to operate on.
 
- BeagleEdk2 >hex blk1:0:200 
+ BeagleEdk2 >hex blk1:0:200
  00000000: 33 C0 8E D0 BC 00 7C FB 50 07 50 1F FC BE 1B 7C |3.....|.P.P....||
  00000010: BF 1B 06 50 57 B9 E5 01 F3 A4 CB BD BE 07 B1 04 |...PW...........|
  00000020: 38 6E 00 7C 09 75 13 83 C5 10 E2 F4 CD 18 8B F5 |8n.|.u..........|
@@ -274,7 +281,7 @@ The fs0: device represents a semihosting connection to the JTAG debugger. It let
 
 <br>
 <br>
-The address device type is powerful as it lets you use an arbitrary chunk of memory in any command that operates on devices. In the follow example the ''hex'' command is used to dump the first 0x40 bytes of the FV via the fv0: device, and the same result is possible by using an address device that points to the memory buffer. The ''hex.4'' example shows how you can use the dot syntax to modify the width of a command. The default  width for ''hex'' is one byte, and by putting ''hex.4'' the with is changed to four bytes. 
+The address device type is powerful as it lets you use an arbitrary chunk of memory in any command that operates on devices. In the follow example the ''hex'' command is used to dump the first 0x40 bytes of the FV via the fv0: device, and the same result is possible by using an address device that points to the memory buffer. The ''hex.4'' example shows how you can use the dot syntax to modify the width of a command. The default  width for ''hex'' is one byte, and by putting ''hex.4'' the with is changed to four bytes.
 <br>
 
  BeagleEdk2 >dev

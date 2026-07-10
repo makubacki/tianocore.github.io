@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <b>Note: this page is no longer maintained. Information is here for historical purposes and will be archived in an upcoming site revision.</b>
 
 {{UDK2010}}
@@ -90,11 +97,11 @@ https://sourceforge.net/projects/edk2/files/EDK_II_Libraries/UDK2010.SR1.UP1.P1/
 <tr style="background-color:#F0F6F8;color:#0E63AA">
   <td>UEFI Mantis access</td>
   <td></td>
-  <td>Mantis is the UEFI ECR (Engineering Change Request) portal 
-<ol><li>http://www.uefi.org/home/ 
-<li>Click on Log On in upper right corner, or Members Pages on left. 
-<li>Under Announcements on the right is Current Specifications (which is not accurate) and UEFI Mantis Access. 
-<li>Click on UEFI Mantis Access - this is the UEFI ECR database. 
+  <td>Mantis is the UEFI ECR (Engineering Change Request) portal
+<ol><li>http://www.uefi.org/home/
+<li>Click on Log On in upper right corner, or Members Pages on left.
+<li>Under Announcements on the right is Current Specifications (which is not accurate) and UEFI Mantis Access.
+<li>Click on UEFI Mantis Access - this is the UEFI ECR database.
 <li>Your uefi.org username/password is supposed to work.  If it does not, then use the UEFI contact link to request access http://www.uefi.org/contact_us/
 </ol></td>
 </tr>

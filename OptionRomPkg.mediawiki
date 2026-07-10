@@ -1,2 +1,9 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDKII Packages]] -->
-This package is designed to interoperate with the EDK II open source and this package is required to build PCI compliant Option ROM image for all CPU architectures, including EBC target. A single driver can support mixes of EFI 1.1, UEFI 2.0 and UEFI 2.1. 
+This package is designed to interoperate with the EDK II open source and this package is required to build PCI compliant Option ROM image for all CPU architectures, including EBC target. A single driver can support mixes of EFI 1.1, UEFI 2.0 and UEFI 2.1.

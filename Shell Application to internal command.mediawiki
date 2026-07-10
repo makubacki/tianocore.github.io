@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 
 Internal commands of the shell application are almost the same as a UEFI Application, but they have to register with the shell binary that they are compiled into.  This means that they are made as libraries and use the initialization routine of the library to perform this registration. Internal commands also have a slight increase in the abilities they can have.
 All of this extra requirements and features are contained within ShellCommandLib and most only function when linked within the shell binary image.
@@ -14,11 +21,11 @@ Internal commands can determine and change the state of the echo feature.
 ==Exit Support==
 Internal commands can get and set the ‘exit state’ which determine whether the shell will exit upon completion of the current command.  This cannot be undone once set.
 ==Script Manipulation Support==
-Internal commands can parse and manipulate the script file.  This means that they can move the ‘execution point’ of the script around within the script file.  
+Internal commands can parse and manipulate the script file.  This means that they can move the ‘execution point’ of the script around within the script file.
 ==Mapping Support==
 Internal commands can add, remove, and manipulate the map names in the shell environment.  There are a lot of commands having to do with map creation and manipulation.  Most of these changes are hard to undo, but the ShellCommandCreateInitialMappingsAndPaths function can pretty much reset everything.
 ==Path and File Support==
-Files and Paths are manipulated vie many functions.  These do not overlap with functions in the ShellLib or the Shell protocols, but extend that to be more feature rich.  The major feature here is the conversion to EFI_FILE_PROTOCOL from SHELL_FILE_HANDLE and back. 
+Files and Paths are manipulated vie many functions.  These do not overlap with functions in the ShellLib or the Shell protocols, but extend that to be more feature rich.  The major feature here is the conversion to EFI_FILE_PROTOCOL from SHELL_FILE_HANDLE and back.
 ==Registration of a command==
 The registration API is as follows:
   RETURN_STATUS
@@ -102,7 +109,7 @@ Use ShellPkg/Library/UefiShellInstall1CommandsLib as your porting basis.
 ##:   //
 ##:   Status = ShellInitialize();
 ##:   ASSERT_EFI_ERROR(Status);
-##: 
+##:
 ##:   Status = CommandInit();
 ##:   ASSERT_EFI_ERROR(Status);
 # Edit ShellPkg/Include/Guid/ShellLibHiiGuid.h and do the following:

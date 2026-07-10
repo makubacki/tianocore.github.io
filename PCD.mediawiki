@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 Questions asked about PCDs
 
 ===Where are PCDs specified?===
@@ -12,13 +19,13 @@ PCDs are declared as part of the DEC, and referenced in a modules INF and a pack
 
 
 ===Is there a Pcdget?===
-Yes, there is PCD Library call depending on the type and size of the PCD variable 
+Yes, there is PCD Library call depending on the type and size of the PCD variable
 
 ===Where are the rules for PCDs?  Is it in a single spec?===
 The PCD Documentation is part of the Build description specifications. Such that there is a section in each of the DEC, DSC, FDF and INF specifications that list the syntax of the PCD for each type of spec.
 
 ===Is there a  PCD User Guide?===
-Not currently 
+Not currently
 
 
 
@@ -30,7 +37,7 @@ The package owner assigns a unique token with the PCD entries.
 The FeatureFlag PCD can be used to enable or disable drivers during runtime. If the platform designer wants to not include the feature or driver then there are a couple of possibilities. Use different .DSC  and .FDF files to have them removed. Another is to use “–D” with the build command line to pass macros into the build. There is an active feature request for PCDs to be used to enable/disable drivers at build time.  This is a capability that will be made available in a future release of the EDK II.
 
 ===Are PCDs supported within the ACPI and AML?===
-There minimal support with PCD and ACPI because the ASL complier is built as a separate part of the build process. 
+There minimal support with PCD and ACPI because the ASL complier is built as a separate part of the build process.
 
 
 ===How automatic is the Platform coding?===
@@ -57,7 +64,7 @@ There is no GUI interface but the BUILD with “-Y PCD” option for the platfor
 The best way is to look at the Mdepkg .chm. It should list what the PCD is and it’s characteristics with descriptions of each. The .chm is created from the .dec file that defines the PCDs using the Doxygen tool.
 
 ===When modifying PCDs within the token space for different products ===
-When modifying PCDs within the token space for different products the different products will have the entire PCD token space for that package as opposed to just a few PCDs that would need to be changed per a product. 
+When modifying PCDs within the token space for different products the different products will have the entire PCD token space for that package as opposed to just a few PCDs that would need to be changed per a product.
 
 ===There are too many PCDs in the .chm. Is there any other means for documentation for porting/ integrating?===
 The .CHM is the package scope.  The other aspect is distributing a module needs to have documentation for integration. Need to list dependencies for module. The documentation should follow at the module level and listing out the PCDs and their default working.

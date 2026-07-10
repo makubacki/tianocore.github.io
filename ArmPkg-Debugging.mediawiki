@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 === Backgound ===
 
 ==== EFI binary format ====
@@ -48,7 +55,7 @@ As you do not have UART yet to print out to the location of the initial symbols,
 2. Retrieve the base address of this symbol in the corresponding ELF file.
 Example:
 <pre>$ fromelf -s Build/ArmRealViewEb-RTSM-A8/DEBUG_RVCTLINUX/ARM/ArmPlatformPkg/Sec/Sec/DEBUG/ArmPlatformSec.dll | grep _ModuleEntryPoint
-  1217  _ModuleEntryPoint          0x00000004   Gb    1  Code  De 
+  1217  _ModuleEntryPoint          0x00000004   Gb    1  Code  De
 Or:
 <pre>$ arm-linux-gnueabi-objdump -t Build/ArmRealViewEb-RTSM-A8/DEBUG_RVCTLINUX/ARM/ArmPlatformPkg/Sec/Sec/DEBUG/ArmPlatformSec.dll | grep _ModuleEntryPoint
 00000004 g     F ER_RO  000000c8 .hidden _ModuleEntryPoint</pre>

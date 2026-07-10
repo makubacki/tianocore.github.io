@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 ''' :red_circle: It is not recommended that anyone work on these tasks. :red_circle: '''
 
 These are tasks had been previously identified by our community but for various reasons are no longer relevant and are largely historical. We do not plan to accept any GSoC proposals for these projects. Please let us know on [[edk2-devel|https://edk2.groups.io/g/devel]] if you plan to work on one of these tasks anyway (to prevent duplicated effort).
@@ -12,7 +19,7 @@ Build a C compiler that is able to generate EBC (EFI Byte Code).
 
 * Difficulty: Hard
 * Language: C, Assembly
-* Mentor: 
+* Mentor:
 * Suggested by: [[@nate-desimone|https://github.com/nate-desimone]]
 
 More information: [[Tasks-Build-a-C-compiler-for-EBC]]
@@ -32,9 +39,9 @@ A [[CSM]] allows a UEFI system to boot legacy operating systems on IA32 & X64 sy
 
 ''' :red_circle: Low priority because Galileo is no longer manufactured. :red_circle: '''
 
-Add features to [[Intel Galileo|Galileo]] based on open source platform in EDK II. https://github.com/tianocore/edk2/tree/master/QuarkPlatformPkg 
+Add features to [[Intel Galileo|Galileo]] based on open source platform in EDK II. https://github.com/tianocore/edk2/tree/master/QuarkPlatformPkg
 * Switch from private SD/MMC stack to standard one in [[MdeModulePkg]].
-* Debugger/Console using USB client mode for multiple high perf UARTs in ESRAM 
+* Debugger/Console using USB client mode for multiple high perf UARTs in ESRAM
 * Logging and Debugger support over USB using ESRAM for DMA.
 Mentor: [[@mdkinney|https://github.com/mdkinney]]
 

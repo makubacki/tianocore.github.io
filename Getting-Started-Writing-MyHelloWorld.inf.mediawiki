@@ -1,18 +1,25 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 Example of MyHelloWorld.inf
 
-Please check for the latest version of the [[EDK II Specifications]] 
+Please check for the latest version of the [[EDK II Specifications]]
 
 Note: Copy and paste the GUID from : http://www.guidgen.com/ for the '''FILE_GUID''' in the example below
 <pre>
 ## @file
 #  Brief Description of UEFI MyHelloWorld
-#  
+#
 #  Detailed Description of UEFI MyWizardDriver
 #
 #  Copyright for UEFI  MyHelloWorld
-#  
+#
 #  License for UEFI  MyHelloWorld
-#  
+#
 ##
 
 [Defines]
@@ -33,11 +40,11 @@ Note: Copy and paste the GUID from : http://www.guidgen.com/ for the '''FILE_GUI
 
 [Packages]
   MdePkg/MdePkg.dec
-  
+
 [LibraryClasses]
   UefiApplicationEntryPoint
   UefiLib
-  
+
 [Guids]
 
 [Ppis]

@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 Fastboot is a protocol designed as a mechanism to update Android platforms. This page describes an implementation of the device-side as part of UEFI. You can use it to download and flash images onto a target's storage, or to download and boot Linux kernels.
 
 Android FastBoot support in UEFI has been added into SVN rev15317 (2014-03-05).
@@ -43,13 +50,13 @@ GPT requires a backup copy of the partition table at the end of the media. When 
 
 4. Subtract 2MB from the end of the partition, and type `resize $START $END`, where $START is the start of the partition and $END is the new end you calculated. Include the "MB" suffix in $START and $END.
 
-5. Type `quit`. 
+5. Type `quit`.
 
 6. Now use `gdisk` to convert from MBR to GPT.
 
 7. Run `gdisk $DEV` as root.<br/>
 You should see a warning stating that the media is partitioned with MBR, and that gdisk will convert to GPT.
-Type `w` to write the partition table, converting to GPT, and quit. 
+Type `w` to write the partition table, converting to GPT, and quit.
 
 In order for the VExpress Fastboot platform to identify partitions, we also need to set the Partition Name fields in the GPT. The reason for this is that flashing a partition will potentially change the filesystem's name, whereas the Partition Name is constant. We will now go through the partition table and populate these fields so that each partition's Partition Name is the same as the name of the filesystem on that partition.
 
@@ -58,7 +65,7 @@ In order for the VExpress Fastboot platform to identify partitions, we also need
 9. Run `gdisk $DEV` as root (again).
 
 10. For each partition containing a filesystem with a name, type `c`, select the partition by number, then type the filesystem's name.<br/>
-Type `w` to save the changes and quit. 
+Type `w` to save the changes and quit.
 
 (In the future, Linaro's Android builds will automatically use GPT and set the Partition Name field).
 
@@ -115,9 +122,9 @@ Android Fastboot mode - version 0.4. Press any key to quit.</pre>
 
 === Overview ===
 The implementation is distributed into several components:
-* EmbeddedPkg/Application/AndroidFastbootApp is the platform-independent UEFI application that handles the core logic of a Fastboot session. It uses the FASTBOOT_TRANSPORT_PROTOCOL to communicate with the host and the FASTBOOT_PLATFORM_PROTOCOL to initiate platform-specific operations. 
+* EmbeddedPkg/Application/AndroidFastbootApp is the platform-independent UEFI application that handles the core logic of a Fastboot session. It uses the FASTBOOT_TRANSPORT_PROTOCOL to communicate with the host and the FASTBOOT_PLATFORM_PROTOCOL to initiate platform-specific operations.
 
-* EmbeddedPkg/Drivers/AndroidFastbootTransportUsbDxe is a driver implementing the FASTBOOT_TRANSPORT_PROTOCOL over USB by acting as a peripheral. This requires a USB peripheral or OTG controller and a UEFI driver for that controller. USB is the "default" transport system for Fastboot - the only one supported by the core AOSP. 
+* EmbeddedPkg/Drivers/AndroidFastbootTransportUsbDxe is a driver implementing the FASTBOOT_TRANSPORT_PROTOCOL over USB by acting as a peripheral. This requires a USB peripheral or OTG controller and a UEFI driver for that controller. USB is the "default" transport system for Fastboot - the only one supported by the core AOSP.
 
 * ArmPlatformPkg/ArmVExpressPkg/ArmVExpressFastBootDxe is an example of a FASTBOOT_PLATFORM_PROTOCOL implementation for ARM development platforms. It uses the SD card as the "flash memory".
 

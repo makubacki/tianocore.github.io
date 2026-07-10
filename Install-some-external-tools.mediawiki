@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDKII]] -->
 <!-- [[Category:EDKII Build]] -->
 Getting and Installing the Required Tools for Building [http://www.tianocore.org/edk2/ EDK II].
@@ -13,7 +20,7 @@ Note: The '''step-by-step''' instructions also cover installing pre-requisite bu
 
 The one of the following is required to be able to obtain the EDK II.
 
-{| border="0" 
+{| border="0"
 ! style="background-color:#aaaaaa;"|Name
 !style="background-color:#aaaaaa;"|URL
 |-

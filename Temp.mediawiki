@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 {{UDK2010}}
 '''UDK2010''' is a stable release of portions of the [http://www.tianocore.org/edk2/ EDK II] project
 
@@ -21,7 +28,7 @@ If you have questions please email the [mailto:edk2-devel@lists.sourceforge.net?
 <th style="background-color:#fdbb13" width="110">
 <span style="font-size: 12.0pt; text-align: left; font-family: Verdana; color: white">
 Download </span>
-</th> 
+</th>
 
 <th style="background-color:#fdbb13" width="430">
 <span style="font-size: 12.0pt; text-align: left; font-family: Verdana; color: white">
@@ -60,10 +67,10 @@ What is it?
 
 <tr style="background-color:#DBEBFF">
 <td>
-w/ WorkSpace Expanded .zip 
+w/ WorkSpace Expanded .zip
 <P style="margin-top: 0; margin-bottom: 0">
 Release '''July 28, 2013'''</p>
-[http://sourceforge.net/projects/edk2/files/UDK2010%20Releases/UDK2010.SR1.UP1.P1/UDK2010.SR1.UP1.P1-ReleaseNotes-MyWorkSpace.txt/download Release Notes] 
+[http://sourceforge.net/projects/edk2/files/UDK2010%20Releases/UDK2010.SR1.UP1.P1/UDK2010.SR1.UP1.P1-ReleaseNotes-MyWorkSpace.txt/download Release Notes]
 </td>
 <td>
 
@@ -86,7 +93,7 @@ https://svn.code.sf.net/p/edk2-fatdriver2/code/trunk/FatPkg/: r73
 '''Supported OS and Build Environments'''
 <P style="margin-top: 0; margin-bottom: 0">
 
-* [[Using EDK II with Native GCC| Using newer versions of Linux]] 
+* [[Using EDK II with Native GCC| Using newer versions of Linux]]
 * [[Windows systems]]
 * [[Xcode | Xcode Mac OS X ]]
 * [[Unix-like systems]] (For older Linux distributions, or using Cygwin or Mac OS X)
@@ -98,7 +105,7 @@ https://svn.code.sf.net/p/edk2-fatdriver2/code/trunk/FatPkg/: r73
 <P style="margin-top: 0; margin-bottom: 0">
 
 <span class="docHeader">[http://sourceforge.net/projects/edk2/files/UDK2010%20Releases/UDK2010.SR1.UP1.P1/UDK2010.SR1.UP1.P1-FilesList-MyWorkSpace.txt/download File List]
-</span>Of Entire Release .zip 
+</span>Of Entire Release .zip
 </p>
 ----
 <span class="docHeader">Documents</span>
@@ -147,7 +154,7 @@ https://svn.code.sf.net/p/edk2-fatdriver2/code/trunk/FatPkg/: r73
 <P style="margin-top: 0; margin-bottom: 0">
 These documents describe the EDK II build information for the following (Build, DEC, DSC, FDF and INF) file formats and it contains the Errata updates (version 1.22 Errata B) that are available with the UDK2010.SR1.UP1.P1 release. See details in the Revision History in each of the individual documents for more details.
 
-* Released June 26, 2012  
+* Released June 26, 2012
 </p>
 
 </td>
@@ -538,16 +545,16 @@ See [[Previous UDK2010 Releases | Previous UDK2010 Menu]]
 </p>
 ----
 <P style="margin-top: 0; margin-bottom: 0">
-[http://sourceforge.net/projects/edk2/files/ EDK II Files] 
+[http://sourceforge.net/projects/edk2/files/ EDK II Files]
 </p>
 </td>
 <td>
 <P style="margin-top: 0; margin-bottom: 0">
-Menu for downloading Previous UDK2010 releases 
+Menu for downloading Previous UDK2010 releases
 </p>
 ----
 <P style="margin-top: 0; margin-bottom: 0">
-SourceForge style explorer: 
+SourceForge style explorer:
 Several files and packages are available on the EDK II project (Docs and Files, under "UDK2010 Releases": UDK2010.UP3.P1, etc.)
 </p>
 </td>
@@ -585,7 +592,7 @@ Several files and packages are available on the EDK II project (Docs and Files, 
 </td>
 <td>
 <P style="margin-top: 0; margin-bottom: 0">
-UEFI Driver Writer's Wizard and the 
+UEFI Driver Writer's Wizard and the
 UEFI Driver Writer's Guide supports UEFI 3.2.1 version of the Specification. See the [[Driver_Developer]]  page for more resources for UEFI Driver Writers Resources
 </p>
 <P style="margin-top: 0; margin-bottom: 0">
@@ -612,7 +619,7 @@ UEFI Driver Writer's Guide supports UEFI 3.2.1 version of the Specification. See
 <td>
 <P style="margin-top: 0; margin-bottom: 0">
 Intel® UEFI Packaging Tool is used to create, install or remove a UEFI Distribution Package.
-The .Zip includes bin UPT.exe from http://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/BaseTools/Bin/Win32 
+The .Zip includes bin UPT.exe from http://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/BaseTools/Bin/Win32
 and Manual Documentation from http://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2/BaseTools/UserManuals plus the Quick Start Guide
 </p>
 <P style="margin-top: 0; margin-bottom: 0">
@@ -620,7 +627,7 @@ and Manual Documentation from http://edk2.svn.sourceforge.net/svnroot/edk2/trunk
 </td>
 <td>
 <P style="margin-top: 0; margin-bottom: 0">
-.zip 
+.zip
 </p>
 <P style="margin-top: 0; margin-bottom: 0">
 User PDF Guide only
@@ -673,7 +680,7 @@ Packages Included in zip
 [http://sourceforge.net/projects/edk2/files/EDK%20II%20Releases/EDK%20II%20Shell/EDKII_UEFI_Shell_2.0_ShellPkg_Rel_1.0.zip/download UEFI Shell 2.0 Pkg .zip]
 </p>
 <P style="margin-top: 0; margin-bottom: 0">
-[[ShellPkg#Shell_2.0_Engineering_Resources| Shell 2.0 Documentation]] 
+[[ShellPkg#Shell_2.0_Engineering_Resources| Shell 2.0 Documentation]]
 
 </p>
 
@@ -700,7 +707,7 @@ See [[Shell_FAQ#How_do_you_add_the_new_UEFI_Shell_2.0_to_the_Nt32_in_the_UDK2010
 
 
 
-<!-- Comment Start Row start 
+<!-- Comment Start Row start
 <tr>
 
 <td>
@@ -742,7 +749,7 @@ col 2 Line 2
 
 
 =UDK2010 More Info =
-EDK II More info: 
+EDK II More info:
 [[Getting Started with EDK II|Getting Started for Developers]],
 [[EDK II Overview]], [[EDKII Packages]]
 

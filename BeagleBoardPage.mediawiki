@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDKII]] -->
 <!-- [[Category:BeagleBoard]] -->
 == Beagle Board==
@@ -15,7 +22,7 @@ If you use the command line version of subversion, then you can easily checkout 
 </pre>
 <br>Build the Beagle Board Package
 <br>
-Now you can run the build.sh script 
+Now you can run the build.sh script
 <br>
 <pre>
 /cygdrive/c/edk2$ cd /cygdrive/c/edk2/BeagleBoardPkg
@@ -41,9 +48,9 @@ This means your ARM compiler is installed in a different location. You will need
 == Boot EFI from RAM on Beagle Board using RealView Debugger ==
 If you have an RealView Debugger hooked up to your Beagle Board you can use /cygdrive/c/edk2/Build/BeagleBoa​rd/DEBUG_RVCT31CYGWI​ N/rvi_boot_from_ram.​inc to down load the EFI image over JTAG and boot it. To load the script go to the Tools menu and select Include Commands from File... You can use edk2/Build/BeagleBoa​rd/DEBUG_RVCT31CYGWI​N/rvi_load_symbols.i​nc to load symbols for the multiple EFI images in the debugger. Note: Some early versions of the RVI have a bug as the script can not access memory and does not work. You need to load the symbols after you break into the debugger.<br>
 <br>
-When the Beagle Board boots from the NAND FLASH the mask ROM on the Beagle Board executes commands out of the start of the NAND to turn on memory and then copies the image from the NAND into system memory and jumps to it. In the EFI world this NAND image is called an FD (Flash Device) image and it contains 520 bytes of image header for the mask ROM and an FV (Firmware Volume). The FV is a simple FLASH file system and the first 4 bytes of the FV contain a jump to the SEC (SEcuirty Core) module. The SEC is a PE/COFF image that contains the reset vector and it is located in an arbitrary location in the FV. When you boot from JTAG the mask ROM on the Beagle Board does not run and the RVD script copies the FD into system memory and sets the PC to first location in the FV.<br> 
+When the Beagle Board boots from the NAND FLASH the mask ROM on the Beagle Board executes commands out of the start of the NAND to turn on memory and then copies the image from the NAND into system memory and jumps to it. In the EFI world this NAND image is called an FD (Flash Device) image and it contains 520 bytes of image header for the mask ROM and an FV (Firmware Volume). The FV is a simple FLASH file system and the first 4 bytes of the FV contain a jump to the SEC (SEcuirty Core) module. The SEC is a PE/COFF image that contains the reset vector and it is located in an arbitrary location in the FV. When you boot from JTAG the mask ROM on the Beagle Board does not run and the RVD script copies the FD into system memory and sets the PC to first location in the FV.<br>
 <br>
-If you have the version of the debugger that does not support the rvi_load_symbols.inc script you can do the following to load symbols. 
+If you have the version of the debugger that does not support the rvi_load_symbols.inc script you can do the following to load symbols.
 Edit the following lines of /cygdrive/c/edk2/BeagleBoardPkg/BeagleBoardPkg.dsc:<br>
 <pre>
 #  PeCoffExtraActionLib|ArmPkg/Library/RvdPeCoffExtraActionLib/RvdPeCoffExtraActionLib.inf
@@ -54,7 +61,7 @@ and convert them to:
   PeCoffExtraActionLib|ArmPkg/Library/RvdPeCoffExtraActionLib/RvdPeCoffExtraActionLib.inf
 #  PeCoffExtraActionLib|MdePkg/Library/BasePeCoffExtraActionLibNull/BasePeCoffExtraActionLibNull.inf
 </pre>
-This will send a series of commands to the RVD console, via semihosting,  that can be used to load symbols. Please note that sending all this data via semihosting slows boot down a lot. After the system gets to the point where you would like to source level debug stop execution on the target. Copy the contents of the StdIO window to a file, and use Tools Include Commands from File...  You should now have source level debug for any EFI module that was loaded in memory. 
+This will send a series of commands to the RVD console, via semihosting,  that can be used to load symbols. Please note that sending all this data via semihosting slows boot down a lot. After the system gets to the point where you would like to source level debug stop execution on the target. Copy the contents of the StdIO window to a file, and use Tools Include Commands from File...  You should now have source level debug for any EFI module that was loaded in memory.
 <br>
 The reset vector code exists in the SEC module located in the FV.  The SEC was relocated to its execution address by the build tool that constructed the FV.  Since this code runs from a fixed address you have to manually load symbols for this code. The SEC loads the DXE Core and that should be the first load command you see in the StdIO window of the debugger.  The following is an example of the first prints that come out of the SEC code. You can cut the load command and past it directly into the RVD Cmd window to source level debug the SEC.<br>
 <pre>
@@ -162,7 +169,7 @@ Boot EFI on the Beagle Board (power cycle if you have it in NAND for example)<br
 '''Step #3:'''<br>
 Use the EFI EBL to flash the image<br>
 <pre>
-BeagleEdk2> cp fs1:\Beagle Board_EFI_flashboot.fd blk0:                
+BeagleEdk2> cp fs1:\Beagle Board_EFI_flashboot.fd blk0:
 </pre>
 
 == Get the edk2 source tree and build BeagleBoardPkg in Windows® DOS Box ==

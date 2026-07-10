@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDKII Packages]] -->
 NetworkPkg provides IPv6 network stack drivers, IPsec driver, [[PXE]] driver, iSCSI driver and necessary shell applications
 for network configuration
@@ -37,20 +44,20 @@ EFI_MTFTP6_PROTOCOL
 </tr>
 
 <tr>
-<td>  
+<td>
 2.  IPsec
 * NetworkPkg/IpSecDxe - Ipsec driver, which produces
-EFI_IPSEC2_PROTOCOL   
+EFI_IPSEC2_PROTOCOL
 
 EFI_IPSEC_CONFIG_PROTOCOL
 </td>
 </tr>
 
 <tr>
-<td>  
+<td>
 3.  PXE
 * NetworkPkg/UefiPxeBcDxe - PXE combo driver, which produces
-EFI_PXE_BASE_CODE_PROTOCOL 
+EFI_PXE_BASE_CODE_PROTOCOL
 
 EFI_LOAD_FILE_PROTOCOL
 </td>
@@ -58,7 +65,7 @@ EFI_LOAD_FILE_PROTOCOL
 
 
 <tr>
-<td>  
+<td>
 4.  iSCSI
 * NetworkPkg/IScsiDxe - iSCSi driver, which produces:
 EFI_ISCSI_INITIATOR_NAME_PROTOCOL
@@ -68,7 +75,7 @@ EFI_AUTHENTICATION_INFO_PROTOCOL
 </tr>
 
 <tr>
-<td>  
+<td>
 5.  Shell Applications
 
 1) NetworkPkg/Application/Ping6

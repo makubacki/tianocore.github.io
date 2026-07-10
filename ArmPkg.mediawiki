@@ -1,6 +1,13 @@
-ArmPkg provides ARM architectural protocols common to most of ARM platforms.  (CU Arch. Protocol, Hardware Interrupt Protocol, MMU & Coprocessor helper API, ect.) 
+= Deprecated Wiki =
 
-Various ARM architectures (from ARMv4T to ARMv7) are currently supported by this package. MPCore and Trustzone support are present through helper libraries. 
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
+ArmPkg provides ARM architectural protocols common to most of ARM platforms.  (CU Arch. Protocol, Hardware Interrupt Protocol, MMU & Coprocessor helper API, ect.)
+
+Various ARM architectures (from ARMv4T to ARMv7) are currently supported by this package. MPCore and Trustzone support are present through helper libraries.
 
 ===Source Repository===
 {{Edk2SubPkg|ArmPkg}}

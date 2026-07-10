@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 = Security Features Implemented in EDK II=
 
 [[EDK II]] implements a variety of platform security features. These are typically disabled or absent in open hardware platforms. While some platforms implement these with enable/disable build flags, other platforms require additional porting to enable security features.
@@ -225,7 +232,7 @@ input device to get user confirmation. Often it is invoked by BDS driver when
 console is ready.
 *        SecurityPkg/Library/DxeTcgPhysicalPresenceLib/DxeTcgPhysicalPresenceLib.inf
 *    3)  TPM measure boot library
- 
+
 The library instance provides measurement and log service for TPM measured
 boot. The instance is invoked during loading an image into memory. It should
 be added into LibraryClasses section of module SecurityStubDxe in the platform

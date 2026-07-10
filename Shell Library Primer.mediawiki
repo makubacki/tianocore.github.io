@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 
 = ShellPkg Main Libraries =
 There are 3 main [[EDK2 Libraries|libraries]] used by almost all shell commands and 2 of these are very usable by shell applications in the [[ShellPkg]].
@@ -7,7 +14,7 @@ Used by both commands and applications.  Provides easy access to Shell Protocols
 This library is functional across both EDK Shell and UEFI Shell and is very useful tor creating applications that are needed to function across Shell environments.
 
 ==HandleParsingLib ==
-Used by both commands and applications.  Provides easy access for manipulating handles.  This means things like 
+Used by both commands and applications.  Provides easy access for manipulating handles.  This means things like
 *conversion the handle to and from the handle index; the index is the 2 digit hex identifier of the handle seen by the user
 *sorting of handles to determine parent controllers, child controllers, or which driver controls a given controller
 

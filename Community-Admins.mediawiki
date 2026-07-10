@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 The EDK II [[Mailing Lists]]  is a good way to contact a broad set of TianoCore developers and site maintainers.
 Please contact the community admins through our - devel+owner@edk2.groups.io
 

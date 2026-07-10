@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 == How To contribute to SCT ==
 
 <u>Pre-requirements:</u>
@@ -37,7 +44,7 @@ index cb9f209..d28e720 100644
 +++ b/Application/InstallSct/InstallSct.c
 @@ -432,35 +432,6 @@ BackupTests (
      }
- 
+
      //
 -    // Exist. Need to remove or backup
 -    //
@@ -81,7 +88,7 @@ And commit it!
 After having completed all your changes, you need to push them to the your GIT repository:
 <pre>$ git push github-olivier om/installsct-fix-backup
 Username for 'https://github.com': oliviermartin
-Password for 'https://oliviermartin@github.com': 
+Password for 'https://oliviermartin@github.com':
 Counting objects: 39, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (19/19), done.

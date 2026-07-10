@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 These tasks have been identified by our community. Many of these tasks would make good [[GSoC2022|GSoC]] projects. They are currently open for development by community members, and would be a great way to get involved and start contributing. Please let us know on [[edk2-devel|https://edk2.groups.io/g/devel]] if you plan to work on one of these tasks (to prevent duplicated effort). Also, please provide status updates on [[edk2-devel|https://edk2.groups.io/g/devel]] so the community will know the project is still being actively developed.
 
 '''Medium versus Large Projects'''
@@ -104,11 +111,11 @@ More information: [[Tasks-MinPlatform-Port-to-Raspberry-Pi]]
 
 ==== Add CI (Continuous Integration) Boot Testing for EDK II Platforms ====
 
-Update EDK II CI to support testing of platforms in the 
+Update EDK II CI to support testing of platforms in the
 [[edk2-plaforms|https://github.com/tianocore/edk2-platforms]] repository.
-The CI tests can be run in simulators or on physical HW.  This task involves 
+The CI tests can be run in simulators or on physical HW.  This task involves
 defining a standard interface between EDK II CI agents and remote CI agents
-that take as input a FW image built by an EDK II CI agent and provides 
+that take as input a FW image built by an EDK II CI agent and provides
 pass/fail results back to the EDK II CI agent.
 
 * Project Size: Large
@@ -392,7 +399,7 @@ to have python modules that wrap the UEFI Boot Services, UEFI Runtime Services, 
 ==== Port ACPI-CA to a shell application ====
 
 Port portions of ACPI-CA to a shell application to enable dumping and disassembly of ACPI tables.
-* Based on https://acpica.org/node/126 
+* Based on https://acpica.org/node/126
 * Table Verifier: AML method execution for testing without booting to an OS.
 * Project Size: Medium
 * Difficulty: Medium
@@ -447,7 +454,7 @@ C compiler to build the tools required to build EDK II firmware.
 
 ==== Resource Compiler ====
 
-Implement a resource compiler in Python that can add resource sections defined by the 
+Implement a resource compiler in Python that can add resource sections defined by the
 UEFI Specification to a PE/COFF image.
 * Project Size: Medium
 * Difficulty: Medium

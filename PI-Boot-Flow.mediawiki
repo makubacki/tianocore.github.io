@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 [[https://raw.githubusercontent.com/tianocore/tianocore.github.io/master/images/PI_Boot_Phases.JPG|
 <img src="https://raw.githubusercontent.com/tianocore/tianocore.github.io/master/images/PI_Boot_Phases-tn.jpg>]]
 
@@ -48,7 +55,7 @@ There are several components in the DXE phase:<br>
 * “DXE Dispatcher”
 * A set of “DXE Drivers”
 The DXE Core produces a set of Boot Services, Runtime Services, and DXE Services. The DXE Dispatcher is responsible for discovering and executing DXE drivers in the correct order. The DXE drivers are responsible for initializing the processor, chipset, and platform components as well as providing software abstractions for system services, console devices, and boot devices. These components work together to initialize the platform and provide the services required to boot an operating system. The DXE phase and Boot Device Selection (BDS) phases work together to establish consoles and attempt the booting of operating systems. The DXE phase is terminated when an operating system is successfully booted. The Dxe Core is composed of boot services code, so no code from the Dxe Core itself is allowed to persist into the OS runtime environment. Only the runtime data structures allocated by the Dxe Core and services and data structured produced by runtime DXE drivers are allowed to persist into the OS runtime environment.<br>
-[http://www.uefi.org/specsandtesttools UEFI.org -PI VOLUME 2: Platform Initialization Specification 1.2 Driver Execution Environment Core Interface] <br> 
+[http://www.uefi.org/specsandtesttools UEFI.org -PI VOLUME 2: Platform Initialization Specification 1.2 Driver Execution Environment Core Interface] <br>
 
 <br>'''Boot Device Selection (BDS) Phase'''<br>
 The Boot Manager in DXE executes after all the DXE drivers whose dependencies have been satisfied have been dispatched by the DXE Dispatcher. At that time, control is handed to the Boot Device Selection ([[BDS]]) phase of execution. The BDS phase is responsible for implementing the platform boot policy. System firmware that is compliant with this specification must implement the boot policy specified in the Boot Manager chapter of the UEFI 2.0 specification. This boot policy provides flexibility that allows system vendors to customize the user experience during this phase of execution.<br>
@@ -60,7 +67,7 @@ The BDS phase is responsible for the following:<br>
 * Attempting to load and execute boot selections
 If the BDS phase cannot make forward progress, it will reinvoke the DXE Dispatcher to see if the dependencies of any additional DXE drivers have been satisfied since the last time the DXE Dispatcher was invoked.<br>
 
-[http://www.uefi.org/specsandtesttools UEFI.org -PI VOLUME 2: Platform Initialization Specification 1.2 Driver Execution Environment Core Interface] <br> 
+[http://www.uefi.org/specsandtesttools UEFI.org -PI VOLUME 2: Platform Initialization Specification 1.2 Driver Execution Environment Core Interface] <br>
 
 <br>'''Transient System Load (TSL) Phase'''<br>
 [[TSL]] is the 1st stage of the boot process where the OS loader is an EFI application.<br>
@@ -68,7 +75,7 @@ If the BDS phase cannot make forward progress, it will reinvoke the DXE Dispatch
 UEFI has a limited set of Runtime ([[RT]]) Services that are available after the Operating System boots and takes over the system. The primary runtime services enable the OS to read and write environment variables. There are also services that abstract the Real Time Clock, produce an monotonically increasing count, and support updates of firmware components via capsules.<br>
 It is legal for OS to call UEFI runtime services using virtual addressing, so some of the runtime services are involved in making sure the code is callable from a given virtual address space. Making a virtual call is a one way gate, and the OS must request virtual calling when it boots and provide the firmware with the virtual mappings for the physical addresses required by the runtime firmware. The firmware then fixes it self up so that the next call can be made from the virtual address space. Due to this complexity of managing virtual calling runtime code in UEFI is usually isolated into runtime only drivers.<br>
 <br>'''After Life (AF) Phase'''<br>
-After the Operating System takes over from the BDS via its boot (TSL), only a small set of UEFI is left behind. If the hardware or OS crashes, firmware could try and implement some form of recovery or remediation action. This is the After life. UEFI and PI do not spec any required behavior in this phase. 
+After the Operating System takes over from the BDS via its boot (TSL), only a small set of UEFI is left behind. If the hardware or OS crashes, firmware could try and implement some form of recovery or remediation action. This is the After life. UEFI and PI do not spec any required behavior in this phase.
 
 == Glossary ==
 See [[Acronyms-and-Glossary | Acronyms]] for glossary and acronym information.

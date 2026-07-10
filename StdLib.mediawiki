@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDKII Packages]] -->
 <!-- [[Category:EADK]] -->
 
@@ -12,14 +19,14 @@ The AppPkg Package provides applications that use Standard Libraries.
 ===Source Repository===
 {{Edk2SubPkg|AppPkg}}
 
-== StdLib == 
+== StdLib ==
 The StdLib Packages provide native UDK implemenations of standard libraries.
 
 [https://github.com/tianocore/edk2/raw/master/StdLib/ReadMe.txt ReadMe]
 ===Source Repository===
 {{Edk2SubPkg|StdLib}}
 
-== StdLibPrivateInternalFiles == 
+== StdLibPrivateInternalFiles ==
 The StdLibPrivateInternalFiles Package of files for use by StdLib only.  Do not use directly.
 
 [https://github.com/tianocore/edk2/raw/master/StdLibPrivateInternalFiles/ReadMe.txt ReadMe]

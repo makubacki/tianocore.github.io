@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDK]] -->
 {{project-summary
 |sum=SNP NT32 Network I/O|cat=none
@@ -34,11 +41,11 @@ Download the [https://github.com/tianocore/edk2-NetNt32Io snapshot] or official 
 === Other Common Links and Downloads===
 
 *Directory of [https://github.com/tianocore/edk2-NetNt32Io Network-IO Source Code Snapshots (Development Versions)]
-*Directory of Network-IO Source Code Snapshots (Official Releases) 
-*Link to the TianoCore Community Project 
-*Link to the [http://www.uefi.org/ UEFI2.0 Specification]  
+*Directory of Network-IO Source Code Snapshots (Official Releases)
+*Link to the TianoCore Community Project
+*Link to the [http://www.uefi.org/ UEFI2.0 Specification]
 *Download [http://www.winpcap.org/ WinPcap® library]
-*Archives of the "Dev" Mailing List 
+*Archives of the "Dev" Mailing List
 
 ''' Intel Gig Undi'''<br>
 Intel® Ethernet Connections Boot Utility, Preboot Images, and UEFI Drivers  - [https://downloadcenter.intel.com/download/19186/Intel-Ethernet-Connections-Boot-Utility-Preboot-Images-and-EFI-Drivers Download] Latest Versions of the UEFI Gig Undi Bin and Source:

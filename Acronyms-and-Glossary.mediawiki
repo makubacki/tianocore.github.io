@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 See also: [[Member-FAQ]]
 
 The EFI and Framework Open Source Community lives within a fairly complex world of acronyms, terms, etc. Hopefully this page helps clarify some of those and provides a good reference.
@@ -23,16 +30,16 @@ The EFI and Framework Open Source Community lives within a fairly complex world 
 ;'''ASL'''
 :   ACPI Source Language
 
-;'''Attribute'''  
+;'''Attribute'''
 :   A field of something tracked in CEE Project Tracker
 
-;'''BA''' 
+;'''BA'''
 :   Boot Authorization
 
-;'''BBS''' 
+;'''BBS'''
 :   BIOS Boot Specification
 
-;'''BDS''' 
+;'''BDS'''
 :   Boot Device Selection phase
 
 ;'''BFV'''
@@ -341,7 +348,7 @@ The EFI and Framework Open Source Community lives within a fairly complex world 
 ;'''VTF'''
 :   Volume Top File.  A file in a firmware volume that must be located such that  the last byte of the file is also the last byte of the firmware volume
 
-;'''VT-UTF8''' 
+;'''VT-UTF8'''
 :   A serial protocol definition that extends VT-100 to support Unicode
 
 ;'''Watchdog Timer'''
@@ -353,7 +360,7 @@ The EFI and Framework Open Source Community lives within a fairly complex world 
 ----
 
 [[EDK II FAQ|EDK II FAQ]]
-Frequently asked questions about EDK II 
+Frequently asked questions about EDK II
 
 
 [[UEFI-PI_FAQ|UEFI/PI FAQ]]

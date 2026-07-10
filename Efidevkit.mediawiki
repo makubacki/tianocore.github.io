@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <b><i>Note: EDK has been deprecated. Please refer to [[EDK II]] for the latest information. This page is maintained for historical purposes and will be archived in a future site update.</i></b>
 
 The '''EDK''' is the open-source component of the "Framework", Intel's implementation of the EFI Specification, which was developed under the project codenamed "Tiano". The EDK was released under the  [[BSD License]]. Refer to the  [[FAQ#EDK_and_Fat-Driver_Projects_FAQ|EDK  section of the EFI and Framework Open Source FAQs]]  for a full explanation of how the EDK relates to the EFI effort.
@@ -77,7 +84,7 @@ DuetRelNotes.txt
 Intel Green H - EDK1117 Patch Version 9
 
 ----
- 
+
 This package contains the full set of Green H files intended to be used for the ''Broadwell Platform'' and ''Bay Trail Platform'' (Intel Corporation Code names).
 The configuration that will be utilized for platform validation is UEFI 2.3.1 and Framework 0.9x (without Framework HII).
 This package does not contain the associated build tools required for UEFI 2.3.1 support.
@@ -91,10 +98,10 @@ At a high level, this update requires a codebase owner to:
 The patch should function in either UEFI 2.0 or UEFI 2.3.1 modes, but UEFI 2.3.1 will be the only configuration used by Intel validation.
 It is recommended that the UEFI 2.3.1 conversion be made as quickly and completely as possible for the 2014 platforms.
 
-Please refer to EDK1117_PatchV9_Details.txt for the changes from the open source EDK 11/17/2006 
+Please refer to EDK1117_PatchV9_Details.txt for the changes from the open source EDK 11/17/2006
 AKA [http://sourceforge.net/projects/efidevkit/files/Releases/Official%20Releases/EDK%201.01.zip/download EDK Release 1.01].
 
-Further details are available from your Intel client BIOS support representative.  
+Further details are available from your Intel client BIOS support representative.
 </td>
 <td></td>
 <td></td>

@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 There is a lot to learn about EDK II and the TianoCore open source community. The real magic of any community is when you join and have full access to the tools that the community drivers use to evolve and make their application and its accompanying documentation and tooling. As a community member, you have access to the following:
 
 * [[Mailing Lists]] - Using groups.io. Primary source of communications.

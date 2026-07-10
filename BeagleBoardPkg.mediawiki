@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 The [http://beagleboard.org/ Beagle Board] is a low cost highly capable single board computer. The Beagle Board is based on an OMAP3530 SoC featuring an ARM® CortexTM-A8 processor. Please go [http://beagleboard.org/buy here], to get information on how to buy a Beagle Board. Don't forget to also order a serial cable and power supply. <br>
 The BeagleBoardPkg package reuses components from ArmPkg and Omap35xxPkg.
 <br>
@@ -154,7 +161,7 @@ sudo apt-get install qemu-user-static qemu-system
 <pre>
 cd $(WORKROOT)/edk2/BeagleBoardPkg/
 ./build.sh RELEASE
-qemu-system-arm -M beagle -serial stdio -sd beagle_sd.img -mtdblock $(WORKROOT)/edk2/Build/BeagleBoard/RELEASE_ARMGCC/FV/BeagleBoard_EFI_flashboot.fd 
+qemu-system-arm -M beagle -serial stdio -sd beagle_sd.img -mtdblock $(WORKROOT)/edk2/Build/BeagleBoard/RELEASE_ARMGCC/FV/BeagleBoard_EFI_flashboot.fd
 </pre>
 
 * If UEFI fails to find the Linux kernel then you should expect to see this error message:
@@ -223,13 +230,13 @@ usage: fatls <interface> <dev[:part]> [directory]
 OMAP3 beagleboard.org # fatls mmc 1
 Unknown command 'fatls' - try 'help'
 OMAP3 beagleboard.org # fatls mmc 1 /
-   192204   u-boot.bin 
-    18360   mlo 
-  3704948   uimage 
-  4765782   uinitrd 
-      387   boot.txt 
-      459   boot.scr 
-      459   boot.ini 
+   192204   u-boot.bin
+    18360   mlo
+  3704948   uimage
+  4765782   uinitrd
+      387   boot.txt
+      459   boot.scr
+      459   boot.ini
    524288   BEAGLEBOARD_EFI.fd
 
 8 file(s), 0 dir(s)

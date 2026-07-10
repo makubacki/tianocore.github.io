@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 Device Tree (DT) is a format used to describe the hardware resources of a specific platform.
 Lbfdt library (dual license - BSD/GPL) is often used to read or modify the information of the FDT (Flat Device Tree).
 
@@ -7,7 +14,7 @@ Author: Jon Loeliger <jdl@jdl.com>
 Date:   Sat Jun 22 12:54:28 2013 -0500
 
     Tag Version 1.4.0
-    
+
     Signed-off-by: Jon Loeliger <jdl@jdl.com>
 </pre>
 

@@ -1,16 +1,23 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 == Introduction ==
 These instructions are to build and run UEFI on the AArch64 Foundation or Base FVPs (Fixed Virtual Platforms). FVPs are fixed configurations of ARM Fast Models; they are also known as RTSMs (Real Time System Models). The Base FVP is an evolution of the VE (Versatile Express) RTSM.<br/>
 While the AArch64 Foundation FVP is free to download, the Base FVP requires an ARM license. The Base FVP has additional debugging and configuration features.
 
 <b>Requirement:</b>
-* A 32-bit or 64-bit Linux host machine. Support for MS Windows-based toolchains has not been added to the EDK2 BaseTools. 
+* A 32-bit or 64-bit Linux host machine. Support for MS Windows-based toolchains has not been added to the EDK2 BaseTools.
 
 == Getting the EDK2 Source with AArch64 support (ARM 64-bit architecture) ==
 1) Get the requirements
 
-A Universally Unique Id (UUID) header. Needed to build the EDK2 BaseTools. On Ubuntu: sudo apt-get install uuid-dev 
+A Universally Unique Id (UUID) header. Needed to build the EDK2 BaseTools. On Ubuntu: sudo apt-get install uuid-dev
 
-2) Download the sources 
+2) Download the sources
 <pre>git clone git@github.com:tianocore/edk2.git
 git clone https://github.com/tianocore/edk2-platforms.git</pre>
 
@@ -64,7 +71,7 @@ Build the kernel.
 You should get the binaries:
 * arch/arm64/boot/Image
 * arch/arm64/boot/dts/foundation-v8.dtb
-* arch/arm64/boot/dts/rtsm_ve-aemv8a.dtb 
+* arch/arm64/boot/dts/rtsm_ve-aemv8a.dtb
 
 === Run Linux from UEFI on the Foundation FVP ===
 

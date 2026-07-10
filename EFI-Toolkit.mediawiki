@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:ArchivedInformation]] -->
 
 '''The [[EDKII-EADK]] is replacing the EFI Toolkit.  It is recommended that you use this EDK II Project instead of the EFI Toolkit since it is no longer supported.'''
@@ -7,12 +14,12 @@
 == Unmaintained project for reference only ==
 
 
-The EFI Toolkit is a set of tools that support rapid porting and development of EFI applications, and promote a uniform pre-boot environment on 32 and 64 bit based platforms. The components are released as reference source code. Some components are meant to be stand alone and run on UEFI/EFI compliant systems and some components will require running on the EFI shell. The EFI Toolkit is released under the [[BSD License from Intel|BSD License]], and the Python code is released under [http://www.python.org/download/releases/2.4.4/license/ PSF License]. 
+The EFI Toolkit is a set of tools that support rapid porting and development of EFI applications, and promote a uniform pre-boot environment on 32 and 64 bit based platforms. The components are released as reference source code. Some components are meant to be stand alone and run on UEFI/EFI compliant systems and some components will require running on the EFI shell. The EFI Toolkit is released under the [[BSD License from Intel|BSD License]], and the Python code is released under [http://www.python.org/download/releases/2.4.4/license/ PSF License].
 
 
-Working with the EFI Toolkit 
+Working with the EFI Toolkit
 
-The EFI Toolkit package enables rapid development of EFI based applications, protocols, device drivers, EFI shells, and OS loaders on IA-32, IA-64(IPF) and Intel 64(EM64T or X64) platforms. It provides libraries and samples for using native EFI services, as well as portability libraries that make it easy to port or write Unix/POSIX style programs. 
+The EFI Toolkit package enables rapid development of EFI based applications, protocols, device drivers, EFI shells, and OS loaders on IA-32, IA-64(IPF) and Intel 64(EM64T or X64) platforms. It provides libraries and samples for using native EFI services, as well as portability libraries that make it easy to port or write Unix/POSIX style programs.
 
 
 Source repository: https://svn.code.sf.net/p/efi-toolkit/code/trunk/efi-toolkit/
@@ -65,7 +72,7 @@ A complete TCP/IPv4 implementation as an EFI protocol, and the socket library.
 
 '''Network Utilities'''
 
-FTP client, CHCP client, ifconfig, route, hostname, and ping. 
+FTP client, CHCP client, ifconfig, route, hostname, and ping.
 
 '''PPP network support'''
 
@@ -81,11 +88,11 @@ Simple full screen text editor that can create and edit both Unicode and ASKII t
 
 '''Wide character (Unicode) and local support'''
 
-The C library supports the ANSI wide-character functions and FreeBSD* local support. 
+The C library supports the ANSI wide-character functions and FreeBSD* local support.
 
 '''Multi-processor Test support'''
 
-Provides support for loading, starting, and terminating non-EFI based programs on application processors of a multi-processor Itanium-based system. 
+Provides support for loading, starting, and terminating non-EFI based programs on application processors of a multi-processor Itanium-based system.
 
 '''RAM Disk'''
 
@@ -123,7 +130,7 @@ Developer page: http://sourceforge.net/projects/efi-toolkit/develop
 
 '''Handy Links'''
 
-The following links are provided for use by the general public: 
+The following links are provided for use by the general public:
 
 *[https://sourceforge.net/projects/efi-toolkit/files/ Directory of EFI Toolkit Source Code Snapshots ]
 
@@ -137,7 +144,7 @@ The following links are provided for use by the general public:
 
 
 Project Point of Contact
-Project owner: 
+Project owner:
 
-*[mailto:harry.l.hsiung@intel.com Hsiung, Harry L], Intel Corporation, 
+*[mailto:harry.l.hsiung@intel.com Hsiung, Harry L], Intel Corporation,
 *[mailto:ming.m.wu@intel.com Wu, Ming], Intel Corporation

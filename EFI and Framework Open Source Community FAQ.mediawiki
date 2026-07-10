@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 The EFI and Framework Open Source Community FAQ
 
 ''Last updated December 28, 2010''
@@ -5,7 +12,7 @@ The EFI and Framework Open Source Community FAQ
 '''[https://sourceforge.net/apps/trac/sourceforge/wiki/WikiStart Site-Wide Help Index]'''
 
 == General Overview ==
-===Q: What is the EFI and Framework Open Source Community? === 
+===Q: What is the EFI and Framework Open Source Community? ===
 
 
 A: The EFI and Framework Open Source Community is a web-based collaborative software development community, initiated and financed by Intel, managed by CollabNet and open to the public. The main purpose of the communityis to provide a home for Open Source projects that focus their efforts on the Intel Platform Innovation Framework for EFI, or Framework for short. The Framework is an implementation of the Unified Extensible Firmware Interface (UEFI) 2.0 (or later) and the Platform Initialization 1.0 (or later) specifications. The primary project on the site is a development kit to enable platform firmware engineers to write, build, debug and test drivers, option ROMs, and EFI applications within the Framework's pre-boot environment.
@@ -76,7 +83,7 @@ A: If you have additions, corrections, or suggestions for this FAQ, please send 
 
 ===Q: What are the expectations of a member of the EFI and Framework Open Source Community? ===
 
-A: Expectations of members depend largely on the member's goals. Where some users may simply be here to gain access to the EDK, others may be actual contributors to that project. Others may have their own projects hosted here. Any and all registered users should consider becoming active on the site, either through joining projects or sharing ideas and thoughts in the Community project. As with any open-source web site, the value of the EFI and Framework Open Source Community is a function of the quality of participation of its members. In terms of behavior, all members are expected to be sensitive to others and to the fact that our member base comes from a large variety of countries, cultures and languages.  
+A: Expectations of members depend largely on the member's goals. Where some users may simply be here to gain access to the EDK, others may be actual contributors to that project. Others may have their own projects hosted here. Any and all registered users should consider becoming active on the site, either through joining projects or sharing ideas and thoughts in the Community project. As with any open-source web site, the value of the EFI and Framework Open Source Community is a function of the quality of participation of its members. In terms of behavior, all members are expected to be sensitive to others and to the fact that our member base comes from a large variety of countries, cultures and languages.
 
 ===Q: What if I only want to download the source code, and not contribute? ===
 
@@ -157,7 +164,7 @@ A: In essence its as simple as downloading the source code, installing developer
 
 A: The EFI and Framework open source community website uses a fairly robust bug-tracking system called "Project Tracker". See the The EFI and Framework Open Source Resolution Process for an overview of the flow, as well as a deeper explanation of how it works here. If you find a bug with the EDK (or have any EDK-related concerns, questions, issues, etc) your best bet is to post to the "Dev" mailing list in the EDK project. If your issue turns out to be a defect, either you or someone on the list can create a formal defect in the database.
 
- 
+
 
 == Starting New Projects FAQ ==
 

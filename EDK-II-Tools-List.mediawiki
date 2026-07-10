@@ -1,5 +1,12 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDKIIBuildTools]] -->
-= Tool Information = 
+= Tool Information =
 This is a table of all of the tools that are part of the [[edk2-buildtools| EDK II BaseTools]].
 
 To build these tools see [[BuildTool Setup Guide]].
@@ -15,8 +22,8 @@ To build these tools see [[BuildTool Setup Guide]].
 <tr>
 <td>BootSectImage.exe</td>
 <td>
-Parses the content of input file with Filename and prints BPB information to the screen. 
-When patch option is specified it will patch BPB information using information from an input file 
+Parses the content of input file with Filename and prints BPB information to the screen.
+When patch option is specified it will patch BPB information using information from an input file
 or MBR.
 </td>
 </tr>
@@ -31,7 +38,7 @@ Used to patch VPD binary data files.
 <tr>
 <td>build.exe</td>
 <td>
-The master command line (CLI) tool that provides a single command for selecting various 
+The master command line (CLI) tool that provides a single command for selecting various
 build options.
 </td>
 </tr>
@@ -53,7 +60,7 @@ Combines PE files into one with EFI loader header.
 <tr>
 <td>EfiRom.exe</td>
 <td>
-Is used to build an Option ROM image from UEFI PE32 file(s) and/or legacy option ROM 
+Is used to build an Option ROM image from UEFI PE32 file(s) and/or legacy option ROM
 images that conform to PCI 2.3 or PCI 3.0 specifications for Option ROM layout.
 </td>
 </tr>
@@ -77,7 +84,7 @@ value into the output file header.
 <tr>
 <td>GenDepex.exe</td>
 <td>
-Parses the input dependency expression string or the preprocessed DSX file to generate 
+Parses the input dependency expression string or the preprocessed DSX file to generate
 the binary PI dependency expression according to module type.
 </td>
 </tr>
@@ -85,10 +92,10 @@ the binary PI dependency expression according to module type.
 <tr>
 <td>GenFds.exe</td>
 <td>
-Generates the Ffs, Fv, FD and Section data depending on the selected command line 
+Generates the Ffs, Fv, FD and Section data depending on the selected command line
 options.
 </td>
-</tr> 
+</tr>
 
 <tr>
 <td>GenFfs.exe</td>
@@ -100,9 +107,9 @@ Generates FFS files for inclusion in a firmware volume.
 <tr>
 <td>GenFV.exe</td>
 <td>
-Generates a PI firmware volume image or a UEFI capsule image from the PI firmware 
-files or the binary files, which conforms to the firmware volume image format 
-defined in PI specification or UEFI capsule image format defined in UEFI 
+Generates a PI firmware volume image or a UEFI capsule image from the PI firmware
+files or the binary files, which conforms to the firmware volume image format
+defined in PI specification or UEFI capsule image format defined in UEFI
 specification.
 </td>
 </tr>
@@ -117,8 +124,8 @@ Processes a PE32 image to get image data or image file.
 <tr>
 <td>GenPage.exe</td>
 <td>
-Is composed of two parts: the page table part, placed at the offset specified 
-from option, and the non-page table part which is placed at the beginning of 
+Is composed of two parts: the page table part, placed at the offset specified
+from option, and the non-page table part which is placed at the beginning of
 the output file.
 </td>
 </tr>
@@ -126,9 +133,9 @@ the output file.
 <tr>
 <td>GenPatchPcdTable.exe</td>
 <td>
-Searches the image map file to find every patchable PCD name and its real 
-address, then parses the binary EFI image to get each section name and 
-address, and calculates PCD offset in the binary EFI image and writes it 
+Searches the image map file to find every patchable PCD name and its real
+address, then parses the binary EFI image to get each section name and
+address, and calculates PCD offset in the binary EFI image and writes it
 into the output file.
 </td>
 </tr>
@@ -136,8 +143,8 @@ into the output file.
 <tr>
 <td>GenSec.exe</td>
 <td>
-Generates valid EFI_SECTION type files, which conform to the firmware file 
-section defined in the PI specification, from PE32/PE32+/COFF image files or 
+Generates valid EFI_SECTION type files, which conform to the firmware file
+section defined in the PI specification, from PE32/PE32+/COFF image files or
 other binary files.
 </td>
 </tr>
@@ -145,7 +152,7 @@ other binary files.
 <tr>
 <td>GenVtf.exe</td>
 <td>
-Generates the Boot Strap File (AKA Volume Top File, or VTF) for IPF 
+Generates the Boot Strap File (AKA Volume Top File, or VTF) for IPF
 images.
 </td>
 </tr>
@@ -160,7 +167,7 @@ Encodes or decodes files with LZMA encode or decode algorithm.
 <tr>
 <td>PatchPcdValue.exe</td>
 <td>
-Sets the specific value into the binary image according to the input PCD 
+Sets the specific value into the binary image according to the input PCD
 offset and type.
 </td>
 </tr>
@@ -182,7 +189,7 @@ Used to sign an efi image
 <tr>
 <td>Split.exe</td>
 <td>
-Creates two Binary files either in the same directory as the current 
+Creates two Binary files either in the same directory as the current
 working directory or in the specified directory.
 </td>
 </tr>
@@ -190,7 +197,7 @@ working directory or in the specified directory.
 <tr>
 <td>TargetTool.exe</td>
 <td>
-Prints current build setting, clear current setting, or modify the current 
+Prints current build setting, clear current setting, or modify the current
 setting in target.txt.
 </td>
 </tr>
@@ -201,11 +208,11 @@ setting in target.txt.
 Encodes or decodes files with EFI extension encode or decode algorithm.
 </td>
 </tr>
- 
+
 <tr>
 <td>Trim.exe</td>
 <td>
-Processes the preprocessed file by Compiler to remove the unused content 
+Processes the preprocessed file by Compiler to remove the unused content
 to generate the file to be processed further by EDKII tools.
 </td>
 </tr>
@@ -220,15 +227,15 @@ Create, install or remove a UEFI Distribution Package.
 <tr>
 <td>VfrCompile.exe</td>
 <td>
-Parses the preprocessed UEFI and Framework VFR file to generate UEFI IFR opcode 
+Parses the preprocessed UEFI and Framework VFR file to generate UEFI IFR opcode
 table, Binary Data and IFR listing file.
 </td>
 </tr>
- 
+
 <tr>
 <td>VolInfo.exe</td>
 <td>
-Displays the contents of a firmware volume residing in a file for informational 
+Displays the contents of a firmware volume residing in a file for informational
 purposes.
 </td>
 </tr>

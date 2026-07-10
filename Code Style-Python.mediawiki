@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:EDKIIBuildTools]] -->
 <!-- [[Category:CodeStyle]] -->
 For our Python coding, we follow the standard [http://www.python.org/dev/peps/pep-0008 Style Guide for Python Code].

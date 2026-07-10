@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 = MinnowBoard UEFI Firmware =
 
 Note: MinnowBoard is a depreciated project for 32-bit UEFI firmware development. The [[MinnowBoardMax]] and [[MinnowBoard 3]] are more updated versions of this open hardware project.

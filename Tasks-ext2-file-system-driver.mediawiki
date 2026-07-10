@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <!-- [[Category:GSOC2011]] -->
 <!-- [[Category:Tasks]] -->
 Develop an [[ext2|https://en.wikipedia.org/wiki/Ext2]] filesystem driver.  (read-only support would be useful as a first step)

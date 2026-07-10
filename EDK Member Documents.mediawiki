@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <div class="t_projects">
 
 <table>
@@ -13,7 +20,7 @@
 community contributed content.</td>
 </tr>
 
- 
+
 <tr>
 <td>
 [https://sourceforge.net/projects/efidevkit/files/Member%20Documents/2009%20Beijing%20UEFI%20Training%20Stuff/ 2009 Beijing UEFI Training Stuff folder]

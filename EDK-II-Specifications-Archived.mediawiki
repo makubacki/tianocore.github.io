@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 <div class="t_projects">
 current [[EDK II Specifications]]
 <table>
@@ -19,10 +26,10 @@ Spec v1.26 <Br>
  -2016-01-01 - [https://github.com/tianocore-docs/Docs/raw/master/Specifications/Build_Spec_1_26.pdf  PDF] |
 [https://github.com/tianocore-docs/Docs/raw/master/Specifications/Build_Spec_1_26.zip  ZIP]
 <BR>
-Spec v1.25 
+Spec v1.25
 <br>
  -2015-08-01 -
-[https://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_1.25A.pdf/download 
+[https://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_1.25A.pdf/download
 Errata A PDF]  |
 [https://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_1.25A.zip/download ZIP]
 <br>
@@ -34,36 +41,36 @@ Spec v1.24<br>
  -2015-03-01 -
 [http://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_1.24A.pdf/download Errata A PDF]  |
 [http://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_1.24A.zip/download ZIP]
- 
+
 <BR>
 -2015-01-01 -
 [http://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_1.24.pdf/download PDF]  |
 [http://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_1.24.zip/download ZIP]
 
 <BR>
-Spec v1.22 
+Spec v1.22
 <BR>
  -2014-01-01 -
 [http://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_v1.22_Errata_D.pdf/download Errata D PDF]  |
 [http://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_v1.22_Errata_D.zip/download ZIP]
 <BR>
- -2013-08-30 - [https://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_v1.22_Errata_C.pdf/download  Errata C PDF] 
+ -2013-08-30 - [https://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_v1.22_Errata_C.pdf/download  Errata C PDF]
 <BR>
- -2012-06-26 - [https://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_v1.22_Errata_B.pdf/download  Errata B PDF] 
+ -2012-06-26 - [https://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_v1.22_Errata_B.pdf/download  Errata B PDF]
 <BR>
- -2011-12-19 - [https://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_1.22_Errata_A_Final.pdf/download  Errata A PDF] 
+ -2011-12-19 - [https://sourceforge.net/projects/edk2/files/Specifications/Build_Spec_1.22_Errata_A_Final.pdf/download  Errata A PDF]
 <BR>
- -2010-05-04 - [https://sourceforge.net/projects/edk2/files/Specifications/EDK_II_Build_v1_22.pdf/download No_Errata PDF] 
+ -2010-05-04 - [https://sourceforge.net/projects/edk2/files/Specifications/EDK_II_Build_v1_22.pdf/download No_Errata PDF]
 </td>
 <td>
 
-This document describes the EDK II build information for the (BUILD) specification and it contains the proposal for the Errata updates that will be available with the UDK2010,  UDK2014 and UDK2015 releases. See details in the Revision History in the document for more details. 
+This document describes the EDK II build information for the (BUILD) specification and it contains the proposal for the Errata updates that will be available with the UDK2010,  UDK2014 and UDK2015 releases. See details in the Revision History in the document for more details.
 
 </td>
 </tr>
 <tr>
 <td>
-'''DEC'''- EDK II DEC File 
+'''DEC'''- EDK II DEC File
 <BR>
 Spec v1.25
 <BR>
@@ -72,7 +79,7 @@ Spec v1.25
 
 
 <BR>
-Spec v1.24 
+Spec v1.24
 <BR>
 -2015-08-01 - [http://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_1.24C.pdf/download Errata C PDF]  |
 [http://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_1.24C.zip/download   ZIP]
@@ -86,19 +93,19 @@ Spec v1.24
 [http://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_1.24A.zip/download   ZIP]
 <BR>
 -2014-08-11 - [http://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_1.24.pdf/download PDF]  |
-[http://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_1.24.zip/download ZIP] 
+[http://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_1.24.zip/download ZIP]
 
 <BR>
-Spec v1.22 
+Spec v1.22
 <BR>
  -2013-08-30 - [https://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_1.22_Errata_C.pdf/download  Errata C PDF]  |
-[http://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_v1.22_Errata_C.zip/download   ZIP] 
+[http://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_v1.22_Errata_C.zip/download   ZIP]
 <BR>
- -2012-06-26 - [https://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_v1.22_Errata_B.pdf/download Errata B PDF] 
+ -2012-06-26 - [https://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_v1.22_Errata_B.pdf/download Errata B PDF]
 <BR>
- -2011-12-19 - [https://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_v1.22_Errata_A_Final.pdf/download  Errata A PDF] 
+ -2011-12-19 - [https://sourceforge.net/projects/edk2/files/Specifications/DEC_Spec_v1.22_Errata_A_Final.pdf/download  Errata A PDF]
 <BR>
- -2010-05-04 - [https://sourceforge.net/projects/edk2/files/Specifications/DEC_v1_22.pdf/download No_Errata]  
+ -2010-05-04 - [https://sourceforge.net/projects/edk2/files/Specifications/DEC_v1_22.pdf/download No_Errata]
 
 
 </td>
@@ -112,7 +119,7 @@ This document describes the EDK II build information (DEC) file format and it co
 
 <tr>
 <td>
-'''DSC'''- EDK II DSC File 
+'''DSC'''- EDK II DSC File
 <BR>
 Spec v1.26 <BR>
 -2016-01-01 - [https://github.com/tianocore-docs/Docs/raw/master/Specifications/DSC_Spec_1_26.pdf PDF]  |
@@ -124,7 +131,7 @@ Spec v1.25
 -2015-07-01 - [https://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_1_25.pdf/download PDF]  |
 [https://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_1_25.zip/download ZIP]
 <Br>
-Spec v1.24 
+Spec v1.24
 
 <BR>
  -2015-03-01 - [http://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_1.24A.pdf/download Errata A PDF]  |
@@ -136,15 +143,15 @@ Spec v1.24
 <BR>
 Spec v1.22 PDF
 <BR>
- -2014-01-11 - [http://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_v1.22_Errata_D.pdf/download Errata D] | [https://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_v1.22_Errata_D.zip/download ZIP] 
-<BR> 
- -2013-08-30 - [https://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_1.22_Errata_C.pdf/download  Errata C] 
+ -2014-01-11 - [http://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_v1.22_Errata_D.pdf/download Errata D] | [https://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_v1.22_Errata_D.zip/download ZIP]
 <BR>
- -2012-06-26 - [https://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_v1.22_Errata_B.pdf/download Errata B] 
+ -2013-08-30 - [https://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_1.22_Errata_C.pdf/download  Errata C]
 <BR>
- -2011-12-19 - [https://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_v1.22_Errata_A_Final.pdf/download  Errata A] 
+ -2012-06-26 - [https://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_v1.22_Errata_B.pdf/download Errata B]
 <BR>
- -2010-05-04 - [https://sourceforge.net/projects/edk2/files/Specifications/DSC_v1_22.pdf/download No_Errata] 
+ -2011-12-19 - [https://sourceforge.net/projects/edk2/files/Specifications/DSC_Spec_v1.22_Errata_A_Final.pdf/download  Errata A]
+<BR>
+ -2010-05-04 - [https://sourceforge.net/projects/edk2/files/Specifications/DSC_v1_22.pdf/download No_Errata]
 
 </td>
 <td>
@@ -157,7 +164,7 @@ This document describes the EDK II build information (DSC) file format and it co
 
 <tr>
 <td>
-'''FDF'''- EDK II FDF File 
+'''FDF'''- EDK II FDF File
 <BR>
 Spec v1.26
 <br>
@@ -165,13 +172,13 @@ Spec v1.26
 [https://github.com/tianocore-docs/Docs/raw/master/Specifications/FDF_Spec_1_26.zip ZIP]
 
 <BR>
-Spec v1.25 
+Spec v1.25
 <br>
 -2015-07-01 - [https://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec_1_25.pdf/download PDF]  |
 [https://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec_1_25.zip/download ZIP]
 <BR>
 
-Spec v1.24 
+Spec v1.24
 <br>
  -2015-03-01 - [http://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec_1.24A.pdf/download Errata A PDF] |
 [http://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec_1.24A.zip/download ZIP]
@@ -183,14 +190,14 @@ Spec v1.24
 <BR>
 Spec v1.22  <br>
  -2014-01-01 - [http://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec1.22_Errata_D.pdf/download Errata D]  |
-[http://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec1.22_Errata_D.zip/download ZIP] 
+[http://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec1.22_Errata_D.zip/download ZIP]
 <br>
- -2013-08-30 - [https://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec_1.22_Errata_C.pdf/download   Errata C]  
+ -2013-08-30 - [https://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec_1.22_Errata_C.pdf/download   Errata C]
 <br>
- -2012-06-26 - [https://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec_v1.22_Errata_B.pdf/download  Errata B] 
+ -2012-06-26 - [https://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec_v1.22_Errata_B.pdf/download  Errata B]
 <br>
  -2011-12-19 - [https://sourceforge.net/projects/edk2/files/Specifications/FDF_Spec_v1.22_Errata_A_Final.pdf/download  Errata A] <BR>
- -2010-05-04 - [https://sourceforge.net/projects/edk2/files/Specifications/FDF_v1_22.pdf/download No_Errata] 
+ -2010-05-04 - [https://sourceforge.net/projects/edk2/files/Specifications/FDF_v1_22.pdf/download No_Errata]
 </td>
 <td>
 
@@ -203,15 +210,15 @@ This document describes the EDK II Flash Description (FDF) file format. This for
 
 <tr>
 <td>
-'''INF'''- EDK II INF File 
+'''INF'''- EDK II INF File
 <br>
-Spec v1.25  
+Spec v1.25
 <br>
  -2015-08-01 - [https://github.com/tianocore-docs/Docs/raw/master/Specifications/INF_Spec_1_25.pdf PDF] |
 [https://github.com/tianocore-docs/Docs/raw/master/Specifications/INF_Spec_1_25.zip ZIP]
 
 <br>
-Spec v1.24  
+Spec v1.24
 <br>
  -2015-08-01 - [http://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_1.24C.pdf/download Errata C PDF] |
 [http://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_1.24C.zip/download   ZIP]
@@ -230,16 +237,16 @@ Spec v1.24
 
 <br>
 Spec v1.22 <br>
- -2014-01-01 - [http://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_v1.22_Errata_D.pdf/download Errata D PDF] |  [http://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_v1.22_Errata_D.zip/download ZIP] 
+ -2014-01-01 - [http://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_v1.22_Errata_D.pdf/download Errata D PDF] |  [http://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_v1.22_Errata_D.zip/download ZIP]
 
 <br>
- -2013-08-30 - [https://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_1.22_Errata_C.pdf/download Errata C] 
+ -2013-08-30 - [https://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_1.22_Errata_C.pdf/download Errata C]
 <br>
- -2012-06-26 - [https://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_v1.22_Errata_B.pdf/download  Errata B] 
-<br> 
- -2011-12-19 - [https://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_v1.22_Errata_A_Final.pdf/download  Errata A] 
+ -2012-06-26 - [https://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_v1.22_Errata_B.pdf/download  Errata B]
+<br>
+ -2011-12-19 - [https://sourceforge.net/projects/edk2/files/Specifications/INF_Spec_v1.22_Errata_A_Final.pdf/download  Errata A]
 <Br>
- -2010-05-04 - [https://sourceforge.net/projects/edk2/files/Specifications/INF_v1_22.pdf/download No_Errata] 
+ -2010-05-04 - [https://sourceforge.net/projects/edk2/files/Specifications/INF_v1_22.pdf/download No_Errata]
 
 </td>
 <td>
@@ -251,14 +258,14 @@ This document describes the EDK II build information (INF) file format and it co
 <tr>
 <td>
 '''Meta-Data''' EDK II  data<br>
-Spec v1.1 Jan 2015 - [https://github.com/tianocore-docs/Docs/raw/master/Specifications/ExpressionSyntax_1.1.pdf PDF] 
+Spec v1.1 Jan 2015 - [https://github.com/tianocore-docs/Docs/raw/master/Specifications/ExpressionSyntax_1.1.pdf PDF]
 | [https://github.com/tianocore-docs/Docs/raw/master/Specifications/ExpressionSyntax_1.1.zip ZIP]
 
 </td>
 <td>
 EDK II Meta Data File Expression Syntax Specification - <BR>
 This document describes the syntax of expression statements for EDK II Meta-data files used in data fields, feature flag expressions and conditional directive statements
- 
+
 </td>
 </tr>
 <tr>
@@ -269,10 +276,10 @@ Spec v0.55 April 2009 - [https://github.com/tianocore-docs/Docs/raw/master/Speci
 </td>
 <td>
 Platform Configuration Database Infrastructure Description PCDs - <br>
-This document discusses the mechanisms and configuration entries required 
+This document discusses the mechanisms and configuration entries required
 to make it easy to write portable silicon modules and to port the Framework
-from platform to platform. 
- 
+from platform to platform.
+
 </td>
 </tr>
 
@@ -284,13 +291,13 @@ Spec v1.3 - March 2016 - [https://github.com/tianocore-docs/Docs/raw/master/Spec
 <BR>
 
 Spec v1.2 - March 2015 - [https://github.com/tianocore-docs/Docs/raw/master/Specifications/UNI_File_Spec_v1_2_Errata_A.pdf Errata A]  |
-[https://github.com/tianocore-docs/Docs/raw/master/Specifications/UNI_File_Spec_v1_2_Errata_A.zip ZIP] 
+[https://github.com/tianocore-docs/Docs/raw/master/Specifications/UNI_File_Spec_v1_2_Errata_A.zip ZIP]
 
 </td>
 <td>
 Multi-String UNI Unicode File Specification <br>
 This document describes the Multi-String build information (UNI) file format . See details in the Revision History in the document for more details.
- 
+
 </td>
 </tr>
 
@@ -311,7 +318,7 @@ Spec v1.4 May 2011 - [https://sourceforge.net/projects/edk2/files/Specifications
 Spec v1.3 Feb 2010 - [https://sourceforge.net/projects/edk2/files/Specifications/VFR_1_3.pdf/download PDF]
 </td>
 <td>
-To simplify the creation of Internal Forms Representation (IFR), 
+To simplify the creation of Internal Forms Representation (IFR),
 
 a high-level Visual Forms Representation (VFR) language is
 

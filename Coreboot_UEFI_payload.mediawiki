@@ -1,8 +1,15 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 __NOTOC__
 
 ==='''Outdated'''===
 
-Please see the updated page [[UefiPayloadpkg]] that replaces the CorebootModulePkg and CorebootPayloadPkg 
+Please see the updated page [[UefiPayloadpkg]] that replaces the CorebootModulePkg and CorebootPayloadPkg
 
 ==='''Coreboot'''===
 
@@ -12,10 +19,10 @@ http://www.coreboot.org/
 
 ==='''Coreboot Payload Package'''===
 
-'''CorebootModulePkg'''        
+'''CorebootModulePkg'''
 - Source code package of Coreboot Support Modules that will be used to parse the coreboot tables in memory , report memory/io resources and install acpi and smbios tables from coreboot into EFI system tables.
 
-'''CorebootPayloadPkg'''        
+'''CorebootPayloadPkg'''
 - Source code package of Coreboot Payload Modules, Provides definitions of       payload image's layout and lists the modules required in DSC file.
 
 '''Build Instructions''':
@@ -24,8 +31,8 @@ https://github.com/tianocore/edk2/raw/master/CorebootPayloadPkg/BuildAndIntegrat
 ===''' Intel® Firmware Support Package'''===
 
 Intel holds the key programming information that is crucial for initializing Intel silicon.
-The Intel® Firmware Support Package (FSP) is a binary distribution of the silicon initialization code that is needed to initialize the Intel silicon. The FSP will perform  the necessary initialization steps as documented in the BWG / BIOS Specification including initialization of the CPU, memory controller, chipset and certain bus interfaces, if necessary.  
-The FSP provides chipset and processor initialization in a format that can easily be incorporated into many boot loaders including coreboot. 
+The Intel® Firmware Support Package (FSP) is a binary distribution of the silicon initialization code that is needed to initialize the Intel silicon. The FSP will perform  the necessary initialization steps as documented in the BWG / BIOS Specification including initialization of the CPU, memory controller, chipset and certain bus interfaces, if necessary.
+The FSP provides chipset and processor initialization in a format that can easily be incorporated into many boot loaders including coreboot.
 http://www.intel.com/fsp
 
 

@@ -1,6 +1,13 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 
 = Shell Requirements =
-The shell is explicitly defined as a UEFI 2.1+ Application.  That means that is has a requirement on a completed system table and many protocols.  
+The shell is explicitly defined as a UEFI 2.1+ Application.  That means that is has a requirement on a completed system table and many protocols.
 The shell will use features only found in UEFI 2.3+ (such as SimpleTextInputEx), but will function with a reduced feature set without these features.  Note that these reductions in functionality may make the the shell non-spec compliant.
 
 == Table Requirements ==

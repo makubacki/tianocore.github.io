@@ -1,3 +1,10 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 Enable multiprocessor support for IA32 & X64 within UefiCpuPkg/CpuDxe.  (Implement [[MdePkg/Include/Protocol/MpService.h|https://github.com/tianocore/edk2/blob/master/MdePkg/Include/Protocol/MpService.h]])
 
 * Status: Complete :heavy_check_mark:

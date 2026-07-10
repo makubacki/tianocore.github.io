@@ -1,5 +1,12 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 This page contains a list of White papers and technical documents in chronological order<br>
-Check [[EDK II Security White Papers]] for documents on security 
+Check [[EDK II Security White Papers]] for documents on security
 
 <div class="t_projects">
 <table>
@@ -21,9 +28,9 @@ Check [[EDK II Security White Papers]] for documents on security
 
 <BR>
 This paper introduces a design guide for an EDK II open source IA firmware solution. In order to make an open IA firmware solution simple, we demonstrate a firmware design approach with minimal features. <BR>
-The only criteria are 
+The only criteria are
 #It can boot to the OS
-#It is secure. 
+#It is secure.
 We can remove many unnecessary silicon or platform features like Capsule update, Recovery, S3 resume, SMBIOS, EC, Super IO (SIO), I2C, and only enable ACPI
 & SMM to support booting.
 
@@ -67,7 +74,7 @@ This paper will introduce how to enable the protection mechanisms in UEFI firmwa
 <BR>
 This document is a getting started guide for using the HTTP boot capability introduced in the UEFI Specification, revision 2.5.
 * January 2018 Rev 0.9
-* April 2016 Rev 0.8 [https://github.com/tianocore-docs/Docs/raw/main/White_Papers/EDKIIHttpBootGettingStartedGuide_0_8.pdf  .PDF] 
+* April 2016 Rev 0.8 [https://github.com/tianocore-docs/Docs/raw/main/White_Papers/EDKIIHttpBootGettingStartedGuide_0_8.pdf  .PDF]
 </td>
 </tr>
 <tr>
@@ -79,7 +86,7 @@ This document is a getting started guide for using the HTTP boot capability intr
 </td>
 <td>
 [https://tianocore-docs.github.io/EDKIIHttpsBootGettingStartedGuide/draft/ Getting Started with UEFI HTTPS Boot on EDK II] contributed by Wu Jiaxin, Fu Siyuan and Brian Richardson<BR>
-HTTP over TLS (HTTPS) boot is a standard implementation for securely booting using the Unified Extensible Firmware Interface (UEFI) over a network device. HTTPS Boot is especially important for clients using potentially insecure networks outside of corporate infrastructure. Security for UEFI HTTPS Boot is provided by the underlying Transport Layer Security (TLS). 
+HTTP over TLS (HTTPS) boot is a standard implementation for securely booting using the Unified Extensible Firmware Interface (UEFI) over a network device. HTTPS Boot is especially important for clients using potentially insecure networks outside of corporate infrastructure. Security for UEFI HTTPS Boot is provided by the underlying Transport Layer Security (TLS).
 This paper assumes the reader is familiar with the [https://tianocore-docs.github.io/EDKIIHttpBootGettingStartedGuide/draft/ EDK II HTTP Boot Getting Started Guide]
  available on this page.
 <BR>
@@ -96,15 +103,15 @@ This paper assumes the reader is familiar with the [https://tianocore-docs.githu
 <td>
 [https://edk2-docs.gitbook.io/a-tour-beyond-bios-memory-protection-in-uefi-bios A Tour Beyond BIOS- Memory Protection in UEFI BIOS] contributed by Jiewen Yao and Vincent Zimmer<BR>
 
-Data execution protection (DEP) is intended to prevent an application or service from executing code from a non-executable memory region. 
+Data execution protection (DEP) is intended to prevent an application or service from executing code from a non-executable memory region.
 This helps prevent certain exploits that store code via a buffer overflow.
 
 <br>
-In the White paper [ https://github.com/tianocore-docs/Docs/raw/main/White_Papers/A_Tour_Beyond_BIOS_Securiy_Enhancement_to_Mitigate_Buffer_Overflow_in_UEFI.pdf A Tour Beyond BIOS-Security Enhancement to Mitigate Buffer Overflow] below, we only discussed the DEP for protecting the stack and setting the not-present page for detecting  `NULL`  address 
+In the White paper [ https://github.com/tianocore-docs/Docs/raw/main/White_Papers/A_Tour_Beyond_BIOS_Securiy_Enhancement_to_Mitigate_Buffer_Overflow_in_UEFI.pdf A Tour Beyond BIOS-Security Enhancement to Mitigate Buffer Overflow] below, we only discussed the DEP for protecting the stack and setting the not-present page for detecting  `NULL`  address
 accesses and as the guard page. This document will have a more comprehensive discussion of the DEP adoption in the current UEFI firmware to harden the pre-boot phase.
 <BR>
 
-* March 2017 
+* March 2017
 </td>
 </tr>
 
@@ -120,7 +127,7 @@ contributed by Jiewen Yao and Vincent Zimmer<BR>
 The firmware update capability represents an important feature for the system firmware on the mother board and the various device firmware instances, such as a host bus adapter-attached PCI option ROM, embedded controller (EC), baseboard management controller (BMC), etc. The firmware recovery is also a feature to support firmware boot in recovery mode in cases where the main flash image is errant or corrupt.
 <BR>
 In this paper, we provide more details on how we implement capsule update and recovery in EDK II.
-* December 2016 
+* December 2016
 </td>
 </tr>
 
@@ -137,19 +144,19 @@ In this paper, we provide more details on how we implement capsule update and re
 
 The purpose of this document is to provide security guidelines to developers, implementers, and code reviewers of the EDK II firmware. The topics discussed in this paper are intended to aid in reducing bugs associated with common security vulnerability classes present in EDK II. Following these guidelines will increase the overall security of platforms implementing the firmware and ensure platforms are not as susceptible to malicious behavior.
 
-* September 2016 
+* September 2016
 </td>
 </tr>
 <tr>
 <td>
 
-[https://github.com/tianocore-docs/Docs/raw/main/White_Papers/A_Tour_Beyond_BIOS_Implementing_Profiling_in_EDK_II.pdf  .PDF] 
+[https://github.com/tianocore-docs/Docs/raw/main/White_Papers/A_Tour_Beyond_BIOS_Implementing_Profiling_in_EDK_II.pdf  .PDF]
 </td>
 <td>
 [https://github.com/tianocore-docs/Docs/raw/main/White_Papers/A_Tour_Beyond_BIOS_Implementing_Profiling_in_EDK_II.pdf A Tour Beyond BIOS Implementing Profiling in EDK II] - contributed by Jiewen Yao, Vincent Zimmer, Star Zeng and Fan Jeff <BR>
 The Unified Extensible Firmware Interface (UEFI) and Platform Initialization (PI) specification defines rich execution environments such as Security (SEC), Pre-EFI Initialization (PEI), Driver Execution Environment (DXE), System Management Mode (SMM) and UEFI Runtime (RT) for firmware drivers. There are more and more features added into a firmware. At same time, the firmware still has a resource constrained environment. In addition to functionality, the size, performance, and security are three major concerns of a firmware engineer. This paper introduces several profiling features implemented in EDK II to help the UEFI firmware developer to analyze the size, performance and security of a UEFI firmware implementation.
 
-* July 2016 
+* July 2016
 </td>
 </tr>
 
@@ -163,9 +170,9 @@ The Unified Extensible Firmware Interface (UEFI) and Platform Initialization (PI
 
 <BR>
 This paper introduces how we can do secure SMM communication in a UEFI BIOS.<BR>
-Audience: This paper assumes that audience has basic EDKII/UEFI firmware development experience, and basic knowledge of SMM. 
+Audience: This paper assumes that audience has basic EDKII/UEFI firmware development experience, and basic knowledge of SMM.
 
-* April 2016 
+* April 2016
 </td>
 </tr>
 
@@ -178,7 +185,7 @@ Audience: This paper assumes that audience has basic EDKII/UEFI firmware develop
 
 This paper introduces the memory map security practices in UEFI BIOS.<BR>
 Audience: This paper assumes that audience has basic EDKII/UEFI firmware development experience.<BR><BR>
- 
+
 The main job of BIOS is to initialize the platform hardware and report information to a generic operating system (OS). The memory map is one of the most important pieces of information. The operating system can only load a kernel, driver or application in the right place if it knows how memory is allocated.
 In '''UEFI Memory Map''', we introduced the memory map design in UEFI BIOS, and saw how a typical platform reports the memory map to an OS. In this paper we will discuss how to enhance the memory map reporting and provide security practice for memory protection to harden platforms.
 
@@ -244,7 +251,7 @@ How the Reset Vector is integrated into a UDK build
 [https://github.com/tianocore-docs/Docs/raw/main/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf .PDF]
 </td>
 <td>
-[https://github.com/tianocore-docs/Docs/raw/main/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf 
+[https://github.com/tianocore-docs/Docs/raw/main/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf
 A Tour Beyond BIOS Implementing UEFI Authenticated Variables in SMM with EDKII]
 <br>
 This paper presents the internal structure and boot flow of the SMM-based UEFI Authenticated Variable driver in the MDE Module Package and Security Package of the EDKII.
@@ -252,7 +259,7 @@ This paper presents the internal structure and boot flow of the SMM-based UEFI A
 Prerequisite
 This paper assumes that audience has EDKII/UEFI firmware development experience. He or she should also be familiar with UEFI/PI firmware infrastructure, such as SEC, PEI, DXE, runtime phase.
 
-* Oct 2015 
+* Oct 2015
 </td>
 </tr>
 
@@ -268,7 +275,7 @@ This paper presents the internal structure and boot flow of PI S3 resume design,
 <br>
 Prerequisite
 This paper assumes that audience has EDKII/UEFI firmware development experience. He or she should also be familiar with UEFI/PI/ACPI firmware infrastructure, such as SEC, PEI, DXE, runtime phase, and S-states.
-* Oct 2015 
+* Oct 2015
 </td>
 </tr>
 
@@ -282,14 +289,14 @@ This paper assumes that audience has EDKII/UEFI firmware development experience.
 
     <td>
 [https://github.com/tianocore-docs/Docs/raw/main/White_Papers/A_Tour_Beyond_BIOS_into_UEFI_Secure_Boot_White_Paper.pdf A Tour Beyond BIOS into UEFI Secure Boot White Paper] <br>
-This document provides an overview of the implementation and intent behind the UEFI Secure Boot feature and capability of UEFI Specification, Version 2.3.1C, http://www.uefi.org 
+This document provides an overview of the implementation and intent behind the UEFI Secure Boot feature and capability of UEFI Specification, Version 2.3.1C, http://www.uefi.org
 
 The goal of the paper is to provide
 *	an understanding of the motivations behind this capability
-*	a walk-through of the implementation 
+*	a walk-through of the implementation
 *	a future evolution.
 
-This paper targets firmware, software, and BIOS engineers. 
+This paper targets firmware, software, and BIOS engineers.
 * July 2012
     </td>
 </tr>

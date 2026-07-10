@@ -1,4 +1,11 @@
-This is just a brief overview of the C [[Code Style]] used for our projects.  
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
+This is just a brief overview of the C [[Code Style]] used for our projects.
 The EDK II Project requires the use of  [[uncrustify|https://github.com/uncrustify/uncrustify]]
 to automatically format C code to match the EDK II C Coding Standard. Details on how to install
 and run uncrustify for EDK II can be found at [[EDK II Code Formatting]].
@@ -27,18 +34,18 @@ __TOC__
 
 C File Example:
  #include "FooFileName.h"
- 
+
  /**
    Brief and Detailed Descriptions.
- 
+
    @param[in]      Arg1 Description of Arg1.
    @param[in]      Arg2 Description of Arg2, which is optional.
    @param[out]     Arg3 Description of Arg3.
    @param[in, out] Arg4 Description of Arg4.
- 
+
    @retval EFI_SUCCESS   Description of what EFI_SUCCESS means.
    @retval !EFI_SUCCESS  Failure.
- 
+
  **/
  EFI_STATUS
  EFIAPI
@@ -51,9 +58,9 @@ C File Example:
  {
    UINTN Local;
    UINTN AnotherLocal;
- 
+
    ...
- 
+
    for (Local = 0; Local < 5; Local++) {
      if (Local == 2) {
        Print (L"Local: %d (yes! 2)\n", Local);
@@ -61,29 +68,29 @@ C File Example:
        Print (L"Local: %d\n", Local);
      }
    }
- 
+
    ...
  }
 
 H File Example:
  #ifndef _FOO_FILE_NAME_H_
  #define _FOO_FILE_NAME_H_
- 
+
  #define FOO_MACRO(a, b) ((a) * (b))
- 
+
  #define FOO_CONSTANT  0xcafe
- 
+
  /**
    Brief and Detailed Descriptions.
- 
+
    @param[in]      Arg1 Description of Arg1.
    @param[in]      Arg2 Description of Arg2, which is optional.
    @param[out]     Arg3 Description of Arg3.
    @param[in, out] Arg4 Description of Arg4.
- 
+
    @retval EFI_SUCCESS   Description of what EFI_SUCCESS means.
    @retval !EFI_SUCCESS  Failure.
- 
+
  **/
  EFI_STATUS
  EFIAPI
@@ -93,9 +100,9 @@ H File Example:
       OUT UINTN  *Arg3,
    IN OUT UINTN  *Arg4
    );
- 
+
  ...
- 
+
  #endif
 
 ==Examples==

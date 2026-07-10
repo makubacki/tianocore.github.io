@@ -1,6 +1,13 @@
+= Deprecated Wiki =
+
+'''DEPRECATION NOTICE:''' This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [https://www.tianocore.org/tianocore-wiki.github.io/ TianoCore Wiki].
+
+----
+
 {{project-summary
 |sum=EFI device driver loader, application launcher, OS booter
-|cat=shell apps 
+|cat=shell apps
 |lic=[[Eclipse]]
 |own={{sfuser|laurie0131}}, rli6
 |docs=http://sourceforge.net/projects/framework-sct/files/
@@ -17,7 +24,7 @@ The framework-sct requires the EFI Developer Kit (EDK) and the EFI Shell to comp
 The following bullets provide information on how to download, build and use the framework-sct.
 
 * Download snaphots of development or official releases of the framework-sct. Simply click on the link and choose the latest development or official version to start the download process.
-* Download the EFI SCT Getting Started Guide (pdf) for guiding on building and using the framework-sct to develop. 
+* Download the EFI SCT Getting Started Guide (pdf) for guiding on building and using the framework-sct to develop.
 
 Project Participation
 
@@ -28,7 +35,7 @@ The framework-sct project team is primarily comprised of Intel platform engineer
 * Original Equiment Manufacturers (OEMs)
 * Operating System Developers
 * Open BIOS Engineers
-* Educational Institutions 
+* Educational Institutions
 
 There is room for project membership in filing, screening, fixing and verifying bugs, as well as participating in the enhancement of the framework-sct . See the framework-sct Project Development Process for an explanation of how this project functions and how new users can participate.
 Handy Links
@@ -39,7 +46,7 @@ The following links are provided for use by the general public:
 * Directory of framework-sct Source Code Snapshots (Official Releases)
 * Link to the TianoCore Community Project
 * Link to the Intel EFI 1.10 Specification (on Intel's Site)
-* Archives of the framework-sct "Dev" Mailing List 
+* Archives of the framework-sct "Dev" Mailing List
 
 These links will work only if you are a registered user on TianoCore (click here to register):
 
