@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 [v0.11 (03-05-2012, Windows MSI)](https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UefiDriverWizard.msi) | [ReadMe](https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UefiDriverWizard/README.txt) |
 [[Wizard-Getting-Started]]
 

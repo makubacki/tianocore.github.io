@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 Back to [Capsule Based System Firmware Update](Capsule-Based-System-Firmware-Update)
 
 Supporting [`SignedCapsulePkg`](https://github.com/tianocore/edk2/tree/master/SignedCapsulePkg) in an EDK II project requires several platform-specific items.

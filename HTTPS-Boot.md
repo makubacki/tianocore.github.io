@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # UEFI HTTPS Boot
 
 The security of HTTPS boot is that of the underlying Transport Layer Security (TLS). In simple terms, HTTPS boot refers to the use of HTTP boot over TLS session. So, please refer to the [UEFI HTTP Boot](https://github.com/tianocore/tianocore.github.io/wiki/HTTP-Boot) page for details. This page includes links to notes for HTTP/HTTPS server configuration and 3rd party documentation.

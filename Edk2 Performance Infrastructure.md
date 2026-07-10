@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # Performance Infrastructure 
 User can use the Perf macros in edk2/MdePkg/Include/Library/PerformanceLib.h to log the performance information.<BR>
 The performance information are collected in FPDT record format directly by performance libraries and then saved in ACPI Firmware Performance Data Table(FPDT).<BR>

@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 ### [October 31, 2014](http://www.tianocore.org/news/2014/10/31/udk2014.sp1.html)
 
 Announcing the new UDK2014.SP1 Release. Goto the [UDK2014](http://www.tianocore.org/udk2014/ "UEFI Development Kit 2014") page to download the release and documentation. [Release Notes](http://sourceforge.net/projects/edk2/files/UDK2014_Releases/UDK2014.SP1/UDK2014.SP1-ReleaseNotes-MyWorkSpace.txt/download)

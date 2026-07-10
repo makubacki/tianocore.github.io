@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 Change **TOOL_CHAIN_TAG** in the file Conf\Target.txt for Windows Visual Studio Versions according to the following Matrix
 
 |Visual Studio |	V. Version |	WinXP / Win7 /IA32 |	Win7 / Win8x / Win10 x64 |

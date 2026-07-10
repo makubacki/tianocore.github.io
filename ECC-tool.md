@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # 1. What is ECC tool?
 ECC is a python tool which helps to detect coding style issues.<br>
 It reports errors for the codes which don't follow [EDK II C Coding Standards Specification](https://tianocore-docs.github.io/edk2-CCodingStandardsSpecification/draft/).<br>

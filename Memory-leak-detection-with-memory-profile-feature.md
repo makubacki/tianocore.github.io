@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # Introduction
 
 The memory profile feature was introduced to help a developer analyze the hardware memory reservation in a UEFI firmware implementation. After enhanced, the memory profile feature can be also used for memory leak detection. The enhanced memory profile feature supports

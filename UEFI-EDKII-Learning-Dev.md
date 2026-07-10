@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # UEFI and EDK II Learning and Development
 
 Welcome to UEFI and EDK II Learning and Development.  The self paced courses below are provided to help you increase your knowledge of UEFI and EDK II and to aid you in performing UEFI- and EDK II-related tasks.

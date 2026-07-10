@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # VariablePolicy Protocol - Enhanced Method for Managing Variables
 
 VariablePolicy is -- conceptually -- a follow-on and replacement for the EdkIIVariableLockProtocol and VariableProperties. It expands upon the capabilities while maintaining a similar interface. The full interface is described in `MdeModulePkg/Include/Protocol/VariablePolicy.h`, but the interface and policy structure don't necessarily give a full picture of the uses of policies, especially some of the more complicated policy constructions. This article aims to describe some possible VariablePolicy-based solutions. It also describes the required changes for a platform adopting VariablePolicy for the first time.

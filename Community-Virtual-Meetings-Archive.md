@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # October 2018 Meeting 2
 ## Overview
 We will be holding the second (of many) community meetings in hopes of receiving feedback as well as raising any new ideas or concerns.

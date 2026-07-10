@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 ## 1. What BaseTools has changed in order to be compatible with Python2 and Python3?
 * If Python2 has a built-in module or its methods that doesn't exist in Python3,replace it with 
 another appropriate methods. For example, `'itertools', 'IterableUserDict', 'long', 'reduce',

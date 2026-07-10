@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # EDK II Code Formatting
 
 To better realize the goals of the [EDK II C Coding Standards Specification](https://tianocore-docs.github.io/edk2-CCodingStandardsSpecification/draft/),

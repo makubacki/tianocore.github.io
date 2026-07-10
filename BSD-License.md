@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 The preferred license for TianoCore contributions is [[BSD+Patent|BSD Plus Patent License]]. The [[Legalese]] page contains information on other licenses accepted under the contributors agreement, and how licenses should be documented in TianoCore projects.
 
 # Example Language: BSD-2-Clause

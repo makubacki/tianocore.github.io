@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 Visual Studio Code is currently my preferred text editor for working on EDK II code. However, making it a good environment for EDK II development work requires several extensions to be installed. My recommendations are below:
 
 # Recommended Extensions

@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # ACPI Source Language (ASL) Compiler Setup
 
 EDK II uses ACPI to describe platform configuration and power management methods to the operating system. These methods are described using ASL, which requires an additional compiler.

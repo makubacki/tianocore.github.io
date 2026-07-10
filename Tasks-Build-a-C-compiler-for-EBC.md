@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 Build a C compiler that is able to generate EBC (EFI Byte Code)
 
 **:red_circle: This project is not recommended as the relevance of EBC has waned. :red_circle:**

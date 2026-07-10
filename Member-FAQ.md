@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 TianoCore has accumulated a lot of information over the years. We keep several FAQs on the wiki, organized by topic. 
 
 * [[FAQ|EFI and Framework Open Source Community FAQ|]] General community questions

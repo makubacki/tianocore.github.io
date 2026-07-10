@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 Building [[OVMF]] is fairly easy once you have installed a few pre-requisites. Please note, however, that building OVMF is not required if you are only interested in [running OVMF](How-to-run-OVMF "wikilink"), since we have provided pre-built binaries of OVMF.
 
 Build Pre-requisites

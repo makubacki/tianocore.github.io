@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 This page provides step-by-step instructions for setting up a [EDK II](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II) build environment on macOS systems using the Xcode development tools.  These steps have been verified with macOS Big Sur 11.3.1
 
 # macOS Xcode

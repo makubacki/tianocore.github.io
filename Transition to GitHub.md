@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 
 The transition to GitHub will start February 2nd at around 10AM PST
 (UTC-8). We estimate it to be completed by February 4th at 5PM PST.

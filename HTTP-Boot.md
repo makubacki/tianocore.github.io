@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # UEFI HTTP Boot
 
 For a detailed description on UEFI HTTP Boot, see the "HTTP Boot" section of the [UEFI Specification](http://www.uefi.org/specifications).

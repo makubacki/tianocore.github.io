@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 The UEFI Variable Runtime Cache feature was introduced to reduce the total number of SMIs triggered and therefore total
 system time in SMM when SMM UEFI variables are enabled.
 

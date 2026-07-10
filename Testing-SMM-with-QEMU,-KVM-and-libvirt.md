@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 This article describes an example setup for testing the edk2 SMM driver stack
 as it is built into OVMF, on QEMU/KVM, managed by libvirt. The setup uses
 hardware virtualization (KVM) and requires a Linux host machine.

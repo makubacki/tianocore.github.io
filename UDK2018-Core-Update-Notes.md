@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # [[UDK2018]] Core Update Notes
 1. The GCC tool chain adds `--whole-archive` link option to detect the duplicated function or variable name. If the source code has this issue, the code will need to be fixed first, or the platform can set a link option to disable this checker in the platform's DSC file as shown below:
 ```

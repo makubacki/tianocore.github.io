@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 ## Introduction
 There are situations where a platform may have separately updatable firmware components (e.g. motherboard, BMC, EC, etc.) and in some cases, there may be dependencies among them. For instance, FWx requires FWy to be at least version 2.0 to install. Today, we don’t have a way to express that in our infrastructure. Fmp capsule dependency attempts to add that capability through minor changes in the FMP capsule as well as a minor enhancement to FmpDxe driver and FmpDeviceLib.
 Capsule Dependency is an incremental change of FMP capsule (Signed Capsule) to evaluate the capsule’s version dependency requirement is satisfied or not before applying the update.

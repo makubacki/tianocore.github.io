@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # UDK2017 Core Update Notes 
 1.  UserPhysicalPresent() behavior is changed in SecurityPkg\Library\PlatformSecureLibNull. <BR>
     It will return the value of new PCD PcdUserPhysicalPresence instead of TRUE.<BR>

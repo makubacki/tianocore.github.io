@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 The Minimum Platform Architecture (MPA) creates guidelines for how to design, enable improvements in quality and security on open source platform initialization development on firmware for Intel products.
 
 #### MinPlatformPkg

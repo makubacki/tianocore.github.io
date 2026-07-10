@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # Preboot Execution Environment (PXE)
 
 PXE is a standardized client-server solution that boots an agent via network, allowing management tasks in the absence of a running OS. EDK II has PXE Boot specification compliant implementation for UEFI. This feature is commonly referred to as "PXE boot".

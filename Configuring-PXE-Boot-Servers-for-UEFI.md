@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # Configuring PXE Boot Servers for UEFI
 
 This page collects resources for configuring [[PXE]] servers to boot UEFI images. The defacto PXE configuration is typically setup for 16-bit x86 legacy BIOS images, so adding UEFI support requires changes to server config files.

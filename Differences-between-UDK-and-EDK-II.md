@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 **Frequently asked questions about the differences between [[UDK]] i.e. [[UDK2017]] and EDK II**
   
 ### What is the difference between UDK and EDK II?

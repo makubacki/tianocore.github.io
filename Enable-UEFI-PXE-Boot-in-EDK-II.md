@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 [[PXE]] Boot is enabled by the [[EDK II]] network stack. If your platform does not have EDK II network stack built in yet, or you feel you miss any modules for enabling PXE boot, please refer to the “FEATURES ENABLING” section in the [[NetworkPkg Getting Started Guide]].
 
 **NOTES:** The platform must support the UUID detection by reading table-based SMBIOS. Please refer the section 5.2.1 of PXE v2.1 specification for more details.

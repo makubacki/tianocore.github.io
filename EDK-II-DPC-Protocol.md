@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # **Deferred Procedure Call Protocol**
 
 This document introduces the Deferred Procedure Call (DPC) protocol, including the protocol interface, design intension and code analysis in edk2 network drivers. There is also some discussion about the assumptions, limitations and rules that user must know before consuming the DPC protocol.

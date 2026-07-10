@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # Debugging EDK II using OvmfPkg with QEMU and Linux GDB
 This example will show how to debug a simple application built with OvmfPkg then using the QEMU and GDB to debug the UEFI Application.
 

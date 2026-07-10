@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 [Back to Capsule-Based Firmware Update and Firmware Recovery](Capsule-Based-Firmware-Update-and-Firmware-Recovery#common-use-cases-for-uefi-capsule)
 
 This page provides details on how to add the system firmware update feature using Signed UEFI Capsules. This feature may be verified using **test signing keys**.  Additional instructions are provided to generate new signing keys using [OpenSSL](https://www.openssl.org) command line utilities, along with steps to verify system firmware updates using user-generated signing keys.

@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 ## EDK II Platforms
 
 Note: new platforms are being developed in the [edk2-platforms](https://github.com/tianocore/edk2-platforms) repository. Some older platforms still reside in the main [edk2](https://github.com/tianocore/edk2) repository.

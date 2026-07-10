@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 OBB (Oem Boot Block) Verification is a common solution of maintaining the Chain-of-Trust in edk2 based firmware. It fills the gap between IBB (Initial Boot Block, verified by Root-of-Trust) and 3rd-party image (like OS loader, verified by Secure Boot). Following figure shows the point at which the OBB Verification complete the Chain-of-Trust in firmware.
 
 ![1566887183249](images/OBB-in-the-Chain-of-Trust.png)

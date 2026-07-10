@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # Overview
 
 Host-based Firmware Analyzer (HBFA) enables advanced testing of UEFI drivers and UEFI Platform Initialization (PI) drivers in the developer’s OS environment. This test system was contributed to TianoCore edk2-staging branch by Intel in April 2019.

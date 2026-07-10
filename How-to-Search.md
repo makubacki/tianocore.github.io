@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 # How to Search the TianoCore wiki pages 
 Most of the documentation, white papers and "How to"s are incorporated into the TianoCore wiki pages.  
 * **Search for a string or topic inside all wiki pages**:

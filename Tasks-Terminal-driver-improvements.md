@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 Optimize cursor motion sequences; support Linux/UNIX standard (xterm/konsole/gnome-terminal/etc.) key codes and line-drawing characters (currently one must set their terminal emulator to use code page 437 for correct line drawing.)
 
 * Status: Complete :heavy_check_mark:

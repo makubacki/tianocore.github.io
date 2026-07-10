@@ -1,3 +1,10 @@
+# Deprecated Wiki
+
+**DEPRECATION NOTICE:** This is the old TianoCore wiki. It is no longer maintained and out-of-date. The new wiki is
+available here: [TianoCore Wiki](https://www.tianocore.org/tianocore-wiki.github.io/).
+
+---
+
 ## Platform Initialization (PI)
 
 UEFI Platform Initialization (PI) describes the boot execution phases to encompass [[UEFI]] supported protocols and services. PI evolved from the original Intel® Platform Innovation Firmware for EFI Specification. While UEFI primarily focuses on the interface between firmware and the operating system, PI focuses on interfaces between low-level firmware components.
